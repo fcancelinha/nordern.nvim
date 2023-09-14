@@ -14,8 +14,6 @@ jobs:
     steps:
     - name: checkout
       uses: actions/checkout@v4
-      with:
-        fetch-depth: '0'
 
     - name: bump version and push tag
       uses: anothrNick/github-tag-action@1.64.0
@@ -24,4 +22,3 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DEFAULT_BUMP: patch
         RELEASE_BRANCHES: master
-        WITH_V: false
