@@ -1,14 +1,10 @@
 local utils = {}
 
-function version()
+function utils.preload()
 	if vim.version().minor < 8 then
 		vim.notify_once("northern.nvim: you must use neovim 0.8 or higher")
 		return
 	end
-end
-
-utils.preload = function()
-	version()
 
 	-- reset default highlights
 	vim.cmd.hi("clear")
@@ -21,7 +17,7 @@ utils.preload = function()
 	vim.g.colors_name = "northern"
 end
 
-function util.load(sections)
+function utils.load(sections)
 	for _, section in pairs(sections) do
 		for group, highlight in pairs(section) do
 			vim.api.nvim_set_hl(0, group, highlight)
