@@ -8,13 +8,13 @@ function utils.version()
 end
 
 function utils.preload()
-	-- set appropriate background
+	-- Colorscheme Name
+	vim.g.colors_name = "northern"
 	vim.o.termguicolors = true
 	vim.o.background = "dark"
 
 	-- reset default highlights
 	vim.cmd.hi("clear")
-
 
 	if vim.fn.exists("syntax_on") then
 		vim.cmd("syntax reset")
@@ -24,9 +24,6 @@ function utils.preload()
 	-- 	vim.cmd([[autocmd! northern]])
 	-- 	vim.cmd([[augroup! northern]])
 	-- end
-
-	-- Colorscheme Name
-	vim.g.colors_name = "northern"
 end
 
 function utils.load(sections)
