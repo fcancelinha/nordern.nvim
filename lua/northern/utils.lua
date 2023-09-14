@@ -1,11 +1,6 @@
 local utils = {}
 
 function utils.preload()
-	if vim.version().minor < 8 then
-		vim.notify_once("northern.nvim: you must use neovim 0.8 or higher")
-		return
-	end
-
 	-- reset default highlights
 	vim.cmd.hi("clear")
 
