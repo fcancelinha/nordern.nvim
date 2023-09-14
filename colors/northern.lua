@@ -15,4 +15,4 @@ package.loaded['northern.options'] = nil
 package.loaded['northern.plugs'] = nil
 package.loaded['northern.utilutils'] = nil
 
-require("northern").sync()
+require("northern").set()

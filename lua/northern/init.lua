@@ -7,17 +7,17 @@
 -- Year: 2023
 -- ********************************************************************************
 
-local B = require("northern.base")
-local U = require("northern.utils")
+local u = require("northern.utils")
+local b = require("northern.base")
 
 -- todo: manipulate groups by loading options
 
 -- preload all the vim options for this theme
 
 -- Load all collections (languages, neovim base, etc..)
-local sync = function()
-	U.preload()
-	U.load(B)
+local set = function()
+	u.preload()
+	u.load(b)
 end
 
-return { sync = sync }
+return { set = set }
