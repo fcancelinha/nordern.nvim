@@ -8,13 +8,12 @@ function utils.version()
 end
 
 function utils.preload()
-	-- Colorscheme Name
+	-- reset default highlights
+	vim.cmd.hi("clear")
+
 	vim.g.colors_name = "northern"
 	vim.o.termguicolors = true
 	vim.o.background = "dark"
-
-	-- reset default highlights
-	vim.cmd.hi("clear")
 
 	if vim.fn.exists("syntax_on") then
 		vim.cmd("syntax reset")

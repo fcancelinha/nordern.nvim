@@ -31,6 +31,7 @@ local C = require("northern.colors")
 -- ctermbg: Sets background of cterm color ctermbg
 -- cterm: cterm attribute map, like highlight-args. If not set, cterm attributes will match those from the attribute map documented above.-
 
+
 local B = {}
 
 -- Base neovim
@@ -135,7 +136,7 @@ B.syntax = {
 	Ignore         = { fg = C.none, bg = C.none },          -- left blank, hidden
 	Include        = { fg = C.frost.light_blue, bg = C.none }, -- preprocessor #include
 	Keyword        = { fg = C.frost.light_blue, bg = C.none }, -- italic for, do, while, etc.
-	Label          = { fg = C.frost.blue, bg = C.none },    -- case, default, etc.
+	Label          = { fg = C.frost.turquoise, bg = C.none }, -- case, default, indent char, window labels etc.
 	Macro          = { fg = C.none, bg = C.none },          -- same as Define
 	Number         = { fg = C.aurora.purple, bg = C.none }, -- a number constant: 5
 	Operator       = { fg = C.aurora.yellow, bg = C.none }, -- sizeof", "+", "*", etc.
