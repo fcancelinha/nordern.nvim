@@ -13,15 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-        uses: actions/checkout@3
-        with:
-          fetch-depth: '0'
+      uses: actions/checkout@v4
 
     - name: bump version and push tag
-        uses: anothrNick/github-tag-action@1.64.0
-        if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          DEFAULT_BUMP: patch
-          RELEASE_BRANCHES: master
-          WITH_V: false
+      uses: anothrNick/github-tag-action@1.64.0
+      if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DEFAULT_BUMP: patch
+        RELEASE_BRANCHES: master
