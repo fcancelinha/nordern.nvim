@@ -32,6 +32,11 @@ local colors = {
 		red    = "#BF616A",
 		yellow = "#EBCB8B",
 	},
+	diff = {
+		del = "#b4747e",
+		add = "#788a7b",
+		mod = "#f2ddb5",
+	}
 }
 
 return colors
