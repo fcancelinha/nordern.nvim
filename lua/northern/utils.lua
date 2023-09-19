@@ -1,6 +1,6 @@
 local utils = {}
 
-function utils.preload()
+function utils.load(...)
 	-- reset default highlights
 	vim.cmd.hi("clear")
 
@@ -9,13 +9,14 @@ function utils.preload()
 	end
 
 	vim.o.termguicolors = true
+	vim.o.background = 'dark'
 	vim.g.colors_name = "northern"
-end
 
-function utils.load(sections)
-	for _, section in pairs(sections) do
-		for group, highlight in pairs(section) do
-			vim.api.nvim_set_hl(0, group, highlight)
+	for _, value in pairs({ ... }) do
+		for _, groups in pairs(value) do
+			for group, highlight in pairs(groups) do
+				vim.api.nvim_set_hl(0, group, highlight)
+			end
 		end
 	end
 end

@@ -22,7 +22,7 @@ local colors = {
 	frost = {
 		blue       = "#5E81AC",
 		light_blue = "#81A1C1",
-		sea        = "#8FBCBB",
+		sea        = "#8FBCB5",
 		turquoise  = "#88C0D0",
 	},
 	aurora = {
@@ -31,11 +31,6 @@ local colors = {
 		purple = "#B48EAD",
 		red    = "#BF616A",
 		yellow = "#EBCB8B",
-	},
-	diff = {
-		del = "#b4747e",
-		add = "#788a7b",
-		mod = "#f2ddb5",
 	}
 }
 

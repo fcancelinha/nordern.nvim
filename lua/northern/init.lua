@@ -6,18 +6,23 @@
 -- License: MIT
 -- Year: 2023
 -- ********************************************************************************
+local northern = {}
 
 local u = require("northern.utils")
 local b = require("northern.base")
+local l = require("northern.lang")
+local p = require("northern.plugs")
 
 -- todo: manipulate groups by loading options
 
--- preload all the vim options for this theme
+-- function northern.load(opts)
+-- 	if opts then
+-- 		--TODO: manipulate options in here
+-- 	end
+--
+-- 	u.load(b, l, p)
+-- end
 
--- Load all collections (languages, neovim base, etc..)
-local set = function()
-	u.preload()
-	u.load(b)
-end
+u.load(b, l, p)
 
-return { set = set }
+-- return northern
