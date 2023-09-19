@@ -13,6 +13,6 @@ package.loaded['northern.base'] = nil
 package.loaded['northern.lang'] = nil
 package.loaded['northern.options'] = nil
 package.loaded['northern.plugs'] = nil
-package.loaded['northern.utilutils'] = nil
+package.loaded['northern.utils'] = nil
 
-require("northern").set()
+require("northern").load()
