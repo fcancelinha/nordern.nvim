@@ -1,6 +1,6 @@
 local C = require("northern.colors")
 
-local nord = {
+local northern = {
 	normal = {
 		a = { bg = C.frost.turquoise, fg = C.bg, bold = true },
 		b = { bg = C.night.c1, fg = C.fg },
@@ -51,4 +51,4 @@ local nord = {
 	}
 }
 
-return nord
+return northern
