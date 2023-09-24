@@ -11,8 +11,8 @@ local l = require("northern.lang")
 local p = require("northern.plugs")
 local u = require("northern.utils")
 
-function load()
+function set()
 	u.load(b, l, p)
 end
 
-return { load = load }
+return { set = set }
