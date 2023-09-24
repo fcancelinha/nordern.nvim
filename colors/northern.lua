@@ -8,8 +8,9 @@
 -- ********************************************************************************
 
 package.loaded['northern'] = nil
-package.loaded['northern.colors'] = nil
 package.loaded['northern.base'] = nil
+package.loaded['northern.colors'] = nil
+package.loaded['northern.config'] = nil
 package.loaded['northern.lang'] = nil
 package.loaded['northern.options'] = nil
 package.loaded['northern.plugs'] = nil

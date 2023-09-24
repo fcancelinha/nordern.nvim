@@ -30,11 +30,11 @@ L.javascript = {
 }
 
 L.lua = {
-	["@variable.lua"]                            = { fg = C.fg, bg = C.none },           --  object and struct fields
-	["@lsp.type.variable.lua"]                   = { fg = C.fg, bg = C.none },           --  object and struct fields
-	["@lsp.type.property.lua"]                   = { fg = C.fg, bg = C.none },           --  similar to `@field`
-	["@lsp.mod.defaultLibrary.lua"]              = { fg = C.frost.sea, bg = C.none },    --  similar to `@field`
-	["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = C.frost.turquoise, bg = C.none }, --  similar to `@field`
+	["@variable.lua"]                            = { fg = C.fg, bg = C.none },     --  object and struct fields
+	["@lsp.type.variable.lua"]                   = { fg = C.fg, bg = C.none },     --  object and struct fields
+	["@lsp.type.property.lua"]                   = { fg = C.fg, bg = C.none },     --  similar to `@field`
+	["@lsp.mod.defaultLibrary.lua"]              = { fg = C.frost.sea, bg = C.none }, --  similar to `@field`
+	["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = C.fg, bg = C.none },     --  similar to `@field`
 }
 
 L.html = {
@@ -59,6 +59,13 @@ L.vimdoc = {
 	["@label.vimdoc"]              = { fg = C.aurora.yellow, bg = C.none },
 	["@parameter.vimdoc"]          = { fg = C.frost.turquoise, bg = C.none },
 	["@conceal.vimdoc"]            = { fg = C.night.c0, bg = C.none },
+}
+
+L.git_config = {
+	["@property.git_config"] = { fg = C.frost.turquoise, bg = C.none },
+	["@type.git_config"]     = { fg = C.frost.turquoise, bg = C.none },
+	["@string.git_config"]   = { fg = C.fg, bg = C.none },
+	["@operator.git_config"] = { fg = C.frost.turquoise, bg = C.none },
 }
 
 L.bash = {

@@ -15,14 +15,12 @@ local p = require("northern.plugs")
 
 -- todo: manipulate groups by loading options
 
--- function northern.load(opts)
--- 	if opts then
--- 		--TODO: manipulate options in here
--- 	end
---
--- 	u.load(b, l, p)
--- end
+function northern.load(opts)
+	-- if opts then
+	-- 	--TODO: manipulate options in here
+	-- end
 
-u.load(b, l, p)
+	u.load(b, l, p)
+end
 
--- return northern
+return northern
