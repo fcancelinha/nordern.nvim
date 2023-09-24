@@ -2,19 +2,19 @@ local C = require("northern.colors")
 local P = {}
 
 P.neo_tree = {
-	NeoTreeBufferNumber       = { fg = C.snow.c0, bg = C.none },              --The buffer number shown in the buffers source.
-	NeoTreeCursorLine         = { fg = C.none, bg = C.night.c1 },             --|hl-CursorLine| override in Neo-tree window.
-	NeoTreeDimText            = { fg = C.snow.c0, bg = C.none },              --Greyed out text used in various places.
+	NeoTreeBufferNumber       = { fg = C.fg, bg = C.none },                   --The buffer number shown in the buffers source.
+	NeoTreeCursorLine         = { link = "CursorLine" },                      --|hl-CursorLine| override in Neo-tree window.
+	NeoTreeDimText            = { fg = C.fg, bg = C.none },                   --Greyed out text used in various places.
 	NeoTreeDirectoryIcon      = { fg = C.frost.turquoise, bg = C.none },      --Directory icon.
-	NeoTreeDirectoryName      = { fg = C.snow.c0, bg = C.none },              --Directory name.
+	NeoTreeDirectoryName      = { fg = C.fg, bg = C.none },                   --Directory name.
 	NeoTreeDotfile            = { fg = C.night.c3, bg = C.none },             --Used for icons and names when dotfiles are filtered.
 	NeoTreeEndOfBuffer        = { fg = C.none, bg = C.none },                 --|hl-EndOfBuffer| override in Neo-tree window.
 	NeoTreeExpander           = { fg = C.night.c2, bg = C.none },             --Used for collapsed/expanded icons.
 	NeoTreeFileIcon           = { fg = C.frost.sea, bg = C.none },            --File icon, when not overridden by devicons.
 	NeoTreeFileName           = { fg = C.snow.c1, bg = C.none },              --File name, when not overwritten by another status.
 	NeoTreeFileNameOpened     = { fg = C.snow.c1, bg = C.none },              --File name when the file is open. Not used yet.
-	NeoTreeFilterTerm         = { fg = C.frost.turquoise, bg = C.none },      --The filter term, as displayed in the root node.
-	NeoTreeFloatBorder        = { fg = C.frost.turquoise, bg = C.none },      --The border for pop-up windows.
+	NeoTreeFilterTerm         = { fg = C.aurora.yellow, bg = C.none },        --The filter term, as displayed in the root node.
+	NeoTreeFloatBorder        = { link = "FloatBorder" },                     --The border for pop-up windows.
 	NeoTreeFloatTitle         = { fg = C.snow.c1, bg = C.none },              --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
 	NeoTreeGitAdded           = { fg = C.aurora.green, bg = C.none },         --File name when the git status is added.
 	NeoTreeGitConflict        = { fg = C.aurora.red, bg = C.none },           --File name when the git status is conflict.
@@ -23,12 +23,12 @@ P.neo_tree = {
 	NeoTreeGitModified        = { fg = C.aurora.yellow, bg = C.none },        --File name when the git status is modified.
 	NeoTreeGitStaged          = { fg = C.aurora.green, bg = C.none },         --Used for git staged symbol.
 	NeoTreeGitUnstaged        = { fg = C.frost.light_blue, bg = C.none },     --Used for git unstaged symbol.
-	NeoTreeGitUntracked       = { fg = C.aurora.red, bg = C.none },           --File name when the git status is untracked.
+	NeoTreeGitUntracked       = { fg = C.frost.light_blue, bg = C.none },     --File name when the git status is untracked.
 	NeoTreeHiddenByName       = { fg = C.night.c2, bg = C.none },             --Used for icons and names when `hide_by_name` is used.
-	NeoTreeIndentMarker       = { fg = C.night.c1, bg = C.none },             --The style of indentation markers (guides). By default, the "Normal" highlight is used.
-	NeoTreeNormal             = { fg = C.snow.c0, bg = C.none },              --|hl-Normal| override in Neo-tree window.
-	NeoTreeNormalNC           = { fg = C.snow.c0, bg = C.none },              --|hl-NormalNC| override in Neo-tree window.
-	NeoTreeRootName           = { fg = C.snow.c0, bg = C.none },              --The name of the root node.
+	NeoTreeIndentMarker       = { fg = C.night.c1, bg = C.none },             --The style of indentation markers (). By default, the "Normal" highlight is used.
+	NeoTreeNormal             = { fg = C.fg, bg = C.none },                   --|hl-Normal| override in Neo-tree window.
+	NeoTreeNormalNC           = { fg = C.fg, bg = C.none },                   --|hl-NormalNC| override in Neo-tree window.
+	NeoTreeRootName           = { fg = C.fg, bg = C.none },                   --The name of the root node.
 	NeoTreeSignColumn         = { fg = C.night.c3, bg = C.none },             --|hl-SignColumn| override in Neo-tree window.
 	NeoTreeFileStats          = { fg = C.night.c3, bg = C.none, italic = true }, --Used for "stat" columns like size, last modified, etc.
 	NeoTreeFileStatsHeader    = { fg = C.night.c3, bg = C.none, bold = true }, --Used for the header (top line) of the above columns.
@@ -79,20 +79,22 @@ P.cmp = {
 
 
 P.telescope = {
-	TelescopeBorder         = { fg = C.frost.turquoise, bg = C.none },
-	TelescopeMatching       = { fg = C.frost.turquoise, bg = C.none },      -- Highlight characters your input
-	TelescopeMultiSelection = { fg = C.none, bg = C.night.c1, italic = true }, -- Multisections
-	TelescopeNormal         = { fg = C.snow.c0, bg = C.none },              -- Floating windows created by telescope
-	TelescopePreviewBorder  = { fg = C.frost.turquoise, bg = C.none },
-	TelescopePreviewTitle   = { fg = C.snow.c0, bg = C.none },
-	TelescopePromptBorder   = { fg = C.frost.turquoise, bg = C.none },
-	TelescopePromptNormal   = { fg = C.snow.c0, bg = C.none },
-	TelescopePromptPrefix   = { fg = C.frost.turquoise, bg = C.none, bold = true },
-	TelescopePromptTitle    = { fg = C.snow.c0, bg = C.none },
-	TelescopeResultsBorder  = { fg = C.frost.turquoise, bg = C.none },
-	TelescopeResultsTitle   = { fg = C.snow.c0, bg = C.none },
-	TelescopeSelection      = { fg = C.frost.turquoise, bg = C.night.c1, italic = true }, -- Selected item
-	TelescopeSelectionCaret = { fg = C.frost.turquoise, bg = C.none, bold = true },    -- Selection caret
+	TelescopeBorder               = { link = "FloatBorder" },
+	TelescopeMatching             = { fg = C.frost.turquoise, bg = C.none }, -- Highlight characters your input
+	TelescopeMultiSelection       = { link = "CursorLine" },              -- Multisections
+	TelescopeNormal               = { fg = C.fg, bg = C.none },           -- Floating windows created by telescope
+	TelescopePreviewBorder        = { link = "FloatBorder" },
+	TelescopePreviewTitle         = { fg = C.fg, bg = C.none },
+	TelescopePromptBorder         = { link = "FloatBorder" },
+	TelescopePromptNormal         = { fg = C.fg, bg = C.none },
+	TelescopePromptPrefix         = { fg = C.frost.turquoise, bg = C.none },
+	TelescopePromptTitle          = { fg = C.fg, bg = C.none },
+	TelescopeResultsBorder        = { link = "FloatBorder" },
+	TelescopeResultsTitle         = { fg = C.fg, bg = C.none },
+	TelescopeSelection            = { link = "CursorLine" },              -- Selected item
+	TelescopeSelectionCaret       = { fg = C.frost.turquoise, bg = C.none }, -- Selection caret
+	TelescopeResultsDiffUntracked = { fg = C.frost.sea, bg = C.none },
+	TelescopeResultsComment       = { fg = C.frost.turquoise, bg = C.none },
 }
 
 P.git_signs = {
@@ -128,33 +130,33 @@ P.git_signs = {
 
 P.diagnostics = {
 	-- Base LSP
-	LspDiagnosticsDefaultError           = { fg = C.aurora.red, bg = C.none },   -- used for "Error" diagnostic virtual text
-	LspDiagnosticsSignError              = { fg = C.aurora.red, bg = C.none },   -- used for "Error" diagnostic signs in sign column
-	LspDiagnosticsFloatingError          = { fg = C.aurora.red, bg = C.none },   -- used for "Error" diagnostic messages in the diagnostics float
-	LspDiagnosticsVirtualTextError       = { fg = C.aurora.red, bg = C.none },   -- Virtual text "Error"
-	LspDiagnosticsUnderlineError         = { fg = C.aurora.red, bg = C.none },   -- used to underline "Error" diagnostics.
-	LspDiagnosticsDefaultWarning         = { fg = C.aurora.yellow, bg = C.none }, -- used for "Warning" diagnostic signs in sign column
-	LspDiagnosticsSignWarning            = { fg = C.aurora.yellow, bg = C.none }, -- used for "Warning" diagnostic signs in sign column
-	LspDiagnosticsFloatingWarning        = { fg = C.aurora.yellow, bg = C.none }, -- used for "Warning" diagnostic messages in the diagnostics float
-	LspDiagnosticsVirtualTextWarning     = { fg = C.aurora.yellow, bg = C.none }, -- Virtual text "Warning"
-	LspDiagnosticsUnderlineWarning       = { fg = C.aurora.yellow, bg = C.none }, -- used to underline "Warning" diagnostics.
-	LspDiagnosticsDefaultInformation     = { fg = C.aurora.green, bg = C.none }, -- used for "Information" diagnostic virtual text
-	LspDiagnosticsSignInformation        = { fg = C.aurora.green, bg = C.none }, -- used for "Information" diagnostic signs in sign column
-	LspDiagnosticsFloatingInformation    = { fg = C.aurora.green, bg = C.none }, -- used for "Information" diagnostic messages in the diagnostics float
-	LspDiagnosticsVirtualTextInformation = { fg = C.aurora.green, bg = C.none }, -- Virtual text "Information"
-	LspDiagnosticsUnderlineInformation   = { fg = C.aurora.green, bg = C.none }, -- used to underline "Information" diagnostics.
-	LspDiagnosticsDefaultHint            = { fg = C.frost.turquoise, bg = C.none }, -- used for "Hint" diagnostic virtual text
-	LspDiagnosticsSignHint               = { fg = C.frost.turquoise, bg = C.none }, -- used for "Hint" diagnostic signs in sign column
-	LspDiagnosticsFloatingHint           = { fg = C.frost.turquoise, bg = C.none }, -- used for "Hint" diagnostic messages in the diagnostics float
-	LspDiagnosticsVirtualTextHint        = { fg = C.frost.turquoise, bg = C.none }, -- Virtual text "Hint"
-	LspDiagnosticsUnderlineHint          = { fg = C.frost.turquoise, bg = C.none }, -- used to underline "Hint" diagnostics.
-	LspReferenceText                     = { fg = C.aurora.green, bg = C.none }, -- used for highlighting "text" references
-	LspReferenceRead                     = { fg = C.frost.turquoise, bg = C.none }, -- used for highlighting "read" references
-	LspReferenceWrite                    = { fg = C.frost.sea, bg = C.none },    -- used for highlighting "write" references
-	LspCodeLensSeparator                 = { fg = C.night.c2, bg = C.none },
-	LspCodeLensText                      = { fg = C.snow.c0, bg = C.none },
-	LspCodeLensSign                      = { fg = C.frost.light_blue, bg = C.none },
-	LspCodeLens                          = { fg = C.frost.turquoise, bg = C.none },
+	LspCodeLens                          = { link = "Comment" },
+	LspCodeLensSeparator                 = { fg = C.night.c1, bg = C.none },
+	LspCodeLensSign                      = { fg = C.frost.turquoise, bg = C.none },
+	LspCodeLensText                      = { link = "Comment" },
+	LspDiagnosticsDefaultError           = { fg = C.aurora.red, bg = C.none },              -- used for "Error" diagnostic virtual text
+	LspDiagnosticsDefaultHint            = { fg = C.frost.turquoise, bg = C.none },         -- used for "Hint" diagnostic virtual text
+	LspDiagnosticsDefaultInformation     = { fg = C.frost.turquoise, bg = C.none },         -- used for "Information" diagnostic virtual text
+	LspDiagnosticsDefaultWarning         = { fg = C.aurora.yellow, bg = C.none },           -- used for "Warning" diagnostic signs in sign column
+	LspDiagnosticsFloatingError          = { fg = C.aurora.red, bg = C.none },              -- used for "Error" diagnostic messages in the diagnostics float
+	LspDiagnosticsFloatingHint           = { fg = C.frost.turquoise, bg = C.none },         -- used for "Hint" diagnostic messages in the diagnostics float
+	LspDiagnosticsFloatingInformation    = { fg = C.frost.turquoise, bg = C.none },         -- used for "Information" diagnostic messages in the diagnostics float
+	LspDiagnosticsFloatingWarning        = { fg = C.aurora.yellow, bg = C.none },           -- used for "Warning" diagnostic messages in the diagnostics float
+	LspDiagnosticsSignError              = { fg = C.aurora.red, bg = C.none },              -- used for "Error" diagnostic signs in sign column
+	LspDiagnosticsSignHint               = { fg = C.frost.turquoise, bg = C.none },         -- used for "Hint" diagnostic signs in sign column
+	LspDiagnosticsSignInformation        = { fg = C.frost.turquoise, bg = C.none },         -- used for "Information" diagnostic signs in sign column
+	LspDiagnosticsSignWarning            = { fg = C.aurora.yellow, bg = C.none },           -- used for "Warning" diagnostic signs in sign column
+	LspDiagnosticsUnderlineError         = { fg = C.none, bg = C.blend.red },               -- used to underline "Error" diagnostics.
+	LspDiagnosticsUnderlineHint          = { fg = C.none, bg = C.blend.turquoise },         -- used to underline "Hint" diagnostics.
+	LspDiagnosticsUnderlineInformation   = { fg = C.none, bg = C.blend.blue },              -- used to underline "Information" diagnostics.
+	LspDiagnosticsUnderlineWarning       = { fg = C.none, bg = C.blend.yellow },            -- used to underline "Warning" diagnostics.
+	LspDiagnosticsVirtualTextError       = { fg = C.aurora.red, bg = C.blend.red },         -- Virtual text "Error"
+	LspDiagnosticsVirtualTextHint        = { fg = C.frost.turquoise, bg = C.blend.turquoise }, -- Virtual text "Hint"
+	LspDiagnosticsVirtualTextInformation = { fg = C.frost.turquoise, bg = C.blend.turquoise }, -- Virtual text "Information"
+	LspDiagnosticsVirtualTextWarning     = { fg = C.aurora.yellow, bg = C.blend.yellow },   -- Virtual text "Warning"
+	LspReferenceRead                     = { fg = C.frost.turquoise, bg = C.none },         -- used for highlighting "read" references
+	LspReferenceText                     = { fg = C.frost.turquoise, bg = C.none },         -- used for highlighting "text" references
+	LspReferenceWrite                    = { fg = C.frost.sea, bg = C.none },               -- used for highlighting "write" references
 	-- Diagnostics
 	DiagnosticError                      = { link = "LspDiagnosticsDefaultError" },
 	DiagnosticWarn                       = { link = "LspDiagnosticsDefaultWarning" },
@@ -178,25 +180,64 @@ P.diagnostics = {
 	DiagnosticSignHint                   = { link = "LspDiagnosticsSignHint" },
 }
 
+P.diff = {
+	diffAdded     = { link = "DiffAdd" },
+	diffRemoved   = { link = "DiffDelete" },
+	diffChanged   = { link = "DiffChange" },
+	diffLine      = { fg = C.frost.light_blue, bg = C.none },
+	diffFile      = { fg = C.frost.light_blue, bg = C.none },
+	diffIndexLine = { link = "Comment" },
+}
+
 P.mason = {
 	MasonMuted              = { fg = C.night.c3, bg = C.none },
-	MasonMutedBlock         = { fg = C.frost.turquoise, bg = C.night.c3 },
+	MasonMutedBlock         = { fg = C.frost.turquoise, bg = C.night.c1 },
 	MasonHeader             = { fg = C.night.c0, bg = C.aurora.yellow, bold = true },
 	MasonHighlight          = { fg = C.frost.turquoise, bg = C.none },
 	MasonHighlightSecondary = { fg = C.aurora.yellow, bg = C.none },
 	-- Lsp Info
 	LspInfoTip              = { fg = C.night.c3, bg = C.none, italic = true },
-	LspInfoBorder           = { fg = C.frost.turquoise, bg = C.none },
+	LspInfoBorder           = { link = "FloatBorder" },
 	LspInfoFiletypeList     = { fg = C.frost.turquoise, bg = C.none, bold = true },
 	LspInfoFiletype         = { fg = C.frost.turquoise, bg = C.none, bold = true },
 	LspInfoList             = { fg = C.frost.turquoise, bg = C.none, bold = true },
 	LspInfoListList         = { fg = C.frost.turquoise, bg = C.none, bold = true },
 	-- Lsp installer
-	LspInstallerInfoBorder  = { fg = C.frost.turquoise, bg = C.none },
+	LspInstallerInfoBorder  = { link = "FloatBorder" },
 	LspInstallerMuted       = { fg = C.night.c3, bg = C.none },
 }
 
 P.lazy = {
+	LazySpecial      = { fg = C.frost.turquoise, bg = C.none },
+	LazyLocal        = { fg = C.aurora.green, bg = C.none },
+	LazyReasonStart  = { fg = C.aurora.green, bg = C.none },
+	LazyProp         = { fg = C.frost.turquoise, bg = C.none },
+	LazyReasonImport = { fg = C.frost.turquoise, bg = C.none },
+	LazyCommit       = { fg = C.frost.turquoise, bg = C.none, bold = true },
+	LazyComment      = { link = "Comment" },
+	LazyDimmed       = { fg = C.aurora.green, bg = C.none, italic = true },
+	LazyProgressDone = { fg = C.frost.light_blue, bg = C.none },
+	LazyCommitIssue  = { fg = C.frost.turquoise, bg = C.none },
+	LazyUrl          = { fg = C.aurora.green, bg = C.none, underline = true },
+	LazyH2           = { fg = C.snow.c0, bg = C.none, bold = true },
+	LazyCommitType   = { fg = C.fg, bg = C.none, bold = true },
+}
+
+P.illuminate = {
+	IlluminatedWordText  = { bg = C.blend.bluec1 },
+	IlluminatedWordRead  = { bg = C.blend.bluec1 },
+	IlluminatedWordWrite = { bg = C.blend.bluec1 },
+}
+
+P.indent_blankline = {
+	IndentBlanklineChar               = { fg = C.night.c1, bg = C.none },
+	IndentBlanklineSpaceChar          = { fg = C.night.c1, bg = C.none },
+	IndentBlanklineContextChar        = { fg = C.frost.turquoise, bg = C.none },
+	IndentBlanklineContextStart       = { fg = C.frost.turquoise, bg = C.none },
+	IndentBlanklineSpaceCharBlankline = { fg = C.night.c1, bg = C.none },
+}
+
+P.trouble = {
 
 }
 

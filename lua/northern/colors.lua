@@ -1,13 +1,11 @@
+local U = require("northern.utils")
 -- The Nord palette : https://www.nordtheme.com/docs/colors-and-palettes
 -- These are the main colors that will form the basis of this colorscheme
-
--- !TODO add git diff colors
--- !TODO add misc colors for dap ui
 
 local colors = {
 	none = "NONE",
 	bg = "#2E3440",
-	fg = "#D8DEE9",
+	fg = "#E5E9F0",
 	night = {
 		c0 = "#2E3440",
 		c1 = "#3B4252",
@@ -31,7 +29,15 @@ local colors = {
 		purple = "#B48EAD",
 		red    = "#BF616A",
 		yellow = "#EBCB8B",
-	}
+	},
+	blend = {
+		red       = U.blend("#BF616A", "#2E3440", 0.1),
+		yellow    = U.blend("#EBCB8B", "#2E3440", 0.1),
+		green     = U.blend("#A3BE8C", "#2E3440", 0.1),
+		turquoise = U.blend("#88C0D0", "#2E3440", 0.1),
+		blue      = U.blend("#5E81AC", "#2E3440", 0.2),
+		bluec1    = U.blend("#5E81AC", "#2E3440", 0.3),
+	},
 }
 
 return colors
