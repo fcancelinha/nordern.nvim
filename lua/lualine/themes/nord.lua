@@ -42,14 +42,13 @@ local nord = {
 		z = { bg = C.aurora.yellow, fg = C.bg, bold = true },
 	},
 	inactive = {
-		a = { bg = C.bg, fg = C.bg, blend = 0 },
-		b = { bg = C.bg, fg = C.bg, blend = 0 },
-		c = { bg = C.bg, fg = C.bg, blend = 0 },
-		x = { bg = C.bg, fg = C.bg, blend = 0 },
-		y = { bg = C.bg, fg = C.bg, blend = 0 },
-		z = { bg = C.bg, fg = C.bg, blend = 0 },
+		a = { bg = C.bg, fg = C.bg },
+		b = { bg = C.bg, fg = C.bg },
+		c = { bg = C.bg, fg = C.bg },
+		x = { bg = C.bg, fg = C.bg },
+		y = { bg = C.bg, fg = C.bg },
+		z = { bg = C.bg, fg = C.bg },
 	}
 }
 
 return nord
-
