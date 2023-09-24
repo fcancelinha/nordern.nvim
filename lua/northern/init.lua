@@ -8,18 +8,12 @@
 -- ********************************************************************************
 local northern = {}
 
-local u = require("northern.utils")
 local b = require("northern.base")
 local l = require("northern.lang")
 local p = require("northern.plugs")
+local u = require("northern.utils")
 
--- todo: manipulate groups by loading options
-
-function northern.load(opts)
-	-- if opts then
-	-- 	--TODO: manipulate options in here
-	-- end
-
+function northern.load()
 	u.load(b, l, p)
 end
 
