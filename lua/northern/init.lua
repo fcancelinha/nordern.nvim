@@ -6,13 +6,16 @@
 -- License: MIT
 -- Year: 2023
 -- ********************************************************************************
+
+local northern = {}
+
 local b = require("northern.base")
 local l = require("northern.lang")
 local p = require("northern.plugs")
 local u = require("northern.utils")
 
-local load = function()
+function northern.load(opts)
 	u.load(b, l, p)
 end
 
-return { load = load }
+return northern
