@@ -6,7 +6,7 @@ P.neo_tree = {
 	NeoTreeCursorLine         = { link = "CursorLine" },                      --|hl-CursorLine| override in Neo-tree window.
 	NeoTreeDimText            = { fg = C.fg, bg = C.none },                   --Greyed out text used in various places.
 	NeoTreeDirectoryIcon      = { fg = C.frost.turquoise, bg = C.none },      --Directory icon.
-	NeoTreeDirectoryName      = { fg = C.fg, bg = C.none },                   --Directory name.
+	NeoTreeDirectoryName      = { fg = C.frost.turquoise, bg = C.none },      --Directory name.
 	NeoTreeDotfile            = { fg = C.night.c3, bg = C.none },             --Used for icons and names when dotfiles are filtered.
 	NeoTreeEndOfBuffer        = { fg = C.none, bg = C.none },                 --|hl-EndOfBuffer| override in Neo-tree window.
 	NeoTreeExpander           = { fg = C.night.c2, bg = C.none },             --Used for collapsed/expanded icons.

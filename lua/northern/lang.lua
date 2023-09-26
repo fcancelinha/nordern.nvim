@@ -25,8 +25,22 @@ L.gosum = {
 	["@number.gosum"]                = { fg = C.aurora.yellow, bg = C.none, bold = true },
 }
 
+L.go = {
+	["@type.builtin.go"] = { fg = C.frost.turquoise, bg = C.none },
+	["@type.go"]         = { fg = C.frost.light_blue, bg = C.nonee },
+}
+
 L.javascript = {
 
+}
+
+L.clang = {
+
+}
+
+L.zsh = {
+	zshDeref = { fg = C.frost.sea, bg = C.none },
+	zshTypes = { fg = C.fg, bg = C.none },
 }
 
 L.lua = {
@@ -42,7 +56,7 @@ L.html = {
 	["@string.html"] = { fg = C.aurora.green, bg = C.none },
 	["@tag.attribute.html"] = { fg = C.aurora.yellow, bg = C.none, bold = true },
 	["@tag.delimiter.html"] = { link = "@tag.html" },
-	["@constant.html"] = { fg = C.night.c3, bg = C.none },
+	["@constant.html"] = { fg = C.snow.c0, bg = C.none },
 	["@text.uri.html"] = { fg = C.frost.sea, bg = C.none, underline = true },
 	["@operator.html"] = { link = "@tag.attribute.html" },
 }
@@ -69,11 +83,29 @@ L.git_config = {
 }
 
 L.bash = {
-
+	["@variable.bash"] = { fg = C.fg, bg = C.none },
+	["@parameter.bash"] = { fg = C.frost.turquoise, bg = C.none },
+	["@operator.bash"] = { fg = C.frost.sea, bg = C.none },
+	["@constant.bash"] = { fg = C.fg, bg = C.none },
+	["@string.regex.bash"] = { fg = C.aurora.yellow, bg = C.none },
+	["@function.call.bash"] = { fg = C.frost.turquoise, bg = C.none },
+	["@punctuation.special.bash"] = { fg = C.frost.turquoise, bg = C.none },
 }
 
 L.markdown = {
-
+	["@text.strong.markdown_inline"] = { fg = C.frost.sea, bg = C.none, bold = true },              --  object and struct fields
+	["@label.markdown"] = { fg = C.frost.sea, bg = C.none, bold = true, italic = true },            --  object and struct fields
+	["@text.title.markdown"] = { fg = C.fg, bg = C.nonee },                                         --  object and struct fields
+	["@text.reference.markdown_inline"] = { fg = C.frost.turquoise, bg = C.nonee },                 --  object and struct fields
+	["@text.uri.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, underline = true },     --  object and struct fields
+	["@text.literal.markdown_inline"] = { fg = C.aurora.green, bg = C.none },                       --  object and struct fields
+	["@text.literal.block.markdown"] = { fg = C.aurora.green, bg = C.none },                        --  object and struct fields
+	["@text.emphasis.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, italic = true },   --  object and struct fields
+	["@text.strike.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, strikethrough = true }, --  object and struct fields
+	["@text.quote.markdown"] = { fg = C.night.c3, bg = C.none },                                    --  object and struct fields
+	["@punctuation.special.markdown"] = { fg = C.aurora.yellow, bg = C.none },                      --  object and struct fields
+	["@punctuation.bracket.markdown_inline"] = { fg = C.fg, bg = C.none },                          --  object and struct fields
+	["@punctuation.delimiter.markdown_inline"] = { fg = C.aurora.yellow, bg = C.none },             --  object and struct fields
 }
 
 L.xml = {
@@ -85,9 +117,10 @@ L.xml = {
 }
 
 L.yaml = {
-	["@field.yaml"]                 = { fg = C.aurora.green, bg = C.none },
+	["@field.yaml"]                 = { fg = C.frost.sea, bg = C.none },
+	["@type.yaml"]                  = { fg = C.frost.turquoise, bg = C.none },
 	["@number.yaml"]                = { fg = C.frost.purple, bg = C.none },
-	["@string.yaml"]                = { fg = C.aurora.yellow, bg = C.none },
+	["@string.yaml"]                = { fg = C.aurora.green, bg = C.none },
 	["@comment.yaml"]               = { fg = C.night.c3, bg = C.none },
 	["@spell.yaml"]                 = { fg = C.night.c3, bg = C.none },
 	["@boolean.yaml"]               = { fg = C.frost.light_blue, bg = C.none },
