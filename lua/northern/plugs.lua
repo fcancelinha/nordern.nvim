@@ -1,6 +1,32 @@
 local C = require("northern.colors")
 local P = {}
 
+
+P.trouble = {
+
+}
+
+P.noice = {
+
+}
+
+P.dadBod = {
+	dbui_connection_error  = { fg = C.aurora.red, bg = C.blend.red },
+	dbui_connection_source = { fg = C.frost.turquoise, bg = C.none },
+	dbui_expanded_scheme   = { fg = C.frost.turquoise, bg = C.none },
+	dbui_expanded_buffers  = { fg = C.frost.turquoise, bg = C.none },
+	dbui_expanded_tables   = { fg = C.frost.turquoise, bg = C.none },
+	dbui_expanded_db       = { fg = C.frost.turquoise, bg = C.none },
+	dbui_connection_ok     = { fg = C.aurora.green, bg = C.blend.green },
+	dbui_saved_query       = { fg = C.aurora.green, bg = C.none },
+	dbui_help              = { fg = C.frost.light_blue, bg = C.none },
+}
+
+P.lazygit = {
+	LazyGitBorder = { link = "FloatBorder" },
+	LazyGitFloat  = { fg = C.snow.c0, bg = C.none },
+}
+
 P.neo_tree = {
 	NeoTreeBufferNumber       = { fg = C.fg, bg = C.none },                   --The buffer number shown in the buffers source.
 	NeoTreeCursorLine         = { link = "CursorLine" },                      --|hl-CursorLine| override in Neo-tree window.
@@ -191,21 +217,23 @@ P.diff = {
 }
 
 P.mason = {
-	MasonMuted              = { fg = C.night.c3, bg = C.none },
-	MasonMutedBlock         = { fg = C.frost.turquoise, bg = C.night.c1 },
-	MasonHeader             = { fg = C.night.c0, bg = C.aurora.yellow, bold = true },
-	MasonHighlight          = { fg = C.frost.turquoise, bg = C.none },
-	MasonHighlightSecondary = { fg = C.aurora.yellow, bg = C.none },
+	MasonMuted                       = { fg = C.night.c3, bg = C.none },
+	MasonMutedBlock                  = { fg = C.frost.turquoise, bg = C.night.c1 },
+	MasonHeader                      = { fg = C.night.c0, bg = C.aurora.yellow, bold = true },
+	MasonHighlight                   = { fg = C.frost.turquoise, bg = C.none },
+	MasonHighlightSecondary          = { fg = C.aurora.yellow, bg = C.none },
+	MasonHighlightBlockBoldSecondary = { fg = C.night.c0, bg = C.aurora.yellow },
+	MasonHeaderSecondary             = { fg = C.frost.turquoise, bg = C.none },
 	-- Lsp Info
-	LspInfoTip              = { fg = C.night.c3, bg = C.none, italic = true },
-	LspInfoBorder           = { link = "FloatBorder" },
-	LspInfoFiletypeList     = { fg = C.frost.turquoise, bg = C.none, bold = true },
-	LspInfoFiletype         = { fg = C.frost.turquoise, bg = C.none, bold = true },
-	LspInfoList             = { fg = C.frost.turquoise, bg = C.none, bold = true },
-	LspInfoListList         = { fg = C.frost.turquoise, bg = C.none, bold = true },
+	LspInfoTip                       = { fg = C.night.c3, bg = C.none, italic = true },
+	LspInfoBorder                    = { link = "FloatBorder" },
+	LspInfoFiletypeList              = { fg = C.frost.turquoise, bg = C.none, bold = true },
+	LspInfoFiletype                  = { fg = C.frost.turquoise, bg = C.none, bold = true },
+	LspInfoList                      = { fg = C.frost.turquoise, bg = C.none, bold = true },
+	LspInfoListList                  = { fg = C.frost.turquoise, bg = C.none, bold = true },
 	-- Lsp installer
-	LspInstallerInfoBorder  = { link = "FloatBorder" },
-	LspInstallerMuted       = { fg = C.night.c3, bg = C.none },
+	LspInstallerInfoBorder           = { link = "FloatBorder" },
+	LspInstallerMuted                = { fg = C.night.c3, bg = C.none },
 }
 
 P.lazy = {
@@ -236,14 +264,6 @@ P.indent_blankline = {
 	IndentBlanklineContextChar        = { fg = C.frost.turquoise, bg = C.none },
 	IndentBlanklineContextStart       = { fg = C.frost.turquoise, bg = C.none },
 	IndentBlanklineSpaceCharBlankline = { fg = C.night.c1, bg = C.none },
-}
-
-P.trouble = {
-
-}
-
-P.noice = {
-
 }
 
 return P

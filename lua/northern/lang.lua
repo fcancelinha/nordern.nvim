@@ -10,6 +10,14 @@ local L = {}
 -- C++
 -- PYTHON
 
+L.javascript = {
+
+}
+
+L.clang = {
+
+}
+
 L.gomod = {
 	["@text.uri.gomod"] = { fg = C.aurora.green, bg = C.none, underline = true },
 	["@comment.gomod"]  = { link = "Comment" },
@@ -30,13 +38,6 @@ L.go = {
 	["@type.go"]         = { fg = C.frost.light_blue, bg = C.nonee },
 }
 
-L.javascript = {
-
-}
-
-L.clang = {
-
-}
 
 L.zsh = {
 	zshDeref = { fg = C.frost.sea, bg = C.none },
