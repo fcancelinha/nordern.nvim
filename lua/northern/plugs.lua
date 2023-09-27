@@ -1,7 +1,6 @@
 local C = require("northern.colors")
 local P = {}
 
-
 P.trouble = {
 
 }
