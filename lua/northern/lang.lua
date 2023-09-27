@@ -4,18 +4,42 @@ local L = {}
 
 -- TODO!
 
--- JAVASCRIPT
 -- C
 -- JAVA
 -- C++
 -- PYTHON
 
-L.javascript = {
-
-}
 
 L.clang = {
 
+}
+
+L.javascript = {
+	["@conditional.ternary.javascript"]                 = { fg = C.aurora.yellow, bg = C.none },
+	["@function.call.javascript"]                       = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.mod.declaration.javascript"]                 = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.mod.defaultLibrary.javascript"]              = { fg = C.frost.blue, bg = C.none },
+	["@lsp.mod.local.javascript"]                       = { fg = C.fg, bg = C.none },
+	["@lsp.type.class.javascript"]                      = { fg = C.fg, bg = C.none },
+	["@lsp.type.function.javascript"]                   = { fg = C.fg, bg = C.none },
+	["@lsp.type.member.javascript"]                     = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.type.property.javascript"]                   = { fg = C.fg, bg = C.none },
+	["@lsp.type.variable.javascript"]                   = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.function.declaration.javascript"]    = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.typemod.function.local.javascript"]          = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.typemod.member.defaultLibrary.javascript"]   = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.typemod.parameter.declaration.javascript"]   = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.property.defaultLibrary.javascript"] = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.typemod.variable.defaultLibrary.javascript"] = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.typemod.variable.readonly.javascript"]       = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.variable.local.javascript"]          = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.variable.declaration.javascript"]    = { fg = C.aurora.green, bg = C.none },
+	["@lsp.typemod.class.declaration.javascript"]       = { fg = C.fg, bg = C.none },
+	["@method.call.javascript"]                         = { fg = C.frost.turquoise, bg = C.none },
+	["@preproc.javascript"]                             = { fg = C.aurora.yellow, bg = C.none },
+	["@property.javascript"]                            = { fg = C.frost.light_blue, bg = C.none },
+	["@punctuation.special.javascript"]                 = { fg = C.aurora.yellow, bg = C.none },
+	["@variable.builtin.javascript"]                    = { fg = C.aurora.yellow, bg = C.none },
 }
 
 L.gomod = {
