@@ -83,7 +83,7 @@ L.go = {
 	["@lsp.typemod.variable.definition.go"]      = { fg = C.fg, bg = C.none },
 	["@lsp.typemod.variable.readonly.go"]        = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.variable.defaultLibrary.go"]  = { fg = C.aurora.yellow, bg = C.none },
-	["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.method.definition.go"]        = { fg = C.frost.turquoise, bg = C.none },
 	["@namespace.go"]                            = { fg = C.fg, bg = C.none },
 	["@property.go"]                             = { fg = C.frost.sea, bg = C.none },
