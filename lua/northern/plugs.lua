@@ -258,11 +258,10 @@ P.illuminate = {
 }
 
 P.indent_blankline = {
-	IndentBlanklineChar               = { fg = C.night.c1, bg = C.none },
-	IndentBlanklineSpaceChar          = { fg = C.night.c1, bg = C.none },
-	IndentBlanklineContextChar        = { fg = C.frost.turquoise, bg = C.none },
-	IndentBlanklineContextStart       = { fg = C.frost.turquoise, bg = C.none },
-	IndentBlanklineSpaceCharBlankline = { fg = C.night.c1, bg = C.none },
+	["@ibl.whitespace.char.1"] = { fg = C.none, bg = C.none, sp = C.none },
+	["@ibl.scope.underline.1"] = { fg = C.none, bg = C.blend.blue, underline = true },
+	["@ibl.scope.char.1"] = { fg = C.frost.turquoise, bg = C.none },
+	["@ibl.indent.char.1"] = { fg = C.night.c1, bg = C.none },
 }
 
 return P
