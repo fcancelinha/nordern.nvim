@@ -14,6 +14,12 @@ L.clang = {
 
 }
 
+L.sql = {
+	["@type.builtin.sql"] = { fg = C.frost.turquoise, bg = C.none },
+	["@keyword.operator.sql"] = { fg = C.frost.turquoise, bg = C.none },
+	["@keyword.sql"] = { fg = C.frost.light_blue, bg = C.none },
+}
+
 L.javascript = {
 	["@conditional.ternary.javascript"]                 = { fg = C.aurora.yellow, bg = C.none },
 	["@constructor.javascript"]                         = { fg = C.frost.blue, bg = C.none },
@@ -60,8 +66,29 @@ L.gosum = {
 }
 
 L.go = {
-	["@type.builtin.go"] = { fg = C.frost.turquoise, bg = C.none },
-	["@type.go"]         = { fg = C.frost.light_blue, bg = C.nonee },
+	["@lsp.keyword.go"]                          = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.mod.definition.go"]                   = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.mod.readonly.go"]                     = { fg = C.frost.blue, bg = C.none },
+	["@lsp.mod.defaultLibrary.go"]               = { fg = C.frost.blue, bg = C.none },
+	["@lsp.type.namespace.go"]                   = { fg = C.fc, bg = C.none },
+	["@lsp.type.type.go"]                        = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.type.keyword.go"]                     = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.type.variable.go"]                    = { fg = C.fg, bg = C.none },
+	["@lsp.type.typeParameter.go"]               = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.type.operator.go"]                    = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.typeParameter.definition.go"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.function.definition.go"]      = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.typemod.parameter.definition.go"]     = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.type.definition.go"]          = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.variable.definition.go"]      = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.variable.readonly.go"]        = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.variable.defaultLibrary.go"]  = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.typemod.method.definition.go"]        = { fg = C.frost.turquoise, bg = C.none },
+	["@namespace.go"]                            = { fg = C.fg, bg = C.none },
+	["@property.go"]                             = { fg = C.frost.sea, bg = C.none },
+	["@type.builtin.go"]                         = { fg = C.frost.turquoise, bg = C.none },
+	["@type.go"]                                 = { fg = C.frost.light_blue, bg = C.none },
 }
 
 
