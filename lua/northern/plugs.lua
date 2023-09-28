@@ -6,6 +6,60 @@ P.trouble = {
 }
 
 P.noice = {
+	NoiceCmdline                      = { fg = C.frost.turquoise, bg = C.bg },           --normal for the classic cmdline area at the bottom"
+	NoiceCmdlineIcon                  = { fg = C.frost.turquoise, bg = C.bg, bold = true }, --Cmdline icon
+	NoiceCmdlineIconCalculator        = { fg = C.frost.sea, bg = C.bg },                 --
+	NoiceCmdlineIconCmdline           = { fg = C.frost.turquoise, bg = C.bg },           --
+	NoiceCmdlineIconFilter            = { fg = C.aurora.yellow, bg = C.bg },             --
+	NoiceCmdlineIconHelp              = { fg = C.frost.turquoise, bg = C.bg },           --
+	NoiceCmdlineIconIncRename         = { fg = C.aurora.red, bg = C.bg },                --
+	NoiceCmdlineIconInput             = { fg = C.frost.turquoise, bg = C.bg },           --
+	NoiceCmdlineIconLua               = { fg = C.frost.light_blue, bg = C.bg },          --
+	NoiceCmdlineIconSearch            = { fg = C.aurora.yellow, bg = C.bg },             --Cmdline search icon (`/` and `?`)
+	NoiceCmdlinePopup                 = { fg = C.frost.turquoise, bg = C.bg },           --normal for the cmdline popup
+	NoiceCmdlinePopupBorder           = { fg = C.frost.turquoise, bg = C.none },         --Cmdline popup border
+	NoiceCmdlinePopupBorderCalculator = { fg = C.frost.sea, bg = C.none },               --
+	NoiceCmdlinePopupBorderCmdline    = { fg = C.frost.turquoise, bg = C.none },         --
+	NoiceCmdlinePopupBorderFilter     = { fg = C.aurora.yellow, bg = C.none },           --
+	NoiceCmdlinePopupBorderHelp       = { fg = C.frost.turquoise, bg = C.none },         --
+	NoiceCmdlinePopupBorderIncRename  = { fg = C.aurora.red, bg = C.none },              --
+	NoiceCmdlinePopupBorderInput      = { fg = C.frost.turquoise, bg = C.none },         --
+	NoiceCmdlinePopupBorderLua        = { fg = C.frost.light_blue, bg = C.none },        --
+	NoiceCmdlinePopupBorderSearch     = { fg = C.aurora.yellow, bg = C.none },           --Cmdline popup border for search
+	NoiceCmdlinePopupTitle            = { fg = C.fg, bg = C.none },                      --Cmdline popup border
+	NoiceCmdlinePrompt                = { fg = C.frost.turquoise, bg = C.bg },           --prompt for input()
+	NoiceCompletionItemMenu           = { fg = C.frost.turquoise, bg = C.bg },           --Normal for the popupmenu
+	NoiceCompletionItemWord           = { fg = C.frost.turquoise, bg = C.bg },           --Normal for the popupmenu
+	NoiceConfirm                      = { fg = C.frost.turquoise, bg = C.bg },           --normal for the confirm view
+	NoiceConfirmBorder                = { fg = C.frost.turquoise, bg = C.bg },           --Border for the confirm view
+	NoiceCursor                       = { fg = C.blend.blue, bg = C.blend.bluec1 },      --fake Cursor
+	NoiceFormatConfirm                = { fg = C.frost.turquoise, bg = C.none },         --
+	NoiceFormatConfirmDefault         = { fg = C.frost.turquoise, bg = C.none },         --
+	NoiceFormatLevelDebug             = { fg = C.aurora.green, bg = C.none },            --
+	NoiceFormatLevelError             = { fg = C.aurora.red, bg = C.none },              --
+	NoiceFormatLevelInfo              = { fg = C.frost.turquoise, bg = C.none },         --
+	NoiceFormatLevelOff               = { fg = C.night.c3, bg = C.none },                --
+	NoiceFormatLevelTrace             = { fg = C.aurora.green, bg = C.none },            --
+	NoiceFormatLevelWarn              = { fg = C.aurora.yellow, bg = C.none },           --
+	NoiceFormatProgressDone           = { fg = C.frost.turquoise, bg = C.none },         --progress bar done
+	NoiceFormatProgressTodo           = { fg = C.aurora.yellow, bg = C.none },           --progress bar todo
+	NoiceFormatTitle                  = { fg = C.fg, bg = C.none },                      --
+	NoiceFormatEvent                  = { fg = C.frost.turquoise, bg = C.bg },           --
+	NoiceLspProgressClient            = { fg = C.frost.blue, bg = C.blend.blue },        --lsp progress client name
+	NoiceLspProgressSpinner           = { fg = C.aurora.green, bg = C.blend.green },     --lsp progress spinner
+	NoiceLspProgressTitle             = { fg = C.fg, bg = C.none },                      --lsp progress title
+	NoiceMini                         = { fg = C.frost.turquoise, bg = C.bg, blend = 0 }, --normal for mini view
+	NoicePopup                        = { fg = C.frost.turquoise, bg = C.bg },           --Normal for popup views
+	NoicePopupBorder                  = { fg = C.frost.turquoise, bg = C.bg },           --Border for popup views
+	NoicePopupmenu                    = { fg = C.frost.turquoise, bg = C.blend.blue },   --normal for the popupmenu
+	NoicePopupmenuBorder              = { fg = C.frost.turquoise, bg = C.bg },           --Popupmenu border
+	NoicePopupmenuMatch               = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --part of the item that matches the input
+	NoicePopupmenuSelected            = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --selected item in the popupmenu
+	NoiceScrollbar                    = { fg = C.night.c2, bg = C.none },                --Normal for scrollbar
+	NoiceScrollbarThumb               = { fg = C.none, bg = C.none },                    --Scrollbar thumb
+	NoiceSplit                        = { fg = C.fg, bg = C.bg },                        --Normal for split views
+	NoiceSplitBorder                  = { fg = C.night.c1, bg = C.bg },                  --Border for split views
+	NoiceVirtualText                  = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --Default hl group for virtualtext views
 
 }
 
