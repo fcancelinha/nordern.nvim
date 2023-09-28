@@ -89,6 +89,7 @@ L.go = {
 	["@property.go"]                             = { fg = C.frost.sea, bg = C.none },
 	["@type.builtin.go"]                         = { fg = C.frost.turquoise, bg = C.none },
 	["@type.go"]                                 = { fg = C.frost.light_blue, bg = C.none },
+	["@include.go"]                              = { fg = C.frost.light_blue, bg = C.none },
 }
 
 
