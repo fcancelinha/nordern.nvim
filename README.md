@@ -53,7 +53,9 @@ vim.cmd.colorscheme('northern')
 colorscheme northern
 ```
 
-To enable `northern` for `Lualine`, :
+To enable `northern` for `Lualine` or `Bufferline`, :
+
+#### Lualine
 
 ```lua
 require('lualine').setup {
@@ -62,6 +64,9 @@ require('lualine').setup {
   },
 }
 ```
+
+#### Bufferline
+
 
 ## 💧 Acknowledgements
 
