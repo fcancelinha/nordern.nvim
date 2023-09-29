@@ -7,7 +7,7 @@ local northern = {
 		c = { bg = C.night.c1, fg = C.fg },
 		x = { bg = C.night.c1, fg = C.fg },
 		y = { bg = C.night.c2, fg = C.fg },
-		z = { bg = C.frost.turquoise, fg = C.bg },
+		z = { bg = C.frost.turquoise, fg = C.bg, bold = true },
 	},
 	insert = {
 		a = { bg = C.aurora.green, fg = C.bg, bold = true },
