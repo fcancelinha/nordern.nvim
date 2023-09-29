@@ -1,8 +1,31 @@
 local C = require("northern.colors")
+
 local P = {}
 
 P.trouble = {
-
+	TroubleCount           = { fg = C.none, bg = C.none },
+	TroubleError           = { fg = C.none, bg = C.none },
+	TroubleNormal          = { fg = C.none, bg = C.none },
+	TroubleTextInformation = { fg = C.none, bg = C.none },
+	TroubleSignWarning     = { fg = C.none, bg = C.none },
+	TroubleLocation        = { fg = C.none, bg = C.none },
+	TroubleWarning         = { fg = C.none, bg = C.none },
+	TroublePreview         = { fg = C.none, bg = C.none },
+	TroubleTextError       = { fg = C.none, bg = C.none },
+	TroubleSignInformation = { fg = C.none, bg = C.none },
+	TroubleIndent          = { fg = C.none, bg = C.none },
+	TroubleSource          = { fg = C.none, bg = C.none },
+	TroubleSignHint        = { fg = C.none, bg = C.none },
+	TroubleSignOther       = { fg = C.none, bg = C.none },
+	TroubleFoldIcon        = { fg = C.none, bg = C.none },
+	TroubleTextWarning     = { fg = C.none, bg = C.none },
+	TroubleCode            = { fg = C.none, bg = C.none },
+	TroubleInformation     = { fg = C.none, bg = C.none },
+	TroubleSignError       = { fg = C.none, bg = C.none },
+	TroubleFile            = { fg = C.none, bg = C.none },
+	TroubleHint            = { fg = C.none, bg = C.none },
+	TroubleTextHint        = { fg = C.none, bg = C.none },
+	TroubleText            = { fg = C.none, bg = C.none },
 }
 
 P.noice = {
@@ -312,10 +335,13 @@ P.illuminate = {
 }
 
 P.indent_blankline = {
-	["@ibl.whitespace.char.1"] = { fg = C.none, bg = C.none, sp = C.none },
-	["@ibl.scope.underline.1"] = { fg = C.none, bg = C.blend.blue, underline = true },
-	["@ibl.scope.char.1"] = { fg = C.frost.turquoise, bg = C.none },
+	IblIndent = { fg = C.none, bg = C.none },
+	IblScope = { fg = C.frost.turquoise, bg = C.none },
+	IblWhitespace = { fg = C.night.c1, bg = C.none },
 	["@ibl.indent.char.1"] = { fg = C.night.c1, bg = C.none },
+	["@ibl.scope.char.1"] = { fg = C.frost.turquoise, bg = C.none },
+	["@ibl.scope.underline.1"] = { fg = C.frost.turquoise, bg = C.blend.blue, underline = true },
+	["@ibl.whitespace.char.1"] = { fg = C.none, bg = C.none, sp = C.none },
 }
 
 return P
