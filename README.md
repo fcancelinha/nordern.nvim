@@ -4,6 +4,8 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 
 **Northern.nvim** | because like any good viking that loves gold, this colorscheme uses aurora yellow to highlight some of the more important tokens.
 
+## Screenshots
+
 ## Plugin Support
 
 ## Roadmap
@@ -14,7 +16,6 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
  - [ ] - special colours for C, C++. Java, Python, typescript, Rust.
  - [ ] - create options
  - [ ] - screenshots of different modes & languages
-
 
 ## 🎐 Requirements
 
