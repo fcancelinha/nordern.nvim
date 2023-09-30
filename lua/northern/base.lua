@@ -30,7 +30,6 @@ local C = require("northern.colors")
 -- ctermbg: Sets background of cterm color ctermbg
 -- cterm: cterm attribute map, like highlight-args. If not set, cterm attributes will match those from the attribute map documented above.-
 
-
 local B = {}
 
 -- Base neovim
@@ -63,9 +62,9 @@ B.gui = {
 	MsgArea        = { fg = C.none, bg = C.bg },                       --	Area for messages and cmdline.
 	MsgSeparator   = { fg = C.night.c1, bg = C.bg },                   --	Separator for scrolled messages msgsep.
 	NonText        = { fg = C.night.c0, bg = C.none },                 --	'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also hl-EndOfBuffer.
-	Normal         = { fg = C.fg, bg = C.none },                       --	Normal text.
-	NormalFloat    = { fg = C.fg, bg = C.none },                       --	Normal text in floating windows.
-	NormalNC       = { fg = C.fg, bg = C.none },                       --	Normal text in non-current windows.
+	Normal         = { fg = C.fg, bg = C.bg },                         --	Normal text.
+	NormalFloat    = { fg = C.fg, bg = C.bg },                         --	Normal text in floating windows.
+	NormalNC       = { fg = C.snow.c0, bg = C.bg },                    --	Normal text in non-current windows.
 	-- Pmenu
 	Pmenu          = { fg = C.fg, bg = C.night.c0 },                   --	Popup menu: Normal item.
 	PmenuExtra     = { fg = C.frost.light_blue, bg = C.none },         --	Popup menu: Normal item "extra text".
@@ -78,7 +77,7 @@ B.gui = {
 	Question       = { fg = C.frost.turquoise, bg = C.none, blend = 20 }, --	hit-enter prompt and yes/no questions.
 	QuickFixLine   = { fg = C.fg, bg = C.none },                       --	Current quickfix item in the quickfix window. Combined with hl-CursorLine when the cursor is there.
 	Search         = { link = "CurSearch" },                           --	Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-	SignColumn     = { fg = C.none, bg = C.none },                     --	Column where signs are displayed.
+	SignColumn     = { fg = C.none, bg = C.bg },                       --	Column where signs are displayed.
 	SpecialKey     = { fg = C.night.c1, bg = C.none },                 --	Unprintable characters: Text displayed differently from what it really is. But not 'listchars' whitespace. hl-Whitespace
 	SpellBad       = { fg = C.aurora.red, bg = C.none },               --	Word that is not recognized by the spellchecker. spell Combined with the highlighting used otherwise.
 	SpellCap       = { fg = C.aurora.red, bg = C.none },               --	Word that should start with a capital. spell Combined with the highlighting used otherwise.
@@ -90,13 +89,13 @@ B.gui = {
 	TabLine        = { fg = C.none, bg = C.night.c1 },                 --	Tab pages line, not active tab page label.
 	TabLineFill    = { fg = C.none, bg = C.night.c1 },                 --	Tab pages line, where there are no labels.
 	TabLineSel     = { fg = C.none, bg = C.night.c3 },                 --	Tab pages line, active tab page label.
-	TermCursor     = { fg = C.none, bg = C.none },                     --	Cursor in a focused terminal.
-	TermCursorNC   = { fg = C.none, bg = C.none },                     --	Cursor in an unfocused terminal.
+	TermCursor     = { fg = C.none, bg = C.blend.bluec1 },             --	Cursor in a focused terminal.
+	TermCursorNC   = { fg = C.none, bg = C.blend.bluec1 },             --	Cursor in an unfocused terminal.
 	Title          = { fg = C.snow.c0, bg = C.bg },                    --	Titles for output from ":set all", ":autocmd" etc.
 	Visual         = { fg = C.none, bg = C.blend.blue },               --	Visual mode selection.
 	VisualNOS      = { fg = C.none, bg = C.blend.blue },               --	Visual mode selection when vim is "Not Owning the Selection".
 	WarningMsg     = { fg = C.aurora.yellow, bg = C.none },            --	Warning messages.
-	Whitespace     = { fg = C.night.c1, bg = C.none },                 --	"nbsp", "space", "tab", "multispace", "lead" and "trail" in 'listchars'.
+	Whitespace     = { fg = C.night.c0, bg = C.none, sp = C.none },    --	"nbsp", "space", "tab", "multispace", "lead" and "trail" in 'listchars'.
 	WildMenu       = { fg = C.frost.turquoise, bg = C.night.c1 },      --	Current match in 'wildmenu' completion.
 	WinBar         = { fg = C.frost.turquoise, bg = C.bg },            --	Window bar of current window.
 	WinBarNC       = { fg = C.frost.turquoise, bg = C.bg },            --	Window bar of not-current windows
@@ -106,20 +105,15 @@ B.gui = {
 	DiffAdd        = { fg = C.aurora.green, bg = C.blend.green },      --	Diff mode: Added line. diff.txt
 	DiffChange     = { fg = C.aurora.yellow, bg = C.blend.yellow },    --	Diff mode: Changed line. diff.txt
 	DiffDelete     = { fg = C.aurora.red, bg = C.blend.red },          --	Diff mode: Deleted line. diff.txt
-	DiffText       = { fg = C.frost.light_blue, bg = C.none },         --	Diff mode: Changed text within a changed line. diff.txt
+	DiffText       = { fg = C.none, bg = C.none },                     --	Diff mode: Changed text within a changed line. diff.txt
 	--Health
 	healthError    = { fg = C.aurora.red, bg = C.none },
 	healthSuccess  = { fg = C.aurora.green, bg = C.none },
 	healthWarning  = { fg = C.aurora.yellow, bg = C.none },
 	-- Gui
-	Menu           = { fg = C.frost.turquoise, bg = C.none }, -- 	Current font, background and foreground colors of the menus. Also used for the toolbar. Applicable highlight arguments: font, guibg, guifg. hl-Scrollbar
-	Scrollbar      = { fg = C.none, bg = C.night.c2 },     -- 	Current background and foreground of the main window's scrollbars. Applicable highlight arguments: guibg, guifg. hl-Tooltip
-	Tooltip        = { fg = C.frost.turquoise, bg = C.none }, -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
-	-- Redraw
-	-- RedrawDebugNormal    = { ctermfg = C.frost.turquoise, ctermbg = C.blend.blue, blend = 20 }, -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
-	-- RedrawDebugClear     = { ctermfg = C.aurora.yellow, ctermbg = C.blend.yellow, blend = 20 }, -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
-	-- RedrawDebugComposed  = { ctermfg = C.aurora.green, ctermbg = C.blend.green, blend = 20 }, -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
-	-- RedrawDebugRecompose = { ctermfg = C.aurora.red, ctermbg = C.blend.red, blend = 20 },    -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
+	Menu           = { fg = C.frost.turquoise, bg = C.bg },           -- 	Current font, background and foreground colors of the menus. Also used for the toolbar. Applicable highlight arguments: font, guibg, guifg. hl-Scrollbar
+	Scrollbar      = { fg = C.none, bg = C.night.c2 },                -- 	Current background and foreground of the main window's scrollbars. Applicable highlight arguments: guibg, guifg. hl-Tooltip
+	Tooltip        = { fg = C.frost.turquoise, bg = C.blend.turquoise }, -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
 }
 
 B.syntax = {
@@ -162,3 +156,4 @@ B.syntax = {
 }
 
 return B
+
