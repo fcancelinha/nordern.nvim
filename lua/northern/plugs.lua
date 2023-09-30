@@ -1,16 +1,15 @@
 local C = require("northern.colors")
-
 local P = {}
 
 P.trouble = {
 	TroubleCode            = { fg = C.fg, bg = C.none },
-	TroubleCount           = { fg = C.aurora.purple, bg = C.none, bold = true },
-	TroubleError           = { fg = C.aurora.red, bg = C.none, bold = true },
+	TroubleCount           = { fg = C.aurora.purple, bg = C.none },
+	TroubleError           = { fg = C.aurora.red, bg = C.none },
 	TroubleFile            = { fg = C.fg, bg = C.none },
 	TroubleFoldIcon        = { fg = C.night.c2, bg = C.none },
-	TroubleHint            = { fg = C.frost.turquoise, bg = C.none, bold = true },
+	TroubleHint            = { fg = C.frost.turquoise, bg = C.none },
 	TroubleIndent          = { fg = C.night.c0, bg = C.none },
-	TroubleInformation     = { fg = C.frost.turquoise, bg = C.none, bold = true },
+	TroubleInformation     = { fg = C.frost.turquoise, bg = C.none },
 	TroubleLocation        = { fg = C.snow.c0, bg = C.none },
 	TroubleNormal          = { fg = C.fg, bg = C.none },
 	TroublePreview         = { fg = C.snow.c0, bg = C.none },
@@ -21,10 +20,10 @@ P.trouble = {
 	TroubleSignWarning     = { fg = C.aurora.yellow, bg = C.none },
 	TroubleSource          = { fg = C.snow.c0, bg = C.none },
 	TroubleText            = { fg = C.fg, bg = C.none },
-	TroubleTextError       = { fg = C.aurora.red, bg = C.none, bold = true },
-	TroubleTextHint        = { fg = C.frost.turquoise, bg = C.none, bold = true },
-	TroubleTextInformation = { fg = C.frost.light_blue, bg = C.none, bold = true },
-	TroubleTextWarning     = { fg = C.aurora.yellow, bg = C.none, bold = true },
+	TroubleTextError       = { fg = C.aurora.red, bg = C.none },
+	TroubleTextHint        = { fg = C.frost.turquoise, bg = C.none },
+	TroubleTextInformation = { fg = C.frost.light_blue, bg = C.none },
+	TroubleTextWarning     = { fg = C.aurora.yellow, bg = C.none },
 	TroubleWarning         = { fg = C.aurora.yellow, bg = C.none },
 }
 
@@ -75,10 +74,10 @@ P.noice = {
 	NoiceFormatProgressTodo           = { fg = C.aurora.yellow, bg = C.none },           --progress bar todo
 	NoiceFormatTitle                  = { fg = C.fg, bg = C.none },                      --
 	NoiceFormatEvent                  = { fg = C.frost.turquoise, bg = C.bg },           --
-	NoiceLspProgressClient            = { fg = C.frost.blue, bg = C.blend.blue },        --lsp progress client name
-	NoiceLspProgressSpinner           = { fg = C.aurora.green, bg = C.blend.green },     --lsp progress spinner
-	NoiceLspProgressTitle             = { fg = C.fg, bg = C.none },                      --lsp progress title
-	NoiceMini                         = { fg = C.snow.c0, bg = C.bg, blend = 0 },        --normal for mini view
+	NoiceLspProgressClient            = { fg = C.frost.turquoise, bg = C.bg, blend = 5 }, --lsp progress client name
+	NoiceLspProgressSpinner           = { fg = C.aurora.green, bg = C.bg, blend = 5 },   --lsp progress spinner
+	NoiceLspProgressTitle             = { fg = C.fg, bg = C.bg },                        --lsp progress title
+	NoiceMini                         = { fg = C.fg, bg = C.bg, blend = 0 },             --normal for mini view
 	NoicePopup                        = { fg = C.frost.turquoise, bg = C.bg },           --Normal for popup views
 	NoicePopupBorder                  = { fg = C.frost.turquoise, bg = C.bg },           --Border for popup views
 	NoicePopupmenu                    = { fg = C.frost.turquoise, bg = C.blend.blue },   --normal for the popupmenu
@@ -86,10 +85,10 @@ P.noice = {
 	NoicePopupmenuMatch               = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --part of the item that matches the input
 	NoicePopupmenuSelected            = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --selected item in the popupmenu
 	NoiceScrollbar                    = { fg = C.night.c2, bg = C.none },                --Normal for scrollbar
-	NoiceScrollbarThumb               = { fg = C.none, bg = C.none },                    --Scrollbar thumb
+	NoiceScrollbarThumb               = { fg = C.night.c2, bg = C.none },                --Scrollbar thumb
 	NoiceSplit                        = { fg = C.fg, bg = C.bg },                        --Normal for split views
 	NoiceSplitBorder                  = { fg = C.night.c1, bg = C.bg },                  --Border for split views
-	NoiceVirtualText                  = { fg = C.frost.turquoise, bg = C.none },         --Default hl group for virtualtext views
+	NoiceVirtualText                  = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --Default hl group for virtualtext views
 }
 
 P.dadBod = {
@@ -186,7 +185,7 @@ P.cmp = {
 }
 
 
-P.telescope = {
+P.telescope        = {
 	TelescopeBorder               = { link = "FloatBorder" },
 	TelescopeMatching             = { fg = C.frost.turquoise, bg = C.none }, -- Highlight characters your input
 	TelescopeMultiSelection       = { link = "CursorLine" },              -- Multisections
@@ -205,7 +204,7 @@ P.telescope = {
 	TelescopeResultsComment       = { fg = C.frost.turquoise, bg = C.none },
 }
 
-P.git_signs = {
+P.git_signs        = {
 	GitSignsAdd                = { fg = C.aurora.green, bg = C.bg },               --Used for the text of 'add' signs.
 	GitSignsChange             = { fg = C.aurora.yellow, bg = C.bg },              --Used for the text of 'change' signs.
 	GitSignsDelete             = { fg = C.aurora.red, bg = C.bg },                 --Used for the text of 'delete' signs.
@@ -236,7 +235,7 @@ P.git_signs = {
 	GitSignsVirtLnum           = { fg = C.night.c3, bg = C.bg },                   --Used for line numbers in inline hunks previews.
 }
 
-P.diagnostics = {
+P.diagnostics      = {
 	-- Base LSP
 	LspCodeLens                          = { link = "Comment" },
 	LspCodeLensSeparator                 = { fg = C.night.c1, bg = C.none },
@@ -289,16 +288,16 @@ P.diagnostics = {
 	DiagnosticUnnecessary                = { bg = C.blend.turquoise },
 }
 
-P.diff = {
+P.diff             = {
 	diffAdded     = { link = "DiffAdd" },
 	diffRemoved   = { link = "DiffDelete" },
 	diffChanged   = { link = "DiffChange" },
-	diffLine      = { fg = C.frost.light_blue, bg = C.none },
-	diffFile      = { fg = C.frost.light_blue, bg = C.none },
+	diffLine      = { fg = C.aurora.yellow, bg = C.none },
+	diffFile      = { fg = C.frost.turquoise, bg = C.none },
 	diffIndexLine = { link = "Comment" },
 }
 
-P.mason = {
+P.mason            = {
 	MasonMuted                       = { fg = C.night.c3, bg = C.none },
 	MasonMutedBlock                  = { fg = C.frost.turquoise, bg = C.night.c1 },
 	MasonHeader                      = { fg = C.night.c0, bg = C.aurora.yellow, bold = true },
@@ -318,7 +317,7 @@ P.mason = {
 	LspInstallerMuted                = { fg = C.night.c3, bg = C.none },
 }
 
-P.lazy = {
+P.lazy             = {
 	LazySpecial      = { fg = C.frost.turquoise, bg = C.none },
 	LazyLocal        = { fg = C.aurora.green, bg = C.none },
 	LazyReasonStart  = { fg = C.aurora.green, bg = C.none },
@@ -327,30 +326,30 @@ P.lazy = {
 	LazyCommit       = { fg = C.frost.turquoise, bg = C.none, bold = true },
 	LazyComment      = { link = "Comment" },
 	LazyDimmed       = { fg = C.aurora.green, bg = C.none, italic = true },
-	LazyProgressDone = { fg = C.frost.light_blue, bg = C.none },
+	LazyProgressDone = { fg = C.aurora.yellow, bg = C.none },
 	LazyCommitIssue  = { fg = C.frost.turquoise, bg = C.none },
 	LazyUrl          = { fg = C.aurora.green, bg = C.none, underline = true },
 	LazyH2           = { fg = C.snow.c0, bg = C.none, bold = true },
 	LazyCommitType   = { fg = C.fg, bg = C.none, bold = true },
 }
 
-P.illuminate = {
+P.illuminate       = {
 	IlluminatedWordText  = { bg = C.blend.bluec1 },
 	IlluminatedWordRead  = { bg = C.blend.bluec1 },
 	IlluminatedWordWrite = { bg = C.blend.bluec1 },
 }
 
 P.indent_blankline = {
-	IblIndent = { fg = C.none, bg = C.none },
+	IblIndent = { fg = C.bg, bg = C.none, sp = C.none },
 	IblScope = { fg = C.frost.turquoise, bg = C.none },
-	IblWhitespace = { fg = C.night.c1, bg = C.none },
+	IblWhitespace = { fg = C.bg, bg = C.none, sp = C.none },
 	["@ibl.indent.char.1"] = { fg = C.night.c1, bg = C.none },
 	["@ibl.scope.char.1"] = { fg = C.frost.turquoise, bg = C.none },
 	["@ibl.scope.underline.1"] = { fg = C.frost.turquoise, bg = C.blend.blue, underline = true },
-	["@ibl.whitespace.char.1"] = { fg = C.none, bg = C.none, sp = C.none },
+	["@ibl.whitespace.char.1"] = { fg = C.bg, bg = C.none, sp = C.none },
 }
 
-P.lualine = {
+P.lualine          = {
 	lualine_a_diff_added_command     = { fg = C.aurora.green, bg = C.none },
 	lualine_a_diff_added_inactive    = { fg = C.aurora.green, bg = C.none },
 	lualine_a_diff_added_insert      = { fg = C.aurora.green, bg = C.none },
@@ -459,6 +458,128 @@ P.lualine = {
 	lualine_z_diff_removed_normal    = { fg = C.aurora.red, bg = C.none },
 	lualine_z_diff_removed_replace   = { fg = C.aurora.red, bg = C.none },
 	lualine_z_diff_removed_visual    = { fg = C.aurora.red, bg = C.none },
+}
+
+P.nvimtree         = {
+	-- File Text
+	NvimTreeSymlink                         = { fg = C.aurora.green, bg = C.none },
+	NvimTreeExecFile                        = { fg = C.aurora.red, bg = C.none },
+	NvimTreeOpenedFile                      = { fg = C.fg, bg = C.none },
+	NvimTreeModifiedFile                    = { fg = C.aurora.yellow, bg = C.none },
+	NvimTreeSpecialFile                     = { fg = C.fg, bg = C.none },
+	NvimTreeImageFile                       = { fg = C.fg, bg = C.none },
+	-- Folder Text
+	NvimTreeFolderName                      = { fg = C.frost.turquoise, bg = C.none },
+	NvimTreeEmptyFolderName                 = { fg = C.frost.turquoise, bg = C.none },
+	NvimTreeOpenedFolderName                = { fg = C.frost.turquoise, bg = C.none },
+	NvimTreeSymlinkFolderName               = { fg = C.aurora.green, bg = C.none },
+	NvimTreeRootFolder                      = { fg = C.frost.turquoise, bg = C.none },
+	-- Icon
+	NvimTreeFileIcon                        = { fg = C.frost.turquoise, bg = C.none },
+	NvimTreeOpenedFileIcon                  = { fg = C.frost.turquoise, bg = C.none }, --NvimTreeOpenedFile
+	NvimTreeSymlinkIcon                     = { fg = C.aurora.green, bg = C.none },
+	NvimTreeFolderIcon                      = { fg = C.frost.turquoise, bg = C.none },
+	NvimTreeOpenedFolderIcon                = { fg = C.frost.turquoise, bg = C.none }, --NvimTreeFolderIcon
+	NvimTreeClosedFolderIcon                = { fg = C.frost.turquoise, bg = C.none }, --NvimTreeFolderIcon
+	NvimTreeFolderArrowClosed               = { fg = C.night.c3, bg = C.none },     --NvimTreeIndentMarker
+	NvimTreeFolderArrowOpen                 = { fg = C.night.c3, bg = C.none },     --NvimTreeIndentMarker
+	-- Indent
+	NvimTreeIndentMarker                    = { fg = C.night.c1, bg = C.none },
+	-- Standard
+	NvimTreeNormal                          = { fg = C.snow.c0, bg = C.none }, --Normal
+	NvimTreeNormalFloat                     = { fg = C.snow.c0, bg = C.none }, --NormalFloat
+	NvimTreeNormalNC                        = { fg = C.snow.c0, bg = C.none }, --NormalFloat
+	NvimTreeLineNr                          = { fg = C.bg, bg = C.none },      --LineNr
+	NvimTreeWinSeparator                    = { fg = C.bg, bg = C.none },      --WinSeparator
+	NvimTreeEndOfBuffer                     = { fg = C.bg, bg = C.none },      --EndOfBuffer
+	NvimTreePopup                           = { fg = C.snow.c0, bg = C.none }, --Normal
+	NvimTreeSignColumn                      = { link = "SignColumn" },         --NvimTreeNormal
+	NvimTreeCursorColumn                    = { link = "CursorColumn" },       --CursorColumn
+	NvimTreeCursorLine                      = { link = "CursorLine" },         --CursorLine
+	NvimTreeCursorLineNr                    = { link = "CursorLineNr" },       --CursorLineNr
+	NvimTreeStatusLine                      = { link = "StatusLine" },         --StatusLine
+	NvimTreeStatusLineNC                    = { link = "StatusLineNC" },       --StatusLineNC
+	-- Clipboard
+	NvimTreeCopiedHL                        = { fg = C.frost.blue, bg = C.none }, --SpellRare
+	NvimTreeCutHL                           = { fg = C.aurora.red, bg = C.none }, --SpellBad
+	-- Bookmark Icon
+	NvimTreeBookmark                        = { fg = C.aurora.purple, bg = C.none },
+	-- Bookmark Highlight
+	NvimTreeBookmarkHL                      = { fg = C.aurora.purple, bg = C.none }, --SpellLocal
+	-- Picker: >
+	NvimTreeWindowPicker                    = { fg = C.frost.light_blue, bg = C.none },
+	-- Live Filter
+	NvimTreeLiveFilterPrefix                = { fg = C.aurora.yellow, bg = C.none },
+	NvimTreeLiveFilterValue                 = { fg = C.fg, bg = C.none },
+	-- Git Icon
+	NvimTreeGitDirty                        = { fg = C.aurora.red, bg = C.none },
+	NvimTreeGitStaged                       = { fg = C.aurora.green, bg = C.none },
+	NvimTreeGitMerge                        = { fg = C.frost.sea, bg = C.none },
+	NvimTreeGitRenamed                      = { fg = C.aurora.yellow, bg = C.none },
+	NvimTreeGitNew                          = { fg = C.aurora.green, bg = C.none },
+	NvimTreeGitDeleted                      = { fg = C.aurora.red, bg = C.none },
+	NvimTreeGitIgnored                      = { fg = C.night.c3, bg = C.none },                --     Comment
+	-- Git File Text
+	NvimTreeFileDirty                       = { fg = C.aurora.red, bg = C.none },              --     NvimTreeGitDirty
+	NvimTreeFileStaged                      = { fg = C.aurora.green, bg = C.none },            --     NvimTreeGitStaged
+	NvimTreeFileMerge                       = { fg = C.frost.sea, bg = C.none },               --     NvimTreeGitMerge
+	NvimTreeFileRenamed                     = { fg = C.aurora.yellow, bg = C.none },           --     NvimTreeGitRenamed
+	NvimTreeFileNew                         = { fg = C.aurora.green, bg = C.none },            --     NvimTreeGitNew
+	NvimTreeFileDeleted                     = { fg = C.aurora.red, bg = C.none },              --     NvimTreeGitDeleted
+	NvimTreeFileIgnored                     = { fg = C.night.c3, bg = C.none },                --     NvimTreeGitIgnored
+	-- Git Folder Text
+	NvimTreeFolderDirty                     = { fg = C.aurora.red, bg = C.none },              --     NvimTreeFileDirty
+	NvimTreeFolderStaged                    = { fg = C.aurora.green, bg = C.none },            --     NvimTreeFileStaged
+	NvimTreeFolderMerge                     = { fg = C.frost.sea, bg = C.none },               --     NvimTreeFileMerge
+	NvimTreeFolderRenamed                   = { fg = C.aurora.yellow, bg = C.none },           --     NvimTreeFileRenamed
+	NvimTreeFolderNew                       = { fg = C.aurora.green, bg = C.none },            --     NvimTreeFileNew
+	NvimTreeFolderDeleted                   = { fg = C.aurora.red, bg = C.none },              --     NvimTreeFileDeleted
+	NvimTreeFolderIgnored                   = { fg = C.night.c3, bg = C.none },                --     NvimTreeFileIgnored
+	-- Diagnostics Icon
+	NvimTreeLspDiagnosticsError             = { fg = C.aurora.red, bg = C.blend.red },         --DiagnosticError
+	NvimTreeLspDiagnosticsWarning           = { fg = C.blend.yellow, bg = C.blend.yellow },    --DiagnosticWarn
+	NvimTreeLspDiagnosticsInformation       = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --DiagnosticInfo
+	NvimTreeLspDiagnosticsHint              = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --DiagnosticHint
+	-- Diagnostics File Text
+	NvimTreeLspDiagnosticsErrorText         = { fg = C.aurora.red, bg = C.none },              --NvimTreeLspDiagnosticsError
+	NvimTreeLspDiagnosticsWarningText       = { fg = C.aurora.yellow, bg = C.none },           --NvimTreeLspDiagnosticsWarning
+	NvimTreeLspDiagnosticsInfoText          = { fg = C.frost.turquoise, bg = C.none },         --NvimTreeLspDiagnosticsInformation
+	NvimTreeLspDiagnosticsHintText          = { fg = C.frost.turquoise, bg = C.none },         --NvimTreeLspDiagnosticsHint
+	-- Diagnostics Folder Text
+	NvimTreeLspDiagnosticsErrorFolderText   = { fg = C.aurora.red, bg = C.none },              --NvimTreeLspDiagnosticsErrorText
+	NvimTreeLspDiagnosticsWarningFolderText = { fg = C.aurora.yellow, bg = C.none },           --NvimTreeLspDiagnosticsWarningText
+	NvimTreeLspDiagnosticsInfoFolderText    = { fg = C.frost.turquoise, bg = C.none },         --NvimTreeLspDiagnosticsInfoText
+	NvimTreeLspDiagnosticsHintFolderText    = { fg = C.frost.turquoise, bg = C.none },         --NvimTreeLspDiagnosticsHintText
+}
+
+P.nerdtree         = {
+	NERDTreeBookmarksLeader = { fg = C.frost.turquoise, bg = C.none },
+	NERDTreeBookmarksHeader = { fg = C.aurora.yellow, bg = C.none },
+	NERDTreeBookmarkName    = { fg = C.aurora.green, bg = C.none },
+	NERDTreeHelpCommand     = { fg = C.snow.c0, bg = C.none },
+	NERDTreeCurrentNode     = { fg = C.fg, bg = C.none },
+	NERDTreeLinkTarget      = { fg = C.fg, bg = C.none },
+	NERDTreeToggleOff       = { fg = C.night.c3, bg = C.none },
+	NERDTreeHelpTitle       = { fg = C.aurora.yellow, bg = C.none },
+	NERDTreeToggleOn        = { fg = C.night.c3, bg = C.none },
+	NERDTreePartFile        = { fg = C.fg, bg = C.none },
+	NERDTreeOpenable        = { fg = C.fg, bg = C.none },
+	NERDTreeLinkFile        = { fg = C.aurora.green, bg = C.none },
+	NERDTreeExecFile        = { fg = C.aurora.yellow, bg = C.none },
+	NERDTreeDirSlash        = { fg = C.fg, bg = C.none },
+	NERDTreeClosable        = { fg = C.night.c3, bg = C.none },
+	NERDTreeBookmark        = { fg = C.aurora.green, bg = C.none },
+	NERDTreeLinkDir         = { fg = C.frost.turquoise, bg = C.none },
+	NERDTreeHelpKey         = { fg = C.frost.turquoise, bg = C.none },
+	NERDTreeIgnore          = { fg = C.night.c3, bg = C.none },
+	NERDTreeFlags           = { fg = C.aurora.red, bg = C.none },
+	NERDTreePart            = { fg = C.none, bg = C.none },
+	NERDTreeHelp            = { fg = C.snow.c0, bg = C.none },
+	NERDTreeFile            = { fg = C.fg, bg = C.none },
+	NERDTreeDir             = { fg = C.frost.turquoise, bg = C.none },
+	NERDTreeCWD             = { fg = C.frost.turquoise, bg = C.none },
+	NERDTreeUp              = { fg = C.none, bg = C.none },
+	NERDTreeRO              = { fg = C.none, bg = C.none },
 }
 
 return P
