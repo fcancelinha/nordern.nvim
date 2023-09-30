@@ -583,3 +583,4 @@ P.nerdtree         = {
 }
 
 return P
+
