@@ -15,7 +15,7 @@ local p = require("northern.plugs")
 local u = require("northern.utils")
 local t = require("bufferline.theme")
 
-northern.theme = t
+northern.bufferline = t.theme()
 
 function northern.load(opts)
 	u.load(b, l, p)
