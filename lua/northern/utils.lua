@@ -6,10 +6,6 @@ local function hexToRgb(color)
 end
 
 local function preload()
-	if vim.version.range('<0.8.0') then
-		print("Colorschem 'northern' requires at least neovim 0.8.0")
-	end
-
 	vim.cmd.hi("clear")
 
 	if vim.fn.exists("syntax_on") then
