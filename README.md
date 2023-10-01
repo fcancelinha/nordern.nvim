@@ -11,7 +11,6 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 ## Roadmap
  - [ ] - improve README
  - [ ] - vimdoc documentation
- - [ ] - support for bufferline
  - [ ] - special colours for C, C++. Java, Python, typescript, Rust.
  - [ ] - create options
  - [ ] - screenshots of different modes & languages
@@ -26,7 +25,7 @@ use your favourite package manager:
 
 [lazy](https://github.com/folke/lazy.nvim)
 ```lua
-{ "fcancelinha/northern.nvim", lazy = true, branch = "master", priority = 1000 }
+{ "fcancelinha/northern.nvim", branch = "master", priority = 1000 }
 ```
 
 [vim-plug](https://github.com/junegunn/vim-plug)
