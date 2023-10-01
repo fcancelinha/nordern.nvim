@@ -26,7 +26,7 @@ use your favourite package manager:
 
 [lazy](https://github.com/folke/lazy.nvim)
 ```lua
-{ "fcancelinha/northern.nvim", branch = "master", priority = 1000 }
+{ "fcancelinha/northern.nvim", lazy = true, branch = "master", priority = 1000 }
 ```
 
 [vim-plug](https://github.com/junegunn/vim-plug)

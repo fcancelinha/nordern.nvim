@@ -7,7 +7,6 @@
 -- Year        : 2023
 -- ********************************************************************************
 
-package.loaded['northern'] = nil
 package.loaded['northern.base'] = nil
 package.loaded['northern.colors'] = nil
 package.loaded['northern.config'] = nil
