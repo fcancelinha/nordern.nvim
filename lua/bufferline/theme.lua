@@ -1,7 +1,8 @@
 local C = require("northern.colors")
+
 local visible = "#434C5E"
 
-local highlights = {
+local theme = {
 	fill = {
 		fg = C.snow.c0,
 		bg = C.bg,
@@ -227,5 +228,4 @@ local highlights = {
 	},
 }
 
-return highlights
-
+return theme
