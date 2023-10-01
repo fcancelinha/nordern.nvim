@@ -340,7 +340,7 @@ P.illuminate       = {
 }
 
 P.indent_blankline = {
-	IblIndent = { fg = C.bg, bg = C.none, sp = C.none },
+	IblIndent = { fg = C.night.c1, bg = C.none, sp = C.none },
 	IblScope = { fg = C.frost.turquoise, bg = C.none },
 	IblWhitespace = { fg = C.bg, bg = C.none, sp = C.none },
 	["@ibl.indent.char.1"] = { fg = C.night.c1, bg = C.none },

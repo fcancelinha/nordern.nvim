@@ -89,7 +89,6 @@ L.go = {
 	["@property.go"]                             = { fg = C.frost.sea, bg = C.none },
 	["@type.builtin.go"]                         = { fg = C.frost.turquoise, bg = C.none },
 	["@type.go"]                                 = { fg = C.frost.light_blue, bg = C.none },
-	["@include.go"]                              = { fg = C.frost.light_blue, bg = C.none },
 }
 
 
@@ -104,15 +103,17 @@ L.lua = {
 	["@lsp.type.property.lua"]                   = { fg = C.fg, bg = C.none },     --  similar to `@field`
 	["@lsp.mod.defaultLibrary.lua"]              = { fg = C.frost.sea, bg = C.none }, --  similar to `@field`
 	["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = C.fg, bg = C.none },     --  similar to `@field`
+	["@field.lua"]                               = { fg = C.fg, bg = C.none },
 }
 
 L.html = {
-	["@tag.html"] = { fg = C.frost.turquoise, bg = C.none },
+	["@tag.html"] = { fg = C.frost.light_blue, bg = C.none },
+	["@text.html"] = { fg = C.fg, bg = C.none },
 	["@string.html"] = { fg = C.aurora.green, bg = C.none },
 	["@tag.attribute.html"] = { fg = C.aurora.yellow, bg = C.none, bold = true },
 	["@tag.delimiter.html"] = { link = "@tag.html" },
 	["@constant.html"] = { fg = C.snow.c0, bg = C.none },
-	["@text.uri.html"] = { fg = C.frost.sea, bg = C.none, underline = true },
+	["@text.uri.html"] = { fg = C.aurora.green, bg = C.none },
 	["@operator.html"] = { link = "@tag.attribute.html" },
 }
 
@@ -149,9 +150,9 @@ L.bash = {
 
 L.markdown = {
 	["@text.strong.markdown_inline"] = { fg = C.frost.sea, bg = C.none, bold = true },              --  object and struct fields
-	["@label.markdown"] = { fg = C.frost.sea, bg = C.none, bold = true, italic = true },            --  object and struct fields
-	["@text.title.markdown"] = { fg = C.fg, bg = C.nonee },                                         --  object and struct fields
-	["@text.reference.markdown_inline"] = { fg = C.frost.turquoise, bg = C.nonee },                 --  object and struct fields
+	["@label.markdown"] = { fg = C.frost.light_blue, bg = C.none, bold = true, italic = true },     --  object and struct fields
+	["@text.title.markdown"] = { fg = C.fg, bg = C.none },                                          --  object and struct fields
+	["@text.reference.markdown_inline"] = { fg = C.frost.turquoise, bg = C.none },                  --  object and struct fields
 	["@text.uri.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, underline = true },     --  object and struct fields
 	["@text.literal.markdown_inline"] = { fg = C.aurora.green, bg = C.none },                       --  object and struct fields
 	["@text.literal.block.markdown"] = { fg = C.aurora.green, bg = C.none },                        --  object and struct fields
@@ -161,6 +162,8 @@ L.markdown = {
 	["@punctuation.special.markdown"] = { fg = C.aurora.yellow, bg = C.none },                      --  object and struct fields
 	["@punctuation.bracket.markdown_inline"] = { fg = C.fg, bg = C.none },                          --  object and struct fields
 	["@punctuation.delimiter.markdown_inline"] = { fg = C.aurora.yellow, bg = C.none },             --  object and struct fields
+	["@punctuation.delimiter.markdown"] = { fg = C.aurora.yellow, bg = C.none },                    --  object and struct fields
+	["@text.todo.unchecked.markdown"] = { fg = C.aurora.yellow, bg = C.none },
 }
 
 L.xml = {
@@ -241,6 +244,7 @@ L.treesitter = {
 	["@method"]                = { fg = C.frost.turquoise, bg = C.none },             --  method definitions
 	["@method.call"]           = { fg = C.frost.turquoise, bg = C.none },             --  method calls
 	["@constructor"]           = { fg = C.frost.turquoise, bg = C.none },             --  constructor calls and definitions
+	["@constant.regex"]        = { fg = C.aurora.purple, bg = C.none },               --  other special strings (e.g. dates)
 	["@parameter"]             = { fg = C.fg, bg = C.none },                          --  parameters of a function
 	-- Keywords
 	["@keyword"]               = { fg = C.frost.light_blue, bg = C.none },            --  various keywords

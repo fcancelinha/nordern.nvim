@@ -5,6 +5,18 @@ local function hexToRgb(color)
 	return { tonumber(color:sub(2, 3), 16), tonumber(color:sub(4, 5), 16), tonumber(color:sub(6, 7), 16) }
 end
 
+local function preload()
+	vim.cmd.hi("clear")
+
+	if vim.fn.exists("syntax_on") then
+		vim.cmd("syntax reset")
+	end
+
+	vim.o.termguicolors = true
+	vim.o.background = "dark"
+	vim.g.colors_name = "northern"
+end
+
 function utils.blend(foreground, background, alpha)
 	alpha = type(alpha) == "string" and (tonumber(alpha, 16) / 0xff) or alpha
 
@@ -20,16 +32,6 @@ function utils.blend(foreground, background, alpha)
 end
 
 function utils.load(...)
-	-- vim.cmd.hi("clear")
-	--
-	-- if vim.fn.exists("syntax_on") then
-	-- 	vim.cmd("syntax reset")
-	-- end
-	--
-	-- vim.o.termguicolors = true
-	-- vim.o.background = 'dark'
-	-- vim.g.colors_name = "northern"
-
 	for _, value in pairs({ ... }) do
 		for _, groups in pairs(value) do
 			for group, highlight in pairs(groups) do
