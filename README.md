@@ -8,6 +8,23 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 
 ## Plugin Support
 
+- [lazy,nvim](https://github.com/folke/lazy.nvim)
+- [noice](https://github.com/folke/noice.nvim)
+- [lualine](https://github.comn/vim-lualine/lualine.nvim)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [git-signs](https://github.com/lewis6991/gitsigns.nvim)
+- [mason](https://github.com/williamboman/mason.nvim)
+- [nvim-lsp](https://github.com/neovim/nvim-lspconfig)
+- [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+- [telescope](https://github.com/nvim-telescope/telescope.nvim)
+- [indent-blank-line](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [leap.nvim](https://github.com/ggandor/leap.nvim)
+- [NERDtree](https://github.com/preservim/nerdtree)
+- [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
+- [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
+- [trouble](https://github.com/folke/trouble.nvim)
+- [dad-bod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
+
 ## Roadmap
  - [ ] - improve README
  - [ ] - vimdoc documentation
