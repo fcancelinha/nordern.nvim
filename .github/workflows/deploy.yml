@@ -22,3 +22,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DEFAULT_BUMP: patch
         RELEASE_BRANCHES: master
+        WITH_V: false
+        DRY_RUN: true
