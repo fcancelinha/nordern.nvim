@@ -2,11 +2,24 @@
 
 A carefully crafted nord colorscheme written in lua for neovim using the [nord palette](https://www.nordtheme.com/docs/colors-and-palettes).
 
+![Alpha](https://github.com/fcancelinha/northern.nvim/assets/48698009/0509d1c3-4643-4ac0-8acb-99dd8fa4bd09)
+
+![main](https://github.com/fcancelinha/northern.nvim/assets/48698009/740b04e3-7a20-4c92-9a00-2dc5e4eb4a25)
+
 **Northern.nvim** | because like any good viking that loves gold, this colorscheme uses aurora yellow to highlight some of the more important tokens.
 
 **WARNING**: this plugin is still very much a WIP, bufferline support exists but I'm figuring out the best way to implement it, some noice windows lack button background and I'm working on it
 
 ## Screenshots
+
+<details>
+  <summary>more screenshots</summary>
+  
+![2123](https://github.com/fcancelinha/northern.nvim/assets/48698009/7508095f-6411-4a89-9fc5-ffb85afd447b)
+
+![3424324](https://github.com/fcancelinha/northern.nvim/assets/48698009/935a4db6-dcae-4e07-9923-8529234d51aa)
+
+</details>
 
 ## Plugin Support
 
