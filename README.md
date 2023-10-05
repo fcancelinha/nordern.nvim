@@ -68,10 +68,10 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 </details>
 
 ## Roadmap
- - [ ] - improve README
+ - [x] - improve README
  - [ ] - vimdoc documentation
  - [ ] - create options
- - [ ] - screenshots of different modes & languages
+ - [x] - screenshots of different modes & languages
 
 ## 🎐 Requirements
 
