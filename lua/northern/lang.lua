@@ -146,6 +146,7 @@ L.bash = {
 	["@string.regex.bash"] = { fg = C.aurora.yellow, bg = C.none },
 	["@function.call.bash"] = { fg = C.frost.turquoise, bg = C.none },
 	["@punctuation.special.bash"] = { fg = C.frost.turquoise, bg = C.none },
+	["@function.builtin.bash"] = { fg = C.frost.sea, bg = C.none },
 }
 
 L.markdown = {
