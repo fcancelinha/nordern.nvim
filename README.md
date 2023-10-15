@@ -41,6 +41,12 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [trouble](https://github.com/folke/trouble.nvim)
 - [dad-bod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
 
+
+## Roadmap
+ - [x] - improve README
+ - [ ] - vimdoc documentation
+ - [ ] - special colours for C, C++. Java, Python, typescript, Rust.
+
 ## Languages with special support
 <details>
   <summary>click to expand the list of languages</summary>

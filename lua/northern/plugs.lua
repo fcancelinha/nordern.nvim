@@ -28,10 +28,10 @@ P.trouble = {
 }
 
 P.leap = {
-	LeapLabelSecondary = { fg = C.night.c0, bg = C.aurora.green, bold = true },
-	LeapLabelSelected  = { fg = C.night.c0, bg = C.aurora.purple, bold = true },
-	LeapLabelPrimary   = { fg = C.night.c0, bg = C.aurora.yellow, bold = true },
-	LeapMatch          = { fg = C.night.c0, bg = C.frost.turquoise, bold = true },
+	LeapLabelSecondary = { fg = C.night.c0, bg = C.blend.green, bold = true },
+	LeapLabelSelected  = { fg = C.night.c0, bg = C.blend.green, bold = true },
+	LeapLabelPrimary   = { fg = C.night.c0, bg = C.blend.turquoise, bold = true },
+	LeapMatch          = { fg = C.night.c0, bg = C.blend.turquoise, bold = true },
 }
 
 P.noice = {
@@ -56,7 +56,7 @@ P.noice = {
 	NoiceCmdlinePopupBorderLua        = { fg = C.frost.light_blue, bg = C.none },        --
 	NoiceCmdlinePopupBorderSearch     = { fg = C.aurora.yellow, bg = C.none },           --Cmdline popup border for search
 	NoiceCmdlinePopupTitle            = { fg = C.fg, bg = C.none },                      --Cmdline popup border
-	NoiceCmdlinePrompt                = { fg = C.frost.turquoise, bg = C.bg },           --prompt for input()
+	NoiceCmdlinePrompt                = { fg = C.frost.turquoise, bg = C.night.c1 },     --prompt for input()
 	NoiceCompletionItemMenu           = { fg = C.frost.turquoise, bg = C.bg },           --Normal for the popupmenu
 	NoiceCompletionItemWord           = { fg = C.frost.turquoise, bg = C.bg },           --Normal for the popupmenu
 	NoiceConfirm                      = { fg = C.frost.turquoise, bg = C.bg },           --normal for the confirm view

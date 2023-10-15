@@ -1,5 +1,4 @@
 local C = require("northern.colors")
-
 local visible = "#434C5E"
 
 local theme = {
