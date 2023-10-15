@@ -26,6 +26,7 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [lazy,nvim](https://github.com/folke/lazy.nvim)
 - [noice](https://github.com/folke/noice.nvim)
 - [lualine](https://github.comn/vim-lualine/lualine.nvim)
+- [bufferline](https://github.com/akinsho/bufferline.nvim)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [git-signs](https://github.com/lewis6991/gitsigns.nvim)
 - [mason](https://github.com/williamboman/mason.nvim)
@@ -40,10 +41,41 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [trouble](https://github.com/folke/trouble.nvim)
 - [dad-bod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
 
+
 ## Roadmap
  - [x] - improve README
  - [ ] - vimdoc documentation
  - [ ] - special colours for C, C++. Java, Python, typescript, Rust.
+
+## Languages with special support
+<details>
+  <summary>click to expand the list of languages</summary>
+
+- [x] - Go
+- [x] - Javascript
+- [x] - Lua
+- [x] - SQL
+- [x] - HTML
+- [x] - CSS
+- [x] - yaml
+- [x] - toml
+- [x] - markdown
+- [x] - bash
+- [x] - xml
+- [ ] - C
+- [ ] - C++
+- [ ] - JAVA
+- [ ] - Python
+- [ ] - Typescript
+- [ ] - Rust
+
+*other languages will be supported depending on popular request*
+
+</details>
+
+## Roadmap
+ - [x] - improve README
+ - [ ] - vimdoc documentation
  - [ ] - create options
  - [x] - screenshots of different modes & languages
 
