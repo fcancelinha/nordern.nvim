@@ -76,6 +76,8 @@ L.go = {
 	["@lsp.type.variable.go"]                    = { fg = C.fg, bg = C.none },
 	["@lsp.type.typeParameter.go"]               = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.type.operator.go"]                    = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.type.function.go"]                    = { fg = C.frost.sea, bg = C.none },
+	["@method.call.go"]                          = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.typeParameter.definition.go"] = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.function.definition.go"]      = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.parameter.definition.go"]     = { fg = C.fg, bg = C.none },
