@@ -76,7 +76,7 @@ L.go = {
 	["@lsp.type.variable.go"]                    = { fg = C.fg, bg = C.none },
 	["@lsp.type.typeParameter.go"]               = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.type.operator.go"]                    = { fg = C.aurora.yellow, bg = C.none },
-	["@lsp.type.function.go"]                    = { fg = C.frost.sea, bg = C.none },
+	["@lsp.type.function.go"]                    = { fg = C.frost.turquoise, bg = C.none },
 	["@method.call.go"]                          = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.typeParameter.definition.go"] = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.function.definition.go"]      = { fg = C.frost.turquoise, bg = C.none },
@@ -88,7 +88,7 @@ L.go = {
 	["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.method.definition.go"]        = { fg = C.frost.turquoise, bg = C.none },
 	["@namespace.go"]                            = { fg = C.fg, bg = C.none },
-	["@property.go"]                             = { fg = C.frost.sea, bg = C.none },
+	["@property.go"]                             = { fg = C.frost.blue, bg = C.none },
 	["@type.builtin.go"]                         = { fg = C.frost.turquoise, bg = C.none },
 	["@type.go"]                                 = { fg = C.frost.light_blue, bg = C.none },
 }

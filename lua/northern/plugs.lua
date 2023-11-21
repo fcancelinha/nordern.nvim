@@ -28,10 +28,10 @@ P.trouble = {
 }
 
 P.leap = {
-	LeapLabelSecondary = { fg = C.night.c0, bg = C.blend.green, bold = true },
-	LeapLabelSelected  = { fg = C.night.c0, bg = C.blend.green, bold = true },
-	LeapLabelPrimary   = { fg = C.night.c0, bg = C.blend.turquoise, bold = true },
-	LeapMatch          = { fg = C.night.c0, bg = C.blend.turquoise, bold = true },
+	LeapLabelSecondary = { fg = C.aurora.green, bg = C.blend.green, bold = true },
+	LeapLabelSelected  = { fg = C.aurora.green, bg = C.blend.green, bold = true },
+	LeapLabelPrimary   = { fg = C.aurora.yellow, bg = C.blend.turquoise, bold = true },
+	LeapMatch          = { fg = C.frost.turquoise, bg = C.blend.turquoise, bold = true },
 }
 
 P.noice = {
@@ -109,43 +109,43 @@ P.lazygit = {
 }
 
 P.neo_tree = {
-	NeoTreeBufferNumber       = { fg = C.fg, bg = C.none },                   --The buffer number shown in the buffers source.
-	NeoTreeCursorLine         = { link = "CursorLine" },                      --|hl-CursorLine| override in Neo-tree window.
-	NeoTreeDimText            = { fg = C.fg, bg = C.none },                   --Greyed out text used in various places.
-	NeoTreeDirectoryIcon      = { fg = C.frost.turquoise, bg = C.none },      --Directory icon.
-	NeoTreeDirectoryName      = { fg = C.frost.turquoise, bg = C.none },      --Directory name.
-	NeoTreeDotfile            = { fg = C.night.c3, bg = C.none },             --Used for icons and names when dotfiles are filtered.
-	NeoTreeEndOfBuffer        = { fg = C.none, bg = C.none },                 --|hl-EndOfBuffer| override in Neo-tree window.
-	NeoTreeExpander           = { fg = C.night.c2, bg = C.none },             --Used for collapsed/expanded icons.
-	NeoTreeFileIcon           = { fg = C.frost.sea, bg = C.none },            --File icon, when not overridden by devicons.
-	NeoTreeFileName           = { fg = C.snow.c1, bg = C.none },              --File name, when not overwritten by another status.
-	NeoTreeFileNameOpened     = { fg = C.snow.c1, bg = C.none },              --File name when the file is open. Not used yet.
-	NeoTreeFilterTerm         = { fg = C.aurora.yellow, bg = C.none },        --The filter term, as displayed in the root node.
-	NeoTreeFloatBorder        = { link = "FloatBorder" },                     --The border for pop-up windows.
-	NeoTreeFloatTitle         = { fg = C.snow.c1, bg = C.none },              --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
-	NeoTreeGitAdded           = { fg = C.aurora.green, bg = C.none },         --File name when the git status is added.
-	NeoTreeGitConflict        = { fg = C.aurora.red, bg = C.none },           --File name when the git status is conflict.
-	NeoTreeGitDeleted         = { fg = C.aurora.red, bg = C.none },           --File name when the git status is deleted.
-	NeoTreeGitIgnored         = { fg = C.night.c2, bg = C.none },             --File name when the git status is ignored.
-	NeoTreeGitModified        = { fg = C.aurora.yellow, bg = C.none },        --File name when the git status is modified.
-	NeoTreeGitStaged          = { fg = C.aurora.green, bg = C.none },         --Used for git staged symbol.
-	NeoTreeGitUnstaged        = { fg = C.frost.light_blue, bg = C.none },     --Used for git unstaged symbol.
-	NeoTreeGitUntracked       = { fg = C.frost.light_blue, bg = C.none },     --File name when the git status is untracked.
-	NeoTreeHiddenByName       = { fg = C.night.c2, bg = C.none },             --Used for icons and names when `hide_by_name` is used.
-	NeoTreeIndentMarker       = { fg = C.night.c1, bg = C.none },             --The style of indentation markers (). By default, the "Normal" highlight is used.
-	NeoTreeNormal             = { fg = C.fg, bg = C.none },                   --|hl-Normal| override in Neo-tree window.
-	NeoTreeNormalNC           = { fg = C.fg, bg = C.none },                   --|hl-NormalNC| override in Neo-tree window.
-	NeoTreeRootName           = { fg = C.fg, bg = C.none },                   --The name of the root node.
-	NeoTreeSignColumn         = { fg = C.night.c3, bg = C.none },             --|hl-SignColumn| override in Neo-tree window.
-	NeoTreeFileStats          = { fg = C.night.c3, bg = C.none, italic = true }, --Used for "stat" columns like size, last modified, etc.
-	NeoTreeFileStatsHeader    = { fg = C.night.c3, bg = C.none, bold = true }, --Used for the header (top line) of the above columns.
-	NeoTreeStatusLine         = { fg = C.night.c0, bg = C.none },             --|hl-StatusLine| override in Neo-tree window.
-	NeoTreeStatusLineNC       = { fg = C.none, bg = C.none },                 --|hl-StatusLineNC| override in Neo-tree window.
-	NeoTreeSymbolicLinkTarget = { fg = C.frost.light_blue, bg = C.none },     --Symbolic link target.
-	NeoTreeTitleBar           = { fg = C.snow.c2, bg = C.none },              --Used for the title bar of pop-ups, when the border-style is set to "NC". This is derived from NeoTreeFloatBorder.
-	NeoTreeVertSplit          = { fg = C.night.c3, bg = C.none },             --|hl-VertSplit| override in Neo-tree window.
-	NeoTreeWinSeparator       = { fg = C.night.c3, bg = C.none },             --|hl-WinSeparator| override in Neo-tree window.
-	NeoTreeWindowsHidden      = { fg = C.night.c3, bg = C.none },             --Used for icons and names that are hidden on Windows.
+	NeoTreeBufferNumber       = { fg = C.fg, bg = C.none },                    --The buffer number shown in the buffers source.
+	NeoTreeCursorLine         = { link = "CursorLine" },                       --|hl-CursorLine| override in Neo-tree window.
+	NeoTreeDimText            = { fg = C.night.c3, bg = C.none },              --Greyed out text used in various places.
+	NeoTreeDirectoryIcon      = { fg = C.frost.sea, bg = C.none },             --Directory icon.
+	NeoTreeDirectoryName      = { fg = C.frost.sea, bg = C.none },             --Directory name.
+	NeoTreeDotfile            = { fg = C.night.c3, bg = C.none, italic = true }, --Used for icons and names when dotfiles are filtered.
+	NeoTreeEndOfBuffer        = { fg = C.none, bg = C.none },                  --|hl-EndOfBuffer| override in Neo-tree window.
+	NeoTreeExpander           = { fg = C.night.c2, bg = C.none },              --Used for collapsed/expanded icons.
+	NeoTreeFileIcon           = { fg = C.frost.sea, bg = C.none },             --File icon, when not overridden by devicons.
+	NeoTreeFileName           = { fg = C.snow.c1, bg = C.none },               --File name, when not overwritten by another status.
+	NeoTreeFileNameOpened     = { fg = C.snow.c1, bg = C.none },               --File name when the file is open. Not used yet.
+	NeoTreeFilterTerm         = { fg = C.aurora.yellow, bg = C.none },         --The filter term, as displayed in the root node.
+	NeoTreeFloatBorder        = { link = "FloatBorder" },                      --The border for pop-up windows.
+	NeoTreeFloatTitle         = { fg = C.snow.c1, bg = C.none },               --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
+	NeoTreeGitAdded           = { fg = C.aurora.green, bg = C.none },          --File name when the git status is added.
+	NeoTreeGitConflict        = { fg = C.aurora.red, bg = C.none },            --File name when the git status is conflict.
+	NeoTreeGitDeleted         = { fg = C.aurora.red, bg = C.none },            --File name when the git status is deleted.
+	NeoTreeGitIgnored         = { fg = C.night.c3, bg = C.none, italic = true }, --File name when the git status is ignored.
+	NeoTreeGitModified        = { fg = C.aurora.yellow, bg = C.none },         --File name when the git status is modified.
+	NeoTreeGitStaged          = { fg = C.aurora.green, bg = C.none },          --Used for git staged symbol.
+	NeoTreeGitUnstaged        = { fg = C.blend.red, bg = C.none },             --Used for git unstaged symbol.
+	NeoTreeGitUntracked       = { fg = C.frost.sea, bg = C.none, italic = true }, --File name when the git status is untracked.
+	NeoTreeHiddenByName       = { fg = C.night.c2, bg = C.none },              --Used for icons and names when `hide_by_name` is used.
+	NeoTreeIndentMarker       = { fg = C.night.c1, bg = C.none },              --The style of indentation markers (). By default, the "Normal" highlight is used.
+	NeoTreeNormal             = { fg = C.fg, bg = C.none },                    --|hl-Normal| override in Neo-tree window.
+	NeoTreeNormalNC           = { fg = C.fg, bg = C.none },                    --|hl-NormalNC| override in Neo-tree window.
+	NeoTreeRootName           = { fg = C.fg, bg = C.none },                    --The name of the root node.
+	NeoTreeSignColumn         = { fg = C.night.c3, bg = C.none },              --|hl-SignColumn| override in Neo-tree window.
+	NeoTreeFileStats          = { fg = C.night.c3, bg = C.none },              --Used for "stat" columns like size, last modified, etc.
+	NeoTreeFileStatsHeader    = { fg = C.night.c3, bg = C.none, italic = true }, --Used for the header (top line) of the above columns.
+	NeoTreeStatusLine         = { fg = C.night.c0, bg = C.none },              --|hl-StatusLine| override in Neo-tree window.
+	NeoTreeStatusLineNC       = { fg = C.none, bg = C.none },                  --|hl-StatusLineNC| override in Neo-tree window.
+	NeoTreeSymbolicLinkTarget = { fg = C.frost.light_blue, bg = C.none },      --Symbolic link target.
+	NeoTreeTitleBar           = { fg = C.snow.c2, bg = C.none },               --Used for the title bar of pop-ups, when the border-style is set to "NC". This is derived from NeoTreeFloatBorder.
+	NeoTreeVertSplit          = { fg = C.night.c3, bg = C.none },              --|hl-VertSplit| override in Neo-tree window.
+	NeoTreeWinSeparator       = { fg = C.night.c3, bg = C.none },              --|hl-WinSeparator| override in Neo-tree window.
+	NeoTreeWindowsHidden      = { fg = C.night.c3, bg = C.none },              --Used for icons and names that are hidden on Windows.
 }
 
 P.cmp = {
