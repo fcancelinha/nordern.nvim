@@ -38,6 +38,10 @@ local colors = {
 		blue      = U.blend("#5E81AC", "#2E3440", 0.2),
 		bluec1    = U.blend("#5E81AC", "#2E3440", 0.3),
 	},
+	special = {
+		sea = "#8EBDBC",
+		light_blue = "#7AA1BE",
+	},
 }
 
 return colors
