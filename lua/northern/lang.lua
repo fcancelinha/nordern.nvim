@@ -23,6 +23,7 @@ L.sql = {
 	["@comment.sql"] = { fg = C.night.c3, bg = C.none, italic = true },
 	["@spell.sql"] = { fg = C.night.c3, bg = C.none, italic = true },
 	["@field.sql"] = { fg = C.aurora.purple, bg = C.none },
+	["@attribute.sql"] = { fg = C.aurora.purple, bg = C.none },
 }
 
 L.javascript = {
@@ -111,6 +112,7 @@ L.lua = {
 	["@lsp.mod.defaultLibrary.lua"]              = { fg = C.frost.sea, bg = C.none }, --  similar to `@field`
 	["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = C.fg, bg = C.none },     --  similar to `@field`
 	["@field.lua"]                               = { fg = C.fg, bg = C.none },
+	["@punctuation.delimiter.lua"]               = { fg = C.fg, bg = C.none },
 }
 
 L.html = {
@@ -183,13 +185,13 @@ L.xml = {
 }
 
 L.yaml = {
-	["@field.yaml"]                 = { fg = C.frost.sea, bg = C.none },
-	["@type.yaml"]                  = { fg = C.frost.turquoise, bg = C.none },
+	["@field.yaml"]                 = { fg = C.aurora.yellow, bg = C.none },
+	["@type.yaml"]                  = { fg = C.fg, bg = C.none, bold = true },
 	["@number.yaml"]                = { fg = C.frost.purple, bg = C.none },
 	["@string.yaml"]                = { fg = C.aurora.green, bg = C.none },
 	["@comment.yaml"]               = { fg = C.night.c3, bg = C.none },
 	["@spell.yaml"]                 = { fg = C.night.c3, bg = C.none },
-	["@boolean.yaml"]               = { fg = C.frost.light_blue, bg = C.none },
+	["@boolean.yaml"]               = { fg = C.aurora.purple, bg = C.none },
 	["@punctuation.delimiter.yaml"] = { fg = C.aurora.green, bg = C.none },
 	["@constant.builtin.yaml"]      = { fg = C.frost.light_blue, bg = C.none },
 	yamlBlockMappingKey             = { fg = C.frost.light_blue, bg = C.none },
@@ -202,7 +204,7 @@ L.yaml = {
 }
 
 L.json = {
-	["@label.json"]                 = { fg = C.frost.turquoise, bg = C.none },
+	["@label.json"]                 = { fg = C.special.sea, bg = C.none },
 	["@string.json"]                = { fg = C.aurora.green, bg = C.none },
 	["@boolean.json"]               = { fg = C.aurora.yellow, bg = C.none },
 	["@conceal.json"]               = { fg = C.fg, bg = C.none },
