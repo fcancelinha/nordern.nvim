@@ -15,9 +15,14 @@ L.clang = {
 }
 
 L.sql = {
-	["@type.builtin.sql"] = { fg = C.frost.turquoise, bg = C.none },
-	["@keyword.operator.sql"] = { fg = C.frost.turquoise, bg = C.none },
+	["@type.builtin.sql"] = { fg = C.frost.sea, bg = C.none },
+	["@type.sql"] = { fg = C.aurora.yellow, bg = C.none },
+	["@type.qualifier.sql"] = { fg = C.frost.light_blue, bg = C.none },
+	["@keyword.operator.sql"] = { fg = C.frost.light_blue, bg = C.none },
 	["@keyword.sql"] = { fg = C.frost.light_blue, bg = C.none },
+	["@comment.sql"] = { fg = C.night.c3, bg = C.none, italic = true },
+	["@spell.sql"] = { fg = C.night.c3, bg = C.none, italic = true },
+	["@field.sql"] = { fg = C.aurora.purple, bg = C.none },
 }
 
 L.javascript = {
@@ -76,8 +81,8 @@ L.go = {
 	["@lsp.type.variable.go"]                    = { fg = C.fg, bg = C.none },
 	["@lsp.type.typeParameter.go"]               = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.type.operator.go"]                    = { fg = C.aurora.yellow, bg = C.none },
-	["@lsp.type.function.go"]                    = { fg = C.frost.turquoise, bg = C.none },
-	["@method.call.go"]                          = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.type.function.go"]                    = { fg = C.frost.sea, bg = C.none },
+	["@method.call.go"]                          = { fg = C.frost.sea, bg = C.none },
 	["@lsp.typemod.typeParameter.definition.go"] = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.function.definition.go"]      = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.parameter.definition.go"]     = { fg = C.fg, bg = C.none },
@@ -85,11 +90,11 @@ L.go = {
 	["@lsp.typemod.variable.definition.go"]      = { fg = C.fg, bg = C.none },
 	["@lsp.typemod.variable.readonly.go"]        = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.variable.defaultLibrary.go"]  = { fg = C.aurora.yellow, bg = C.none },
-	["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.light_blue, bg = C.none },
 	["@lsp.typemod.method.definition.go"]        = { fg = C.frost.turquoise, bg = C.none },
 	["@namespace.go"]                            = { fg = C.fg, bg = C.none },
-	["@property.go"]                             = { fg = C.frost.blue, bg = C.none },
-	["@type.builtin.go"]                         = { fg = C.frost.turquoise, bg = C.none },
+	["@property.go"]                             = { fg = C.frost.sea, bg = C.none },
+	["@type.builtin.go"]                         = { fg = C.frost.light_blue, bg = C.none },
 	["@type.go"]                                 = { fg = C.frost.light_blue, bg = C.none },
 }
 
@@ -101,7 +106,7 @@ L.zsh = {
 
 L.lua = {
 	["@variable.lua"]                            = { fg = C.fg, bg = C.none },     --  object and struct fields
-	["@lsp.type.variable.lua"]                   = { fg = C.fg, bg = C.none },     --  object and struct fields
+	["@lsp.type.variable.lua"]                   = { fg = C.frost.sea, bg = C.none }, --  object and struct fields
 	["@lsp.type.property.lua"]                   = { fg = C.fg, bg = C.none },     --  similar to `@field`
 	["@lsp.mod.defaultLibrary.lua"]              = { fg = C.frost.sea, bg = C.none }, --  similar to `@field`
 	["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = C.fg, bg = C.none },     --  similar to `@field`
