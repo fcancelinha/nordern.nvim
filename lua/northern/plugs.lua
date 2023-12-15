@@ -1,6 +1,13 @@
 local C = require("northern.colors")
 local P = {}
 
+P.neotest = {
+	NeotestAdapterName = { fg = C.aurora.yellow, bg = C.none },
+	NeotestDir = { fg = C.frost.turquoise, bg = C.none },
+	NeotestTest = { fg = C.fg, bg = C.none, italic = true },
+	NeotestFile = { fg = C.aurora.purple, bg = C.none, bold = true, underline = true },
+}
+
 P.trouble = {
 	TroubleCode            = { fg = C.fg, bg = C.none },
 	TroubleCount           = { fg = C.aurora.purple, bg = C.none },
