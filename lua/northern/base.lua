@@ -105,7 +105,7 @@ B.gui = {
 	DiffAdd        = { fg = C.aurora.green, bg = C.blend.green },      --	Diff mode: Added line. diff.txt
 	DiffChange     = { fg = C.aurora.yellow, bg = C.blend.yellow },    --	Diff mode: Changed line. diff.txt
 	DiffDelete     = { fg = C.aurora.red, bg = C.blend.red },          --	Diff mode: Deleted line. diff.txt
-	DiffText       = { fg = C.none, bg = C.none },                     --	Diff mode: Changed text within a changed line. diff.txt
+	DiffText       = { fg = C.fg, bg = C.none },                       --	Diff mode: Changed text within a changed line. diff.txt
 	--Health
 	healthError    = { fg = C.aurora.red, bg = C.none },
 	healthSuccess  = { fg = C.aurora.green, bg = C.none },
@@ -156,4 +156,3 @@ B.syntax = {
 }
 
 return B
-

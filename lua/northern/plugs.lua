@@ -69,8 +69,8 @@ P.noice = {
 	NoiceConfirm                      = { fg = C.frost.turquoise, bg = C.bg },           --normal for the confirm view
 	NoiceConfirmBorder                = { fg = C.frost.turquoise, bg = C.bg },           --Border for the confirm view
 	NoiceCursor                       = { fg = C.blend.blue, bg = C.blend.bluec1 },      --fake Cursor
-	NoiceFormatConfirm                = { fg = C.frost.turquoise, bg = C.none },         --
-	NoiceFormatConfirmDefault         = { fg = C.frost.turquoise, bg = C.none },         --
+	NoiceFormatConfirm                = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --
+	NoiceFormatConfirmDefault         = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --
 	NoiceFormatLevelDebug             = { fg = C.aurora.green, bg = C.none },            --
 	NoiceFormatLevelError             = { fg = C.aurora.red, bg = C.none },              --
 	NoiceFormatLevelInfo              = { fg = C.frost.turquoise, bg = C.none },         --
