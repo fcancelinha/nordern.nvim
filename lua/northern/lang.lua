@@ -20,7 +20,7 @@ L.sql = {
 	["@type.qualifier.sql"] = { fg = C.frost.light_blue, bg = C.none },
 	["@keyword.operator.sql"] = { fg = C.frost.light_blue, bg = C.none },
 	["@keyword.sql"] = { fg = C.frost.light_blue, bg = C.none },
-	["@comment.sql"] = { fg = C.night.c3, bg = C.none, italic = true },
+	["@comment.sql"] = { link = "Comment" },
 	["@spell.sql"] = { fg = C.night.c3, bg = C.none, italic = true },
 	["@field.sql"] = { fg = C.aurora.purple, bg = C.none },
 	["@attribute.sql"] = { fg = C.aurora.purple, bg = C.none },
@@ -56,6 +56,12 @@ L.javascript = {
 	["@property.javascript"]                            = { fg = C.frost.light_blue, bg = C.none },
 	["@punctuation.special.javascript"]                 = { fg = C.aurora.yellow, bg = C.none },
 	["@variable.builtin.javascript"]                    = { fg = C.frost.turquoise, bg = C.none },
+}
+
+L.make = {
+	["@function.make"] = { fg = C.fg, bg = C.none },
+	["@function.builtin.make"] = { fg = C.fg, bg = C.none },
+	["@symbol.make"] = { fg = C.frost.sea, bg = C.none },
 }
 
 L.gomod = {
@@ -191,7 +197,7 @@ L.yaml = {
 	["@type.yaml"]                  = { fg = C.fg, bg = C.none, bold = true },
 	["@number.yaml"]                = { fg = C.frost.purple, bg = C.none },
 	["@string.yaml"]                = { fg = C.aurora.green, bg = C.none },
-	["@comment.yaml"]               = { fg = C.night.c3, bg = C.none },
+	["@comment.yaml"]               = { link = "Comment" },
 	["@spell.yaml"]                 = { fg = C.night.c3, bg = C.none },
 	["@boolean.yaml"]               = { fg = C.aurora.purple, bg = C.none },
 	["@punctuation.delimiter.yaml"] = { fg = C.aurora.green, bg = C.none },
@@ -216,7 +222,7 @@ L.json = {
 }
 
 L.toml = {
-	["@comment.toml"]             = { fg = C.night.c3, bg = C.none },
+	["@comment.toml"]             = { link = "Comment" },
 	["@type.toml"]                = { fg = C.frost.sea, bg = C.none },
 	["@property.toml"]            = { fg = C.snow.c2, bg = C.none },
 	["@number.toml"]              = { fg = C.aurora.purple, bg = C.none },
