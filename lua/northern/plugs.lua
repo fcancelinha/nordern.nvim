@@ -41,6 +41,10 @@ P.leap = {
 	LeapMatch          = { fg = C.frost.turquoise, bg = C.blend.turquoise, bold = true },
 }
 
+P.flash = {
+	FlashLabel = { fg = C.bg, bg = C.aurora.yellow },   --Substitute   jump label
+}
+
 P.noice = {
 	NoiceCmdline                      = { fg = C.frost.turquoise, bg = C.bg },           --normal for the classic cmdline area at the bottom"
 	NoiceCmdlineIcon                  = { fg = C.frost.turquoise, bg = C.bg, bold = true }, --Cmdline icon

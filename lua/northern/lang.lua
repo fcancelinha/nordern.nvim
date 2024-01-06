@@ -81,7 +81,7 @@ L.gosum = {
 
 L.go = {
 	["@boolean.go"]                              = { fg = C.aurora.yellow, bg = C.none },
-	["@constant.go"]                             = { fg = C.frost.sea, bg = C.none },
+	["@constant.go"]                             = { fg = C.aurora.yellow, bg = C.none },
 	["@keyword.function.go"]                     = { fg = C.frost.light_blue, bg = C.none },
 	["@lsp.keyword.go"]                          = { fg = C.frost.light_blue, bg = C.none },
 	["@lsp.mod.defaultLibrary.go"]               = { fg = C.frost.blue, bg = C.none },
@@ -176,21 +176,24 @@ L.bash = {
 }
 
 L.markdown = {
-	["@text.strong.markdown_inline"] = { fg = C.frost.sea, bg = C.none, bold = true },              --  object and struct fields
-	["@label.markdown"] = { fg = C.frost.light_blue, bg = C.none, bold = true, italic = true },     --  object and struct fields
-	["@text.title.markdown"] = { fg = C.fg, bg = C.none },                                          --  object and struct fields
-	["@text.reference.markdown_inline"] = { fg = C.frost.turquoise, bg = C.none },                  --  object and struct fields
-	["@text.uri.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, underline = true },     --  object and struct fields
-	["@text.literal.markdown_inline"] = { fg = C.aurora.green, bg = C.none },                       --  object and struct fields
-	["@text.literal.block.markdown"] = { fg = C.aurora.green, bg = C.none },                        --  object and struct fields
-	["@text.emphasis.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, italic = true },   --  object and struct fields
-	["@text.strike.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, strikethrough = true }, --  object and struct fields
-	["@text.quote.markdown"] = { fg = C.night.c3, bg = C.none },                                    --  object and struct fields
-	["@punctuation.special.markdown"] = { fg = C.aurora.yellow, bg = C.none },                      --  object and struct fields
-	["@punctuation.bracket.markdown_inline"] = { fg = C.fg, bg = C.none },                          --  object and struct fields
-	["@punctuation.delimiter.markdown_inline"] = { fg = C.aurora.yellow, bg = C.none },             --  object and struct fields
-	["@punctuation.delimiter.markdown"] = { fg = C.aurora.yellow, bg = C.none },                    --  object and struct fields
+	["@label.markdown"] = { fg = C.frost.light_blue, bg = C.none, bold = true, italic = true },
+	["@punctuation.bracket.markdown_inline"] = { fg = C.fg, bg = C.none },
+	["@punctuation.delimiter.markdown"] = { fg = C.aurora.yellow, bg = C.none },
+	["@punctuation.delimiter.markdown_inline"] = { fg = C.aurora.yellow, bg = C.none },
+	["@punctuation.special.markdown"] = { fg = C.aurora.yellow, bg = C.none },
+	["@spell.markdown"] = { fg = C.fg, bg = C.none, italic = true },
+	["@text.emphasis.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, italic = true },
+	["@text.literal.block.markdown"] = { fg = C.aurora.green, bg = C.none },
+	["@text.literal.markdown_inline"] = { fg = C.aurora.green, bg = C.none },
+	["@text.literal.markdown"] = { fg = C.aurora.yellow, bg = C.none },
+	["@text.quote.markdown"] = { fg = C.night.c3, bg = C.none },
+	["@text.reference.markdown"] = { fg = C.aurora.green, bg = C.none, italic = true },
+	["@text.reference.markdown_inline"] = { fg = C.frost.turquoise, bg = C.none },
+	["@text.strike.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, strikethrough = true },
+	["@text.strong.markdown_inline"] = { fg = C.frost.sea, bg = C.none, bold = true },
+	["@text.title.markdown"] = { fg = C.fg, bg = C.none },
 	["@text.todo.unchecked.markdown"] = { fg = C.aurora.yellow, bg = C.none },
+	["@text.uri.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, underline = true },
 }
 
 L.xml = {
