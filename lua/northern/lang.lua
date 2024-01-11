@@ -97,7 +97,7 @@ L.go = {
 	["@lsp.typemod.function.definition.go"]      = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.method.definition.go"]        = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.parameter.definition.go"]     = { fg = C.fg, bg = C.none },
-	["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.type.definition.go"]          = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.typeParameter.definition.go"] = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.variable.defaultLibrary.go"]  = { fg = C.aurora.yellow, bg = C.none },
@@ -108,12 +108,11 @@ L.go = {
 	["@namespace.go"]                            = { fg = C.fg, bg = C.none },
 	["@property.go"]                             = { fg = C.frost.turquoise, bg = C.none },
 	["@string.go"]                               = { fg = C.aurora.green, bg = C.none },
-	["@type.builtin.go"]                         = { fg = C.special.light_blue, bg = C.none, italic = true },
+	["@type.builtin.go"]                         = { fg = C.special.light_blue, bg = C.none },
 	["@type.definition.go"]                      = { fg = C.aurora.yellow, bg = C.none },
-	["@type.go"]                                 = { fg = C.special.light_blue, bg = C.none, italic = true },
+	["@type.go"]                                 = { fg = C.special.light_blue, bg = C.none },
 	["@function.call.go"]                        = { fg = C.frost.turquoise, bg = C.none },
 	["@field.go"]                                = { fg = C.fg, bg = C.none },
-
 }
 
 
