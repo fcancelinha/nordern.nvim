@@ -192,7 +192,8 @@ L.markdown = {
 	["@text.strong.markdown_inline"] = { fg = C.frost.sea, bg = C.none, bold = true },
 	["@text.title.markdown"] = { fg = C.fg, bg = C.none },
 	["@text.todo.unchecked.markdown"] = { fg = C.aurora.yellow, bg = C.none },
-	["@text.uri.markdown_inline"] = { fg = C.frost.light_blue, bg = C.none, underline = true },
+	["@text.todo.checked.markdown"] = { fg = C.aurora.green, bg = C.none },
+	["@text.uri.markdown_inline"] = { fg = C.aurora.green, bg = C.none, underline = true },
 }
 
 L.xml = {

@@ -13,11 +13,6 @@ local b = require("northern.base")
 local l = require("northern.lang")
 local p = require("northern.plugs")
 local u = require("northern.utils")
-local t = require("bufferline.theme")
-
-function northern.bufferline()
-	return t
-end
 
 function northern.load(opts)
 	u.load(b, l, p)
