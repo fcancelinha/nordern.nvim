@@ -22,6 +22,8 @@ L.http = {
 	["@text.uri.http"] = { fg = C.aurora.green, bg = C.none, underline = true },
 	["@variable.http"] = { fg = C.aurora.green, bg = C.none, underline = true },
 	["@parameter.http"] = { fg = C.aurora.green, bg = C.none, bold = true },
+	["@punctuation.delimiter.http"] = { fg = C.aurora.green, bg = C.none, bold = true },
+	["@field.http"] = { fg = C.aurora.green, bg = C.none, bold = true },
 	["httpResult200"] = { fg = C.aurora.green, bg = C.none },
 	["httpResult300"] = { fg = C.aurora.purple, bg = C.none },
 	["httpResult400"] = { fg = C.aurora.orange, bg = C.none },
