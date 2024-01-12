@@ -14,6 +14,29 @@ L.clang = {
 
 }
 
+L.http = {
+	["@constant.http"] = { fg = C.aurora.yellow, bg = C.none, bold = true },
+	["@keyword.http"] = { fg = C.aurora.green, bg = C.none, bold = true },
+	["@operator.http"] = { fg = C.aurora.green, bg = C.none, underline = true },
+	["@string.http"] = { fg = C.aurora.green, bg = C.none, underline = true },
+	["@text.uri.http"] = { fg = C.aurora.green, bg = C.none, underline = true },
+	["@variable.http"] = { fg = C.aurora.green, bg = C.none, underline = true },
+	["@parameter.http"] = { fg = C.aurora.green, bg = C.none, bold = true },
+	["httpResult200"] = { fg = C.aurora.green, bg = C.none },
+	["httpResult300"] = { fg = C.aurora.purple, bg = C.none },
+	["httpResult400"] = { fg = C.aurora.orange, bg = C.none },
+	["httpResult500"] = { fg = C.aurora.red, bg = C.none },
+	["httpResultComment"] = { fg = C.night.c3, bg = C.none },
+	["httpResultDate"] = { fg = C.fg, bg = C.none },
+	["httpResultDateField"] = { fg = C.frost.light_blue, bg = C.none },
+	["httpResultField"] = { fg = C.frost.light_blue, bg = C.none, bold = true },
+	["httpResultHeader"] = { fg = C.frost.turquoise, bg = C.none, bold = true },
+	["httpResultNumber"] = { fg = C.fg, bg = C.none },
+	["httpResultPath"] = { fg = C.aurora.green, bg = C.none },
+	["httpResultString"] = { fg = C.aurora.green, bg = C.none },
+	["httpResultTitle"] = { fg = C.aurora.yellow, bg = C.none, bold = true },
+}
+
 L.sql = {
 	["@type.builtin.sql"] = { fg = C.frost.sea, bg = C.none },
 	["@type.sql"] = { fg = C.aurora.yellow, bg = C.none },
@@ -224,13 +247,15 @@ L.yaml = {
 }
 
 L.json = {
-	["@label.json"]                 = { fg = C.special.sea, bg = C.none },
-	["@string.json"]                = { fg = C.aurora.green, bg = C.none },
+	["@label.json"]                 = { fg = C.aurora.green, bg = C.none },
+	["@string.json"]                = { fg = C.aurora.yellow, bg = C.none },
 	["@boolean.json"]               = { fg = C.aurora.yellow, bg = C.none },
 	["@conceal.json"]               = { fg = C.fg, bg = C.none },
 	["@number.json"]                = { fg = C.aurora.purple, bg = C.none },
 	["@punctuation.delimiter.json"] = { fg = C.fg, bg = C.none },
 	["@punctuation.bracket.json"]   = { fg = C.fg, bg = C.none },
+	["jsonKeyword"]                 = { fg = C.aurora.green, bg = C.none },
+	["jsonString"]                  = { fg = C.aurora.yellow, bg = C.none },
 }
 
 L.toml = {
