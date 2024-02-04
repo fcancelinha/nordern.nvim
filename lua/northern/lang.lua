@@ -112,7 +112,7 @@ L.go = {
 	["@lsp.mod.defaultLibrary.go"]               = { fg = C.frost.blue, bg = C.none },
 	["@lsp.mod.definition.go"]                   = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.mod.readonly.go"]                     = { fg = C.frost.blue, bg = C.none },
-	["@lsp.type.function.go"]                    = { fg = C.frost.sea, bg = C.none },
+	["@lsp.type.function.go"]                    = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.type.keyword.go"]                     = { fg = C.frost.light_blue, bg = C.none },
 	["@lsp.type.namespace.go"]                   = { fg = C.fc, bg = C.none },
 	["@lsp.type.operator.go"]                    = { fg = C.aurora.yellow, bg = C.none },
