@@ -2,18 +2,6 @@ local C = require("northern.colors")
 
 local L = {}
 
--- TODO!
-
--- C
--- JAVA
--- C++
--- PYTHON
-
-
-L.clang = {
-
-}
-
 L.http = {
 	["@constant.http"] = { fg = C.aurora.yellow, bg = C.none, bold = true },
 	["@field.http"] = { fg = C.aurora.green, bg = C.none, bold = true },
@@ -51,6 +39,53 @@ L.sql = {
 	["@attribute.sql"] = { fg = C.aurora.purple, bg = C.none },
 }
 
+L.typescript = {
+	["@constructor.typescript"] = { fg = C.aurora.purple, bg = C.none },
+	["@function.method.call.typescript"] = { fg = C.frost.sea, bg = C.none },
+	["@keyword.conditional.ternary.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.mod.declaration.typescript"] = { fg = C.frost.sea, bg = C.none },
+	["@lsp.mod.defaultLibrary.typescript"] = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.mod.readonly.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.type.class.typescript"] = { fg = C.frost.blue, bg = C.none },
+	["@lsp.type.enumMember.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.type.interface.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.type.member.typescript"] = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.type.namespace.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.type.parameter.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.type.property.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.type.type.typescript"] = { fg = C.frost.sea, bg = C.none },
+	["@lsp.type.typeParameter.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.type.variable.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.class.declaration.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.enumMember.declaration.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.enumMember.readonly.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.function.declaration.typescript"] = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.typemod.function.local.typescript"] = { fg = C.frost.turquoise, bg = C.none },
+	["@lsp.typemod.interface.declaration.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.member.declaration.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.member.defaultLibrary.typescript"] = { fg = C.frost.sea, bg = C.none },
+	["@lsp.typemod.namespace.declaration.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.parameter.declaration.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.property.declaration.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.property.defaultLibrary.typescript"] = { fg = C.frost.sea, bg = C.none },
+	["@lsp.typemod.property.readonly.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.type.declaration.typescript"] = { fg = C.frost.sea, bg = C.none },
+	["@lsp.typemod.typeParameter.declaration.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.typemod.variable.declaration.typescript"] = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.variable.defaultLibrary.typescript"] = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.typemod.variable.readonly.typescript"] = { fg = C.fg, bg = C.none },
+	["@punctuation.delimiter.typescript"] = { fg = C.fg, bg = C.none },
+	["@punctuation.special.typescript"] = { fg = C.aurora.yellow, bg = C.none },
+	["@string.typescript"] = { fg = C.aurora.green, bg = C.none },
+	["@type.builtin.typescript"] = { fg = C.frost.turquoise, bg = C.none },
+	["@type.qualifier.typescript"] = { fg = C.frost.blue, bg = C.none },
+	["@type.typescript"] = { fg = C.fg, bg = C.none },
+	["@variable.builtin.typescript"] = { fg = C.frost.sea, bg = C.none },
+	["@variable.member.typescript"] = { fg = C.fg, bg = C.none },
+	["@variable.typescript"] = { fg = C.fg, bg = C.none },
+	["@keyword.operator.typescript"] = { fg = C.frost.blue, bg = C.none },
+}
+
 L.javascript = {
 	["@conditional.ternary.javascript"]                 = { fg = C.aurora.yellow, bg = C.none },
 	["@constructor.javascript"]                         = { fg = C.frost.blue, bg = C.none },
@@ -65,8 +100,8 @@ L.javascript = {
 	["@lsp.type.variable.javascript"]                   = { fg = C.fg, bg = C.none },
 	["@lsp.typemod.class.declaration.javascript"]       = { fg = C.frost.sea, bg = C.none },
 	["@lsp.typemod.function.declaration.javascript"]    = { fg = C.frost.turquoise, bg = C.none },
-	["@lsp.typemod.function.local.javascript"]          = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.function.defaultLibrary.javascript"] = { fg = C.frost.sea, bg = C.none },
+	["@lsp.typemod.function.local.javascript"]          = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.member.defaultLibrary.javascript"]   = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.parameter.declaration.javascript"]   = { fg = C.fg, bg = C.none },
 	["@lsp.typemod.property.declaration.javascript"]    = { fg = C.fg, bg = C.none },
