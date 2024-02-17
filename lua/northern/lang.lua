@@ -271,14 +271,41 @@ L.lua = {
 }
 
 L.html = {
-	["@tag.html"] = { fg = C.frost.light_blue, bg = C.none },
-	["@text.html"] = { fg = C.fg, bg = C.none },
+	["@constant.html"] = { fg = C.snow.c0, bg = C.none },
+	["@operator.html"] = { link = "@tag.attribute.html" },
 	["@string.html"] = { fg = C.aurora.green, bg = C.none },
+	["@string.special.url.html"] = { fg = C.frost.turquoise, bg = C.none, underline = true },
 	["@tag.attribute.html"] = { fg = C.aurora.yellow, bg = C.none, bold = true },
 	["@tag.delimiter.html"] = { link = "@tag.html" },
-	["@constant.html"] = { fg = C.snow.c0, bg = C.none },
+	["@tag.html"] = { fg = C.frost.light_blue, bg = C.none },
+	["@text.html"] = { fg = C.fg, bg = C.none },
 	["@text.uri.html"] = { fg = C.aurora.green, bg = C.none },
-	["@operator.html"] = { link = "@tag.attribute.html" },
+}
+
+L.css = {
+	-- no lsp
+	["cssColor"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssCommonAttr"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssFlexibleBoxAttr"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssFontAttr"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssFunction"] = { fg = C.frost.turquoise, bg = C.none, italic = true },
+	["cssMediaAttr"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssMultiColumnAttr"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssPositioningAttr"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssPseudoClassId"] = { fg = C.aurora.yellow, bg = C.none },
+	["cssTextAttr"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssTransitionAttr"] = { fg = C.fg, bg = C.none, italic = true },
+	["cssUIAttr"] = { fg = C.fg, bg = C.none, italic = true },
+
+	-- treesitter
+	["@attribute.css"] = { fg = C.aurora.yellow, bg = C.none },
+	["@property.css"] = { fg = C.frost.light_blue, bg = C.none },
+	["@punctuation.bracket.css"] = { fg = C.fg, bg = C.none },
+	["@punctuation.delimiter.css"] = { fg = C.fg, bg = C.none },
+	["@tag.css"] = { fg = C.aurora.yellow, bg = C.none },
+	["@type.css"] = { fg = C.frost.sea, bg = C.none },
+	["@variable.css"] = { fg = C.frost.light_blue, bg = C.none },
+	["@function.css"] = { fg = C.frost.blue, bg = C.none },
 }
 
 L.vimdoc = {
