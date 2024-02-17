@@ -33,6 +33,7 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [leap.nvim](https://github.com/ggandor/leap.nvim)
 - [lualine](https://github.comn/vim-lualine/lualine.nvim)
 - [mason](https://github.com/williamboman/mason.nvim)
+- [NERDtree](https://github.com/preservim/nerdtree)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [neotest](https://github.com/nvim-neotest/neotest)
 - [noice](https://github.com/folke/noice.nvim)
@@ -42,45 +43,40 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [trouble](https://github.com/folke/trouble.nvim)
-- [NERDtree](https://github.com/preservim/nerdtree)
 
-
-## Roadmap
- - [x] - improve README
- - [ ] - vimdoc documentation
- - [ ] - special colours for C, C++. Java, Python, typescript, Rust.
-
-## Languages with special support
-<details>
-  <summary>click to expand the list of languages</summary>
-
-- [x] - Go
-- [x] - Javascript
-- [x] - Lua
-- [x] - SQL
-- [x] - HTML
-- [x] - CSS
-- [x] - yaml
-- [x] - toml
-- [x] - markdown
-- [x] - bash
-- [x] - xml
-- [ ] - C
-- [ ] - C++
-- [ ] - JAVA
-- [ ] - Python
-- [ ] - Typescript
-- [ ] - Rust
-
-*other languages will be supported depending on popular request*
-
-</details>
 
 ## Roadmap
  - [x] - improve README
  - [ ] - vimdoc documentation
  - [ ] - create options
  - [x] - screenshots of different modes & languages
+
+## Languages with special support
+<details>
+  <summary>click to expand the list of languages</summary>
+
+- [ ] - C
+- [ ] - C++
+- [ ] - JAVA
+- [ ] - Python
+- [ ] - Rust
+- [x] - Typescript
+- [x] - CSS
+- [x] - Go
+- [x] - HTML
+- [x] - HTTP
+- [x] - Javascript
+- [x] - Lua
+- [x] - SQL
+- [x] - bash
+- [x] - markdown
+- [x] - toml
+- [x] - xml
+- [x] - yaml
+
+*other major languages will be supported upon popular request*
+
+</details>
 
 ## 🎐 Requirements
 
@@ -90,17 +86,17 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 
 use your favourite package manager:
 
-[lazy](https://github.com/folke/lazy.nvim)
+- [Lazy](https://github.com/folke/lazy.nvim)
 ```lua
 { "fcancelinha/northern.nvim", branch = "master", priority = 1000 }
 ```
 
-[vim-plug](https://github.com/junegunn/vim-plug)
+- [Vim-plug](https://github.com/junegunn/vim-plug)
 ```vim
 Plug 'fcancelinha/northern.nvim'
 ```
 
-[packer](https://github.com/wbthomason/packer.nvim)
+- [Packer](https://github.com/wbthomason/packer.nvim)
 ```lua
 use {'fcancelinha/northern.nvim'}
 ```
@@ -133,6 +129,7 @@ require('lualine').setup {
 
 #### Bufferline
 
+WIP - still trying to come up with a simple way to inject the theme directly to the plugin
 
 ## 💧 Acknowledgements
 
