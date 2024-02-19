@@ -48,7 +48,7 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 ## Roadmap
  - [x] - improve README
  - [ ] - vimdoc documentation
- - [ ] - create options
+ - [ ] - create & extend options
  - [x] - screenshots of different modes & languages
 
 ## Languages with special support
@@ -60,14 +60,18 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [ ] - JAVA
 - [ ] - Python
 - [ ] - Rust
-- [x] - Typescript
 - [x] - CSS
 - [x] - Go
 - [x] - HTML
 - [x] - HTTP
+- [x] - JSON
+- [x] - JSX
 - [x] - Javascript
 - [x] - Lua
 - [x] - SQL
+- [x] - TSX
+- [x] - Typescript
+- [x] - ZSH
 - [x] - bash
 - [x] - markdown
 - [x] - toml
@@ -103,13 +107,12 @@ use {'fcancelinha/northern.nvim'}
 
 ## ⛵ Use
 
-Make sure to place this at the end of your configuration
+Make sure to place this at the end of your configuration to avoid overwriting.
 
 ```lua
 -- Lua
 vim.cmd.colorscheme('northern')
 ```
-
 ```vim
 " Vim-Script
 colorscheme northern
@@ -123,11 +126,12 @@ To enable `northern` for `Lualine` or `Bufferline`, :
 require('lualine').setup {
   options = {
     theme = 'northern'
+    (...)
   },
 }
 ```
 
-#### Bufferline
+#### Bufferline ⚠️
 
 WIP - still trying to come up with a simple way to inject the theme directly to the plugin
 
