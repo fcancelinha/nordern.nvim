@@ -46,7 +46,7 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 
 
 ## Roadmap
- - [x] - improve README
+ - [x] - improve README 
  - [ ] - vimdoc documentation
  - [ ] - create & extend options
  - [x] - screenshots of different modes & languages
@@ -61,7 +61,8 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [ ] - Python
 - [ ] - Rust
 - [x] - CSS
-- [x] - Go
+- [x] - Go & (gomod, gosum)
+- [x] - gitconfig
 - [x] - HTML
 - [x] - HTTP
 - [x] - JSON
