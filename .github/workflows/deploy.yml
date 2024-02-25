@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v3
 
     - name: bump version and push tag
       uses: anothrNick/github-tag-action@1.64.0
@@ -22,5 +22,5 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         DEFAULT_BUMP: patch
         RELEASE_BRANCHES: master
-        WITH_V: false
+        WITH_V: true
         DRY_RUN: true
