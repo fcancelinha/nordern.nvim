@@ -23,8 +23,10 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 
 ## Plugin Support
 
+- [NERDtree](https://github.com/preservim/nerdtree)
 - [bufferline](https://github.com/akinsho/bufferline.nvim)
 - [dad-bod-ui](https://github.com/kristijanhusak/vim-dadbod-ui)
+- [dap-ui](https://github.com/rcarriga/nvim-dap-ui)
 - [flash](https://github.com/kristijanhusak/vim-dadbod-ui)
 - [git-signs](https://github.com/lewis6991/gitsigns.nvim)
 - [illuminate](https://github.com/RRethy/vim-illuminate)
@@ -33,7 +35,6 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [leap.nvim](https://github.com/ggandor/leap.nvim)
 - [lualine](https://github.comn/vim-lualine/lualine.nvim)
 - [mason](https://github.com/williamboman/mason.nvim)
-- [NERDtree](https://github.com/preservim/nerdtree)
 - [neo-tree.nvim](https://github.com/nvim-neo-tree/neo-tree.nvim)
 - [neotest](https://github.com/nvim-neotest/neotest)
 - [noice](https://github.com/folke/noice.nvim)
@@ -43,7 +44,6 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [trouble](https://github.com/folke/trouble.nvim)
-
 
 ## Roadmap
  - [x] - improve README 
@@ -60,24 +60,24 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [ ] - JAVA
 - [ ] - Python
 - [ ] - Rust
+- [x] - Bash
 - [x] - CSS
+- [x] - Gitconfig
 - [x] - Go & (gomod, gosum)
-- [x] - gitconfig
 - [x] - HTML
 - [x] - HTTP
 - [x] - JSON
 - [x] - JSX
 - [x] - Javascript
 - [x] - Lua
+- [x] - Markdown
 - [x] - SQL
 - [x] - TSX
+- [x] - Toml
 - [x] - Typescript
+- [x] - Xml
+- [x] - Yaml
 - [x] - ZSH
-- [x] - bash
-- [x] - markdown
-- [x] - toml
-- [x] - xml
-- [x] - yaml
 
 *other major languages will be supported upon popular request*
 
