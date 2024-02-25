@@ -9,6 +9,51 @@ P.neotest = {
 	NeotestFile = { fg = C.aurora.purple, bg = C.none, bold = true, underline = true },
 }
 
+P.dap = {
+	DapUIBreakpointsCurrentLine  = { fg = C.aurora.green, bg = C.none },
+	DapUIBreakpointsDisabledLine = { fg = C.night.c3, bg = C.none },
+	DapUIBreakpointsInfo         = { fg = C.frost.turquoise, bg = C.none },
+	DapUIBreakpointsLine         = { fg = C.frost.turquoise, bg = C.none },
+	DapUIBreakpointsPath         = { fg = C.frost.turquoise, bg = C.none },
+	DapUICurrentFrameName        = { fg = C.frost.turquoise, bg = C.none },
+	DapUIDecoration              = { fg = C.frost.turquoise, bg = C.none },
+	DapUIEndofBuffer             = { fg = C.night.c0, bg = C.none },
+	DapUIFloatNormal             = { fg = C.frost.turquoise, bg = C.none },
+	DapUIFloatBorder             = { fg = C.frost.turquoise, bg = C.none },
+	DapUIFrameName               = { fg = C.fg, bg = C.none },
+	DapUILineNumber              = { fg = C.fg, bg = C.none },
+	DapUIModifiedValue           = { fg = C.aurora.yellow, bg = C.none },
+	DapUINormal                  = { fg = C.fc, bg = C.none },
+	DapUINormalNC                = { fg = C.fg, bg = C.none },
+	DapUIPlayPause               = { fg = C.aurora.green, bg = C.none },
+	DapUIPlayPauseNC             = { fg = C.aurora.green, bg = C.none },
+	DapUIRestart                 = { fg = C.aurora.green, bg = C.none },
+	DapUIRestartNC               = { fg = C.aurora.green, bg = C.none },
+	DapUIScope                   = { fg = C.frost.turquoise, bg = C.none },
+	DapUISource                  = { fg = C.aurora.purple, bg = C.none },
+	DapUIStepInto                = { fg = C.frost.turquoise, bg = C.none },
+	DapUIStepIntoNC              = { fg = C.frost.turquoise, bg = C.none },
+	DapUIStepBack                = { fg = C.frost.turquoise, bg = C.none },
+	DapUIStepBackNC              = { fg = C.frost.turquoise, bg = C.none },
+	DapUIStepOut                 = { fg = C.frost.turquoise, bg = C.none },
+	DapUIStepOutNC               = { fg = C.frost.turquoise, bg = C.none },
+	DapUIStepOver                = { fg = C.frost.turquoise, bg = C.none },
+	DapUIStepOverNC              = { fg = C.frost.turquoise, bg = C.none },
+	DapUIStop                    = { fg = C.aurora.red, bg = C.none },
+	DapUIStopNC                  = { fg = C.aurora.red, bg = C.none },
+	DapUIStoppedThread           = { fg = C.aurora.red, bg = C.none },
+	DapUIThread                  = { fg = C.aurora.yellow, bg = C.none },
+	DapUIType                    = { fg = C.aurora.purple, bg = C.none },
+	DapUIUnavailable             = { fg = C.night.c3, bg = C.none },
+	DapUIUnavailableNC           = { fg = C.night.c3, bg = C.none },
+	DapUIValue                   = { fg = C.fg, bg = C.none },
+	DapUIVariable                = { fg = C.fg, bg = C.none },
+	DapUIWatchesEmpty            = { fg = C.aurora.red, bg = C.none },
+	DapUIWatchesError            = { fg = C.aurora.red, bg = C.none },
+	DapUIWatchesValue            = { fg = C.aurora.green, bg = C.none },
+	DapUIWinSelect               = { fg = C.frost.turquoise, bg = C.none },
+}
+
 P.trouble = {
 	TroubleCode            = { fg = C.fg, bg = C.none },
 	TroubleCount           = { fg = C.aurora.purple, bg = C.none },
@@ -554,6 +599,22 @@ P.mason            = {
 	-- Lsp installer
 	LspInstallerInfoBorder           = { link = "FloatBorder" },
 	LspInstallerMuted                = { fg = C.night.c3, bg = C.none },
+}
+
+P.diffview         = {
+	DiffviewFilePanelTitle = { fg = C.frost.turquoise, bg = C.none },
+	DiffviewFilePanelCounter = { fg = C.aurora.yellow, bg = C.none },
+	DiffviewFilePanelInsertions = { fg = C.aurora.green, bg = C.none },
+	DiffviewFilePanelDeletions = { fg = C.aurora.red, bg = C.none },
+	DiffviewFilePanelRootPath = { fg = C.frost.sea, bg = C.none },
+	DiffviewPrimary = { fg = C.frost.turquoise, bg = C.none },
+	DiffviewSecondary = { fg = C.aurora.yellow, bg = C.none },
+	DiffviewDiffAddAsDelete = { fg = C.frost.blue, bg = C.blend.blue },
+	DiffviewStatusUntracked = { fg = C.frost.sea, bg = C.none },
+	DiffviewStatusUnmerged = { fg = C.frost.sea, bg = C.none },
+	DiffviewStatusModified = { fg = C.aurora.yellow, bg = C.none },
+	DiffviewStatusDeleted = { fg = C.aurora.red, bg = C.none },
+	DiffviewStatusAdded = { fg = C.aurora.green, bg = C.none },
 }
 
 P.lazy             = {
