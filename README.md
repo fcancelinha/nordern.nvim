@@ -78,6 +78,7 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [x] - Xml
 - [x] - Yaml
 - [x] - ZSH
+- [x] - Robot
 
 *other major languages will be supported upon popular request*
 
