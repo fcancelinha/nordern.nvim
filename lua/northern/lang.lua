@@ -56,7 +56,7 @@ L.typescript = {
 	["typescriptBinaryOp"]                                = { fg = C.aurora.yellow, bg = C.none },
 	["typescriptBraces"]                                  = { fg = C.frost.turquoise, bg = C.none },
 	["typescriptBrackets"]                                = { fg = C.frost.light_blue, bg = C.none },
-	["typescriptBlock"]                                   = { fg = C.frost.blue, bg = C.none, italic = true },
+	["typescriptBlock"]                                   = { fg = C.aurora.yellow, bg = C.none, bold = true },
 	["typescriptCall"]                                    = { fg = C.fg, bg = C.none },
 	["typescriptCase"]                                    = { fg = C.frost.light_blue, bg = C.none },
 	["typescriptClassBlock"]                              = { fg = C.fg, bg = C.none },
@@ -110,7 +110,7 @@ L.typescript = {
 	--lsp
 	["@constructor.typescript"]                           = { fg = C.frost.blue, bg = C.none },
 	["@function.method.call.typescript"]                  = { fg = C.frost.sea, bg = C.none },
-	["@function.method.typescript"]                       = { fg = C.fg, bg = C.none },
+	["@function.method.typescript"]                       = { fg = C.frost.sea, bg = C.none },
 	["@keyword.conditional.ternary.typescript"]           = { fg = C.fg, bg = C.none },
 	["@keyword.operator.typescript"]                      = { fg = C.frost.light_blue, bg = C.none },
 	["@lsp.mod.declaration.typescript"]                   = { fg = C.fg, bg = C.none },
@@ -132,7 +132,7 @@ L.typescript = {
 	["@lsp.typemod.function.declaration.typescript"]      = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.function.local.typescript"]            = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.interface.declaration.typescript"]     = { fg = C.fg, bg = C.none },
-	["@lsp.typemod.member.declaration.typescript"]        = { fg = C.fg, bg = C.none },
+	["@lsp.typemod.member.declaration.typescript"]        = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.typemod.member.defaultLibrary.typescript"]     = { fg = C.frost.sea, bg = C.none },
 	["@lsp.typemod.namespace.declaration.typescript"]     = { fg = C.aurora.purple, bg = C.none },
 	["@lsp.typemod.parameter.declaration.typescript"]     = { fg = C.fg, bg = C.none },
@@ -143,18 +143,22 @@ L.typescript = {
 	["@lsp.typemod.typeParameter.declaration.typescript"] = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.variable.declaration.typescript"]      = { fg = C.fg, bg = C.none },
 	["@lsp.typemod.variable.defaultLibrary.typescript"]   = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.typemod.member.async.typescript"]              = { fg = C.frost.sea, bg = C.none },
+	["@lsp.mod.async.typescript"]                         = { fg = C.frost.sea, bg = C.none },
 	["@lsp.typemod.variable.readonly.typescript"]         = { fg = C.fg, bg = C.none },
 	["@punctuation.delimiter.typescript"]                 = { fg = C.fg, bg = C.none },
 	["@punctuation.special.typescript"]                   = { fg = C.aurora.yellow, bg = C.none },
 	["@punctuation.bracket.typescript"]                   = { fg = C.frost.turquoise, bg = C.none },
 	["@string.typescript"]                                = { fg = C.aurora.green, bg = C.none },
 	["@type.builtin.typescript"]                          = { fg = C.frost.turquoise, bg = C.none },
-	["@type.qualifier.typescript"]                        = { fg = C.frost.blue, bg = C.none },
-	["@type.typescript"]                                  = { fg = C.fg, bg = C.none },
+	["@type.qualifier.typescript"]                        = { fg = C.frost.light_blue, bg = C.none },
 	["@variable.builtin.typescript"]                      = { fg = C.frost.light_blue, bg = C.none },
 	["@variable.member.typescript"]                       = { fg = C.fg, bg = C.none },
 	["@variable.typescript"]                              = { fg = C.fg, bg = C.none },
 	["@operator.typescript"]                              = { fg = C.aurora.yellow, bg = C.none },
+	["@constant.typescript"]                              = { fg = C.fg, bg = C.none },
+	["@function.call.typescript"]                         = { fg = C.frost.turquoise, bg = C.none },
+	["@type.typescript"]                                  = { fg = C.aurora.yellow, bg = C.none },
 }
 
 L.javascript = {
@@ -202,7 +206,7 @@ L.javascript = {
 	["@lsp.typemod.property.defaultLibrary.javascript"]    = { fg = C.aurora.purple, bg = C.none },
 	["@lsp.typemod.property.readonly.javascript"]          = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.typemod.variable.declaration.javascript"]       = { fg = C.fg, bg = C.none },
-	["@lsp.typemod.variable.defaultLibrary.javascript"]    = { fg = C.frost.light_blue, bg = C.none },
+	["@lsp.typemod.variable.defaultLibrary.javascript"]    = { fg = C.frost.blue, bg = C.none },
 	["@lsp.typemod.variable.local.javascript"]             = { fg = C.fg, bg = C.none },
 	["@lsp.typemod.variable.readonly.javascript"]          = { fg = C.fg, bg = C.none },
 	["@method.call.javascript"]                            = { fg = C.frost.turquoise, bg = C.none },
@@ -223,10 +227,11 @@ L.make = {
 }
 
 L.gomod = {
-	["@text.uri.gomod"] = { fg = C.aurora.green, bg = C.none, underline = true },
-	["@comment.gomod"]  = { link = "Comment" },
-	["@keyword.gomod"]  = { fg = C.frost.turquoise, bg = C.none },
-	["@string.gomod"]   = { fg = C.aurora.yellow, bg = C.none, bold = true },
+	["@text.uri.gomod"]           = { fg = C.aurora.green, bg = C.none, underline = true },
+	["@comment.gomod"]            = { link = "Comment" },
+	["@keyword.gomod"]            = { fg = C.frost.turquoise, bg = C.none },
+	["@string.gomod"]             = { fg = C.aurora.yellow, bg = C.none, bold = true },
+	["@string.special.url.gomod"] = { fg = C.aurora.green, bg = C.none, bold = true },
 }
 
 L.gosum = {
@@ -238,24 +243,14 @@ L.gosum = {
 }
 
 L.go = {
-	--gopls
-	["goBlock"]                                  = { fg = C.frost.turquoise, bg = C.none },
-	["goConditional"]                            = { fg = C.frost.light_blue, bg = C.none },
-	["goParen"]                                  = { fg = C.fg, bg = C.none },
-
-	--tresitter
-	["@boolean.go"]                              = { fg = C.aurora.yellow, bg = C.none },
-	["@constant.go"]                             = { fg = C.aurora.yellow, bg = C.none },
-	["@field.go"]                                = { fg = C.fg, bg = C.none },
-	["@function.call.go"]                        = { fg = C.frost.turquoise, bg = C.none },
-	["@keyword.function.go"]                     = { fg = C.frost.light_blue, bg = C.none },
+	["@string.go"]                               = { fg = C.aurora.green, bg = C.none },
 	["@lsp.keyword.go"]                          = { fg = C.frost.light_blue, bg = C.none },
 	["@lsp.mod.defaultLibrary.go"]               = { fg = C.frost.blue, bg = C.none },
 	["@lsp.mod.definition.go"]                   = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.mod.readonly.go"]                     = { fg = C.frost.blue, bg = C.none },
 	["@lsp.type.function.go"]                    = { fg = C.frost.turquoise, bg = C.none },
 	["@lsp.type.keyword.go"]                     = { fg = C.frost.light_blue, bg = C.none },
-	["@lsp.type.namespace.go"]                   = { fg = C.fc, bg = C.none },
+	["@lsp.type.namespace.go"]                   = { fg = C.fg, bg = C.none },
 	["@lsp.type.operator.go"]                    = { fg = C.aurora.yellow, bg = C.none },
 	["@lsp.type.string.go"]                      = { fg = C.aurora.green, bg = C.none },
 	["@lsp.type.type.go"]                        = { fg = C.frost.light_blue, bg = C.none },
@@ -272,13 +267,32 @@ L.go = {
 	["@lsp.typemod.variable.readonly.go"]        = { fg = C.aurora.yellow, bg = C.none },
 	["@method.call.go"]                          = { fg = C.frost.sea, bg = C.none },
 	["@method.go"]                               = { fg = C.frost.turquoise, bg = C.none },
+	["@module.go"]                               = { fg = C.fg, bg = C.none },
 	["@namespace.go"]                            = { fg = C.fg, bg = C.none },
 	["@property.go"]                             = { fg = C.frost.turquoise, bg = C.none },
-	["@punctuation.bracket.go"]                  = { fg = C.fg, bg = C.none },
-	["@string.go"]                               = { fg = C.aurora.green, bg = C.none },
+	["@punctuation.bracket.go"]                  = { fg = C.frost.turquoise, bg = C.none },
 	["@type.builtin.go"]                         = { fg = C.special.light_blue, bg = C.none },
 	["@type.definition.go"]                      = { fg = C.aurora.yellow, bg = C.none },
 	["@type.go"]                                 = { fg = C.special.light_blue, bg = C.none },
+	["@boolean.go"]                              = { fg = C.aurora.yellow, bg = C.none },
+	["@constant.go"]                             = { fg = C.aurora.yellow, bg = C.none },
+	["@field.go"]                                = { fg = C.fg, bg = C.none },
+	["@variable.go"]                             = { fg = C.fg, bg = C.none },
+	["@function.call.go"]                        = { fg = C.frost.turquoise, bg = C.none },
+	["@keyword.function.go"]                     = { fg = C.frost.light_blue, bg = C.none },
+	["goBlock"]                                  = { fg = C.frost.turquoise, bg = C.none },
+	["goConst"]                                  = { fg = C.aurora.yellow, bg = C.none },
+	["goConditional"]                            = { fg = C.frost.light_blue, bg = C.none },
+	["goParen"]                                  = { fg = C.fg, bg = C.none },
+	["goImportString"]                           = { fg = C.aurora.green, bg = C.none },
+	["goImport"]                                 = { fg = C.frost.sea, bg = C.none },
+}
+
+L.robot = {
+	["@lsp.type.documentation.robot"]    = { fg = C.night.c3, bg = C.none },
+	["@lsp.type.header.robot"]           = { fg = C.night.c3, bg = C.none },
+	["@lsp.type.variableOperator.robot"] = { fg = C.frost.sea, bg = C.none },
+	["@function.call.robot"]             = { fg = C.frost.turquoise, bg = C.none },
 }
 
 
@@ -288,13 +302,22 @@ L.zsh = {
 }
 
 L.lua = {
-	["@variable.lua"]                            = { fg = C.fg, bg = C.none },     --  object and struct fields
-	["@lsp.type.variable.lua"]                   = { fg = C.frost.sea, bg = C.none }, --  object and struct fields
-	["@lsp.type.property.lua"]                   = { fg = C.fg, bg = C.none },     --  similar to `@field`
-	["@lsp.mod.defaultLibrary.lua"]              = { fg = C.frost.sea, bg = C.none }, --  similar to `@field`
-	["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = C.fg, bg = C.none },     --  similar to `@field`
+	["@variable.lua"]                            = { fg = C.fg, bg = C.none },           --  object and struct fields
+	["@constant.lua"]                            = { fg = C.frost.sea, bg = C.none },    --  object and struct fields
+	["@lsp.type.variable.lua"]                   = { fg = C.frost.sea, bg = C.none },    --  object and struct fields
+	["@lsp.type.property.lua"]                   = { fg = C.fg, bg = C.none },           --  similar to `@field`
+	["@lsp.type.method.lua"]                     = { fg = C.frost.sea, bg = C.none },    --  similar to `@field`
+	["@lsp.mod.defaultLibrary.lua"]              = { fg = C.frost.sea, bg = C.none },    --  similar to `@field`
+	["@lsp.mod.declaration.lua"]                 = { fg = C.fg, bg = C.none },           --  similar to `@field`
+	["@lsp.mod.global.lua"]                      = { fg = C.frost.sea, bg = C.none },    --  similar to `@field`
+	["@lsp.typemod.variable.declaration.lua"]    = { fg = C.fg, bg = C.none },           --  similar to `@field`
+	["@lsp.typemod.variable.defaultLibrary.lua"] = { fg = C.fg, bg = C.none },           --  similar to `@field`
+	["@lsp.typemod.variable.global.lua"]         = { fg = C.frost.sea, bg = C.none },    --  similar to `@field`
+	["@lsp.typemod.function.declaration.lua"]    = { fg = C.frost.turquoise, bg = C.none }, --  similar to `@field`
+	["@lsp.typemod..global.lua"]                 = { fg = C.frost.sea, bg = C.none },    --  similar to `@field`
 	["@field.lua"]                               = { fg = C.fg, bg = C.none },
 	["@punctuation.delimiter.lua"]               = { fg = C.fg, bg = C.none },
+	["@function.call.lua"]                       = { fg = C.frost.turquoise, bg = C.none },
 }
 
 L.html = {
