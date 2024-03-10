@@ -463,7 +463,7 @@ L.json = {
 	["@string.json"]                = { fg = C.aurora.green, bg = C.none },
 	["@string.escape.json"]         = { fg = C.aurora.yellow, bg = C.none },
 	["@boolean.json"]               = { fg = C.aurora.green, bg = C.none },
-	["@conceal.json"]               = { fg = C.fg, bg = C.none },
+	["@conceal.json"]               = { fg = C.frost.sea, bg = C.none },
 	["@number.json"]                = { fg = C.aurora.purple, bg = C.none },
 	["@punctuation.delimiter.json"] = { fg = C.fg, bg = C.none },
 	["@punctuation.bracket.json"]   = { fg = C.frost.sea, bg = C.none },
