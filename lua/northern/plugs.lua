@@ -5,8 +5,22 @@ local visible = "#434C5E"
 P.neotest = {
 	NeotestAdapterName = { fg = C.aurora.yellow, bg = C.none },
 	NeotestDir = { fg = C.frost.turquoise, bg = C.none },
-	NeotestTest = { fg = C.fg, bg = C.none, italic = true },
-	NeotestFile = { fg = C.aurora.purple, bg = C.none, bold = true, underline = true },
+	NeotestTest = { fg = C.snow.c2, bg = C.none },
+	NeotestFile = { fg = C.frost.sea, bg = C.none, bold = true, underline = true },
+	NeotestBorder = { fg = C.frost.turquoise, bg = C.none },
+	NeotestExpandMarker = { fg = C.night.c3, bg = C.none },
+	NeotestFailed = { fg = C.aurora.red, bg = C.none },
+	NeotestFocused = { fg = C.aurora.yellow, bg = C.blend.bluec1, underline = true },
+	NeotestIndent = { fg = C.night.c3, bg = C.none },
+	NeotestMarked = { fg = C.aurora.orange, bg = C.none },
+	NeotestNamespace = { fg = C.frost.sea, bg = C.none },
+	NeotestPassed = { fg = C.aurora.green, bg = C.none },
+	NeotestRunning = { fg = C.aurora.yellow, bg = C.none },
+	NeotestWinSelect = { fg = C.frost.turquoise, bg = C.none },
+	NeotestSkipped = { fg = C.night.c1, bg = C.none },
+	NeotestTarget = { fg = C.aurora.red, bg = C.none },
+	NeotestUnknown = { fg = C.night.c3, bg = C.none },
+	NeotestWatching = { fg = C.aurora.yellow, bg = C.none },
 }
 
 P.dap = {
@@ -318,6 +332,10 @@ P.telescope        = {
 	TelescopePromptTitle          = { fg = C.fg, bg = C.none },
 	TelescopeResultsBorder        = { link = "FloatBorder" },
 	TelescopeResultsTitle         = { fg = C.fg, bg = C.none },
+	TelescopeResultsNormal        = { fg = C.fg, bg = C.none },
+	TelescopeResultsMethod        = { fg = C.frost.sea, bg = C.none },
+	TelescopeResultsStruct        = { fg = C.aurora.green, bg = C.none },
+	TelescopeResultsIdentifier    = { fg = C.aurora.green, bg = C.none },
 	TelescopeSelection            = { link = "CursorLine" },              -- Selected item
 	TelescopeSelectionCaret       = { fg = C.frost.turquoise, bg = C.none }, -- Selection caret
 	TelescopeResultsDiffUntracked = { fg = C.frost.sea, bg = C.none },

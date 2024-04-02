@@ -392,9 +392,9 @@ L.vimdoc = {
 
 L.git_config = {
 	["@property.git_config"] = { fg = C.frost.turquoise, bg = C.none },
-	["@type.git_config"]     = { fg = C.frost.turquoise, bg = C.none },
+	["@type.git_config"]     = { fg = C.fg, bg = C.none },
 	["@string.git_config"]   = { fg = C.fg, bg = C.none },
-	["@operator.git_config"] = { fg = C.frost.turquoise, bg = C.none },
+	["@operator.git_config"] = { fg = C.aurora.yellow, bg = C.none },
 }
 
 L.bash = {
