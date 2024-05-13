@@ -2,6 +2,31 @@ local C = require("northern.colors")
 
 local L = {}
 
+L.lsp = {
+	-- -- LSP Semantic Token Groups
+	["@lsp.type.class"]                      = { link = "@type" },
+	["@lsp.type.comment"]                    = { link = "@comment" },
+	["@lsp.type.enum"]                       = { link = "@constant" },
+	["@lsp.type.enumMember"]                 = { link = "@constant" },
+	["@lsp.type.field"]                      = { link = "@field" },
+	["@lsp.type.function"]                   = { link = "@function" },
+	["@lsp.type.interface"]                  = { link = "@type" },
+	["@lsp.type.keyword"]                    = { link = "@keyword" },
+	["@lsp.type.method"]                     = { link = "@method" },
+	["@lsp.type.namespace"]                  = { link = "@namespace" },
+	["@lsp.type.parameter"]                  = { link = "@parameter" },
+	["@lsp.type.property"]                   = { link = "@property" },
+	["@lsp.type.struct"]                     = { link = "@structure" },
+	["@lsp.type.typeParameter"]              = { link = "@parameter" },
+	["@lsp.type.variable"]                   = { link = "@variable" },
+	["@lsp.typemod.method.defaultLibrary"]   = { link = "@method.call" },
+	["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
+	["@lsp.typemod.operator.injected"]       = { link = "@operator" },
+	["@lsp.typemod.string.injected"]         = { link = "@string" },
+	["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
+	["@lsp.typemod.variable.injected"]       = { link = "@variable" },
+}
+
 L.http = {
 	["@constant.http"]              = { fg = C.aurora.yellow, bg = C.none, bold = true },
 	["@field.http"]                 = { fg = C.aurora.green, bg = C.none, bold = true },
@@ -239,10 +264,13 @@ L.gomod = {
 
 L.gosum = {
 	["@string.special.gosum"]        = { fg = C.aurora.yellow, bg = C.none, bold = true },
+	["@string.special.url.gosum"]    = { fg = C.aurora.green, bg = C.none, bold = true },
+	["@string.special.symbol.gosum"] = { fg = C.aurora.green, bg = C.none, bold = true },
 	["@symbol.gosum"]                = { fg = C.frost.sea, bg = C.none },
-	["@attribute.gosum"]             = { fg = C.aurora.yellow, bg = C.none },
-	["@punctuation.delimiter.gosum"] = { fg = C.aurora.green, bg = C.none },
+	["@attribute.gosum"]             = { fg = C.fg, bg = C.none },
+	["@punctuation.delimiter.gosum"] = { fg = C.fg, bg = C.none },
 	["@number.gosum"]                = { fg = C.aurora.yellow, bg = C.none, bold = true },
+	["@keyword.gosum"]               = { fg = C.frost.turquoise, bg = C.none, bold = true },
 }
 
 L.go = {
@@ -293,12 +321,10 @@ L.go = {
 }
 
 L.robot = {
-	["@lsp.type.documentation.robot"]    = { fg = C.night.c3, bg = C.none },
-	["@lsp.type.header.robot"]           = { fg = C.night.c3, bg = C.none },
-	["@lsp.type.variableOperator.robot"] = { fg = C.frost.sea, bg = C.none },
+	["@lsp.type.header.robot"]           = { fg = C.aurora.yellow, bg = C.none },
+	["@lsp.type.variableOperator.robot"] = { fg = C.frost.sea, bg = C.none, sp = C.aurora.green },
 	["@function.call.robot"]             = { fg = C.frost.turquoise, bg = C.none },
 }
-
 
 L.zsh = {
 	["zshDeref"] = { fg = C.frost.sea, bg = C.none },
@@ -399,6 +425,7 @@ L.git_config = {
 
 L.bash = {
 	["@variable.bash"]            = { fg = C.fg, bg = C.none },
+	["@variable.parameter.bash"]  = { fg = C.aurora.green, bg = C.none },
 	["@parameter.bash"]           = { fg = C.frost.turquoise, bg = C.none },
 	["@operator.bash"]            = { fg = C.frost.sea, bg = C.none },
 	["@constant.bash"]            = { fg = C.fg, bg = C.none },
@@ -422,6 +449,18 @@ L.markdown = {
 	["@text.quote.markdown"]                   = { fg = C.night.c3, bg = C.none },
 	["@text.reference.markdown"]               = { fg = C.aurora.green, bg = C.none, italic = true },
 	["@text.reference.markdown_inline"]        = { fg = C.frost.turquoise, bg = C.none },
+	["@markup.heading.2.markdown"]             = { fg = C.frost.turquoise, bg = C.none },
+	["@markup.list.markdown"]                  = { fg = C.aurora.yellow, bg = C.none },
+	["@markup.link.label.markdown_inline"]     = { fg = C.frost.turquoise, bg = C.none },
+	["@markup.link.markdown_inline"]           = { fg = C.aurora.green, bg = C.none },
+	["@markup.strong.markdown_inline"]         = { fg = C.frost.sea, bg = C.none, bold = true },
+	["@markup.italic.markdown_inline"]         = { fg = C.frost.blue, bg = C.none, italic = true },
+	["@markup.raw.markdown_inline"]            = { fg = C.aurora.yellow, bg = C.none },
+	["@markup.link.url.markdown_inline"]       = { fg = C.aurora.green, bg = C.none },
+	["@nospell.markdown_inline"]               = { fg = C.aurora.green, bg = C.none },
+	["@conceal.markdown_inline"]               = { fg = C.aurora.yellow, bg = C.none },
+	["@_url.markdown_inline"]                  = { fg = C.aurora.green, bg = C.none },
+	["@markup.raw.block.markdown"]             = { fg = C.aurora.yellow, bg = C.none },
 	["@text.strike.markdown_inline"]           = { fg = C.frost.light_blue, bg = C.none, strikethrough = true },
 	["@text.strong.markdown_inline"]           = { fg = C.frost.sea, bg = C.none, bold = true },
 	["@text.title.markdown"]                   = { fg = C.fg, bg = C.none },
@@ -441,12 +480,15 @@ L.xml = {
 L.yaml = {
 	["@field.yaml"]                 = { fg = C.aurora.yellow, bg = C.none },
 	["@type.yaml"]                  = { fg = C.fg, bg = C.none, bold = true },
-	["@number.yaml"]                = { fg = C.frost.purple, bg = C.none },
+	["@number.yaml"]                = { fg = C.aurora.purple, bg = C.none },
+	["@property.yaml"]              = { fg = C.frost.sea, bg = C.none },
 	["@string.yaml"]                = { fg = C.aurora.green, bg = C.none },
-	["@comment.yaml"]               = { link = "Comment" },
+	["@comment.yaml"]               = { fg = C.aurora.yellow, bg = C.none },
+	["@label.yaml"]                 = { fg = C.aurora.yellow, bg = C.none },
 	["@spell.yaml"]                 = { fg = C.night.c3, bg = C.none },
 	["@boolean.yaml"]               = { fg = C.aurora.purple, bg = C.none },
-	["@punctuation.delimiter.yaml"] = { fg = C.aurora.green, bg = C.none },
+	["@punctuation.delimiter.yaml"] = { fg = C.aurora.yellow, bg = C.none },
+	["@punctuation.special.yaml"]   = { fg = C.frost.blue, bg = C.none },
 	["@constant.builtin.yaml"]      = { fg = C.frost.light_blue, bg = C.none },
 	["yamlBlockMappingKey"]         = { fg = C.frost.light_blue, bg = C.none },
 	["yamlBool"]                    = { fg = C.frost.light_blue, bg = C.none },
@@ -565,31 +607,6 @@ L.treesitter = {
 	["@text.diff.delete"]      = { fg = C.aurora.red, bg = C.blend.red },             --  deleted text (for diff files)
 	-- Conceal
 	["@conceal"]               = { fg = C.none, bg = C.none },                        --  for captures that are only used for concealing
-}
-
-L.lsp = {
-	-- -- LSP Semantic Token Groups
-	["@lsp.type.class"]                      = { link = "@type" },
-	["@lsp.type.comment"]                    = { link = "@comment" },
-	["@lsp.type.enum"]                       = { link = "@constant" },
-	["@lsp.type.enumMember"]                 = { link = "@constant" },
-	["@lsp.type.field"]                      = { link = "@field" },
-	["@lsp.type.function"]                   = { link = "@function" },
-	["@lsp.type.interface"]                  = { link = "@type" },
-	["@lsp.type.keyword"]                    = { link = "@keyword" },
-	["@lsp.type.method"]                     = { link = "@method" },
-	["@lsp.type.namespace"]                  = { link = "@namespace" },
-	["@lsp.type.parameter"]                  = { link = "@parameter" },
-	["@lsp.type.property"]                   = { link = "@property" },
-	["@lsp.type.struct"]                     = { link = "@structure" },
-	["@lsp.type.typeParameter"]              = { link = "@parameter" },
-	["@lsp.type.variable"]                   = { link = "@variable" },
-	["@lsp.typemod.method.defaultLibrary"]   = { link = "@method.call" },
-	["@lsp.typemod.function.defaultLibrary"] = { link = "@function.builtin" },
-	["@lsp.typemod.operator.injected"]       = { link = "@operator" },
-	["@lsp.typemod.string.injected"]         = { link = "@string" },
-	["@lsp.typemod.variable.defaultLibrary"] = { link = "@variable.builtin" },
-	["@lsp.typemod.variable.injected"]       = { link = "@variable" },
 }
 
 return L
