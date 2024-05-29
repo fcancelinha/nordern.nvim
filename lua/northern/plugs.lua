@@ -27,7 +27,7 @@ P.dap = {
 	DapUIBreakpointsCurrentLine  = { fg = C.aurora.green, bg = C.none },
 	DapUIBreakpointsDisabledLine = { fg = C.night.c3, bg = C.none },
 	DapUIBreakpointsInfo         = { fg = C.frost.turquoise, bg = C.none },
-	DapUIBreakpointsLine         = { fg = C.frost.turquoise, bg = C.none },
+	DapUIBreakpointsLine         = { fg = C.none, bg = C.blend.turquoise },
 	DapUIBreakpointsPath         = { fg = C.frost.turquoise, bg = C.none },
 	DapUICurrentFrameName        = { fg = C.frost.turquoise, bg = C.none },
 	DapUIDecoration              = { fg = C.frost.turquoise, bg = C.none },
@@ -44,24 +44,24 @@ P.dap = {
 	DapUIRestart                 = { fg = C.aurora.green, bg = C.none },
 	DapUIRestartNC               = { fg = C.aurora.green, bg = C.none },
 	DapUIScope                   = { fg = C.frost.turquoise, bg = C.none },
-	DapUISource                  = { fg = C.aurora.purple, bg = C.none },
-	DapUIStepInto                = { fg = C.frost.turquoise, bg = C.none },
-	DapUIStepIntoNC              = { fg = C.frost.turquoise, bg = C.none },
-	DapUIStepBack                = { fg = C.frost.turquoise, bg = C.none },
-	DapUIStepBackNC              = { fg = C.frost.turquoise, bg = C.none },
-	DapUIStepOut                 = { fg = C.frost.turquoise, bg = C.none },
-	DapUIStepOutNC               = { fg = C.frost.turquoise, bg = C.none },
-	DapUIStepOver                = { fg = C.frost.turquoise, bg = C.none },
-	DapUIStepOverNC              = { fg = C.frost.turquoise, bg = C.none },
+	DapUISource                  = { fg = C.aurora.yellow, bg = C.none },
+	DapUIStepInto                = { fg = C.frost.sea, bg = C.none },
+	DapUIStepIntoNC              = { fg = C.frost.sea, bg = C.none },
+	DapUIStepBack                = { fg = C.frost.sea, bg = C.none },
+	DapUIStepBackNC              = { fg = C.frost.sea, bg = C.none },
+	DapUIStepOut                 = { fg = C.frost.sea, bg = C.none },
+	DapUIStepOutNC               = { fg = C.frost.sea, bg = C.none },
+	DapUIStepOver                = { fg = C.frost.sea, bg = C.none },
+	DapUIStepOverNC              = { fg = C.frost.sea, bg = C.none },
 	DapUIStop                    = { fg = C.aurora.red, bg = C.none },
 	DapUIStopNC                  = { fg = C.aurora.red, bg = C.none },
-	DapUIStoppedThread           = { fg = C.aurora.red, bg = C.none },
-	DapUIThread                  = { fg = C.aurora.yellow, bg = C.none },
-	DapUIType                    = { fg = C.aurora.purple, bg = C.none },
+	DapUIStoppedThread           = { fg = C.aurora.orange, bg = C.none },
+	DapUIThread                  = { fg = C.aurora.green, bg = C.none },
+	DapUIType                    = { fg = C.frost.sea, bg = C.none },
 	DapUIUnavailable             = { fg = C.night.c3, bg = C.none },
 	DapUIUnavailableNC           = { fg = C.night.c3, bg = C.none },
-	DapUIValue                   = { fg = C.fg, bg = C.none },
-	DapUIVariable                = { fg = C.fg, bg = C.none },
+	DapUIValue                   = { fg = C.aurora.green, bg = C.none },
+	DapUIVariable                = { fg = C.fg, bg = C.none, bold = true, underline = true },
 	DapUIWatchesEmpty            = { fg = C.aurora.red, bg = C.none },
 	DapUIWatchesError            = { fg = C.aurora.red, bg = C.none },
 	DapUIWatchesValue            = { fg = C.aurora.green, bg = C.none },
@@ -239,7 +239,7 @@ P.dadBod = {
 
 P.lazygit = {
 	LazyGitBorder = { link = "FloatBorder" },
-	LazyGitFloat  = { fg = C.snow.c0, bg = C.none },
+	LazyGitFloat  = { fg = C.fg, bg = C.none },
 }
 
 P.neo_tree = {
@@ -362,7 +362,7 @@ P.git_signs        = {
 	GitSignsUntrackedLn        = { fg = C.frost.sea, bg = C.bg },                  --Used for buffer line (when `config.linehl == true`) of 'untracked' signs.
 	GitSignsAddPreview         = { fg = C.aurora.green, bg = C.bg },               --Used for added lines in previews.
 	GitSignsDeletePreview      = { fg = C.aurora.red, bg = C.bg },                 --Used for deleted lines in previews.
-	GitSignsCurrentLineBlame   = { fg = C.night.c3, bg = C.bg },                   --Used for current line blame.
+	GitSignsCurrentLineBlame   = { fg = C.night.c3, bg = C.bg, italic = true },    --Used for current line blame.
 	GitSignsAddInline          = { fg = C.aurora.green, bg = C.bg },               --Used for added word diff regions in inline previews.
 	GitSignsDeleteInline       = { fg = C.aurora.red, bg = C.bg },                 --Used for deleted word diff regions in inline previews.
 	GitSignsChangeInline       = { fg = C.aurora.yellow, bg = C.bg },              --Used for changed word diff regions in inline previews.
@@ -744,6 +744,8 @@ P.floaterm         = {
 
 P.toggleterm       = {
 	ToggleTerm1FloatBorder = { fg = C.frost.turquoise, bg = C.none },
+	ToggleTerm1Float = { fg = C.frost.turquoise, bg = C.none },
+	ToggleTerm1Normal = { fg = C.frost.turquoise, bg = C.none },
 }
 
 return P

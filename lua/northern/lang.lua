@@ -424,15 +424,16 @@ L.git_config = {
 }
 
 L.bash = {
-	["@variable.bash"]            = { fg = C.fg, bg = C.none },
-	["@variable.parameter.bash"]  = { fg = C.aurora.green, bg = C.none },
-	["@parameter.bash"]           = { fg = C.frost.turquoise, bg = C.none },
-	["@operator.bash"]            = { fg = C.frost.sea, bg = C.none },
-	["@constant.bash"]            = { fg = C.fg, bg = C.none },
-	["@string.regex.bash"]        = { fg = C.aurora.yellow, bg = C.none },
-	["@function.call.bash"]       = { fg = C.frost.turquoise, bg = C.none },
-	["@punctuation.special.bash"] = { fg = C.frost.turquoise, bg = C.none },
-	["@function.builtin.bash"]    = { fg = C.frost.sea, bg = C.none },
+	["@variable.bash"]              = { fg = C.fg, bg = C.none },
+	["@variable.parameter.bash"]    = { fg = C.aurora.green, bg = C.none },
+	["@parameter.bash"]             = { fg = C.frost.turquoise, bg = C.none },
+	["@operator.bash"]              = { fg = C.frost.sea, bg = C.none },
+	["@constant.bash"]              = { fg = C.fg, bg = C.none },
+	["@string.regex.bash"]          = { fg = C.aurora.yellow, bg = C.none },
+	["@function.call.bash"]         = { fg = C.frost.turquoise, bg = C.none },
+	["@punctuation.special.bash"]   = { fg = C.frost.turquoise, bg = C.none },
+	["@punctuation.delimiter.bash"] = { fg = C.frost.turquoise, bg = C.none },
+	["@function.builtin.bash"]      = { fg = C.frost.sea, bg = C.none },
 }
 
 L.markdown = {
@@ -449,7 +450,12 @@ L.markdown = {
 	["@text.quote.markdown"]                   = { fg = C.night.c3, bg = C.none },
 	["@text.reference.markdown"]               = { fg = C.aurora.green, bg = C.none, italic = true },
 	["@text.reference.markdown_inline"]        = { fg = C.frost.turquoise, bg = C.none },
+	["@markup.heading.1.markdown"]             = { fg = C.frost.turquoise, bg = C.none },
 	["@markup.heading.2.markdown"]             = { fg = C.frost.turquoise, bg = C.none },
+	["@markup.heading.3.markdown"]             = { fg = C.frost.turquoise, bg = C.none },
+	["@markup.heading.4.markdown"]             = { fg = C.frost.turquoise, bg = C.none },
+	["@markup.heading.5.markdown"]             = { fg = C.frost.turquoise, bg = C.none },
+	["@markup.heading.6.markdown"]             = { fg = C.frost.turquoise, bg = C.none },
 	["@markup.list.markdown"]                  = { fg = C.aurora.yellow, bg = C.none },
 	["@markup.link.label.markdown_inline"]     = { fg = C.frost.turquoise, bg = C.none },
 	["@markup.link.markdown_inline"]           = { fg = C.aurora.green, bg = C.none },
