@@ -2,6 +2,20 @@ local C = require("northern.colors")
 local P = {}
 local visible = "#434C5E"
 
+P.outline = {
+	OutlineGuides         = { fg = C.night.c1, bg = C.bg },
+	OutlineLineno         = { fg = C.night.c0, bg = C.bg },
+	OutlineCurrent        = { fg = C.none, bg = C.blend.bluec1 },
+	OutlineDetails        = { fg = C.frost.turquoise, bg = C.bg },
+	OutlineHelpTip        = { fg = C.fg, bg = C.bg },
+	OutlineStatusFt       = { fg = C.fg, bg = C.bg },
+	OutlineFoldMarker     = { fg = C.frost.turquoise, bg = C.bg },
+	OutlineStatusError    = { fg = C.blend.red, bg = C.bg },
+	OutlineJumpHighlight  = { fg = C.aurora.yellow, bg = C.bg },
+	OutlineKeymapHelpKey  = { fg = C.aurora.yellow, bg = C.bg },
+	OutlineStatusProvider = { fg = C.aurora.purple, bg = C.bg },
+}
+
 P.neotest = {
 	NeotestAdapterName = { fg = C.aurora.yellow, bg = C.none },
 	NeotestDir = { fg = C.frost.turquoise, bg = C.none },

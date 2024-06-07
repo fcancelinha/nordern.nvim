@@ -425,7 +425,7 @@ L.git_config = {
 
 L.bash = {
 	["@variable.bash"]              = { fg = C.fg, bg = C.none },
-	["@variable.parameter.bash"]    = { fg = C.aurora.green, bg = C.none },
+	["@variable.parameter.bash"]    = { fg = C.aurora.yellow, bg = C.none, bold = true },
 	["@parameter.bash"]             = { fg = C.frost.turquoise, bg = C.none },
 	["@operator.bash"]              = { fg = C.frost.sea, bg = C.none },
 	["@constant.bash"]              = { fg = C.fg, bg = C.none },
