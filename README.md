@@ -134,9 +134,9 @@ require('lualine').setup {
 }
 ```
 
-#### Bufferline ⚠️
+#### Bufferline
 
-WIP - still trying to come up with a simple way to inject the theme directly to the plugin
+- This has been integrated directly into the colorscheme, override the colors you don't like in your plugin config.
 
 ## 💧 Acknowledgements
 
