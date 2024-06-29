@@ -44,6 +44,7 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [trouble](https://github.com/folke/trouble.nvim)
+- [outline](https://github.com/hedyhli/outline.nvim)
 
 ## Roadmap
  - [x] - improve README 
@@ -133,9 +134,9 @@ require('lualine').setup {
 }
 ```
 
-#### Bufferline ⚠️
+#### Bufferline
 
-WIP - still trying to come up with a simple way to inject the theme directly to the plugin
+- This has been integrated directly into the colorscheme, override the colors you don't like in your plugin config.
 
 ## 💧 Acknowledgements
 
