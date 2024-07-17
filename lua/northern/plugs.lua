@@ -1,17 +1,17 @@
-local C = require("northern.colors")
-local P = {}
+local C            = require("northern.colors")
+local P            = {}
 
-P.luminate = {
+P.luminate         = {
 	MyYankGroup  = { fg = C.aurora.yellow, bg = C.blend.turquoise },
 	MyPasteGroup = { fg = C.aurora.yellow, bg = C.blend.turquoise },
 }
 
-P.quickfix = {
+P.quickfix         = {
 	qfFileName = { fg = C.frost.turquoise, bg = C.none, bold = true, underline = true },
 	qfLineNr = { fg = C.night.c3, bg = C.bg },
 }
 
-P.outline = {
+P.outline          = {
 	OutlineGuides         = { fg = C.night.c1, bg = C.bg },
 	OutlineLineno         = { fg = C.night.c0, bg = C.bg },
 	OutlineCurrent        = { fg = C.none, bg = C.blend.bluec1 },
@@ -25,7 +25,7 @@ P.outline = {
 	OutlineStatusProvider = { fg = C.aurora.purple, bg = C.bg },
 }
 
-P.neotest = {
+P.neotest          = {
 	NeotestAdapterName = { fg = C.aurora.yellow, bg = C.none },
 	NeotestDir = { fg = C.frost.turquoise, bg = C.none },
 	NeotestTest = { fg = C.snow.c2, bg = C.none },
@@ -46,11 +46,11 @@ P.neotest = {
 	NeotestWatching = { fg = C.aurora.yellow, bg = C.none },
 }
 
-P.dap = {
+P.dap              = {
 	DapUIBreakpointsCurrentLine  = { fg = C.aurora.green, bg = C.none },
 	DapUIBreakpointsDisabledLine = { fg = C.night.c3, bg = C.none },
 	DapUIBreakpointsInfo         = { fg = C.frost.turquoise, bg = C.none },
-	DapUIBreakpointsLine         = { fg = C.none, bg = C.blend.turquoise },
+	DapUIBreakpointsLine         = { fg = C.none, bg = C.blend.green },
 	DapUIBreakpointsPath         = { fg = C.frost.turquoise, bg = C.none },
 	DapUICurrentFrameName        = { fg = C.frost.turquoise, bg = C.none },
 	DapUIDecoration              = { fg = C.frost.turquoise, bg = C.none },
@@ -91,7 +91,7 @@ P.dap = {
 	DapUIWinSelect               = { fg = C.frost.turquoise, bg = C.none },
 }
 
-P.trouble = {
+P.trouble          = {
 	TroubleCode            = { fg = C.fg, bg = C.none },
 	TroubleCount           = { fg = C.aurora.purple, bg = C.none },
 	TroubleError           = { fg = C.aurora.red, bg = C.none },
@@ -117,14 +117,14 @@ P.trouble = {
 	TroubleWarning         = { fg = C.aurora.yellow, bg = C.none },
 }
 
-P.leap = {
+P.leap             = {
 	LeapLabelSecondary = { fg = C.aurora.green, bg = C.blend.green, bold = true },
 	LeapLabelSelected  = { fg = C.aurora.green, bg = C.blend.green, bold = true },
 	LeapLabelPrimary   = { fg = C.aurora.yellow, bg = C.blend.turquoise, bold = true },
 	LeapMatch          = { fg = C.frost.turquoise, bg = C.blend.turquoise, bold = true },
 }
 
-P.bufferline = {
+P.bufferline       = {
 	BufferLineBackground                = { fg = C.snow.c0, bg = C.blend.bluec1 },
 	BufferLineBuffer                    = { fg = C.snow.c0, bg = C.blend.bluec1, },
 	BufferLineBufferSelected            = { fg = C.frost.turquoise, bg = C.bg, bold = true, },
@@ -187,11 +187,11 @@ P.bufferline = {
 	BufferLineWarningVisible            = { fg = C.aurora.yellow, bg = C.blend.bluec1, },
 }
 
-P.flash = {
+P.flash            = {
 	FlashLabel = { fg = C.bg, bg = C.aurora.yellow }, --Substitute   jump label
 }
 
-P.noice = {
+P.noice            = {
 	NoiceCmdline                      = { fg = C.frost.turquoise, bg = C.bg },              --normal for the classic cmdline area at the bottom"
 	NoiceCmdlineIcon                  = { fg = C.frost.turquoise, bg = C.bg, bold = true }, --Cmdline icon
 	NoiceCmdlineIconCalculator        = { fg = C.frost.sea, bg = C.bg },                    --
@@ -248,7 +248,7 @@ P.noice = {
 	NoiceVirtualText                  = { fg = C.frost.turquoise, bg = C.blend.bluec1 },    --Default hl group for virtualtext views
 }
 
-P.dadBod = {
+P.dadBod           = {
 	dbui_connection_error  = { fg = C.aurora.red, bg = C.blend.red },
 	dbui_connection_source = { fg = C.frost.turquoise, bg = C.none },
 	dbui_expanded_scheme   = { fg = C.frost.turquoise, bg = C.none },
@@ -260,7 +260,7 @@ P.dadBod = {
 	dbui_help              = { fg = C.frost.light_blue, bg = C.none },
 }
 
-P.lazygit = {
+P.lazygit          = {
 	LazyGitBorder    = { link = "FloatBorder" },
 	LazyGitFloat     = { fg = C.snow.c0, bg = C.none },
 	LazyH2           = { fg = C.snow.c0, bg = C.none },
@@ -278,86 +278,84 @@ P.lazygit = {
 	LazyReasonImport = { fg = C.snow.c0, bg = C.none },
 }
 
-P.neo_tree = {
-	NeoTreeBufferNumber       = { fg = C.fg, bg = C.none },                        --The buffer number shown in the buffers source.
-	NeoTreeCursorLine         = { link = "CursorLine" },                           --|hl-CursorLine| override in Neo-tree window.
-	NeoTreeDimText            = { fg = C.night.c3, bg = C.none },                  --Greyed out text used in various places.
-	NeoTreeDirectoryIcon      = { fg = C.frost.light_blue, bg = C.none },          --Directory icon.
-	NeoTreeDirectoryName      = { fg = C.snow.c0, bg = C.none, underline = true }, --Directory name.
-	NeoTreeDotfile            = { fg = C.night.c3, bg = C.none },                  --Used for icons and names when dotfiles are filtered.
-	NeoTreeEndOfBuffer        = { fg = C.none, bg = C.none },                      --|hl-EndOfBuffer| override in Neo-tree window.
-	NeoTreeExpander           = { fg = C.night.c2, bg = C.none },                  --Used for collapsed/expanded icons.
-	NeoTreeFadeText1          = { fg = C.night.c2, bg = C.none },                  --Used for icons and names that are hidden on Windows.
-	NeoTreeFadeText2          = { fg = C.night.c2, bg = C.none },                  --Used for icons and names that are hidden on Windows.
-	NeoTreeFileIcon           = { fg = C.frost.sea, bg = C.none },                 --File icon, when not overridden by devicons.
-	NeoTreeFileName           = { fg = C.snow.c1, bg = C.none },                   --File name, when not overwritten by another status.
-	NeoTreeFileNameOpened     = { fg = C.snow.c1, bg = C.none },                   --File name when the file is open. Not used yet.
-	NeoTreeFileStats          = { fg = C.night.c3, bg = C.none },                  --Used for "stat" columns like size, last modified, etc.
-	NeoTreeFileStatsHeader    = { fg = C.night.c3, bg = C.none, italic = true },   --Used for the header (top line) of the above columns.
-	NeoTreeFilterTerm         = { fg = C.aurora.yellow, bg = C.none },             --The filter term, as displayed in the root node.
-	NeoTreeFloatBorder        = { link = "FloatBorder" },                          --The border for pop-up windows.
-	NeoTreeFloatTitle         = { fg = C.snow.c1, bg = C.none },                   --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
-	NeoTreeGitAdded           = { fg = C.aurora.green, bg = C.none },              --File name when the git status is added.
-	NeoTreeGitConflict        = { fg = C.aurora.red, bg = C.none },                --File name when the git status is conflict.
-	NeoTreeGitDeleted         = { fg = C.aurora.red, bg = C.none },                --File name when the git status is deleted.
-	NeoTreeGitIgnored         = { fg = C.night.c3, bg = C.none },                  --File name when the git status is ignored.
-	NeoTreeGitModified        = { fg = C.aurora.yellow, bg = C.none },             --File name when the git status is modified.
-	NeoTreeGitStaged          = { fg = C.aurora.green, bg = C.none },              --Used for git staged symbol.
-	NeoTreeGitUnstaged        = { fg = C.aurora.orange, bg = C.none },             --Used for git unstaged symbol.
-	NeoTreeGitUntracked       = { fg = C.frost.sea, bg = C.none },                 --File name when the git status is untracked.
-	NeoTreeHiddenByName       = { fg = C.night.c3, bg = C.none },                  --Used for icons and names when `hide_by_name` is used.
-	NeoTreeIndentMarker       = { fg = C.night.c1, bg = C.none },                  --The style of indentation markers (). By default, the "Normal" highlight is used.
-	NeoTreeMessage            = { fg = C.night.c2, bg = C.none },                  --Used for icons and names that are hidden on Windows.
-	NeoTreeModified           = { fg = C.aurora.yellow, bg = C.none },             --File name when the git status is modified.
-	NeoTreeNormal             = { fg = C.fg, bg = C.none },                        --|hl-Normal| override in Neo-tree window.
-	NeoTreeNormalNC           = { fg = C.fg, bg = C.none },                        --|hl-NormalNC| override in Neo-tree window.
-	NeoTreeRootName           = { fg = C.frost.light_blue, bg = C.none },          --The name of the root node.
-	NeoTreeSignColumn         = { fg = C.night.c3, bg = C.none },                  --|hl-SignColumn| override in Neo-tree window.
-	NeoTreeStatusLine         = { fg = C.night.c0, bg = C.none },                  --|hl-StatusLine| override in Neo-tree window.
-	NeoTreeStatusLineNC       = { fg = C.none, bg = C.none },                      --|hl-StatusLineNC| override in Neo-tree window.
-	NeoTreeSymbolicLinkTarget = { fg = C.frost.light_blue, bg = C.none },          --Symbolic link target.
-	NeoTreeTitleBar           = { fg = C.snow.c2, bg = C.none },                   --Used for the title bar of pop-ups, when the border-style is set to "NC". This is derived from NeoTreeFloatBorder.
-	NeoTreeVertSplit          = { fg = C.night.c3, bg = C.none },                  --|hl-VertSplit| override in Neo-tree window.
-	NeoTreeWinSeparator       = { fg = C.night.c3, bg = C.none },                  --|hl-WinSeparator| override in Neo-tree window.
-	NeoTreeWindowsHidden      = { fg = C.night.c3, bg = C.none },                  --Used for icons and names that are hidden on Windows.
+P.neo_tree         = {
+	NeoTreeBufferNumber       = { fg = C.fg, bg = C.none },                      --The buffer number shown in the buffers source.
+	NeoTreeCursorLine         = { link = "CursorLine" },                         --|hl-CursorLine| override in Neo-tree window.
+	NeoTreeDimText            = { fg = C.night.c3, bg = C.none },                --Greyed out text used in various places.
+	NeoTreeDirectoryIcon      = { fg = C.frost.turquoise, bg = C.none },         --Directory icon.
+	NeoTreeDirectoryName      = { fg = C.snow.c0, bg = C.none, bold = true },    --Directory name.
+	NeoTreeDotfile            = { fg = C.night.c3, bg = C.none, bold = true },   --Used for icons and names when dotfiles are filtered.
+	NeoTreeEndOfBuffer        = { fg = C.none, bg = C.none },                    --|hl-EndOfBuffer| override in Neo-tree window.
+	NeoTreeExpander           = { fg = C.night.c2, bg = C.none },                --Used for collapsed/expanded icons.
+	NeoTreeFadeText1          = { fg = C.night.c2, bg = C.none },                --Used for icons and names that are hidden on Windows.
+	NeoTreeFadeText2          = { fg = C.night.c2, bg = C.none },                --Used for icons and names that are hidden on Windows.
+	NeoTreeFileIcon           = { fg = C.frost.sea, bg = C.none },               --File icon, when not overridden by devicons.
+	NeoTreeFileName           = { fg = C.fg, bg = C.none, bold = true },         --File name, when not overwritten by another status.
+	NeoTreeFileNameOpened     = { fg = C.fg, bg = C.none, bold = true },         --File name when the file is open. Not used yet.
+	NeoTreeFileStats          = { fg = C.night.c3, bg = C.none },                --Used for "stat" columns like size, last modified, etc.
+	NeoTreeFileStatsHeader    = { fg = C.night.c3, bg = C.none, italic = true }, --Used for the header (top line) of the above columns.
+	NeoTreeFilterTerm         = { fg = C.aurora.yellow, bg = C.none },           --The filter term, as displayed in the root node.
+	NeoTreeFloatBorder        = { link = "FloatBorder" },                        --The border for pop-up windows.
+	NeoTreeFloatTitle         = { fg = C.fg, bg = C.none },                      --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
+	NeoTreeGitAdded           = { fg = C.aurora.green, bg = C.none },            --File name when the git status is added.
+	NeoTreeGitConflict        = { fg = C.aurora.red, bg = C.none },              --File name when the git status is conflict.
+	NeoTreeGitDeleted         = { fg = C.aurora.red, bg = C.none },              --File name when the git status is deleted.
+	NeoTreeGitIgnored         = { fg = C.night.c3, bg = C.none },                --File name when the git status is ignored.
+	NeoTreeGitModified        = { fg = C.aurora.yellow, bg = C.none },           --File name when the git status is modified.
+	NeoTreeGitStaged          = { fg = C.aurora.green, bg = C.none },            --Used for git staged symbol.
+	NeoTreeGitUnstaged        = { fg = C.aurora.orange, bg = C.none },           --Used for git unstaged symbol.
+	NeoTreeGitUntracked       = { fg = C.frost.sea, bg = C.none },               --File name when the git status is untracked.
+	NeoTreeHiddenByName       = { fg = C.night.c3, bg = C.none },                --Used for icons and names when `hide_by_name` is used.
+	NeoTreeIndentMarker       = { fg = C.night.c1, bg = C.none },                --The style of indentation markers (). By default, the "Normal" highlight is used.
+	NeoTreeMessage            = { fg = C.night.c2, bg = C.none },                --Used for icons and names that are hidden on Windows.
+	NeoTreeModified           = { fg = C.aurora.yellow, bg = C.none },           --File name when the git status is modified.
+	NeoTreeNormal             = { fg = C.fg, bg = C.none },                      --|hl-Normal| override in Neo-tree window.
+	NeoTreeNormalNC           = { fg = C.fg, bg = C.none },                      --|hl-NormalNC| override in Neo-tree window.
+	NeoTreeRootName           = { fg = C.frost.turquoise, bg = C.none },         --The name of the root node.
+	NeoTreeSignColumn         = { fg = C.night.c3, bg = C.none },                --|hl-SignColumn| override in Neo-tree window.
+	NeoTreeStatusLine         = { fg = C.night.c0, bg = C.none },                --|hl-StatusLine| override in Neo-tree window.
+	NeoTreeStatusLineNC       = { fg = C.none, bg = C.none },                    --|hl-StatusLineNC| override in Neo-tree window.
+	NeoTreeSymbolicLinkTarget = { fg = C.frost.sea, bg = C.none },               --Symbolic link target.
+	NeoTreeTitleBar           = { fg = C.snow.c2, bg = C.none },                 --Used for the title bar of pop-ups, when the border-style is set to "NC". This is derived from NeoTreeFloatBorder.
+	NeoTreeVertSplit          = { fg = C.night.c3, bg = C.none },                --|hl-VertSplit| override in Neo-tree window.
+	NeoTreeWinSeparator       = { fg = C.night.c3, bg = C.none },                --|hl-WinSeparator| override in Neo-tree window.
+	NeoTreeWindowsHidden      = { fg = C.night.c3, bg = C.none },                --Used for icons and names that are hidden on Windows.
 }
 
-P.cmp = {
-	CmpItemAbbr              = { fg = C.fg, bg = C.none },              --Highlight group for unmatched characters of each completion field.
-	CmpItemAbbrDeprecated    = { fg = C.night.c3, bg = C.none },        --Highlight group for unmatched characters of each deprecated completion field.
-	CmpItemAbbrMatch         = { fg = C.frost.turquoise, bg = C.none }, --Highlight group for matched characters of each completion field. Matched characters must form a substring of a field which share a starting position.
-	CmpItemAbbrMatchFuzzy    = { fg = C.frost.turquoise, bg = C.none }, --Highlight group for fuzzy-matched characters of each completion field.
-	CmpItemKind              = { fg = C.aurora.red, bg = C.none },      --Highlight group for the kind of the field.
-	CmpItemMenu              = { fg = C.aurora.green, bg = C.none },    --The menu field's highlight group.
-	-- Kind Icons
-	CmpItemKindClass         = { fg = C.aurora.red, bg = C.none },
-	CmpItemKindColor         = { fg = C.frost.turquoise, bg = C.none },
-	CmpItemKindConstant      = { fg = C.aurora.yellow, bg = C.none },
-	CmpItemKindConstructor   = { fg = C.frost.light_blue, bg = C.none },
-	CmpItemKindCopilot       = { fg = C.aurora.orange, bg = C.none },
-	CmpItemKindEnum          = { fg = C.aurora.yellow, bg = C.none },
-	CmpItemKindEnumMember    = { fg = C.aurora.yellow, bg = C.none },
-	CmpItemKindEvent         = { fg = C.aurora.green, bg = C.none },
-	CmpItemKindField         = { fg = C.frost.turquoise, bg = C.none },
-	CmpItemKindFile          = { fg = C.aurora.red, bg = C.none },
-	CmpItemKindFolder        = { fg = C.aurora.red, bg = C.none },
-	CmpItemKindFunction      = { fg = C.frost.light_blue, bg = C.none },
-	CmpItemKindInterface     = { fg = C.aurora.orange, bg = C.none },
-	CmpItemKindKeyword       = { fg = C.aurora.red, bg = C.none },
-	CmpItemKindMethod        = { fg = C.aurora.purple, bg = C.none },
-	CmpItemKindModule        = { fg = C.frost.light_blue, bg = C.none },
-	CmpItemKindOperator      = { fg = C.aurora.red, bg = C.none },
-	CmpItemKindProperty      = { fg = C.frost.turquoise, bg = C.none },
-	CmpItemKindReference     = { fg = C.aurora.yellow, bg = C.none },
-	CmpItemKindSnippet       = { fg = C.aurora.green, bg = C.none },
-	CmpItemKindStruct        = { fg = C.frost.sea, bg = C.none },
-	CmpItemKindText          = { fg = C.aurora.purple, bg = C.none },
-	CmpItemKindTypeParameter = { fg = C.frost.turquoise, bg = C.none },
-	CmpItemKindUnit          = { fg = C.aurora.green, bg = C.none },
-	CmpItemKindValue         = { fg = C.frost.turquoise, bg = C.none },
-	CmpItemKindVariable      = { fg = C.aurora.yellow, bg = C.none },
+P.cmp              = {
+	CmpItemAbbr              = { fg = C.fg, bg = C.none },
+	CmpItemAbbrDeprecated    = { bg = C.night.c3, fg = C.bg },
+	CmpItemAbbrMatch         = { fg = C.frost.turquoise, bg = C.none },
+	CmpItemAbbrMatchFuzzy    = { fg = C.frost.turquoise, bg = C.none },
+	CmpItemKind              = { bg = C.aurora.red, fg = C.bg },
+	CmpItemKindClass         = { bg = C.aurora.red, fg = C.bg },
+	CmpItemKindColor         = { bg = C.frost.turquoise, fg = C.bg },
+	CmpItemKindConstant      = { bg = C.aurora.yellow, fg = C.bg },
+	CmpItemKindConstructor   = { bg = C.frost.light_blue, fg = C.bg },
+	CmpItemKindCopilot       = { bg = C.aurora.orange, fg = C.bg },
+	CmpItemKindEnum          = { bg = C.aurora.yellow, fg = C.bg },
+	CmpItemKindEnumMember    = { bg = C.aurora.yellow, fg = C.bg },
+	CmpItemKindEvent         = { bg = C.aurora.green, fg = C.bg },
+	CmpItemKindField         = { bg = C.frost.turquoise, fg = C.bg },
+	CmpItemKindFile          = { bg = C.aurora.red, fg = C.bg },
+	CmpItemKindFolder        = { bg = C.aurora.red, fg = C.bg },
+	CmpItemKindFunction      = { bg = C.frost.light_blue, fg = C.bg },
+	CmpItemKindInterface     = { bg = C.aurora.orange, fg = C.bg },
+	CmpItemKindKeyword       = { bg = C.aurora.red, fg = C.bg },
+	CmpItemKindMethod        = { bg = C.aurora.purple, fg = C.bg },
+	CmpItemKindModule        = { bg = C.frost.light_blue, fg = C.bg },
+	CmpItemKindOperator      = { bg = C.aurora.red, fg = C.bg },
+	CmpItemKindProperty      = { bg = C.frost.turquoise, fg = C.bg },
+	CmpItemKindReference     = { bg = C.aurora.yellow, fg = C.bg },
+	CmpItemKindSnippet       = { bg = C.aurora.green, fg = C.bg },
+	CmpItemKindStruct        = { bg = C.frost.sea, fg = C.bg },
+	CmpItemKindText          = { bg = C.aurora.purple, fg = C.bg },
+	CmpItemKindTypeParameter = { bg = C.frost.turquoise, fg = C.bg },
+	CmpItemKindUnit          = { bg = C.aurora.green, fg = C.bg },
+	CmpItemKindValue         = { bg = C.frost.turquoise, fg = C.bg },
+	CmpItemKindVariable      = { bg = C.aurora.yellow, fg = C.bg },
+	CmpItemMenu              = { fg = C.night.c3, bg = C.none, italic = true },
 }
-
 
 P.telescope        = {
 	TelescopeBorder               = { link = "FloatBorder" },
