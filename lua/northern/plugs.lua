@@ -261,21 +261,8 @@ P.dadBod           = {
 }
 
 P.lazygit          = {
-	LazyGitBorder    = { link = "FloatBorder" },
-	LazyGitFloat     = { fg = C.snow.c0, bg = C.none },
-	LazyH2           = { fg = C.snow.c0, bg = C.none },
-	LazyUrl          = { fg = C.snow.c0, bg = C.none },
-	LazyProp         = { fg = C.snow.c0, bg = C.none },
-	LazyLocal        = { fg = C.snow.c0, bg = C.none },
-	LazyCommit       = { fg = C.snow.c0, bg = C.none },
-	LazyDimmed       = { fg = C.snow.c0, bg = C.none },
-	LazyComment      = { fg = C.snow.c0, bg = C.none },
-	LazySpecial      = { fg = C.snow.c0, bg = C.none },
-	LazyCommitType   = { fg = C.snow.c0, bg = C.none },
-	LazyCommitIssue  = { fg = C.snow.c0, bg = C.none },
-	LazyReasonStart  = { fg = C.snow.c0, bg = C.none },
-	LazyProgressDone = { fg = C.snow.c0, bg = C.none },
-	LazyReasonImport = { fg = C.snow.c0, bg = C.none },
+	LazyGitBorder = { link = "FloatBorder" },
+	LazyGitFloat  = { fg = C.snow.c0, bg = C.none },
 }
 
 P.neo_tree         = {
@@ -777,6 +764,53 @@ P.nerdtree         = {
 P.floaterm         = {
 	FloatermBorder = { fg = C.frost.turquoise, bg = C.none },
 	Floaterm = { fg = C.bg, bg = C.none },
+}
+
+P.fzf_lua          = {
+	FzfLuaBorder = { link = "FloatBorder" }, -- Normal          	hls.border        	Main win border
+	-- FzfLuaBufFlagAlt        = { fg = C.none, bg = C.bg },             -- *CadetBlue1     	hls.buf_flag_alt  	Buffer line (buffers)
+	-- FzfLuaBufFlagCur        = { fg = C.none, bg = C.bg },             -- *Brown1         	hls.buf_flag_cur  	Buffer line (buffers)
+	-- FzfLuaBufName           = { fg = C.none, bg = C.bg },             -- *LightMagenta   	hls.buf_name      	Buffer name (lines)
+	-- FzfLuaBufNr             = { fg = C.night.c1, bg = C.bg },         -- *BlanchedAlmond 	hls.buf_nr        	Buffer number (all buffers)
+	-- FzfLuaCursor            = { link = "Cursor" },                    -- Cursor          	hls.cursor        	Builtin preview Cursor
+	-- FzfLuaCursorLine        = { link = "CursorLine" },                -- CursorLine      	hls.cursorline    	Builtin preview Cursorline
+	-- FzfLuaCursorLineNr      = { fg = C.night.c1, bg = C.bg },         -- CursorLineNr    	hls.cursorlinenr  	Builtin preview CursorLineNr
+	-- FzfLuaDirIcon           = { fg = C.frost.turquoise, bg = C.bg },  -- Directory       	hls.dir_icon      	Paths directory icon
+	-- FzfLuaDirPart           = { fg = C.none, bg = C.bg },             -- Comment         	hls.dir_part      	Path formatters directory hl group
+	-- FzfLuaFilePart          = { fg = C.none, bg = C.bg },             -- @none           	hls.file_part     	Path formatters file hl group
+	-- FzfLuaFzfBorder         = { link = "FloatBorder" },               -- FzfLuaBorder    	fzf.border        	fzf's border
+	-- FzfLuaFzfCursorLine     = { link = "Cursorline" },                -- FzfLuaCursorLine	fzf.cursorline    	fzf's fg+|bg+
+	-- FzfLuaFzfGutter         = { fg = C.night.c1, bg = C.bg },         -- FzfLuaNormal    	fzf.gutter        	fzf's gutter (hl bg is used)
+	-- FzfLuaFzfHeader         = { fg = C.aurora.orange, bg = C.bg },    -- FzfLuaTitle     	fzf.header        	fzf's header
+	-- FzfLuaFzfInfo           = { fg = C.frost.turquoise, bg = C.bg },  -- NonText         	fzf.info          	fzf's info
+	-- FzfLuaFzfMarker         = { fg = C.none, bg = C.bg },             -- FzfLuaFzfPointer	fzf.marker        	fzf's marker
+	-- FzfLuaFzfMatch          = { fg = C.frost.turquoise, bg = C.bg },  -- Special         	fzf.match         	fzf's hl+
+	-- FzfLuaFzfNormal         = { fg = C.aurora.green, bg = C.bg },     -- FzfLuaNormal    	fzf.normal        	fzf's fg|bg
+	-- FzfLuaFzfPointer        = { fg = C.aurora.yellow, bg = C.bg },    -- Special         	fzf.pointer       	fzf's pointer
+	-- FzfLuaFzfPrompt         = { fg = C.aurora.yellow, bg = C.bg },    -- Special         	fzf.prompt        	fzf's prompt
+	-- FzfLuaFzfQuery          = { fg = C.none, bg = C.bg },             -- FzfLuaNormal    	fzf.query         	fzf's header
+	-- FzfLuaFzfScrollbar      = { fg = C.blend.turquoise, bg = C.bg },  -- FzfLuaFzfBorder 	fzf.scrollbar     	fzf's scrollbar
+	-- FzfLuaFzfSeparator      = { fg = C.night.c1, bg = C.bg },         -- FzfLuaFzfBorder 	fzf.separator     	fzf's separator
+	-- FzfLuaFzfSpinner        = { fg = C.aurora.yellow, bg = C.bg },    -- FzfLuaFzfPointer	fzf.spinner       	fzf's spinner
+	-- FzfLuaHeaderBind        = { fg = C.none, bg = C.bg },             -- *BlanchedAlmond 	hls.header_bind   	Header keybind
+	-- FzfLuaHeaderText        = { fg = C.fg, bg = C.bg },               -- *Brown1         	hls.header_text   	Header text
+	-- FzfLuaHelpBorder        = { fg = C.night.c1, bg = C.bg },         -- FzfLuaBorder    	hls.help_border   	Help win border
+	-- FzfLuaHelpNormal        = { fg = C.fg, bg = C.bg },               -- FzfLuaNormal    	hls.help_normal   	Help win fg/bg
+	-- FzfLuaLiveSym           = { fg = C.none, bg = C.bg },             -- *Brown1         	hls.live_sym      	LSP live symbols query match
+	-- FzfLuaNormal            = { fg = C.fg, bg = C.bg },               -- Normal          	hls.normal        	Main win fg/bg
+	-- FzfLuaPathColNr         = { fg = C.night.c1, bg = C.bg },         -- *CadetBlue1     	hls.path_colnr    	Path col nr (lines,qf,lsp,diag)
+	-- FzfLuaPathLineNr        = { fg = C.night.c1, bg = C.bg },         -- *LightGreen     	hls.path_linenr   	Path line nr (lines,qf,lsp,diag)
+	-- FzfLuaPreviewBorder     = { link = "FloatBorder" },               -- FzfLuaBorder    	hls.preview_border	Builtin preview border
+	-- FzfLuaPreviewNormal     = { fg = C.fg, bg = C.bg },               -- FzfLuaNormal    	hls.preview_normal	Builtin preview fg/bg
+	-- FzfLuaPreviewTitle      = { fg = C.fg, bg = C.bg },               -- FzfLuaTitle     	hls.preview_title 	Builtin preview title
+	-- FzfLuaScrollBorderEmpty = { fg = C.none, bg = C.bg },             -- FzfLuaBorder    	hls.scrollborder_e	Builtin preview border scroll empty
+	-- FzfLuaScrollBorderFull  = { fg = C.none, bg = C.bg },             -- FzfLuaBorder    	hls.scrollborder_f	Builtin preview border scroll full
+	-- FzfLuaScrollFloatEmpty  = { fg = C.none, bg = C.bg },             -- PmenuSbar       	hls.scrollfloat_e 	Builtin preview float scroll empty
+	-- FzfLuaScrollFloatFull   = { fg = C.none, bg = C.bg },             -- PmenuThumb      	hls.scrollfloat_f 	Builtin preview float scroll full
+	-- FzfLuaSearch            = { fg = C.frost.light_blue, bg = C.bg }, -- IncSearch       	hls.search        	Builtin preview search matches
+	-- FzfLuaTabMarker         = { fg = C.none, bg = C.bg },             -- *BlanchedAlmond 	hls.tab_marker    	Tab marker (tabs)
+	-- FzfLuaTabTitle          = { fg = C.fg, bg = C.bg },               -- *LightSkyBlue1  	hls.tab_title     	Tab title (tabs)
+	-- FzfLuaTitle             = { fg = C.fg, bg = C.bg },               -- FzfLuaNormal    	hls.title         	Main win title
 }
 
 return P
