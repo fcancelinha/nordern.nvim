@@ -1,14 +1,24 @@
 <h1 align="center">Northern.nvim❄️ </h1>
 
-A carefully crafted nord colorscheme written in lua for neovim using the [nord palette](https://www.nordtheme.com/docs/colors-and-palettes).
+<div align="center">
+    A carefully crafted nord colorscheme written in lua for neovim using the <a href="https://www.nordtheme.com/docs/colors-and-palettes">Nord Palette</a>.
+<br></br>
+</div>
 
-![Alpha](https://github.com/fcancelinha/northern.nvim/assets/48698009/0509d1c3-4643-4ac0-8acb-99dd8fa4bd09)
+
+![dashboard](https://github.com/user-attachments/assets/8bd142a5-6bd5-4c72-9564-7862aa677563)
+
+![golang](https://github.com/user-attachments/assets/9b9cada4-5258-426c-93b9-1d9a4db3762e)
 
 ![main](https://github.com/fcancelinha/northern.nvim/assets/48698009/740b04e3-7a20-4c92-9a00-2dc5e4eb4a25)
 
+<div align="center">
+
 **Northern.nvim** | because like any good viking that loves gold, this colorscheme uses aurora yellow to highlight some of the more important tokens.
 
-**WARNING**: this plugin is still very much a WIP, bufferline support exists but I'm figuring out the best way to implement it, some noice windows lack button background and I'm working on it
+**WARNING** ⚠️: this plugin is still very much a WIP, bufferline support exists but I'm figuring out the best way to implement it, some noice windows lack button background and I'm working on it
+
+</div>
 
 ## Screenshots
 
@@ -45,6 +55,7 @@ A carefully crafted nord colorscheme written in lua for neovim using the [nord p
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [trouble](https://github.com/folke/trouble.nvim)
 - [outline](https://github.com/hedyhli/outline.nvim)
+- [barbecue](https://github.com/utilyre/barbecue.nvim)
 
 ## Roadmap
  - [x] - improve README 
