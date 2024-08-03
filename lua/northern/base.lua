@@ -1,4 +1,5 @@
 local C = require("northern.colors")
+local B = {}
 -- nvim_set_hl({ns_id}, {name}, {*val}) nvim_set_hl()Sets a highlight group.
 --
 -- Note:
@@ -30,14 +31,12 @@ local C = require("northern.colors")
 -- ctermbg: Sets background of cterm color ctermbg
 -- cterm: cterm attribute map, like highlight-args. If not set, cterm attributes will match those from the attribute map documented above.-
 
-local B = {}
-
 -- Base neovim
 B.gui = {
     ColorColumn    = { fg = C.none, bg = C.bg },                    --	Used for the columns set with 'colorcolumn'.
     Conceal        = { fg = C.none, bg = C.bg },                    --	Placeholder characters substituted for concealed text (see 'conceallevel').
     CurSearch      = { fg = C.night.c1, bg = C.frost.turquoise },   --Used for highlighting a search pattern under the cursor (see 'hlsearch').
-    Cursor         = { fg = C.bg, bg = C.fg },                      --	Character under the cursor.
+    Cursor         = { fg = C.none, bg = C.snow.c0 },               --	Character under the cursor.
     CursorColumn   = { fg = C.none, bg = C.night.c1 },              --	Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorIM       = { fg = C.bg, bg = C.fg },                      --	Like Cursor, but used when in IME mode. CursorIM
     CursorLine     = { fg = C.none, bg = C.blend.blue },            --	Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
@@ -47,9 +46,9 @@ B.gui = {
     Directory      = { fg = C.fg, bg = C.none },                    --	Directory names (and other special names in listings).
     EndOfBuffer    = { fg = C.night.c1, bg = C.bg },                --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
     ErrorMsg       = { fg = C.aurora.red, bg = C.bg },              --	Error messages on the command line.
-    FloatBorder    = { fg = C.frost.turquoise, bg = C.bg },         --	Border of floating windows.
-    FloatFooter    = { fg = C.night.c3, bg = C.bg },                --	Footer of floating windows.
-    FloatTitle     = { fg = C.snow.c0, bg = C.bg },                 --	Title of floating windows.
+    FloatBorder    = { fg = C.frost.turquoise, bg = C.none },       --	Border of floating windows.
+    FloatFooter    = { fg = C.night.c3, bg = C.none },              --	Footer of floating windows.
+    FloatTitle     = { fg = C.snow.c0, bg = C.none },               --	Title of floating windows.
     FoldColumn     = { fg = C.none, bg = C.none },                  --	'foldcolumn'
     Folded         = { fg = C.none, bg = C.none },                  --	Line used for closed folds.
     IncSearch      = { link = "CurSearch" },                        --	'incsearch' highlighting; also used for the text replaced with ":s///c".

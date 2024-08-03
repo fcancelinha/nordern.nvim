@@ -13,9 +13,11 @@ local b = require("northern.base")
 local l = require("northern.lang")
 local p = require("northern.plugs")
 local u = require("northern.utils")
+local c = require("northern.config")
 
 function northern.load(opts)
-	u.load(b, l, p)
+    c.apply_opts(b, opts)
+    u.load(b, l, p)
 end
 
 return northern
