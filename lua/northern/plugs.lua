@@ -310,37 +310,38 @@ P.neo_tree         = {
 }
 
 P.cmp              = {
+
     CmpItemAbbr              = { fg = C.fg, bg = C.none },
-    CmpItemAbbrDeprecated    = { bg = C.night.c3, fg = C.bg },
+    CmpItemAbbrDeprecated    = { fg = C.night.c3, bg = C.none },
     CmpItemAbbrMatch         = { fg = C.frost.turquoise, bg = C.none },
     CmpItemAbbrMatchFuzzy    = { fg = C.frost.turquoise, bg = C.none },
-    CmpItemKind              = { bg = C.aurora.red, fg = C.bg },
-    CmpItemKindClass         = { bg = C.aurora.red, fg = C.bg },
-    CmpItemKindColor         = { bg = C.frost.turquoise, fg = C.bg },
-    CmpItemKindConstant      = { bg = C.aurora.yellow, fg = C.bg },
-    CmpItemKindConstructor   = { bg = C.frost.light_blue, fg = C.bg },
-    CmpItemKindCopilot       = { bg = C.aurora.orange, fg = C.bg },
-    CmpItemKindEnum          = { bg = C.aurora.yellow, fg = C.bg },
-    CmpItemKindEnumMember    = { bg = C.aurora.yellow, fg = C.bg },
-    CmpItemKindEvent         = { bg = C.aurora.green, fg = C.bg },
-    CmpItemKindField         = { bg = C.frost.turquoise, fg = C.bg },
-    CmpItemKindFile          = { bg = C.aurora.red, fg = C.bg },
-    CmpItemKindFolder        = { bg = C.aurora.red, fg = C.bg },
-    CmpItemKindFunction      = { bg = C.frost.light_blue, fg = C.bg },
-    CmpItemKindInterface     = { bg = C.frost.sea, fg = C.bg },
-    CmpItemKindKeyword       = { bg = C.aurora.red, fg = C.bg },
-    CmpItemKindMethod        = { bg = C.aurora.purple, fg = C.bg },
-    CmpItemKindModule        = { bg = C.frost.light_blue, fg = C.bg },
-    CmpItemKindOperator      = { bg = C.aurora.red, fg = C.bg },
-    CmpItemKindProperty      = { bg = C.frost.turquoise, fg = C.bg },
-    CmpItemKindReference     = { bg = C.aurora.yellow, fg = C.bg },
-    CmpItemKindSnippet       = { bg = C.aurora.green, fg = C.bg },
-    CmpItemKindStruct        = { bg = C.frost.sea, fg = C.bg },
-    CmpItemKindText          = { bg = C.aurora.purple, fg = C.bg },
-    CmpItemKindTypeParameter = { bg = C.frost.turquoise, fg = C.bg },
-    CmpItemKindUnit          = { bg = C.aurora.green, fg = C.bg },
-    CmpItemKindValue         = { bg = C.frost.turquoise, fg = C.bg },
-    CmpItemKindVariable      = { bg = C.aurora.yellow, fg = C.bg },
+    CmpItemKind              = { fg = C.aurora.red, bg = C.none },
+    CmpItemKindClass         = { fg = C.aurora.red, bg = C.none },
+    CmpItemKindColor         = { fg = C.frost.turquoise, bg = C.none },
+    CmpItemKindConstant      = { fg = C.aurora.yellow, bg = C.none },
+    CmpItemKindConstructor   = { fg = C.frost.light_blue, bg = C.none },
+    CmpItemKindCopilot       = { fg = C.aurora.orange, bg = C.none },
+    CmpItemKindEnum          = { fg = C.aurora.yellow, bg = C.none },
+    CmpItemKindEnumMember    = { fg = C.aurora.yellow, bg = C.none },
+    CmpItemKindEvent         = { fg = C.aurora.green, bg = C.none },
+    CmpItemKindField         = { fg = C.frost.turquoise, bg = C.none },
+    CmpItemKindFile          = { fg = C.aurora.red, bg = C.none },
+    CmpItemKindFolder        = { fg = C.aurora.red, bg = C.none },
+    CmpItemKindFunction      = { fg = C.frost.light_blue, bg = C.none },
+    CmpItemKindInterface     = { fg = C.frost.sea, bg = C.none },
+    CmpItemKindKeyword       = { fg = C.aurora.red, bg = C.none },
+    CmpItemKindMethod        = { fg = C.aurora.purple, bg = C.none },
+    CmpItemKindModule        = { fg = C.frost.light_blue, bg = C.none },
+    CmpItemKindOperator      = { fg = C.aurora.red, bg = C.none },
+    CmpItemKindProperty      = { fg = C.frost.turquoise, bg = C.none },
+    CmpItemKindReference     = { fg = C.aurora.yellow, bg = C.none },
+    CmpItemKindSnippet       = { fg = C.aurora.green, bg = C.none },
+    CmpItemKindStruct        = { fg = C.frost.sea, bg = C.none },
+    CmpItemKindText          = { fg = C.aurora.purple, bg = C.none },
+    CmpItemKindTypeParameter = { fg = C.frost.turquoise, bg = C.none },
+    CmpItemKindUnit          = { fg = C.aurora.green, bg = C.none },
+    CmpItemKindValue         = { fg = C.frost.turquoise, bg = C.none },
+    CmpItemKindVariable      = { fg = C.frost.turquoise, bg = C.none },
     CmpItemMenu              = { fg = C.night.c3, bg = C.none, italic = true },
 }
 
@@ -401,7 +402,7 @@ P.git_signs        = {
 P.diagnostics      = {
     -- Base LSP
     LspCodeLens                          = { link = "Comment" },
-    LspCodeLensSeparator                 = { fg = C.night.c1, bg = C.none },
+    LspCodeLensSeparator                 = { link = "Comment" },
     LspCodeLensSign                      = { fg = C.frost.turquoise, bg = C.none },
     LspCodeLensText                      = { link = "Comment" },
     LspDiagnosticsDefaultError           = { fg = C.aurora.red, bg = C.none },                 -- used for "Error" diagnostic virtual text
@@ -413,16 +414,16 @@ P.diagnostics      = {
     LspDiagnosticsFloatingInformation    = { fg = C.frost.turquoise, bg = C.none },            -- used for "Information" diagnostic messages in the diagnostics float
     LspDiagnosticsFloatingWarning        = { fg = C.aurora.yellow, bg = C.none },              -- used for "Warning" diagnostic messages in the diagnostics float
     LspDiagnosticsSignError              = { fg = C.aurora.red, bg = C.none },                 -- used for "Error" diagnostic signs in sign column
-    LspDiagnosticsSignHint               = { fg = C.frost.turquoise, bg = C.none },            -- used for "Hint" diagnostic signs in sign column
+    LspDiagnosticsSignHint               = { fg = C.frost.sea, bg = C.none },                  -- used for "Hint" diagnostic signs in sign column
     LspDiagnosticsSignInformation        = { fg = C.frost.turquoise, bg = C.none },            -- used for "Information" diagnostic signs in sign column
     LspDiagnosticsSignWarning            = { fg = C.aurora.yellow, bg = C.none },              -- used for "Warning" diagnostic signs in sign column
     LspDiagnosticsUnderlineError         = { fg = C.none, bg = C.blend.red },                  -- used to underline "Error" diagnostics.
     LspDiagnosticsUnderlineHint          = { fg = C.none, bg = C.blend.turquoise },            -- used to underline "Hint" diagnostics.
-    LspDiagnosticsUnderlineInformation   = { fg = C.none, bg = C.blend.blue },                 -- used to underline "Information" diagnostics.
+    LspDiagnosticsUnderlineInformation   = { fg = C.none, bg = C.blend.bluec1 },               -- used to underline "Information" diagnostics.
     LspDiagnosticsUnderlineWarning       = { fg = C.none, bg = C.blend.yellow },               -- used to underline "Warning" diagnostics.
     LspDiagnosticsVirtualTextError       = { fg = C.aurora.red, bg = C.blend.red },            -- Virtual text "Error"
     LspDiagnosticsVirtualTextHint        = { fg = C.frost.turquoise, bg = C.blend.turquoise }, -- Virtual text "Hint"
-    LspDiagnosticsVirtualTextInformation = { fg = C.frost.turquoise, bg = C.blend.turquoise }, -- Virtual text "Information"
+    LspDiagnosticsVirtualTextInformation = { fg = C.frost.turquoise, bg = C.blend.bluec1 },    -- Virtual text "Information"
     LspDiagnosticsVirtualTextWarning     = { fg = C.aurora.yellow, bg = C.blend.yellow },      -- Virtual text "Warning"
     LspReferenceRead                     = { fg = C.frost.turquoise, bg = C.none },            -- used for highlighting "read" references
     LspReferenceText                     = { fg = C.frost.turquoise, bg = C.none },            -- used for highlighting "text" references
@@ -514,9 +515,9 @@ P.lazy             = {
 }
 
 P.illuminate       = {
-    IlluminatedWordText  = { bg = C.blend.bluec1 },
-    IlluminatedWordRead  = { bg = C.blend.bluec1 },
-    IlluminatedWordWrite = { bg = C.blend.bluec1 },
+    IlluminatedWordText  = { bg = C.blend.turquoise, fg = C.frost.turquoise },
+    IlluminatedWordRead  = { bg = C.blend.turquoise, fg = C.frost.turquoise },
+    IlluminatedWordWrite = { bg = C.blend.turquoise, fg = C.frost.turquoise },
 }
 
 P.indent_blankline = {
@@ -536,6 +537,7 @@ P.lualine          = {
     lualine_a_diff_added_normal      = { fg = C.aurora.green, bg = C.none },
     lualine_a_diff_added_replace     = { fg = C.aurora.green, bg = C.none },
     lualine_a_diff_added_visual      = { fg = C.aurora.green, bg = C.none },
+    lualine_a_inactive               = { fg = C.aurora.none, bg = C.none },
     lualine_a_diff_modified_command  = { fg = C.aurora.yellow, bg = C.none },
     lualine_a_diff_modified_inactive = { fg = C.aurora.yellow, bg = C.none },
     lualine_a_diff_modified_insert   = { fg = C.aurora.yellow, bg = C.none },
@@ -560,6 +562,7 @@ P.lualine          = {
     lualine_b_diff_modified_normal   = { fg = C.aurora.yellow, bg = C.none },
     lualine_b_diff_modified_replace  = { fg = C.aurora.yellow, bg = C.none },
     lualine_b_diff_modified_visual   = { fg = C.aurora.yellow, bg = C.none },
+    lualine_b_inactive               = { fg = C.aurora.none, bg = C.none },
     lualine_b_diff_removed_command   = { fg = C.aurora.red, bg = C.none },
     lualine_b_diff_removed_inactive  = { fg = C.aurora.red, bg = C.none },
     lualine_b_diff_removed_insert    = { fg = C.aurora.red, bg = C.none },
@@ -584,6 +587,7 @@ P.lualine          = {
     lualine_c_diff_removed_normal    = { fg = C.aurora.red, bg = C.none },
     lualine_c_diff_removed_replace   = { fg = C.aurora.red, bg = C.none },
     lualine_c_diff_removed_visual    = { fg = C.aurora.red, bg = C.none },
+    lualine_c_inactive               = { fg = C.aurora.none, bg = C.none },
     lualine_x_diff_added_command     = { fg = C.aurora.green, bg = C.none },
     lualine_x_diff_added_inactive    = { fg = C.aurora.green, bg = C.none },
     lualine_x_diff_added_insert      = { fg = C.aurora.green, bg = C.none },
@@ -816,39 +820,39 @@ P.fzf_lua          = {
 }
 
 P.barbecue         = {
-    barbecue_basename               = { fg = C.fg, bg = C.bg, bold = true },
-    barbecue_context                = { fg = C.fg, bg = C.bg, bold = true },
-    barbecue_context_array          = { fg = C.frost.sea, bg = C.bg, bold = true },
-    barbecue_context_boolean        = { fg = C.aurora.red, bg = C.bg, bold = true },
-    barbecue_context_class          = { fg = C.aurora.red, bg = C.bg, bold = true },
-    barbecue_context_constant       = { fg = C.fg, bg = C.bg, bold = true },
-    barbecue_context_constructor    = { fg = C.frost.light_blue, bg = C.bg, bold = true },
-    barbecue_context_enum           = { fg = C.aurora.yellow, bg = C.bg, bold = true },
-    barbecue_context_enum_member    = { fg = C.aurora.yellow, bg = C.bg, bold = true },
-    barbecue_context_event          = { fg = C.aurora.green, bg = C.bg, bold = true },
-    barbecue_context_field          = { fg = C.frost.sea, bg = C.bg, bold = true },
-    barbecue_context_file           = { fg = C.aurora.red, bg = C.bg, bold = true },
-    barbecue_context_function       = { fg = C.frost.light_blue, bg = C.bg, bold = true },
-    barbecue_context_interface      = { fg = C.frost.sea, bg = C.bg, bold = true },
-    barbecue_context_key            = { fg = C.aurora.red, bg = C.bg, bold = true },
-    barbecue_context_method         = { fg = C.aurora.purple, bg = C.bg, bold = true },
-    barbecue_context_module         = { fg = C.aurora.purple, bg = C.bg, bold = true },
-    barbecue_context_namespace      = { fg = C.frost.blue, bg = C.bg, bold = true },
-    barbecue_context_null           = { fg = C.fg, bg = C.bg, bold = true },
-    barbecue_context_number         = { fg = C.aurora.purple, bg = C.bg, bold = true },
-    barbecue_context_object         = { fg = C.aurora.yellow, bg = C.bg, bold = true },
-    barbecue_context_operator       = { fg = C.aurora.red, bg = C.bg, bold = true },
-    barbecue_context_package        = { fg = C.frost.blue, bg = C.bg, bold = true },
-    barbecue_context_property       = { fg = C.frost.turquoise, bg = C.bg, bold = true },
-    barbecue_context_string         = { fg = C.aurora.green, bg = C.bg, bold = true },
-    barbecue_context_struct         = { fg = C.frost.sea, bg = C.bg, bold = true },
-    barbecue_context_type_parameter = { fg = C.frost.turquoise, bg = C.bg, bold = true },
-    barbecue_context_variable       = { fg = C.fg, bg = C.bg, bold = true },
-    barbecue_dirname                = { fg = C.frost.light_blue, bg = C.bg, bold = true },
-    barbecue_ellipsis               = { fg = C.aurora.yellow, bg = C.bg, bold = true },
-    barbecue_modified               = { fg = C.aurora.yellow, bg = C.bg, bold = true },
-    barbecue_normal                 = { fg = C.bg, bg = C.bg, bold = true },
-    barbecue_separator              = { fg = C.frost.turquoise, bg = C.bg, bold = true },
+    barbecue_basename               = { fg = C.fg, bg = C.bg, },
+    barbecue_context                = { fg = C.fg, bg = C.bg, },
+    barbecue_context_array          = { fg = C.frost.sea, bg = C.bg, },
+    barbecue_context_boolean        = { fg = C.aurora.red, bg = C.bg, },
+    barbecue_context_class          = { fg = C.aurora.red, bg = C.bg, },
+    barbecue_context_constant       = { fg = C.fg, bg = C.bg, },
+    barbecue_context_constructor    = { fg = C.frost.light_blue, bg = C.bg, },
+    barbecue_context_enum           = { fg = C.aurora.yellow, bg = C.bg, },
+    barbecue_context_enum_member    = { fg = C.aurora.yellow, bg = C.bg, },
+    barbecue_context_event          = { fg = C.aurora.green, bg = C.bg, },
+    barbecue_context_field          = { fg = C.frost.sea, bg = C.bg, },
+    barbecue_context_file           = { fg = C.aurora.red, bg = C.bg, },
+    barbecue_context_function       = { fg = C.frost.light_blue, bg = C.bg, },
+    barbecue_context_interface      = { fg = C.frost.sea, bg = C.bg, },
+    barbecue_context_key            = { fg = C.aurora.red, bg = C.bg, },
+    barbecue_context_method         = { fg = C.aurora.purple, bg = C.bg, },
+    barbecue_context_module         = { fg = C.aurora.purple, bg = C.bg, },
+    barbecue_context_namespace      = { fg = C.frost.blue, bg = C.bg, },
+    barbecue_context_null           = { fg = C.fg, bg = C.bg, },
+    barbecue_context_number         = { fg = C.aurora.purple, bg = C.bg, },
+    barbecue_context_object         = { fg = C.aurora.yellow, bg = C.bg, },
+    barbecue_context_operator       = { fg = C.aurora.red, bg = C.bg, },
+    barbecue_context_package        = { fg = C.frost.blue, bg = C.bg, },
+    barbecue_context_property       = { fg = C.frost.turquoise, bg = C.bg, },
+    barbecue_context_string         = { fg = C.aurora.green, bg = C.bg, },
+    barbecue_context_struct         = { fg = C.frost.sea, bg = C.bg, },
+    barbecue_context_type_parameter = { fg = C.frost.turquoise, bg = C.bg, },
+    barbecue_context_variable       = { fg = C.fg, bg = C.bg, },
+    barbecue_dirname                = { fg = C.frost.light_blue, bg = C.bg, },
+    barbecue_ellipsis               = { fg = C.aurora.yellow, bg = C.bg, },
+    barbecue_modified               = { fg = C.aurora.yellow, bg = C.bg, },
+    barbecue_normal                 = { fg = C.bg, bg = C.bg, },
+    barbecue_separator              = { fg = C.frost.turquoise, bg = C.bg, },
 }
 
 return P

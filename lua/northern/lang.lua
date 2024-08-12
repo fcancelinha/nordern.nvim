@@ -266,11 +266,11 @@ L.make = {
 }
 
 L.gomod = {
-    ["@text.uri.gomod"]           = { fg = C.aurora.green, bg = C.none, underline = true },
+    ["@text.uri.gomod"]           = { fg = C.aurora.green, bg = C.none },
     ["@comment.gomod"]            = { link = "Comment" },
     ["@keyword.gomod"]            = { fg = C.frost.light_blue, bg = C.none, bold = true },
     ["@string.gomod"]             = { fg = C.aurora.yellow, bg = C.none, bold = true },
-    ["@string.special.url.gomod"] = { fg = C.aurora.green, bg = C.none, bold = true, underline = true },
+    ["@string.special.url.gomod"] = { fg = C.aurora.green, bg = C.none, bold = true },
 }
 
 L.gosum = {
@@ -278,15 +278,18 @@ L.gosum = {
     ["@string.special.url.gosum"]    = { fg = C.aurora.green, bg = C.none, bold = true },
     ["@string.special.symbol.gosum"] = { fg = C.aurora.green, bg = C.none, bold = true },
     ["@symbol.gosum"]                = { fg = C.frost.sea, bg = C.none },
-    ["@attribute.gosum"]             = { fg = C.fg, bg = C.none },
+    ["@attribute.gosum"]             = { fg = C.aurora.purple, bg = C.none },
     ["@punctuation.delimiter.gosum"] = { fg = C.fg, bg = C.none },
     ["@number.gosum"]                = { fg = C.aurora.yellow, bg = C.none, bold = true },
-    ["@keyword.gosum"]               = { fg = C.frost.turquoise, bg = C.none, bold = true },
+    ["@keyword.gosum"]               = { fg = C.aurora.yellow, bg = C.none, bold = true },
 }
 
 L.go = {
-    ["@string.go"]                               = { fg = C.aurora.green, bg = C.none },
-    ["@string.escape.go"]                        = { fg = C.aurora.yellow, bg = C.none },
+    ["@constant.builtin.go"]                     = { fg = C.aurora.yellow, bg = C.none },
+    ["@constant.go"]                             = { fg = C.frost.sea, bg = C.none },
+    ["@field.go"]                                = { fg = C.fg, bg = C.none },
+    ["@function.call.go"]                        = { fg = C.frost.turquoise, bg = C.none },
+    ["@keyword.function.go"]                     = { fg = C.frost.light_blue, bg = C.none },
     ["@lsp.keyword.go"]                          = { fg = C.frost.light_blue, bg = C.none },
     ["@lsp.mod.defaultLibrary.go"]               = { fg = C.frost.blue, bg = C.none },
     ["@lsp.mod.definition.go"]                   = { fg = C.aurora.yellow, bg = C.none },
@@ -307,28 +310,26 @@ L.go = {
     ["@lsp.typemod.typeParameter.definition.go"] = { fg = C.aurora.yellow, bg = C.none },
     ["@lsp.typemod.variable.defaultLibrary.go"]  = { fg = C.aurora.yellow, bg = C.none },
     ["@lsp.typemod.variable.definition.go"]      = { fg = C.fg, bg = C.none },
-    ["@lsp.typemod.variable.readonly.go"]        = { fg = C.frost.turquoise, bg = C.none },
+    ["@lsp.typemod.variable.readonly.go"]        = { fg = C.aurora.yellow, bg = C.none },
     ["@method.call.go"]                          = { fg = C.frost.sea, bg = C.none },
     ["@method.go"]                               = { fg = C.frost.turquoise, bg = C.none },
     ["@module.go"]                               = { fg = C.fg, bg = C.none },
     ["@namespace.go"]                            = { fg = C.fg, bg = C.none },
     ["@property.go"]                             = { fg = C.frost.turquoise, bg = C.none },
     ["@punctuation.bracket.go"]                  = { fg = C.frost.light_blue, bg = C.none },
+    ["@string.escape.go"]                        = { fg = C.aurora.yellow, bg = C.none },
+    ["@string.go"]                               = { fg = C.aurora.green, bg = C.none },
     ["@type.builtin.go"]                         = { fg = C.special.light_blue, bg = C.none },
     ["@type.definition.go"]                      = { fg = C.aurora.yellow, bg = C.none },
     ["@type.go"]                                 = { fg = C.special.light_blue, bg = C.none },
-    ["@constant.go"]                             = { fg = C.aurora.yellow, bg = C.none },
-    ["@field.go"]                                = { fg = C.fg, bg = C.none },
     ["@variable.go"]                             = { fg = C.fg, bg = C.none },
     ["@variable.parameter.go"]                   = { fg = C.fg, bg = C.none },
-    ["@function.call.go"]                        = { fg = C.frost.turquoise, bg = C.none },
-    ["@keyword.function.go"]                     = { fg = C.frost.light_blue, bg = C.none },
     ["goBlock"]                                  = { fg = C.frost.turquoise, bg = C.none },
-    ["goConst"]                                  = { fg = C.aurora.yellow, bg = C.none },
     ["goConditional"]                            = { fg = C.frost.light_blue, bg = C.none },
-    ["goParen"]                                  = { fg = C.fg, bg = C.none },
-    ["goImportString"]                           = { fg = C.aurora.green, bg = C.none },
+    ["goConst"]                                  = { fg = C.aurora.yellow, bg = C.none },
     ["goImport"]                                 = { fg = C.frost.sea, bg = C.none },
+    ["goImportString"]                           = { fg = C.aurora.green, bg = C.none },
+    ["goParen"]                                  = { fg = C.fg, bg = C.none },
 }
 
 L.robot = {
