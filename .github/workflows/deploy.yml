@@ -1,4 +1,4 @@
-name: Northern.nvim deployment
+name: nordern.nvim deployment
 
 on:
   push:
