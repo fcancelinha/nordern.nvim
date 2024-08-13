@@ -5,10 +5,26 @@ local function hexToRgb(color)
     return { tonumber(color:sub(2, 3), 16), tonumber(color:sub(4, 5), 16), tonumber(color:sub(6, 7), 16) }
 end
 
+local function semantic_token_override()
+    vim.api.nvim_create_autocmd("LspTokenUpdate", {
+        callback = function(args)
+            local token = args.data.token
+            if token.modifiers.builtin and token.modifiers.readonly and args.data.client_id then
+                vim.lsp.semantic_tokens.highlight_token(
+                    token, args.buf, args.data.client_id, '@lsp.mod.builtin',
+                    vim.highlight.priorities.semantic_tokens + 5
+                )
+            end
+        end,
+    })
+end
+
 function utils.preload()
     if vim.fn.exists("syntax_on") then
         vim.cmd("syntax reset")
     end
+
+    semantic_token_override()
 
     vim.o.termguicolors = true
     vim.o.background = "dark"
