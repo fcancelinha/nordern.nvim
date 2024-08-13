@@ -10,7 +10,6 @@
 
 ![dashboard](https://github.com/user-attachments/assets/8bd142a5-6bd5-4c72-9564-7862aa677563)
 ![golang](https://github.com/user-attachments/assets/9b9cada4-5258-426c-93b9-1d9a4db3762e)
-![main](https://github.com/fcancelinha/nordern.nvim/assets/48698009/740b04e3-7a20-4c92-9a00-2dc5e4eb4a25)
 
 <div align="center">
 
@@ -26,9 +25,6 @@
 <details>
   <summary>more screenshots</summary>
   
-![2123](https://github.com/fcancelinha/nordern.nvim/assets/48698009/7508095f-6411-4a89-9fc5-ffb85afd447b)
-
-![3424324](https://github.com/fcancelinha/nordern.nvim/assets/48698009/935a4db6-dcae-4e07-9923-8529234d51aa)
 
 </details>
 
