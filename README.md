@@ -1,4 +1,6 @@
-<h1 align="center">Nordern.nvim❄️ </h1>
+<h1 align="center">
+    Nordern.nvim❄️ 
+</h1>
 
 <div align="center">
     A carefully crafted nord colorscheme written in lua for neovim using the <a href="https://www.nordtheme.com/docs/colors-and-palettes">Nord Palette</a>.
@@ -15,8 +17,10 @@
 <div align="center">
 
 **Nordern.nvim** | because like any good viking that loves gold, this colorscheme uses aurora yellow to highlight some of the more important tokens.
+</div>
 
-**WARNING** ⚠️: this plugin is still very much a WIP
+<div align="center">
+    WARNING ⚠️: this plugin is still very much a WIP, the name has been changed from Northern => Nordern for better exposure
 </div>
 
 ## Screenshots
