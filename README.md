@@ -16,8 +16,7 @@
 
 **Nordern.nvim** | because like any good viking that loves gold, this colorscheme uses aurora yellow to highlight some of the more important tokens.
 
-**WARNING** ⚠️: this plugin is still very much a WIP, bufferline support exists but I'm figuring out the best way to implement it, some noice windows lack button background and I'm working on it
-
+**WARNING** ⚠️: this plugin is still very much a WIP
 </div>
 
 ## Screenshots
