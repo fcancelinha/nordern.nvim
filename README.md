@@ -9,9 +9,7 @@
 
 
 ![dashboard](https://github.com/user-attachments/assets/8bd142a5-6bd5-4c72-9564-7862aa677563)
-
 ![golang](https://github.com/user-attachments/assets/9b9cada4-5258-426c-93b9-1d9a4db3762e)
-
 ![main](https://github.com/fcancelinha/nordern.nvim/assets/48698009/740b04e3-7a20-4c92-9a00-2dc5e4eb4a25)
 
 <div align="center">
@@ -135,7 +133,7 @@ vim.cmd.colorscheme('nordern')
 colorscheme nordern
 ```
 
-To enable `nordern` for `Lualine` or `Bufferline`, :
+To enable `nordern` for `Lualine`:
 
 #### Lualine
 
@@ -151,6 +149,19 @@ require('lualine').setup {
 #### Bufferline
 
 - This has been integrated directly into the colorscheme, override the colors you don't like in your plugin config.
+
+## 🔧 Configuration
+
+- The available options currently, are:
+
+```lua
+# default configuration
+
+require('nordern').setup({
+    italicized_comments = Boolean,
+    brighter_comments = Boolean,
+})
+```
 
 ## 💧 Acknowledgements
 
