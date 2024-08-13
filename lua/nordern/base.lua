@@ -1,4 +1,4 @@
-local C = require("northern.colors")
+local C = require("nordern.colors")
 -- nvim_set_hl({ns_id}, {name}, {*val}) nvim_set_hl()Sets a highlight group.
 --
 -- Note:
@@ -47,7 +47,7 @@ B.gui = {
     EndOfBuffer    = { fg = C.night.c1, bg = C.none },              --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
     ErrorMsg       = { fg = C.aurora.red, bg = C.bg },              --	Error messages on the command line.
     FloatBorder    = { fg = C.frost.turquoise, bg = C.bg },         --	Border of floating windows.
-    FloatFooter    = { fg = C.bg, bg = C.bg },                      --	Footer of floating windows.
+    FloatFooter    = { fg = C.frost.turquoise, bg = C.none },                      --	Footer of floating windows.
     FloatTitle     = { fg = C.fg, bg = C.bg },                      --	Title of floating windows.
     FoldColumn     = { fg = C.none, bg = C.none },                  --	'foldcolumn'
     Folded         = { fg = C.none, bg = C.none },                  --	Line used for closed folds.

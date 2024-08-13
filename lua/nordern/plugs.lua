@@ -1,4 +1,4 @@
-local C            = require("northern.colors")
+local C            = require("nordern.colors")
 local P            = {}
 
 P.luminate         = {

@@ -1,4 +1,4 @@
-local U = require("northern.utils")
+local U = require("nordern.utils")
 -- The Nord palette : https://www.nordtheme.com/docs/colors-and-palettes
 -- These are the main colors that will form the basis of this colorscheme
 

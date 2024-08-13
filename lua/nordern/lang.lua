@@ -1,4 +1,4 @@
-local C = require("northern.colors")
+local C = require("nordern.colors")
 
 local L = {}
 
@@ -291,9 +291,9 @@ L.go = {
     ["@function.call.go"]                        = { fg = C.frost.turquoise, bg = C.none },
     ["@keyword.function.go"]                     = { fg = C.frost.light_blue, bg = C.none },
     ["@lsp.keyword.go"]                          = { fg = C.frost.light_blue, bg = C.none },
-    ["@lsp.mod.defaultLibrary.go"]               = { fg = C.frost.blue, bg = C.none },
-    ["@lsp.mod.definition.go"]                   = { fg = C.aurora.yellow, bg = C.none },
-    ["@lsp.mod.readonly.go"]                     = { fg = C.frost.blue, bg = C.none },
+    ["@lsp.mod.defaultLibrary.go"]               = { fg = C.aurora.yellow, bg = C.none },
+    ["@lsp.mod.definition.go"]                   = { fg = C.frost.sea, bg = C.none },
+    ["@lsp.mod.readonly.go"]                     = { fg = C.frost.sea, bg = C.none },
     ["@lsp.type.function.go"]                    = { fg = C.frost.turquoise, bg = C.none },
     ["@lsp.type.keyword.go"]                     = { fg = C.frost.light_blue, bg = C.none },
     ["@lsp.type.namespace.go"]                   = { fg = C.fg, bg = C.none },
@@ -306,11 +306,11 @@ L.go = {
     ["@lsp.typemod.method.definition.go"]        = { fg = C.frost.turquoise, bg = C.none },
     ["@lsp.typemod.parameter.definition.go"]     = { fg = C.fg, bg = C.none },
     ["@lsp.typemod.type.defaultLibrary.go"]      = { fg = C.frost.turquoise, bg = C.none },
-    ["@lsp.typemod.type.definition.go"]          = { fg = C.aurora.yellow, bg = C.none },
+    ["@lsp.typemod.type.definition.go"]          = { fg = C.frost.sea, bg = C.none },
     ["@lsp.typemod.typeParameter.definition.go"] = { fg = C.aurora.yellow, bg = C.none },
     ["@lsp.typemod.variable.defaultLibrary.go"]  = { fg = C.aurora.yellow, bg = C.none },
     ["@lsp.typemod.variable.definition.go"]      = { fg = C.fg, bg = C.none },
-    ["@lsp.typemod.variable.readonly.go"]        = { fg = C.aurora.yellow, bg = C.none },
+    ["@lsp.typemod.variable.readonly.go"]        = { fg = C.frost.sea, bg = C.none },
     ["@method.call.go"]                          = { fg = C.frost.sea, bg = C.none },
     ["@method.go"]                               = { fg = C.frost.turquoise, bg = C.none },
     ["@module.go"]                               = { fg = C.fg, bg = C.none },
@@ -320,7 +320,7 @@ L.go = {
     ["@string.escape.go"]                        = { fg = C.aurora.yellow, bg = C.none },
     ["@string.go"]                               = { fg = C.aurora.green, bg = C.none },
     ["@type.builtin.go"]                         = { fg = C.special.light_blue, bg = C.none },
-    ["@type.definition.go"]                      = { fg = C.aurora.yellow, bg = C.none },
+    ["@type.definition.go"]                      = { fg = C.frost.sea, bg = C.none },
     ["@type.go"]                                 = { fg = C.special.light_blue, bg = C.none },
     ["@variable.go"]                             = { fg = C.fg, bg = C.none },
     ["@variable.parameter.go"]                   = { fg = C.fg, bg = C.none },
@@ -443,6 +443,11 @@ L.git_config = {
     ["@type.git_config"]     = { fg = C.fg, bg = C.none },
     ["@string.git_config"]   = { fg = C.fg, bg = C.none },
     ["@operator.git_config"] = { fg = C.aurora.yellow, bg = C.none },
+}
+
+L.git_ignore = {
+    ["@string.special.path.gitignore"] = {link = "Comment"},
+    ["@punctuation.delimiter.gitignore"] = {link = "Comment"},
 }
 
 L.bash = {
