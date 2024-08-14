@@ -498,20 +498,21 @@ P.diffview         = {
 }
 
 P.lazy             = {
-    LazySpecial      = { fg = C.frost.turquoise, bg = C.none },
+    LazyBackdrop     = { fg = C.none, bg = C.blend.turquoise },
+    LazyComment      = { link = "Comment" },
+    LazyCommit       = { fg = C.frost.turquoise, bg = C.none, bold = true },
+    LazyCommitIssue  = { fg = C.frost.turquoise, bg = C.none },
+    LazyCommitType   = { fg = C.frost.light_blue, bg = C.none, bold = true, italic = true },
+    LazyDimmed       = { fg = C.aurora.green, bg = C.none, italic = true },
+    LazyH2           = { fg = C.snow.c0, bg = C.none, bold = true },
     LazyLocal        = { fg = C.aurora.green, bg = C.none },
-    LazyReasonStart  = { fg = C.aurora.green, bg = C.none },
+    LazyProgressDone = { fg = C.aurora.yellow, bg = C.none },
     LazyProp         = { fg = C.frost.turquoise, bg = C.none },
     LazyReasonImport = { fg = C.frost.turquoise, bg = C.none },
-    LazyCommit       = { fg = C.frost.turquoise, bg = C.none, bold = true },
-    LazyComment      = { link = "Comment" },
-    LazyDimmed       = { fg = C.aurora.green, bg = C.none, italic = true },
-    LazyProgressDone = { fg = C.aurora.yellow, bg = C.none },
-    LazyCommitIssue  = { fg = C.frost.turquoise, bg = C.none },
-    LazyUrl          = { fg = C.aurora.green, bg = C.none, underline = true },
-    LazyH2           = { fg = C.snow.c0, bg = C.none, bold = true },
-    LazyCommitType   = { fg = C.frost.light_blue, bg = C.none, bold = true, italic = true },
+    LazyReasonStart  = { fg = C.aurora.green, bg = C.none },
+    LazySpecial      = { fg = C.frost.turquoise, bg = C.none },
     LazyTaskOutput   = { fg = C.aurora.green, bg = C.none, bold = true },
+    LazyUrl          = { fg = C.aurora.green, bg = C.none, underline = true, sp = C.aurora.green },
 }
 
 P.illuminate       = {

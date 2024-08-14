@@ -3,9 +3,9 @@ local C = require("nordern.colors")
 local L = {}
 
 L.neovim = {
-    ["DiagnosticOk"] = { fg = C.aurora.green, bg = C.none, bold = true },
-    ["DiagnosticWarn"] = { fg = C.aurora.yellow, bg = C.none, bold = true },
-    ["DiagnosticError"] = { fg = C.aurora.red, bg = C.none, bold = true },
+    ["DiagnosticOk"] = { fg = C.aurora.green, bg = C.blend.green, bold = true },
+    ["DiagnosticWarn"] = { fg = C.aurora.yellow, bg = C.blend.yellow, bold = true },
+    ["DiagnosticError"] = { fg = C.aurora.red, bg = C.blend.red, bold = true },
 }
 
 L.lsp = {
@@ -13,6 +13,7 @@ L.lsp = {
     ["@lsp.type.class"]                      = { link = "@class" },
     ["@lsp.type.comment"]                    = { link = "@comment" },
     ["@lsp.type.enum"]                       = { link = "@constant" },
+    ["@lsp.mod.defaultLibrary"]              = { link = "@constant" },
     ["@lsp.type.enumMember"]                 = { link = "@constant" },
     ["@lsp.type.field"]                      = { link = "@field" },
     ["@lsp.type.function"]                   = { link = "@function" },
@@ -292,11 +293,11 @@ L.go = {
     ["@keyword.function.go"]                     = { fg = C.frost.light_blue, bg = C.none },
     ["@lsp.keyword.go"]                          = { fg = C.frost.light_blue, bg = C.none },
     ["@lsp.mod.defaultLibrary.go"]               = { fg = C.aurora.yellow, bg = C.none },
-    ["@lsp.mod.definition.go"]                   = { fg = C.frost.sea, bg = C.none },
+    ["@lsp.mod.definition.go"]                   = { fg = C.fg, bg = C.none },
     ["@lsp.mod.readonly.go"]                     = { fg = C.frost.sea, bg = C.none },
     ["@lsp.type.function.go"]                    = { fg = C.frost.turquoise, bg = C.none },
     ["@lsp.type.keyword.go"]                     = { fg = C.frost.light_blue, bg = C.none },
-    ["@lsp.type.namespace.go"]                   = { fg = C.fg, bg = C.none },
+    ["@lsp.type.namespace.go"]                   = { fg = C.none, bg = C.none },
     ["@lsp.type.operator.go"]                    = { fg = C.aurora.yellow, bg = C.none },
     ["@lsp.type.string.go"]                      = { fg = C.aurora.green, bg = C.none },
     ["@lsp.type.type.go"]                        = { fg = C.frost.light_blue, bg = C.none },
@@ -314,7 +315,7 @@ L.go = {
     ["@method.call.go"]                          = { fg = C.frost.sea, bg = C.none },
     ["@method.go"]                               = { fg = C.frost.turquoise, bg = C.none },
     ["@module.go"]                               = { fg = C.fg, bg = C.none },
-    ["@namespace.go"]                            = { fg = C.fg, bg = C.none },
+    ["@namespace.go"]                            = { fg = C.none, bg = C.none },
     ["@property.go"]                             = { fg = C.frost.turquoise, bg = C.none },
     ["@punctuation.bracket.go"]                  = { fg = C.frost.light_blue, bg = C.none },
     ["@string.escape.go"]                        = { fg = C.aurora.yellow, bg = C.none },
@@ -353,6 +354,7 @@ L.zsh = {
 
 L.lua = {
     ["@variable.lua"]                            = { fg = C.fg, bg = C.none },
+    ["@variable.member.lua"]                     = { fg = C.frost.sea, bg = C.none },
     ["@constant.lua"]                            = { fg = C.frost.sea, bg = C.none },
     ["@lsp.type.variable.lua"]                   = { fg = C.frost.turquoise, bg = C.none },
     ["@lsp.type.property.lua"]                   = { fg = C.fg, bg = C.none },
@@ -446,8 +448,8 @@ L.git_config = {
 }
 
 L.git_ignore = {
-    ["@string.special.path.gitignore"] = {link = "Comment"},
-    ["@punctuation.delimiter.gitignore"] = {link = "Comment"},
+    ["@string.special.path.gitignore"] = { link = "Comment" },
+    ["@punctuation.delimiter.gitignore"] = { link = "Comment" },
 }
 
 L.bash = {

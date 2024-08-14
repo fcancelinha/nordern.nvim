@@ -9,10 +9,20 @@ local function semantic_token_override()
     vim.api.nvim_create_autocmd("LspTokenUpdate", {
         callback = function(args)
             local token = args.data.token
-            if token.modifiers.builtin and token.modifiers.readonly and args.data.client_id then
+            if token.modifiers.defaultLibrary and token.modifiers.readonly then
                 vim.lsp.semantic_tokens.highlight_token(
-                    token, args.buf, args.data.client_id, '@lsp.mod.builtin',
-                    vim.highlight.priorities.semantic_tokens + 5
+                    token,
+                    args.buf,
+                    args.data.client_id,
+                    "@lsp.mod.defaultLibrary"
+                )
+            end
+            if token.type == "variable" and token.modifiers.readonly and token.modifiers.definition then
+                vim.lsp.semantic_tokens.highlight_token(
+                    token,
+                    args.buf,
+                    args.data.client_id,
+                    "@lsp.type.variable"
                 )
             end
         end,
