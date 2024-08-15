@@ -19,3 +19,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
+        INITIAL_VERSION: 1.1.0
+        MAJOR_STRING_TOKEN: "feat"
+        MINOR_STRING_TOKEN: "fix"
+        PATCH_STRING_TOKEN: "refactor"
+        NONE_STRING_TOKEN: "chore"
