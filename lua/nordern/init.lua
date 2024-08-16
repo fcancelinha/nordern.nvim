@@ -16,7 +16,7 @@ local c = require("nordern.config")
 
 function nordern.load(opts)
     u.preload()
-    c.apply_opts(b, opts)
+    c.config(b, opts)
     u.load(b, l, p)
 end
 
