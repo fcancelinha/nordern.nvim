@@ -1,9 +1,5 @@
 local utils = {}
 
-local function hexToRgb(color)
-    color = string.lower(color)
-    return { tonumber(color:sub(2, 3), 16), tonumber(color:sub(4, 5), 16), tonumber(color:sub(6, 7), 16) }
-end
 
 local function semantic_token_override()
     vim.api.nvim_create_autocmd("LspTokenUpdate", {
@@ -34,7 +30,11 @@ function utils.preload()
     vim.o.termguicolors = true
     vim.o.background = "dark"
     vim.g.colors_name = "nordern"
-    vim.cmd.colorscheme("nordern")
+end
+
+local function hexToRgb(color)
+    color = string.lower(color)
+    return { tonumber(color:sub(2, 3), 16), tonumber(color:sub(4, 5), 16), tonumber(color:sub(6, 7), 16) }
 end
 
 function utils.blend(foreground, background, alpha)
