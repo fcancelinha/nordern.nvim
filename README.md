@@ -158,12 +158,18 @@ require('lualine').setup {
 
 #### The available options currently, are:
 
-1. transparent = false (transparent background)
-2. brighter_comments = false
-3. italic_comments = false
+```lua
+{
+    transparent = false, -- turns the background transparent
+    brighter_comments = false, -- changes the shade of comments to be brighter and easier to read
+    italic_comments = false, -- italicizes the comments
+}
+```
+
+#### You can apply these options in one of two ways
 
 ```lua
-(...)
+-- Lazy nvim
 opts = {
     transparent = Boolean,
     brighter_comments = Boolean,
@@ -186,7 +192,7 @@ end
 
 ## 💧 Acknowledgements
 
-This is my first try at making a neovim plugin. I want to thank [shaunsign](https://github.com/shaunsingh) nord.nvim which made me understand how to setup my own plugin project structure and [gbprod](https://github.com/gbprod) for the blending functions that produce a soft background.
+This is my first try at making a neovim plugin. I want to thank [shaunsingh](https://github.com/shaunsingh) nord.nvim which made me understand how to setup my own plugin project structure and [gbprod](https://github.com/gbprod) for the blending functions that produce a soft background.
  
 ## 🌊 Other Nord Themes
 
