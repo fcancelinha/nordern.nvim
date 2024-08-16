@@ -1,12 +1,11 @@
 -- *******************************************************************************
 -- Name: Nordern.nvim
 -- Description: Carefully crafted nord colorscheme for neovim in Lua, using arctic studio's palette choosing the warmer colors.
--- Author: dcancelinha https://github.com/fcancelinha
+-- Author: fcancelinha https://github.com/fcancelinha
 -- Website: https://github.com/fcancelinha/nordern.nvim
 -- License: MIT
 -- Year: 2023
 -- ********************************************************************************
-
 local nordern = {}
 
 local b = require("nordern.base")

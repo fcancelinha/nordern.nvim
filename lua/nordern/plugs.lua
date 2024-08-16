@@ -192,17 +192,17 @@ P.flash            = {
 }
 
 P.noice            = {
-    NoiceCmdline                      = { fg = C.frost.turquoise, bg = C.bg },              --normal for the classic cmdline area at the bottom"
-    NoiceCmdlineIcon                  = { fg = C.frost.turquoise, bg = C.bg, bold = true }, --Cmdline icon
-    NoiceCmdlineIconCalculator        = { fg = C.frost.sea, bg = C.bg },                    --
-    NoiceCmdlineIconCmdline           = { fg = C.frost.turquoise, bg = C.bg },              --
-    NoiceCmdlineIconFilter            = { fg = C.aurora.yellow, bg = C.bg },                --
-    NoiceCmdlineIconHelp              = { fg = C.frost.turquoise, bg = C.bg },              --
-    NoiceCmdlineIconIncRename         = { fg = C.aurora.red, bg = C.bg },                   --
-    NoiceCmdlineIconInput             = { fg = C.frost.turquoise, bg = C.bg },              --
-    NoiceCmdlineIconLua               = { fg = C.frost.light_blue, bg = C.bg },             --
-    NoiceCmdlineIconSearch            = { fg = C.aurora.yellow, bg = C.bg },                --Cmdline search icon (`/` and `?`)
-    NoiceCmdlinePopup                 = { fg = C.frost.turquoise, bg = C.bg },              --normal for the cmdline popup
+    NoiceCmdline                      = { fg = C.frost.turquoise, bg = C.none },              --normal for the classic cmdline area at the bottom"
+    NoiceCmdlineIcon                  = { fg = C.frost.turquoise, bg = C.none },              --Cmdline icon
+    NoiceCmdlineIconCalculator        = { fg = C.frost.sea, bg = C.none },                    --
+    NoiceCmdlineIconCmdline           = { fg = C.frost.turquoise, bg = C.none },              --
+    NoiceCmdlineIconFilter            = { fg = C.aurora.yellow, bg = C.none },                --
+    NoiceCmdlineIconHelp              = { fg = C.frost.turquoise, bg = C.none },              --
+    NoiceCmdlineIconIncRename         = { fg = C.aurora.red, bg = C.none },                   --
+    NoiceCmdlineIconInput             = { fg = C.frost.turquoise, bg = C.none },              --
+    NoiceCmdlineIconLua               = { fg = C.frost.light_blue, bg = C.none },             --
+    NoiceCmdlineIconSearch            = { fg = C.aurora.yellow, bg = C.none },                --Cmdline search icon (`/` and `?`)
+    NoiceCmdlinePopup                 = { fg = C.frost.turquoise, bg = C.none },              --normal for the cmdline popup
     NoiceCmdlinePopupBorder           = { link = "FloatBorder" },                           --Cmdline popup border
     NoiceCmdlinePopupBorderCalculator = { link = "FloatBorder" },                           --
     NoiceCmdlinePopupBorderCmdline    = { link = "FloatBorder" },                           --
@@ -218,17 +218,17 @@ P.noice            = {
     NoiceCompletionItemWord           = { fg = C.frost.turquoise, bg = C.bg },              --Normal for the popupmenu
     NoiceConfirm                      = { fg = C.frost.turquoise, bg = C.bg },              --normal for the confirm view
     NoiceConfirmBorder                = { fg = C.frost.turquoise, bg = C.bg },              --Border for the confirm view
-    NoiceCursor                       = { fg = C.blend.blue, bg = C.blend.bluec1 },         --fake Cursor
+    NoiceCursor                       = { fg = C.none, bg = C.blend.bluec1 },               --fake Cursor
     NoiceFormatConfirm                = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --
     NoiceFormatConfirmDefault         = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --
-    NoiceFormatLevelDebug             = { fg = C.aurora.green, bg = C.none },               --
-    NoiceFormatLevelError             = { fg = C.aurora.red, bg = C.none },                 --
-    NoiceFormatLevelInfo              = { fg = C.frost.turquoise, bg = C.none },            --
+    NoiceFormatLevelDebug             = { fg = C.aurora.green, bg = C.blend.green },        --
+    NoiceFormatLevelError             = { fg = C.aurora.red, bg = C.blend.red },            --
+    NoiceFormatLevelInfo              = { fg = C.frost.turquoise, bg = C.blend.bluec1 },    --
     NoiceFormatLevelOff               = { fg = C.night.c3, bg = C.none },                   --
     NoiceFormatLevelTrace             = { fg = C.aurora.green, bg = C.none },               --
     NoiceFormatLevelWarn              = { fg = C.aurora.yellow, bg = C.none },              --
-    NoiceFormatProgressDone           = { fg = C.frost.turquoise, bg = C.none },            --progress bar done
-    NoiceFormatProgressTodo           = { fg = C.aurora.yellow, bg = C.none },              --progress bar todo
+    NoiceFormatProgressDone           = { fg = C.frost.turquoise, bg = C.blend.bluec1 },    --progress bar done
+    NoiceFormatProgressTodo           = { fg = C.aurora.yellow, bg = C.bg },                --progress bar todo
     NoiceFormatTitle                  = { fg = C.fg, bg = C.none },                         --
     NoiceFormatEvent                  = { fg = C.frost.turquoise, bg = C.bg },              --
     NoiceLspProgressClient            = { fg = C.frost.turquoise, bg = C.bg },              --lsp progress client name
@@ -244,7 +244,7 @@ P.noice            = {
     NoiceScrollbar                    = { fg = C.night.c2, bg = C.none },                   --Normal for scrollbar
     NoiceScrollbarThumb               = { fg = C.none, bg = C.blend.turquoise },            --Scrollbar thumb
     NoiceSplit                        = { fg = C.fg, bg = C.bg },                           --Normal for split views
-    NoiceSplitBorder                  = { fg = C.night.c1, bg = C.bg },                     --Border for split views
+    NoiceSplitBorder                  = { fg = C.night.c1, bg = C.none },                   --Border for split views
     NoiceVirtualText                  = { fg = C.frost.turquoise, bg = C.blend.bluec1 },    --Default hl group for virtualtext views
 }
 
@@ -349,11 +349,11 @@ P.telescope        = {
     TelescopeBorder               = { link = "FloatBorder" },
     TelescopeMatching             = { fg = C.frost.turquoise, bg = C.none }, -- Highlight characters your input
     TelescopeMultiSelection       = { link = "CursorLine" },                 -- Multisections
-    TelescopeNormal               = { fg = C.fg, bg = C.none },              -- Floating windows created by telescope
+    TelescopeNormal               = { fg = C.fg, bg = C.bg },              -- Floating windows created by telescope
     TelescopePreviewBorder        = { link = "FloatBorder" },
     TelescopePreviewTitle         = { fg = C.fg, bg = C.none },
     TelescopePromptBorder         = { link = "FloatBorder" },
-    TelescopePromptNormal         = { fg = C.fg, bg = C.none },
+    TelescopePromptNormal         = { fg = C.fg, bg = C.bg },
     TelescopePromptPrefix         = { fg = C.frost.turquoise, bg = C.none },
     TelescopePromptTitle          = { fg = C.fg, bg = C.none },
     TelescopeResultsBorder        = { link = "FloatBorder" },

@@ -46,8 +46,8 @@ B.gui = {
     Directory      = { fg = C.fg, bg = C.none },                      --	Directory names (and other special names in listings) fg = C.none, bg = C.blend.bluec1 .
     EndOfBuffer    = { fg = C.night.c1, bg = C.none },                --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
     ErrorMsg       = { fg = C.aurora.red, bg = C.bg },                --	Error messages on the command line.
-    FloatBorder    = { fg = C.frost.turquoise, bg = C.none },         --	Border of floating windows.
-    FloatFooter    = { fg = C.frost.turquoise, bg = C.none },         --	Footer of floating windows.base
+    FloatBorder    = { fg = C.frost.turquoise, bg = C.bg },         --	Border of floating windows.
+    FloatFooter    = { fg = C.frost.turquoise, bg = C.bg },         --	Footer of floating windows.base
     FloatTitle     = { fg = C.fg, bg = C.none },                      --	Title of floating windows.
     FoldColumn     = { fg = C.none, bg = C.none },                    --	'foldcolumn'
     Folded         = { fg = C.none, bg = C.none },                    --	Line used for closed folds.
@@ -61,11 +61,11 @@ B.gui = {
     MsgArea        = { fg = C.none, bg = C.bg },                      --	Area for messages and cmdline.
     MsgSeparator   = { fg = C.night.c1, bg = C.bg },                  --	Separator for scrolled messages msgsep.
     NonText        = { fg = C.bg, bg = C.bg },                        --	'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also hl-EndOfBuffer.
-    Normal         = { fg = C.fg, bg = C.bg },                        --	Normal text.
+    Normal         = { fg = C.fg, bg = C.none },                        --	Normal text.
     NormalFloat    = { fg = C.fg, bg = C.bg },                        --	Normal text in floating windows.
     NormalNC       = { fg = C.fg, bg = C.bg },                        --	Normal text in non-current windows.
     -- Pmenu
-    Pmenu          = { fg = C.fg, bg = C.night.c0 },                  --	Popup menu: Normal item.
+    Pmenu          = { fg = C.fg, bg = C.bg },                  --	Popup menu: Normal item.
     PmenuExtra     = { fg = C.frost.light_blue, bg = C.bg },          --	Popup menu: Normal item "extra text".
     PmenuExtraSel  = { fg = C.night.c1, bg = C.blend.blue },          --	Popup menu: Selected item "extra text".
     PmenuKind      = { fg = C.frost.turquoise, bg = C.none },         --	Popup menu: Normal item "kind".
@@ -104,7 +104,7 @@ B.gui = {
     DiffAdd        = { fg = C.aurora.green, bg = C.blend.green },     --	Diff mode: Added line. diff.txt
     DiffChange     = { fg = C.aurora.yellow, bg = C.blend.yellow },   --	Diff mode: Changed line. diff.txt
     DiffDelete     = { fg = C.aurora.red, bg = C.blend.red },         --	Diff mode: Deleted line. diff.txt
-    DiffText       = { fg = C.fg, bg = C.none },                      --	Diff mode: Changed text within a changed line. diff.txt
+    DiffText       = { fg = C.fg, bg = C.bg },                      --	Diff mode: Changed text within a changed line. diff.txt
     --Health
     healthError    = { fg = C.aurora.red, bg = C.blend.red },
     healthSuccess  = { fg = C.aurora.green, bg = C.blend.green },
@@ -112,7 +112,7 @@ B.gui = {
     -- Gui
     Menu           = { fg = C.frost.turquoise, bg = C.bg },           -- 	Current font, background and foreground colors of the menus. Also used for the toolbar. Applicable highlight arguments: font, guibg, guifg. hl-Scrollbar
     Scrollbar      = { link = "PmenuSbar" },                          -- 	Current background and foreground of the main window's scrollbars. Applicable highlight arguments: guibg, guifg. hl-Tooltip
-    Tooltip        = { fg = C.blend.turquoise, bg = C.none },         -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
+    Tooltip        = { fg = C.blend.turquoise, bg = C.bg },         -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
     Yank           = { fg = C.aurora.yellow, bg = C.blend.turquoise } -- Yanking highlight
 }
 

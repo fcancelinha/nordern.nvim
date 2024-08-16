@@ -9,12 +9,8 @@ local function apply_brighter_comments(syntax)
     syntax.Comment.fg = "#707788"
 end
 
-local function apply_transparent_background(gui)
-    for _, v in ipairs(gui) do
-        if v.bg ~= colors.bg then
-            v.bg = colors.none
-        end
-    end
+local function apply_transparent_background(base)
+    base.Normal.bg = colors.none
 end
 
 function C.apply_opts(highlights, opts)
