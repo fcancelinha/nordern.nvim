@@ -31,11 +31,10 @@ end
 
 function utils.preload()
     semantic_token_override()
-
     vim.o.termguicolors = true
     vim.o.background = "dark"
     vim.g.colors_name = "nordern"
-    vim.cmd("colorscheme nordern")
+    vim.cmd.colorscheme("nordern")
 end
 
 function utils.blend(foreground, background, alpha)
