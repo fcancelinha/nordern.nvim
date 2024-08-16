@@ -1,26 +1,21 @@
-name: nordern.nvim deployment
-
+name: Bump version
 on:
   push:
-    branches: 
+    branches:
       - master
-  pull_request:
-    branches: master
-    types: [opened, synchronize]
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: write
     steps:
-    - name: checkout
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v4
+      with:
+        fetch-depth: '0'
 
-    - name: bump version and push tag
-      uses: anothrNick/github-tag-action@1.64.0
-      if: ${{ github.event_name == 'push' && !contains(join(github.event.commits.*.message, ', '), '#skip') }}
+    - name: Bump version and push tag
+      uses: anothrNick/github-tag-action@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        DEFAULT_BUMP: patch
-        RELEASE_BRANCHES: master
         WITH_V: true
-        DRY_RUN: true
