@@ -156,15 +156,32 @@ require('lualine').setup {
 
 ## 🔧 Configuration
 
-- The available options currently, are:
+#### The available options currently, are:
+
+1. transparent = false (transparent background)
+2. brighter_comments = false
+3. italic_comments = false
 
 ```lua
-# default configuration
-
-require('nordern').setup({
-    italicized_comments = Boolean,
+(...)
+opts = {
+    transparent = Boolean,
     brighter_comments = Boolean,
-})
+    italic_comments = Boolean
+},
+(...)
+```
+
+OR
+
+```lua
+config = function()
+    require('nordern').setup({
+        transparent = Boolean,
+        brighter_comments = Boolean,
+        italic_comments = Boolean,
+    })
+end
 ```
 
 ## 💧 Acknowledgements
