@@ -192,17 +192,17 @@ P.flash            = {
 }
 
 P.noice            = {
-    NoiceCmdline                      = { fg = C.frost.turquoise, bg = C.none },              --normal for the classic cmdline area at the bottom"
-    NoiceCmdlineIcon                  = { fg = C.frost.turquoise, bg = C.none },              --Cmdline icon
-    NoiceCmdlineIconCalculator        = { fg = C.frost.sea, bg = C.none },                    --
-    NoiceCmdlineIconCmdline           = { fg = C.frost.turquoise, bg = C.none },              --
-    NoiceCmdlineIconFilter            = { fg = C.aurora.yellow, bg = C.none },                --
-    NoiceCmdlineIconHelp              = { fg = C.frost.turquoise, bg = C.none },              --
-    NoiceCmdlineIconIncRename         = { fg = C.aurora.red, bg = C.none },                   --
-    NoiceCmdlineIconInput             = { fg = C.frost.turquoise, bg = C.none },              --
-    NoiceCmdlineIconLua               = { fg = C.frost.light_blue, bg = C.none },             --
-    NoiceCmdlineIconSearch            = { fg = C.aurora.yellow, bg = C.none },                --Cmdline search icon (`/` and `?`)
-    NoiceCmdlinePopup                 = { fg = C.frost.turquoise, bg = C.none },              --normal for the cmdline popup
+    NoiceCmdline                      = { fg = C.frost.turquoise, bg = C.none },            --normal for the classic cmdline area at the bottom"
+    NoiceCmdlineIcon                  = { fg = C.frost.turquoise, bg = C.none },            --Cmdline icon
+    NoiceCmdlineIconCalculator        = { fg = C.frost.sea, bg = C.none },                  --
+    NoiceCmdlineIconCmdline           = { fg = C.frost.turquoise, bg = C.none },            --
+    NoiceCmdlineIconFilter            = { fg = C.aurora.yellow, bg = C.none },              --
+    NoiceCmdlineIconHelp              = { fg = C.frost.turquoise, bg = C.none },            --
+    NoiceCmdlineIconIncRename         = { fg = C.aurora.red, bg = C.none },                 --
+    NoiceCmdlineIconInput             = { fg = C.frost.turquoise, bg = C.none },            --
+    NoiceCmdlineIconLua               = { fg = C.frost.light_blue, bg = C.none },           --
+    NoiceCmdlineIconSearch            = { fg = C.aurora.yellow, bg = C.none },              --Cmdline search icon (`/` and `?`)
+    NoiceCmdlinePopup                 = { fg = C.frost.turquoise, bg = C.none },            --normal for the cmdline popup
     NoiceCmdlinePopupBorder           = { link = "FloatBorder" },                           --Cmdline popup border
     NoiceCmdlinePopupBorderCalculator = { link = "FloatBorder" },                           --
     NoiceCmdlinePopupBorderCmdline    = { link = "FloatBorder" },                           --
@@ -284,6 +284,7 @@ P.neo_tree         = {
     NeoTreeFilterTerm         = { fg = C.aurora.yellow, bg = C.none },           --The filter term, as displayed in the root node.
     NeoTreeFloatBorder        = { link = "FloatBorder" },                        --The border for pop-up windows.
     NeoTreeFloatTitle         = { fg = C.fg, bg = C.none },                      --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
+    NeoTreeFloatNormal        = { fg = C.fg, bg = C.none },                      --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
     NeoTreeGitAdded           = { fg = C.aurora.green, bg = C.none },            --File name when the git status is added.
     NeoTreeGitConflict        = { fg = C.aurora.red, bg = C.none },              --File name when the git status is conflict.
     NeoTreeGitDeleted         = { fg = C.aurora.red, bg = C.none },              --File name when the git status is deleted.
@@ -349,7 +350,7 @@ P.telescope        = {
     TelescopeBorder               = { link = "FloatBorder" },
     TelescopeMatching             = { fg = C.frost.turquoise, bg = C.none }, -- Highlight characters your input
     TelescopeMultiSelection       = { link = "CursorLine" },                 -- Multisections
-    TelescopeNormal               = { fg = C.fg, bg = C.bg },              -- Floating windows created by telescope
+    TelescopeNormal               = { fg = C.fg, bg = C.bg },                -- Floating windows created by telescope
     TelescopePreviewBorder        = { link = "FloatBorder" },
     TelescopePreviewTitle         = { fg = C.fg, bg = C.none },
     TelescopePromptBorder         = { link = "FloatBorder" },

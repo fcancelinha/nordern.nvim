@@ -62,8 +62,8 @@ B.gui = {
     MsgSeparator   = { fg = C.night.c1, bg = C.bg },                  --	Separator for scrolled messages msgsep.
     NonText        = { fg = C.bg, bg = C.bg },                        --	'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also hl-EndOfBuffer.
     Normal         = { fg = C.fg, bg = C.bg },                        --	Normal text.
-    NormalFloat    = { fg = C.fg, bg = C.bg },                        --	Normal text in floating windows.
-    NormalNC       = { fg = C.fg, bg = C.bg },                        --	Normal text in non-current windows.
+    NormalFloat    = { fg = C.fg, bg = C.none },                        --	Normal text in floating windows.
+    NormalNC       = { fg = C.fg, bg = C.none },                        --	Normal text in non-current windows.
     -- Pmenu
     Pmenu          = { fg = C.fg, bg = C.bg },                        --	Popup menu: Normal item.
     PmenuExtra     = { fg = C.frost.light_blue, bg = C.bg },          --	Popup menu: Normal item "extra text".

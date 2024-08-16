@@ -30,15 +30,12 @@ local function semantic_token_override()
 end
 
 function utils.preload()
-    if vim.fn.exists("syntax_on") then
-        vim.cmd("syntax reset")
-    end
-
     semantic_token_override()
 
     vim.o.termguicolors = true
     vim.o.background = "dark"
     vim.g.colors_name = "nordern"
+    vim.cmd("colorscheme nordern")
 end
 
 function utils.blend(foreground, background, alpha)
