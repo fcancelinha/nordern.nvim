@@ -1,6 +1,12 @@
 local C = {}
 local colors = require("nordern.colors")
 
+C.default = {
+    italic_comments = false,
+    brighter_comments = false,
+    transparent = false,
+}
+
 local function apply_italicized_comments(syntax)
     syntax.Comment.italic = true
 end
@@ -13,9 +19,9 @@ local function apply_transparent_background(base)
     base.Normal.bg = colors.none
 end
 
-function C.apply_opts(highlights, opts)
+function C.apply_config(highlights, opts)
     if opts then
-        if opts.italicized_comments then
+        if opts.italic_comments then
             apply_italicized_comments(highlights.syntax)
         end
 
@@ -23,7 +29,7 @@ function C.apply_opts(highlights, opts)
             apply_brighter_comments(highlights.syntax)
         end
 
-        if opts.transparent_background then
+        if opts.transparent then
             apply_transparent_background(highlights.gui)
         end
     end
