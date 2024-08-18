@@ -63,14 +63,16 @@
 - [barbecue](https://github.com/utilyre/barbecue.nvim)
 
 ## Roadmap
- - [x] - improve README 
  - [ ] - vimdoc documentation
- - [ ] - create & extend options
+ - [x] - improve README 
+ - [x] - create & extend options
  - [x] - screenshots of different modes & languages
 
 ## Languages with special support
 <details>
   <summary>click to expand the list of languages</summary>
+
+  *missing languages will be supported upon popular request*
 
 - [ ] - C
 - [ ] - C++
@@ -95,9 +97,7 @@
 - [x] - Xml
 - [x] - Yaml
 - [x] - ZSH
-- [x] - Robot
-
-*other major languages will be supported upon popular request*
+- [x] - RobotFramework
 
 </details>
 
@@ -156,13 +156,13 @@ require('lualine').setup {
 
 ## 🔧 Configuration
 
-#### The available options currently, are:
+#### The available options are:
 
 ```lua
 {
-    transparent = false, -- turns the background transparent
-    brighter_comments = false, -- changes the shade of comments to be brighter and easier to read
-    italic_comments = false, -- italicizes the comments
+    transparent = false, -- turns the background transparent.
+    brighter_comments = false, -- changes the shade of comments to be brighter and easier to read.
+    italic_comments = false, -- italicizes the comments.
 }
 ```
 
@@ -192,7 +192,7 @@ end
 
 ## 💧 Acknowledgements
 
-This is my first try at making a neovim plugin. I want to thank [shaunsingh](https://github.com/shaunsingh) nord.nvim which made me understand how to setup my own plugin project structure and [gbprod](https://github.com/gbprod) for the blending functions that produce a soft background.
+This is my first try at making a neovim plugin. I want to thank [shaunsingh](https://github.com/shaunsingh) which made me understand how to setup my own plugin project structure and [gbprod](https://github.com/gbprod) for the blending functions that produce a soft background.
  
 ## 🌊 Other Nord Themes
 
@@ -202,7 +202,3 @@ This is my first try at making a neovim plugin. I want to thank [shaunsingh](htt
 - [edeneast/nightfox.nvim](https://github.com/EdenEast/nightfox.nvim)
 
 ----------------------------------------------------------------------------------------------------------------------
-
-<p align="center">Copyright &copy; 2023-present
- 
-
