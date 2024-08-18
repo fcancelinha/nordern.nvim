@@ -33,15 +33,15 @@ local B = {}
 
 -- Base neovim
 B.gui = {
-    ColorColumn    = { fg = C.none, bg = C.bg },                      --	Used for the columns set with 'colorcolumn'.
-    Conceal        = { fg = C.none, bg = C.bg },                      --	Placeholder characters substituted for concealed text (see 'conceallevel').
-    CurSearch      = { fg = C.bg, bg = C.frost.turquoise },           --Used for highlighting a search pattern under the cursor (see 'hlsearch').
+    ColorColumn    = {link = "CursorLine"},                --	Used for the columns set with 'colorcolumn'.
+    Conceal        = { fg = C.none, bg = C.bg },                      --	Placeholder characters substituted for concealed text ().
+    CurSearch      = { fg = C.bg, bg = C.frost.turquoise },           --    Used for highlighting a search pattern under the cursor (see 'hlsearch').
     Cursor         = { fg = C.bg, bg = C.frost.turquoise },           --	Character under the cursor.
     CursorColumn   = { fg = C.none, bg = C.night.c1 },                --	Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorIM       = { fg = C.bg, bg = C.frost.turquoise },           --	Like Cursor, but used when in IME mode. CursorIM
     CursorLine     = { fg = C.none, bg = C.blend.blue },              --	Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
     CursorLineFold = { fg = C.none, bg = C.fg },                      --	Like FoldColumn when 'cursorline' is set for the cursor line.
-    CursorLineNr   = { fg = C.bg, bg = C.frost.turquoise },           --Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
+    CursorLineNr   = { fg = C.bg, bg = C.frost.turquoise },           --    Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
     CursorLineSign = { fg = C.night.c1, bg = C.blend.blue },          --	Like SignColumn when 'cursorline' is set for the cursor line.
     Directory      = { fg = C.fg, bg = C.none },                      --	Directory names (and other special names in listings) fg = C.none, bg = C.blend.bluec1 .
     EndOfBuffer    = { fg = C.night.c1, bg = C.none },                --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
@@ -90,6 +90,7 @@ B.gui = {
     TabLineSel     = { fg = C.bg, bg = C.bg },                        --	Tab pages line, active tab page label.
     TermCursor     = { fg = C.none, bg = C.blend.bluec1 },            --	Cursor in a focused terminal.
     TermCursorNC   = { fg = C.none, bg = C.blend.bluec1 },            --	Cursor in an unfocused terminal.
+    TermNormal     = { fg = C.fg, bg = C.bg },
     Title          = { fg = C.fg, bg = C.bg },                        --	Titles for output from ":set all", ":autocmd" etc.
     Visual         = { fg = C.none, bg = C.blend.blue },              --	Visual mode selection.
     VisualNOS      = { fg = C.none, bg = C.blend.blue },              --	Visual mode selection when vim is "Not Owning the Selection".

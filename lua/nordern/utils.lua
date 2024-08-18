@@ -1,6 +1,5 @@
 local utils = {}
 
-
 local function semantic_token_override()
     vim.api.nvim_create_autocmd("LspTokenUpdate", {
         callback = function(args)

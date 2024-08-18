@@ -17,6 +17,8 @@ end
 
 local function apply_transparent_background(base)
     base.Normal.bg = colors.none
+    base.WinBarNC.bg = colors.none
+    base.TermNormal.bg = colors.none
 end
 
 function C.apply_config(highlights, opts)
