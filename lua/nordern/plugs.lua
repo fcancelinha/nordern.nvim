@@ -350,11 +350,11 @@ P.telescope        = {
     TelescopeBorder               = { link = "FloatBorder" },
     TelescopeMatching             = { fg = C.frost.turquoise, bg = C.none }, -- Highlight characters your input
     TelescopeMultiSelection       = { link = "CursorLine" },                 -- Multisections
-    TelescopeNormal               = { fg = C.fg, bg = C.bg },                -- Floating windows created by telescope
+    TelescopeNormal               = { fg = C.fg, bg = C.none },                -- Floating windows created by telescope
     TelescopePreviewBorder        = { link = "FloatBorder" },
     TelescopePreviewTitle         = { fg = C.fg, bg = C.none },
     TelescopePromptBorder         = { link = "FloatBorder" },
-    TelescopePromptNormal         = { fg = C.fg, bg = C.bg },
+    TelescopePromptNormal         = { fg = C.fg, bg = C.none },
     TelescopePromptPrefix         = { fg = C.frost.turquoise, bg = C.none },
     TelescopePromptTitle          = { fg = C.fg, bg = C.none },
     TelescopeResultsBorder        = { link = "FloatBorder" },
@@ -367,6 +367,8 @@ P.telescope        = {
     TelescopeSelectionCaret       = { fg = C.frost.turquoise, bg = C.none }, -- Selection caret
     TelescopeResultsDiffUntracked = { fg = C.frost.sea, bg = C.none },
     TelescopeResultsComment       = { fg = C.frost.turquoise, bg = C.none },
+    TelescopePreviewHyphen       = { fg = C.frost.turquoise, bg = C.none },
+    TelescopePromptCounter       = { fg = C.frost.turquoise, bg = C.none },
 }
 
 P.git_signs        = {

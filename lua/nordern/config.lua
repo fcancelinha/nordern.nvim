@@ -16,9 +16,24 @@ local function apply_brighter_comments(syntax)
 end
 
 local function apply_transparent_background(base)
-    base.Normal.bg = colors.none
-    base.WinBarNC.bg = colors.none
-    base.TermNormal.bg = colors.none
+    local highlight_groups = {
+        "Normal",
+        "NormalFloat",
+        "FloatBorder",
+        "FloatTitle",
+        "WinBarNC",
+        "WinBar",
+        "TermNormal",
+        "StatusLine",
+        "StatusLineNC",
+        "TabLine",
+        "TabLineFill",
+        "TabLineSel"
+    }
+
+    for _, group in ipairs(highlight_groups) do
+        base[group].bg = colors.none
+    end
 end
 
 function C.apply_config(highlights, opts)

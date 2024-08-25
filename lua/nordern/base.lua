@@ -33,7 +33,7 @@ local B = {}
 
 -- Base neovim
 B.gui = {
-    ColorColumn    = {link = "CursorLine"},                --	Used for the columns set with 'colorcolumn'.
+    ColorColumn    = { link = "CursorLine" },                         --	Used for the columns set with 'colorcolumn'.
     Conceal        = { fg = C.none, bg = C.bg },                      --	Placeholder characters substituted for concealed text ().
     CurSearch      = { fg = C.bg, bg = C.frost.turquoise },           --    Used for highlighting a search pattern under the cursor (see 'hlsearch').
     Cursor         = { fg = C.bg, bg = C.frost.turquoise },           --	Character under the cursor.
@@ -47,8 +47,8 @@ B.gui = {
     EndOfBuffer    = { fg = C.night.c1, bg = C.none },                --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
     ErrorMsg       = { fg = C.aurora.red, bg = C.bg },                --	Error messages on the command line.
     FloatBorder    = { fg = C.frost.turquoise, bg = C.bg },           --	Border of floating windows.
-    FloatFooter    = { fg = C.frost.turquoise, bg = C.bg },           --	Footer of floating windows.base
-    FloatTitle     = { fg = C.fg, bg = C.none },                      --	Title of floating windows.
+    FloatFooter    = { link = "FloatBorder" },                        --	Footer of floating windows.base
+    FloatTitle     = { fg = C.fg, bg = C.bg },                        --	Title of floating windows.
     FoldColumn     = { fg = C.none, bg = C.none },                    --	'foldcolumn'
     Folded         = { fg = C.none, bg = C.none },                    --	Line used for closed folds.
     IncSearch      = { link = "CurSearch" },                          --	'incsearch' highlighting; also used for the text replaced with ":s///c".
@@ -62,8 +62,8 @@ B.gui = {
     MsgSeparator   = { fg = C.night.c1, bg = C.bg },                  --	Separator for scrolled messages msgsep.
     NonText        = { fg = C.bg, bg = C.bg },                        --	'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also hl-EndOfBuffer.
     Normal         = { fg = C.fg, bg = C.bg },                        --	Normal text.
-    NormalFloat    = { fg = C.fg, bg = C.bg },                        --	Normal text in floating windows.
-    NormalNC       = { fg = C.fg, bg = C.bg },                        --	Normal text in non-current windows.
+    NormalFloat    = { link = "Normal" },                             --	Normal text in floating windows.
+    NormalNC       = { link = "Normal" },                             --	Normal text in non-current windows.
     -- Pmenu
     Pmenu          = { fg = C.fg, bg = C.bg },                        --	Popup menu: Normal item.
     PmenuExtra     = { fg = C.frost.light_blue, bg = C.bg },          --	Popup menu: Normal item "extra text".
@@ -82,8 +82,8 @@ B.gui = {
     SpellCap       = { fg = C.aurora.red, bg = C.bg },                --	Word that should start with a capital. spell Combined with the highlighting used otherwise.
     SpellLocal     = { fg = C.aurora.yellow, bg = C.bg },             --	Word that is recognized by the spellchecker as one that is used in another region. spell Combined with the highlighting used otherwise.
     SpellRare      = { fg = C.aurora.yellow, bg = C.bg },             --	Word that is recognized by the spellchecker as one that is hardly ever used. spell Combined with the highlighting used otherwise.
-    StatusLine     = { fg = C.none, bg = C.none },                    --	Status line of current window.
-    StatusLineNC   = { fg = C.none, bg = C.none },                    --	Status lines of not-current windows. Note: If this is equal to "StatusLine", Vim will use "^^^" in the status line of the current window.
+    StatusLine     = { fg = C.none, bg = C.bg },                      --	Status line of current window.
+    StatusLineNC   = { link = "StatusLine" },                         --	Status lines of not-current windows. Note: If this is equal to "StatusLine", Vim will use "^^^" in the status line of the current window.
     Substitute     = { link = "CurSearch" },                          --	:substitute replacement text highlighting.
     TabLine        = { fg = C.bg, bg = C.bg },                        --	Tab pages line, not active tab page label.
     TabLineFill    = { fg = C.bg, bg = C.bg },                        --	Tab pages line, where there are no labels.
