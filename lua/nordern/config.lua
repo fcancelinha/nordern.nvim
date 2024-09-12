@@ -2,8 +2,9 @@ local C = {}
 local colors = require("nordern.colors")
 
 C.default = {
-    italic_comments = false,
     brighter_comments = false,
+    brighter_conditionals = true,
+    italic_comments = false,
     transparent = false,
 }
 
@@ -13,6 +14,10 @@ end
 
 local function apply_brighter_comments(syntax)
     syntax.Comment.fg = "#707788"
+end
+
+local function apply_brighter_conditionals(syntax)
+    syntax.Boolean.fg = colors.aurora.yellow
 end
 
 local function apply_transparent_background(base)
@@ -28,7 +33,8 @@ local function apply_transparent_background(base)
         "StatusLineNC",
         "TabLine",
         "TabLineFill",
-        "TabLineSel"
+        "TabLineSel",
+        "SignColumn",
     }
 
     for _, group in ipairs(highlight_groups) do
@@ -48,6 +54,10 @@ function C.apply_config(highlights, opts)
 
         if opts.transparent then
             apply_transparent_background(highlights.gui)
+        end
+
+        if opts.brighter_conditionals then
+            apply_brighter_conditionals(highlights.syntax)
         end
     end
 end

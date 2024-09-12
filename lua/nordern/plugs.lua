@@ -28,22 +28,22 @@ P.outline          = {
 P.neotest          = {
     NeotestAdapterName = { fg = C.aurora.yellow, bg = C.none },
     NeotestDir = { fg = C.frost.turquoise, bg = C.none },
-    NeotestTest = { fg = C.snow.c2, bg = C.none },
-    NeotestFile = { fg = C.frost.sea, bg = C.none, bold = true, underline = true },
-    NeotestBorder = { fg = C.frost.turquoise, bg = C.none },
+    NeotestTest = { fg = C.fg, bg = C.none },
+    NeotestFile = { fg = C.frost.sea, bg = C.none, bold = true, underline = true, sp = C.frost.sea },
+    NeotestBorder = { link = "FloatBorder" },
     NeotestExpandMarker = { fg = C.night.c3, bg = C.none },
-    NeotestFailed = { fg = C.aurora.red, bg = C.none },
-    NeotestFocused = { fg = C.aurora.yellow, bg = C.blend.bluec1, underline = true },
+    NeotestFailed = { fg = C.aurora.red, bg = C.blend.red },
+    NeotestFocused = { fg = C.aurora.yellow, bg = C.blend.bluec1, underline = true, sp = C.aurora.yellow },
     NeotestIndent = { fg = C.night.c3, bg = C.none },
-    NeotestMarked = { fg = C.aurora.orange, bg = C.none },
+    NeotestMarked = { fg = C.aurora.yellow, bg = C.none },
     NeotestNamespace = { fg = C.frost.sea, bg = C.none },
-    NeotestPassed = { fg = C.aurora.green, bg = C.none },
+    NeotestPassed = { fg = C.aurora.green, bg = C.blend.green },
     NeotestRunning = { fg = C.aurora.yellow, bg = C.none },
     NeotestWinSelect = { fg = C.frost.turquoise, bg = C.none },
-    NeotestSkipped = { fg = C.night.c1, bg = C.none },
-    NeotestTarget = { fg = C.aurora.red, bg = C.none },
-    NeotestUnknown = { fg = C.night.c3, bg = C.none },
-    NeotestWatching = { fg = C.aurora.yellow, bg = C.none },
+    NeotestSkipped = { fg = C.night.c3, bg = C.none },
+    NeotestTarget = { fg = C.aurora.purple, bg = C.none },
+    NeotestUnknown = { fg = C.night.c1, bg = C.none },
+    NeotestWatching = { fg = C.aurora.orange, bg = C.none },
 }
 
 P.dap              = {
@@ -262,7 +262,7 @@ P.dadBod           = {
 
 P.lazygit          = {
     LazyGitBorder = { link = "FloatBorder" },
-    LazyGitFloat  = { fg = C.snow.c0, bg = C.none },
+    LazyGitFloat  = { fg = C.fg, bg = C.none },
 }
 
 P.neo_tree         = {
@@ -350,7 +350,7 @@ P.telescope        = {
     TelescopeBorder               = { link = "FloatBorder" },
     TelescopeMatching             = { fg = C.frost.turquoise, bg = C.none }, -- Highlight characters your input
     TelescopeMultiSelection       = { link = "CursorLine" },                 -- Multisections
-    TelescopeNormal               = { fg = C.fg, bg = C.none },                -- Floating windows created by telescope
+    TelescopeNormal               = { fg = C.fg, bg = C.none },              -- Floating windows created by telescope
     TelescopePreviewBorder        = { link = "FloatBorder" },
     TelescopePreviewTitle         = { fg = C.fg, bg = C.none },
     TelescopePromptBorder         = { link = "FloatBorder" },
@@ -367,8 +367,8 @@ P.telescope        = {
     TelescopeSelectionCaret       = { fg = C.frost.turquoise, bg = C.none }, -- Selection caret
     TelescopeResultsDiffUntracked = { fg = C.frost.sea, bg = C.none },
     TelescopeResultsComment       = { fg = C.frost.turquoise, bg = C.none },
-    TelescopePreviewHyphen       = { fg = C.frost.turquoise, bg = C.none },
-    TelescopePromptCounter       = { fg = C.frost.turquoise, bg = C.none },
+    TelescopePreviewHyphen        = { fg = C.frost.turquoise, bg = C.none },
+    TelescopePromptCounter        = { fg = C.frost.turquoise, bg = C.none },
 }
 
 P.git_signs        = {
@@ -855,8 +855,32 @@ P.barbecue         = {
     barbecue_dirname                = { fg = C.frost.light_blue, bg = C.bg, },
     barbecue_ellipsis               = { fg = C.aurora.yellow, bg = C.bg, },
     barbecue_modified               = { fg = C.aurora.yellow, bg = C.bg, },
-    barbecue_normal                 = { fg = C.bg, bg = C.bg, },
+    barbecue_normal                 = { fg = C.frost.turquoise, bg = C.bg, },
     barbecue_separator              = { fg = C.frost.turquoise, bg = C.bg, },
+}
+
+-- P.toggleterm       = {
+--     ToggleTerm1Normal = { fg = C.fg, bg = C.bg },
+--     ToggleTerm1WinBar = { fg = C.fg, bg = C.bg },
+--     ToggleTerm1WinBarNC = { fg = C.fg, bg = C.bg },
+--     ToggleTerm1SignColumn = { fg = C.fg, bg = C.bg },
+--     ToggleTerm1StatusLine = { fg = C.fg, bg = C.bg },
+--     ToggleTerm1EndOfBuffer = { fg = C.fg, bg = C.bg },
+--     ToggleTerm1FloatBorder = { fg = C.fg, bg = C.bg },
+--     ToggleTerm1NormalFloat = { fg = C.fg, bg = C.bg },
+--     ToggleTerm1StatusLineNC = { fg = C.fg, bg = C.bg },
+-- }
+
+P.mini             = {
+    MiniIconsRed    = { fg = C.aurora.red, bg = C.none },
+    MiniIconsBlue   = { fg = C.frost.blue, bg = C.none },
+    MiniIconsCyan   = { fg = C.frost.sea, bg = C.none },
+    MiniIconsGrey   = { fg = C.night.c1, bg = C.none },
+    MiniIconsAzure  = { fg = C.frost.turquoise, bg = C.none },
+    MiniIconsGreen  = { fg = C.aurora.green, bg = C.none },
+    MiniIconsOrange = { fg = C.aurora.orange, bg = C.none },
+    MiniIconsPurple = { fg = C.aurora.purple, bg = C.none },
+    MiniIconsYellow = { fg = C.aurora.yellow, bg = C.none },
 }
 
 return P

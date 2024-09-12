@@ -159,10 +159,12 @@ require('lualine').setup {
 #### The available options are:
 
 ```lua
+-- Default options
 {
-    transparent = false, -- turns the background transparent.
-    brighter_comments = false, -- changes the shade of comments to be brighter and easier to read.
-    italic_comments = false, -- italicizes the comments.
+    brighter_comments = false, -- changes the hue of comments to be brighter and easier to read.
+    brighter_conditionals = false, -- changes the color of booleans, enums and readonly to aurora yellow from light blue.
+    italic_comments = false, -- italicizes comments
+    transparent = false, -- turns the background transparent (this is a WIP and there might be inconsistencies)
 }
 ```
 
@@ -171,9 +173,10 @@ require('lualine').setup {
 ```lua
 -- Lazy nvim
 opts = {
-    transparent = Boolean,
     brighter_comments = Boolean,
+    brighter_conditionals = Boolean
     italic_comments = Boolean
+    transparent = Boolean,
 },
 (...)
 ```
@@ -183,9 +186,10 @@ OR
 ```lua
 config = function()
     require('nordern').setup({
-        transparent = Boolean,
         brighter_comments = Boolean,
-        italic_comments = Boolean,
+        brighter_conditionals = Boolean
+        italic_comments = Boolean
+        transparent = Boolean,
     })
 end
 ```
