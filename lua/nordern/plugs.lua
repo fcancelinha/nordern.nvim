@@ -883,4 +883,21 @@ P.mini             = {
     MiniIconsYellow = { fg = C.aurora.yellow, bg = C.none },
 }
 
+P.avante           = {
+    AvanteTitle                 = { fg = C.bg, bg = C.frost.turquoise },
+    AvanteSubtitle              = { fg = C.bg, bg = C.frost.sea},
+    AvanteAnnotation            = { link = "Comment" },
+    AvanteSuggestion            = { fg = C.night.c3, bg = C.none },
+    AvanteThirdTitle            = { fg = C.bg, bg = C.aurora.green },
+    AvanteReversedTitle         = { fg = C.frost.turquoise, bg = C.none },
+    AvanteConflictCurrent       = { link = "DiffDelete" },
+    AvanteConflictAncestor      = { fg = C.aurora.orange, bg = C.blend.yellow },
+    AvanteConflictIncoming      = { link = "DiffChange" },
+    AvanteReversedSubtitle      = { fg = C.aurora.green, bg = C.none },
+    AvanteReversedThirdTitle    = { fg = C.aurora.green, bg = C.none },
+    AvanteConflictCurrentLabel  = { fg = C.aurora.red, bg = C.none },
+    AvanteConflictAncestorLabel = { fg = C.aurora.purple, bg = C.none },
+    AvanteConflictIncomingLabel = { fg = C.aurora.orange, bg = C.none },
+}
+
 return P
