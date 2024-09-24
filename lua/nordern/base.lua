@@ -33,90 +33,94 @@ local B = {}
 
 -- Base neovim
 B.gui = {
-    ColorColumn    = { link = "CursorLine" },                                    --	Used for the columns set with 'colorcolumn'.
-    Conceal        = { fg = C.none, bg = C.none },                               --	Placeholder characters substituted for concealed text ().
-    CurSearch      = { fg = C.bg, bg = C.frost.turquoise },                      --  Used for highlighting a search pattern under the cursor (see 'hlsearch').
-    Cursor         = { fg = C.bg, bg = C.frost.turquoise },                      --	Character under the cursor.
-    CursorColumn   = { fg = C.none, bg = C.night.c1 },                           --	Screen-column at the cursor, when 'cursorcolumn' is set.
-    CursorIM       = { fg = C.bg, bg = C.frost.turquoise },                      --	Like Cursor, but used when in IME mode. CursorIM
-    CursorLine     = { fg = C.none, bg = C.blend.blue },                         --	Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
-    CursorLineFold = { fg = C.none, bg = C.fg },                                 --	Like FoldColumn when 'cursorline' is set for the cursor line.
-    CursorLineNr   = { fg = C.frost.turquoise, bg = C.blend.blue, bold = true }, --  Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
-    CursorLineSign = { fg = C.night.c1, bg = C.blend.blue },                     --	Like SignColumn when 'cursorline' is set for the cursor line.
-    Directory      = { fg = C.fg, bg = C.none },                                 --	Directory names (and other special names in listings) fg = C.none, bg = C.blend.bluec1 .
-    EndOfBuffer    = { fg = C.night.c1, bg = C.none },                           --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
-    ErrorMsg       = { fg = C.aurora.red, bg = C.none },                         --	Error messages on the command line.
-    FloatBorder    = { fg = C.frost.turquoise, bg = C.none },                    --	Border of floating windows.
-    FloatFooter    = { link = "FloatBorder" },                                   --	Footer of floating windows.base
-    FloatTitle     = { fg = C.fg, bg = C.bg },                                   --	Title of floating windows.
-    FoldColumn     = { fg = C.none, bg = C.none },                               --	'foldcolumn'
-    Folded         = { fg = C.none, bg = C.night.c3 },                           --	Line used for closed folds.
-    IncSearch      = { link = "CurSearch" },                                     --	'incsearch' highlighting; also used for the text replaced with ":s///c".
-    LineNr         = { fg = C.fg, bg = C.none },                                 --	Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
-    LineNrAbove    = { fg = C.night.c3, bg = C.none },                           --	Line number for when the 'relativenumber' option is set, above the cursor line.
-    LineNrBelow    = { fg = C.night.c3, bg = C.none },                           --	Line number for when the 'relativenumber' option is set, below the cursor line.
-    MatchParen     = { fg = C.none, bg = C.night.c3 },                           --	Character under the cursor or just before it, if it is a paired bracket, and its match. pi_paren.txt
-    ModeMsg        = { fg = C.fg, bg = C.bg },                                   --	'showmode' message (e.g., "-- INSERT --").
-    MoreMsg        = { fg = C.fg, bg = C.bg },                                   --	more-prompt
-    MsgArea        = { fg = C.none, bg = C.bg },                                 --	Area for messages and cmdline.
-    MsgSeparator   = { fg = C.night.c1, bg = C.bg },                             --	Separator for scrolled messages msgsep.
-    NonText        = { fg = C.night.c3, bg = C.none },                           --	'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also hl-EndOfBuffer.
-    Normal         = { fg = C.fg, bg = C.bg },                                   --	Normal text.
-    NormalFloat    = { link = "Normal" },                                        --	Normal text in floating windows.
-    NormalNC       = { link = "Normal" },                                        --	Normal text in non-current windows.
-    Pmenu          = { fg = C.fg, bg = C.bg },                                   --	Popup menu: Normal item.
-    PmenuExtra     = { fg = C.frost.light_blue, bg = C.bg },                     --	Popup menu: Normal item "extra text".
-    PmenuExtraSel  = { fg = C.night.c1, bg = C.blend.blue },                     --	Popup menu: Selected item "extra text".
-    PmenuKind      = { fg = C.frost.turquoise, bg = C.bg },                      --	Popup menu: Normal item "kind".
-    PmenuKindSel   = { fg = C.frost.sea, bg = C.blend.blue },                    --	Popup menu: Selected item "kind".
-    PmenuSbar      = { fg = C.blend.turquoise, bg = C.bg },                      --	Popup menu: Scrollbar.
-    PmenuSel       = { fg = C.none, bg = C.blend.blue },                         --	Popup menu: Selected item.
-    PmenuThumb     = { fg = C.night.c1, bg = C.night.c2 },                       --	Popup menu: Thumb of the scrollbar.
-    Question       = { fg = C.frost.turquoise, bg = C.bg },                      --	hit-enter prompt and yes/no questions.
-    QuickFixLine   = { fg = C.fg, bg = C.none },                                 --	Current quickfix item in the quickfix window. Combined with hl-CursorLine when the cursor is there.
-    Search         = { link = "CurSearch" },                                     --	Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
-    SignColumn     = { fg = C.none, bg = C.bg },                                 --	Column where signs are displayed.
-    SpecialKey     = { fg = C.night.c2, bg = C.bg },                             --	Unprintable characters: Text displayed differently from what it really is. But not 'listchars' whitespace. hl-Whitespace
-    SpellBad       = { fg = C.aurora.red, bg = C.bg },                           --	Word that is not recognized by the spellchecker. spell Combined with the highlighting used otherwise.
-    SpellCap       = { fg = C.aurora.red, bg = C.bg },                           --	Word that should start with a capital. spell Combined with the highlighting used otherwise.
-    SpellLocal     = { fg = C.aurora.yellow, bg = C.bg },                        --	Word that is recognized by the spellchecker as one that is used in another region. spell Combined with the highlighting used otherwise.
-    SpellRare      = { fg = C.aurora.yellow, bg = C.bg },                        --	Word that is recognized by the spellchecker as one that is hardly ever used. spell Combined with the highlighting used otherwise.
-    StatusLine     = { fg = C.none, bg = C.bg },                                 --	Status line of current window.
-    StatusLineNC   = { link = "StatusLine" },                                    --	Status lines of not-current windows. Note: If this is equal to "StatusLine", Vim will use "^^^" in the status line of the current window.
-    Substitute     = { link = "CurSearch" },                                     --	:substitute replacement text highlighting.
-    TabLine        = { fg = C.bg, bg = C.bg },                                   --	Tab pages line, not active tab page label.
-    TabLineFill    = { fg = C.bg, bg = C.bg },                                   --	Tab pages line, where there are no labels.
-    TabLineSel     = { fg = C.bg, bg = C.bg },                                   --	Tab pages line, active tab page label.
-    TermCursor     = { fg = C.none, bg = C.blend.bluec1 },                       --	Cursor in a focused terminal.
-    TermCursorNC   = { fg = C.none, bg = C.blend.bluec1 },                       --	Cursor in an unfocused terminal.
-    TermNormal     = { fg = C.fg, bg = C.bg },
-    Title          = { fg = C.fg, bg = C.bg },                                   --	Titles for output from ":set all", ":autocmd" etc.
-    Visual         = { fg = C.none, bg = C.blend.blue },                         --	Visual mode selection.
-    VisualNOS      = { fg = C.none, bg = C.blend.blue },                         --	Visual mode selection when vim is "Not Owning the Selection".
-    WarningMsg     = { fg = C.aurora.yellow, bg = C.none },                      --	Warning messages.
-    Whitespace     = { fg = C.night.c3, bg = C.none, sp = C.night.c3 },          --	"nbsp", "space", "tab", "multispace", "lead" and "trail" in 'listchars'.
-    WildMenu       = { fg = C.frost.turquoise, bg = C.blend.bluec1 },            --	Current match in 'wildmenu' completion.
-    WinBar         = { fg = C.none, bg = C.bg },                                 --	Window bar of current window.
-    WinBarNC       = { fg = C.none, bg = C.bg },                                 --	Window bar of not-current windows
-    WinSeparator   = { fg = C.night.c1, bg = C.bg },                             --	Separators between window splits.
-    lCursor        = { fg = C.bg, bg = C.frost.turquoise },                      --	Character under the cursor when language-mapping is used (see 'guicursor').
-    DiffAdd        = { fg = C.aurora.green, bg = C.blend.green },                --	Diff mode: Added line. diff.txt
-    DiffChange     = { fg = C.aurora.yellow, bg = C.blend.yellow },              --	Diff mode: Changed line. diff.txt
-    DiffDelete     = { fg = C.aurora.red, bg = C.blend.red },                    --	Diff mode: Deleted line. diff.txt
-    DiffText       = { fg = C.fg, bg = C.bg },                                   --	Diff mode: Changed text within a changed line. diff.txt
-    healthError    = { fg = C.aurora.red, bg = C.blend.red },
-    healthSuccess  = { fg = C.aurora.green, bg = C.blend.green },
-    healthWarning  = { fg = C.aurora.yellow, bg = C.blend.yellow },
-    Menu           = { fg = C.frost.turquoise, bg = C.bg },           -- 	Current font, background and foreground colors of the menus. Also used for the toolbar. Applicable highlight arguments: font, guibg, guifg. hl-Scrollbar
-    Scrollbar      = { link = "PmenuSbar" },                          -- 	Current background and foreground of the main window's scrollbars. Applicable highlight arguments: guibg, guifg. hl-Tooltip
-    Tooltip        = { fg = C.blend.turquoise, bg = C.bg },           -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
-    Yank           = { fg = C.aurora.yellow, bg = C.blend.turquoise } -- Yanking highlight
+    ColorColumn              = { link = "CursorLine" },                                    --	Used for the columns set with 'colorcolumn'.
+    Conceal                  = { fg = C.none, bg = C.none },                               --	Placeholder characters substituted for concealed text ().
+    CurSearch                = { fg = C.bg, bg = C.frost.turquoise },                      --   Used for highlighting a search pattern under the cursor (see 'hlsearch').
+    Cursor                   = { fg = C.bg, bg = C.frost.turquoise },                      --	Character under the cursor.
+    CursorColumn             = { fg = C.none, bg = C.night.c1 },                           --	Screen-column at the cursor, when 'cursorcolumn' is set.
+    CursorIM                 = { fg = C.bg, bg = C.frost.turquoise },                      --	Like Cursor, but used when in IME mode. CursorIM
+    CursorLine               = { fg = C.none, bg = C.blend.blue },                         --	Screen-line at the cursor, when 'cursorline' is set. Low-priority if foreground (ctermfg OR guifg) is not set.
+    CursorLineFold           = { fg = C.none, bg = C.fg },                                 --	Like FoldColumn when 'cursorline' is set for the cursor line.
+    CursorLineNr             = { fg = C.frost.turquoise, bg = C.blend.blue, bold = true }, --   Like LineNr when 'cursorline' is set and 'cursorlineopt' contains "number" or is "both", for the cursor line.
+    CursorLineSign           = { fg = C.night.c1, bg = C.blend.blue },                     --	Like SignColumn when 'cursorline' is set for the cursor line.
+    Directory                = { fg = C.fg, bg = C.none },                                 --	Directory names (and other special names in listings) fg = C.none, bg = C.blend.bluec1 .
+    EndOfBuffer              = { fg = C.night.c1, bg = C.none },                           --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
+    ErrorMsg                 = { fg = C.aurora.red, bg = C.none },                         --	Error messages on the command line.
+    FloatBorder              = { fg = C.frost.turquoise, bg = C.none },                    --	Border of floating windows.
+    FloatFooter              = { link = "FloatBorder" },                                   --	Footer of floating windows.base
+    FloatTitle               = { fg = C.fg, bg = C.bg },                                   --	Title of floating windows.
+    FoldColumn               = { fg = C.none, bg = C.none },                               --	'foldcolumn'
+    Folded                   = { fg = C.none, bg = C.night.c3 },                           --	Line used for closed folds.
+    IncSearch                = { link = "CurSearch" },                                     --	'incsearch' highlighting; also used for the text replaced with ":s///c".
+    LineNr                   = { fg = C.fg, bg = C.none },                                 --	Line number for ":number" and ":#" commands, and when 'number' or 'relativenumber' option is set.
+    LineNrAbove              = { fg = C.night.c3, bg = C.none },                           --	Line number for when the 'relativenumber' option is set, above the cursor line.
+    LineNrBelow              = { fg = C.night.c3, bg = C.none },                           --	Line number for when the 'relativenumber' option is set, below the cursor line.
+    MatchParen               = { fg = C.none, bg = C.night.c3 },                           --	Character under the cursor or just before it, if it is a paired bracket, and its match. pi_paren.txt
+    ModeMsg                  = { fg = C.fg, bg = C.bg },                                   --	'showmode' message (e.g., "-- INSERT --").
+    MoreMsg                  = { fg = C.fg, bg = C.bg },                                   --	more-prompt
+    MsgArea                  = { fg = C.none, bg = C.bg },                                 --	Area for messages and cmdline.
+    MsgSeparator             = { fg = C.night.c1, bg = C.bg },                             --	Separator for scrolled messages msgsep.
+    NonText                  = { fg = C.night.c3, bg = C.none },                           --	'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also hl-EndOfBuffer.
+    Normal                   = { fg = C.fg, bg = C.bg },                                   --	Normal text.
+    NormalFloat              = { link = "Normal" },                                        --	Normal text in floating windows.
+    NormalNC                 = { link = "Normal" },                                        --	Normal text in non-current windows.
+    Pmenu                    = { fg = C.fg, bg = C.bg },                                   --	Popup menu: Normal item.
+    PmenuExtra               = { fg = C.frost.light_blue, bg = C.bg },                     --	Popup menu: Normal item "extra text".
+    PmenuExtraSel            = { fg = C.night.c1, bg = C.blend.blue },                     --	Popup menu: Selected item "extra text".
+    PmenuKind                = { fg = C.frost.turquoise, bg = C.bg },                      --	Popup menu: Normal item "kind".
+    PmenuKindSel             = { fg = C.frost.sea, bg = C.blend.blue },                    --	Popup menu: Selected item "kind".
+    PmenuSbar                = { fg = C.blend.turquoise, bg = C.bg },                      --	Popup menu: Scrollbar.
+    PmenuSel                 = { fg = C.none, bg = C.blend.blue },                         --	Popup menu: Selected item.
+    PmenuThumb               = { fg = C.night.c1, bg = C.night.c2 },                       --	Popup menu: Thumb of the scrollbar.
+    Question                 = { fg = C.frost.turquoise, bg = C.bg },                      --	hit-enter prompt and yes/no questions.
+    QuickFixLine             = { fg = C.fg, bg = C.none },                                 --	Current quickfix item in the quickfix window. Combined with hl-CursorLine when the cursor is there.
+    Search                   = { link = "CurSearch" },                                     --	Last search pattern highlighting (see 'hlsearch'). Also used for similar items that need to stand out.
+    SignColumn               = { fg = C.none, bg = C.bg },                                 --	Column where signs are displayed.
+    SpecialKey               = { fg = C.night.c2, bg = C.bg },                             --	Unprintable characters: Text displayed differently from what it really is. But not 'listchars' whitespace. hl-Whitespace
+    SpellBad                 = { fg = C.aurora.red, bg = C.bg },                           --	Word that is not recognized by the spellchecker. spell Combined with the highlighting used otherwise.
+    SpellCap                 = { fg = C.aurora.red, bg = C.bg },                           --	Word that should start with a capital. spell Combined with the highlighting used otherwise.
+    SpellLocal               = { fg = C.aurora.yellow, bg = C.bg },                        --	Word that is recognized by the spellchecker as one that is used in another region. spell Combined with the highlighting used otherwise.
+    SpellRare                = { fg = C.aurora.yellow, bg = C.bg },                        --	Word that is recognized by the spellchecker as one that is hardly ever used. spell Combined with the highlighting used otherwise.
+    StatusLine               = { fg = C.none, bg = C.bg },                                 --	Status line of current window.
+    StatusLineNC             = { link = "StatusLine" },                                    --	Status lines of not-current windows. Note: If this is equal to "StatusLine", Vim will use "^^^" in the status line of the current window.
+    Substitute               = { link = "CurSearch" },                                     --	:substitute replacement text highlighting.
+    TabLine                  = { fg = C.bg, bg = C.bg },                                   --	Tab pages line, not active tab page label.
+    TabLineFill              = { fg = C.bg, bg = C.bg },                                   --	Tab pages line, where there are no labels.
+    TabLineSel               = { fg = C.bg, bg = C.bg },                                   --	Tab pages line, active tab page label.
+    TermCursor               = { fg = C.none, bg = C.blend.bluec1 },                       --	Cursor in a focused terminal.
+    TermCursorNC             = { fg = C.none, bg = C.blend.bluec1 },                       --	Cursor in an unfocused terminal.
+    TermNormal               = { fg = C.fg, bg = C.bg },
+    Title                    = { fg = C.fg, bg = C.bg },                                   --	Titles for output from ":set all", ":autocmd" etc.
+    Visual                   = { fg = C.none, bg = C.blend.blue },                         --	Visual mode selection.
+    VisualNOS                = { fg = C.none, bg = C.blend.blue },                         --	Visual mode selection when vim is "Not Owning the Selection".
+    WarningMsg               = { fg = C.aurora.yellow, bg = C.none },                      --	Warning messages.
+    Whitespace               = { fg = C.night.c3, bg = C.none, sp = C.night.c3 },          --	"nbsp", "space", "tab", "multispace", "lead" and "trail" in 'listchars'.
+    WildMenu                 = { fg = C.frost.turquoise, bg = C.blend.bluec1 },            --	Current match in 'wildmenu' completion.
+    WinBar                   = { fg = C.fg, bg = C.bg },                                   --	Window bar of current window.
+    WinBarNC                 = { fg = C.fg, bg = C.bg },                                   --	Window bar of not-current windows
+    WinSeparator             = { fg = C.night.c1, bg = C.none },                           --	Separators between window splits.
+    lCursor                  = { fg = C.bg, bg = C.frost.turquoise },                      --	Character under the cursor when language-mapping is used (see 'guicursor').
+    DiffAdd                  = { fg = C.aurora.green, bg = C.blend.green },                --	Diff mode: Added line. diff.txt
+    DiffChange               = { fg = C.aurora.yellow, bg = C.blend.yellow },              --	Diff mode: Changed line. diff.txt
+    DiffDelete               = { fg = C.aurora.red, bg = C.blend.red },                    --	Diff mode: Deleted line. diff.txt
+    DiffText                 = { fg = C.fg, bg = C.bg },                                   --	Diff mode: Changed text within a changed line. diff.txt
+    healthError              = { fg = C.aurora.red, bg = C.blend.red },
+    healthSuccess            = { fg = C.aurora.green, bg = C.blend.green },
+    healthWarning            = { fg = C.aurora.yellow, bg = C.blend.yellow },
+    Menu                     = { fg = C.frost.turquoise, bg = C.bg },            -- 	Current font, background and foreground colors of the menus. Also used for the toolbar. Applicable highlight arguments: font, guibg, guifg. hl-Scrollbar
+    Scrollbar                = { link = "PmenuSbar" },                           -- 	Current background and foreground of the main window's scrollbars. Applicable highlight arguments: guibg, guifg. hl-Tooltip
+    Tooltip                  = { fg = C.blend.turquoise, bg = C.bg },            -- 	Current font, background and foreground of the tooltips. Applicable highlight arguments: font, guibg, guifg.
+    Yank                     = { fg = C.aurora.yellow, bg = C.blend.turquoise }, -- Yanking highlight
+    WindowPickerWinBar       = { fg = C.fg, bg = C.none },
+    WindowPickerWinBarNC     = { fg = C.fg, bg = C.none },
+    WindowPickerStatusLine   = { fg = C.fg, bg = C.none },
+    WindowPickerStatusLineNC = { fg = C.fg, bg = C.none },
 }
 
 B.syntax = {
     Boolean        = { fg = C.frost.sea, bg = C.none },                                           -- a boolean constant: TRUE, false
     Character      = { fg = C.frost.light_blue, bg = C.none },                                    -- any character constant: 'c', '\n'
-    Comment        = { fg = C.night.c3, bg = C.none },                                            -- italic comments
+    Comment        = { fg = C.blend.comment, bg = C.none },                                       -- any comment
     Conditional    = { fg = C.frost.light_blue, bg = C.none },                                    -- italic if, then, else, endif, switch, etc.
     Constant       = { fg = C.frost.light_blue, bg = C.none },                                    -- any constant
     Debug          = { fg = C.snow.c0, bg = C.none },                                             -- debugging statements
