@@ -84,7 +84,7 @@ P.dap              = {
     DapUIUnavailable             = { fg = C.night.c3, bg = C.none },
     DapUIUnavailableNC           = { fg = C.night.c3, bg = C.none },
     DapUIValue                   = { fg = C.aurora.green, bg = C.none },
-    DapUIVariable                = { fg = C.fg, bg = C.none, bold = true, underline = true },
+    DapUIVariable                = { fg = C.fg, bg = C.none, bold = true, underline = true, sp = C.fg },
     DapUIWatchesEmpty            = { fg = C.aurora.red, bg = C.none },
     DapUIWatchesError            = { fg = C.aurora.red, bg = C.none },
     DapUIWatchesValue            = { fg = C.aurora.green, bg = C.none },
@@ -885,7 +885,7 @@ P.mini             = {
 
 P.avante           = {
     AvanteTitle                 = { fg = C.bg, bg = C.frost.turquoise },
-    AvanteSubtitle              = { fg = C.bg, bg = C.frost.sea},
+    AvanteSubtitle              = { fg = C.bg, bg = C.frost.sea },
     AvanteAnnotation            = { link = "Comment" },
     AvanteSuggestion            = { fg = C.night.c3, bg = C.none },
     AvanteThirdTitle            = { fg = C.bg, bg = C.aurora.green },
@@ -898,6 +898,15 @@ P.avante           = {
     AvanteConflictCurrentLabel  = { fg = C.aurora.red, bg = C.none },
     AvanteConflictAncestorLabel = { fg = C.aurora.purple, bg = C.none },
     AvanteConflictIncomingLabel = { fg = C.aurora.orange, bg = C.none },
+}
+
+P.incline          = {
+    InclineNormal = { fg = C.none, bg = C.none },
+    InclineNormalNC = { fg = C.none, bg = C.none },
+}
+
+P.dropbar          = {
+    DropBarIconKindFolder = { fg = C.frost.turquoise, bg = C.none }
 }
 
 return P
