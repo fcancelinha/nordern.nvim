@@ -300,7 +300,7 @@ L.go = {
     ["@lsp.type.namespace.go"]                   = { fg = C.none, bg = C.none },
     ["@lsp.type.operator.go"]                    = { fg = C.aurora.yellow, bg = C.none },
     ["@lsp.type.string.go"]                      = { fg = C.aurora.green, bg = C.none },
-    ["@lsp.type.type.go"]                        = { fg = C.frost.turquoise, bg = C.none },
+    ["@lsp.type.type.go"]                        = { link = "@type.go" },
     ["@lsp.type.typeParameter.go"]               = { fg = C.aurora.yellow, bg = C.none },
     ["@lsp.type.variable.go"]                    = { fg = C.fg, bg = C.none },
     ["@lsp.typemod.function.definition.go"]      = { fg = C.frost.turquoise, bg = C.none },
@@ -334,17 +334,19 @@ L.go = {
 }
 
 L.robot = {
-    ["@lsp.type.header.robot"]           = { fg = C.frost.sea, bg = C.none, bold = true, standout = true },
-    ["@lsp.type.name.robot"]             = { fg = C.aurora.green, bg = C.none, bold = true },
-    ["@lsp.type.argumentValue.robot"]    = { fg = C.aurora.green, bg = C.none },
-    ["@lsp.type.keywordNameCall.robot"]  = { fg = C.aurora.green, bg = C.none },
-    ["@lsp.type.setting.robot"]          = { fg = C.frost.turquoise, bg = C.none, bold = true },
-    ["@lsp.type.control.robot"]          = { fg = C.frost.sea, bg = C.none, bold = true },
-    ["@lsp.type.documentation.robot"]    = { fg = C.night.c3, bg = C.none, italic = true },
-    ["@punctuation.delimiter.robot"]     = { fg = C.aurora.yellow, bg = C.none },
-    ["@lsp.type.variableOperator.robot"] = { fg = C.frost.turquoise, bg = C.none, bold = true },
-    ["@function.call.robot"]             = { fg = C.frost.sea, bg = C.none },
-    ["@function.robot"]                  = { fg = C.frost.sea, bg = C.none },
+    ["@lsp.type.header.robot"]                = { fg = C.frost.sea, bg = C.none, bold = true, underline = true },
+    ["@lsp.type.name.robot"]                  = { fg = C.aurora.green, bg = C.none, bold = true },
+    ["@lsp.type.argumentValue.robot"]         = { fg = C.frost.turquoise, bg = C.none },
+    ["@lsp.type.keywordNameCall.robot"]       = { fg = C.frost.turquoise, bg = C.none },
+    ["@lsp.type.keywordNameDefinition.robot"] = { fg = C.frost.sea, bg = C.none, bold = true },
+    ["@lsp.type.setting.robot"]               = { fg = C.frost.light_blue, bg = C.none, bold = true },
+    ["@lsp.type.control.robot"]               = { fg = C.frost.light_blue, bg = C.none, bold = true },
+    ["@lsp.type.documentation.robot"]         = { fg = C.night.c3, bg = C.none, italic = true },
+    ["@punctuation.delimiter.robot"]          = { fg = C.aurora.yellow, bg = C.none },
+    ["@lsp.type.variableOperator.robot"]      = { fg = C.frost.sea, bg = C.none, bold = true },
+    ["@lsp.type.variable.robot"]              = { fg = C.aurora.green, bg = C.none, italic = true },
+    ["@function.call.robot"]                  = { fg = C.frost.sea, bg = C.none },
+    ["@function.robot"]                       = { fg = C.frost.sea, bg = C.none },
 }
 
 L.zsh = {
