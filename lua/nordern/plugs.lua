@@ -1,4 +1,4 @@
-local C            = require("nordern.colors")
+local C            = require('nordern.colors')
 local P            = {}
 
 P.luminate         = {
@@ -30,7 +30,7 @@ P.neotest          = {
     NeotestDir = { fg = C.frost.turquoise, bg = C.none },
     NeotestTest = { fg = C.fg, bg = C.none },
     NeotestFile = { fg = C.frost.sea, bg = C.none, bold = true, underline = true, sp = C.frost.sea },
-    NeotestBorder = { link = "FloatBorder" },
+    NeotestBorder = { link = 'FloatBorder' },
     NeotestExpandMarker = { fg = C.night.c3, bg = C.none },
     NeotestFailed = { fg = C.aurora.red, bg = C.blend.red },
     NeotestFocused = { fg = C.aurora.yellow, bg = C.blend.bluec1, underline = true, sp = C.aurora.yellow },
@@ -203,13 +203,13 @@ P.noice            = {
     NoiceCmdlineIconLua               = { fg = C.frost.light_blue, bg = C.none },           --
     NoiceCmdlineIconSearch            = { fg = C.aurora.yellow, bg = C.none },              --Cmdline search icon (`/` and `?`)
     NoiceCmdlinePopup                 = { fg = C.frost.turquoise, bg = C.none },            --normal for the cmdline popup
-    NoiceCmdlinePopupBorder           = { link = "FloatBorder" },                           --Cmdline popup border
-    NoiceCmdlinePopupBorderCalculator = { link = "FloatBorder" },                           --
-    NoiceCmdlinePopupBorderCmdline    = { link = "FloatBorder" },                           --
+    NoiceCmdlinePopupBorder           = { link = 'FloatBorder' },                           --Cmdline popup border
+    NoiceCmdlinePopupBorderCalculator = { link = 'FloatBorder' },                           --
+    NoiceCmdlinePopupBorderCmdline    = { link = 'FloatBorder' },                           --
     NoiceCmdlinePopupBorderFilter     = { fg = C.aurora.yellow, bg = C.none },              --
     NoiceCmdlinePopupBorderHelp       = { fg = C.frost.turquoise, bg = C.none },            --
     NoiceCmdlinePopupBorderIncRename  = { fg = C.aurora.red, bg = C.none },                 --
-    NoiceCmdlinePopupBorderInput      = { link = "FloatBorder" },                           --
+    NoiceCmdlinePopupBorderInput      = { link = 'FloatBorder' },                           --
     NoiceCmdlinePopupBorderLua        = { fg = C.frost.light_blue, bg = C.none },           --
     NoiceCmdlinePopupBorderSearch     = { fg = C.aurora.yellow, bg = C.none },              --Cmdline popup border for search
     NoiceCmdlinePopupTitle            = { fg = C.fg, bg = C.none },                         --Cmdline popup border
@@ -236,9 +236,9 @@ P.noice            = {
     NoiceLspProgressTitle             = { fg = C.fg, bg = C.bg },                           --lsp progress title
     NoiceMini                         = { fg = C.fg, bg = C.bg, blend = 0 },                --normal for mini view
     NoicePopup                        = { fg = C.fg, bg = C.bg },                           --Normal for popup views
-    NoicePopupBorder                  = { link = "FloatBorder" },                           --Border for popup views
+    NoicePopupBorder                  = { link = 'FloatBorder' },                           --Border for popup views
     NoicePopupmenu                    = { fg = C.frost.turquoise, bg = C.blend.blue },      --normal for the popupmenu
-    NoicePopupmenuBorder              = { link = "FloatBorder" },                           --Popupmenu border
+    NoicePopupmenuBorder              = { link = 'FloatBorder' },                           --Popupmenu border
     NoicePopupmenuMatch               = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --part of the item that matches the input
     NoicePopupmenuSelected            = { fg = C.frost.turquoise, bg = C.blend.turquoise }, --selected item in the popupmenu
     NoiceScrollbar                    = { fg = C.night.c2, bg = C.none },                   --Normal for scrollbar
@@ -261,13 +261,13 @@ P.dadBod           = {
 }
 
 P.lazygit          = {
-    LazyGitBorder = { link = "FloatBorder" },
+    LazyGitBorder = { link = 'FloatBorder' },
     LazyGitFloat  = { fg = C.fg, bg = C.none },
 }
 
 P.neo_tree         = {
     NeoTreeBufferNumber       = { fg = C.fg, bg = C.none },                      --The buffer number shown in the buffers source.
-    NeoTreeCursorLine         = { link = "CursorLine" },                         --|hl-CursorLine| override in Neo-tree window.
+    NeoTreeCursorLine         = { link = 'CursorLine' },                         --|hl-CursorLine| override in Neo-tree window.
     NeoTreeDimText            = { fg = C.night.c3, bg = C.none },                --Greyed out text used in various places.
     NeoTreeDirectoryIcon      = { fg = C.frost.turquoise, bg = C.none },         --Directory icon.
     NeoTreeDirectoryName      = { fg = C.snow.c0, bg = C.none, bold = true },    --Directory name.
@@ -282,7 +282,7 @@ P.neo_tree         = {
     NeoTreeFileStats          = { fg = C.night.c3, bg = C.none },                --Used for "stat" columns like size, last modified, etc.
     NeoTreeFileStatsHeader    = { fg = C.night.c3, bg = C.none, italic = true }, --Used for the header (top line) of the above columns.
     NeoTreeFilterTerm         = { fg = C.aurora.yellow, bg = C.none },           --The filter term, as displayed in the root node.
-    NeoTreeFloatBorder        = { link = "FloatBorder" },                        --The border for pop-up windows.
+    NeoTreeFloatBorder        = { link = 'FloatBorder' },                        --The border for pop-up windows.
     NeoTreeFloatTitle         = { fg = C.fg, bg = C.none },                      --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
     NeoTreeFloatNormal        = { fg = C.fg, bg = C.none },                      --Used for the title text of pop-ups when the border-style is set to another style than "NC". This is derived from NeoTreeFloatBorder.
     NeoTreeGitAdded           = { fg = C.aurora.green, bg = C.none },            --File name when the git status is added.
@@ -347,23 +347,23 @@ P.cmp              = {
 }
 
 P.telescope        = {
-    TelescopeBorder               = { link = "FloatBorder" },
+    TelescopeBorder               = { link = 'FloatBorder' },
     TelescopeMatching             = { fg = C.frost.turquoise, bg = C.none }, -- Highlight characters your input
-    TelescopeMultiSelection       = { link = "CursorLine" },                 -- Multisections
+    TelescopeMultiSelection       = { link = 'CursorLine' },                 -- Multisections
     TelescopeNormal               = { fg = C.fg, bg = C.none },              -- Floating windows created by telescope
-    TelescopePreviewBorder        = { link = "FloatBorder" },
+    TelescopePreviewBorder        = { link = 'FloatBorder' },
     TelescopePreviewTitle         = { fg = C.fg, bg = C.none },
-    TelescopePromptBorder         = { link = "FloatBorder" },
+    TelescopePromptBorder         = { link = 'FloatBorder' },
     TelescopePromptNormal         = { fg = C.fg, bg = C.none },
     TelescopePromptPrefix         = { fg = C.frost.turquoise, bg = C.none },
     TelescopePromptTitle          = { fg = C.fg, bg = C.none },
-    TelescopeResultsBorder        = { link = "FloatBorder" },
+    TelescopeResultsBorder        = { link = 'FloatBorder' },
     TelescopeResultsTitle         = { fg = C.fg, bg = C.none },
     TelescopeResultsNormal        = { fg = C.fg, bg = C.none },
     TelescopeResultsMethod        = { fg = C.frost.sea, bg = C.none },
     TelescopeResultsStruct        = { fg = C.aurora.green, bg = C.none },
     TelescopeResultsIdentifier    = { fg = C.aurora.green, bg = C.none },
-    TelescopeSelection            = { link = "CursorLine" },                 -- Selected item
+    TelescopeSelection            = { link = 'CursorLine' },                 -- Selected item
     TelescopeSelectionCaret       = { fg = C.frost.turquoise, bg = C.none }, -- Selection caret
     TelescopeResultsDiffUntracked = { fg = C.frost.sea, bg = C.none },
     TelescopeResultsComment       = { fg = C.frost.turquoise, bg = C.none },
@@ -404,10 +404,10 @@ P.git_signs        = {
 
 P.diagnostics      = {
     -- Base LSP
-    LspCodeLens                          = { link = "Comment" },
-    LspCodeLensSeparator                 = { link = "Comment" },
+    LspCodeLens                          = { link = 'Comment' },
+    LspCodeLensSeparator                 = { link = 'Comment' },
     LspCodeLensSign                      = { fg = C.frost.turquoise, bg = C.none },
-    LspCodeLensText                      = { link = "Comment" },
+    LspCodeLensText                      = { link = 'Comment' },
     LspDiagnosticsDefaultError           = { fg = C.aurora.red, bg = C.none },                 -- used for "Error" diagnostic virtual text
     LspDiagnosticsDefaultHint            = { fg = C.frost.turquoise, bg = C.none },            -- used for "Hint" diagnostic virtual text
     LspDiagnosticsDefaultInformation     = { fg = C.frost.turquoise, bg = C.none },            -- used for "Information" diagnostic virtual text
@@ -432,36 +432,36 @@ P.diagnostics      = {
     LspReferenceText                     = { fg = C.frost.turquoise, bg = C.none },            -- used for highlighting "text" references
     LspReferenceWrite                    = { fg = C.frost.sea, bg = C.none },                  -- used for highlighting "write" references
     -- Diagnostics
-    DiagnosticError                      = { link = "LspDiagnosticsDefaultError" },
-    DiagnosticFloatingError              = { link = "LspDiagnosticsFloatingError" },
-    DiagnosticFloatingHint               = { link = "LspDiagnosticsFloatingHint" },
-    DiagnosticFloatingInfo               = { link = "LspDiagnosticsFloatingInformation" },
-    DiagnosticFloatingWarn               = { link = "LspDiagnosticsFloatingWarning" },
-    DiagnosticHint                       = { link = "LspDiagnosticsDefaultHint" },
-    DiagnosticInfo                       = { link = "LspDiagnosticsDefaultInformation" },
-    DiagnosticSignError                  = { link = "LspDiagnosticsSignError" },
-    DiagnosticSignHint                   = { link = "LspDiagnosticsSignHint" },
-    DiagnosticSignInfo                   = { link = "LspDiagnosticsSignInformation" },
-    DiagnosticSignWarn                   = { link = "LspDiagnosticsSignWarning" },
-    DiagnosticUnderlineError             = { link = "LspDiagnosticsUnderlineError" },
-    DiagnosticUnderlineHint              = { link = "LspDiagnosticsUnderlineHint" },
-    DiagnosticUnderlineInfo              = { link = "LspDiagnosticsUnderlineInformation" },
-    DiagnosticUnderlineWarn              = { link = "LspDiagnosticsUnderlineWarning" },
-    DiagnosticVirtualTextError           = { link = "LspDiagnosticsVirtualTextError" },
-    DiagnosticVirtualTextHint            = { link = "LspDiagnosticsVirtualTextHint" },
-    DiagnosticVirtualTextInfo            = { link = "LspDiagnosticsVirtualTextInformation" },
-    DiagnosticVirtualTextWarn            = { link = "LspDiagnosticsVirtualTextWarning" },
-    DiagnosticWarn                       = { link = "LspDiagnosticsDefaultWarning" },
+    DiagnosticError                      = { link = 'LspDiagnosticsDefaultError' },
+    DiagnosticFloatingError              = { link = 'LspDiagnosticsFloatingError' },
+    DiagnosticFloatingHint               = { link = 'LspDiagnosticsFloatingHint' },
+    DiagnosticFloatingInfo               = { link = 'LspDiagnosticsFloatingInformation' },
+    DiagnosticFloatingWarn               = { link = 'LspDiagnosticsFloatingWarning' },
+    DiagnosticHint                       = { link = 'LspDiagnosticsDefaultHint' },
+    DiagnosticInfo                       = { link = 'LspDiagnosticsDefaultInformation' },
+    DiagnosticSignError                  = { link = 'LspDiagnosticsSignError' },
+    DiagnosticSignHint                   = { link = 'LspDiagnosticsSignHint' },
+    DiagnosticSignInfo                   = { link = 'LspDiagnosticsSignInformation' },
+    DiagnosticSignWarn                   = { link = 'LspDiagnosticsSignWarning' },
+    DiagnosticUnderlineError             = { link = 'LspDiagnosticsUnderlineError' },
+    DiagnosticUnderlineHint              = { link = 'LspDiagnosticsUnderlineHint' },
+    DiagnosticUnderlineInfo              = { link = 'LspDiagnosticsUnderlineInformation' },
+    DiagnosticUnderlineWarn              = { link = 'LspDiagnosticsUnderlineWarning' },
+    DiagnosticVirtualTextError           = { link = 'LspDiagnosticsVirtualTextError' },
+    DiagnosticVirtualTextHint            = { link = 'LspDiagnosticsVirtualTextHint' },
+    DiagnosticVirtualTextInfo            = { link = 'LspDiagnosticsVirtualTextInformation' },
+    DiagnosticVirtualTextWarn            = { link = 'LspDiagnosticsVirtualTextWarning' },
+    DiagnosticWarn                       = { link = 'LspDiagnosticsDefaultWarning' },
     DiagnosticUnnecessary                = { bg = C.blend.turquoise },
 }
 
 P.diff             = {
-    diffAdded     = { link = "DiffAdd" },
-    diffRemoved   = { link = "DiffDelete" },
-    diffChanged   = { link = "DiffChange" },
+    diffAdded     = { link = 'DiffAdd' },
+    diffRemoved   = { link = 'DiffDelete' },
+    diffChanged   = { link = 'DiffChange' },
     diffLine      = { fg = C.aurora.yellow, bg = C.none },
     diffFile      = { fg = C.frost.turquoise, bg = C.none },
-    diffIndexLine = { link = "Comment" },
+    diffIndexLine = { link = 'Comment' },
 }
 
 P.mason            = {
@@ -474,13 +474,13 @@ P.mason            = {
     MasonHeaderSecondary             = { fg = C.frost.turquoise, bg = C.none },
     -- Lsp Info
     LspInfoTip                       = { fg = C.night.c3, bg = C.none, italic = true },
-    LspInfoBorder                    = { link = "FloatBorder" },
+    LspInfoBorder                    = { link = 'FloatBorder' },
     LspInfoFiletypeList              = { fg = C.frost.turquoise, bg = C.none, bold = true },
     LspInfoFiletype                  = { fg = C.frost.turquoise, bg = C.none, bold = true },
     LspInfoList                      = { fg = C.frost.turquoise, bg = C.none, bold = true },
     LspInfoListList                  = { fg = C.frost.turquoise, bg = C.none, bold = true },
     -- Lsp installer
-    LspInstallerInfoBorder           = { link = "FloatBorder" },
+    LspInstallerInfoBorder           = { link = 'FloatBorder' },
     LspInstallerMuted                = { fg = C.night.c3, bg = C.none },
 }
 
@@ -502,7 +502,7 @@ P.diffview         = {
 
 P.lazy             = {
     LazyBackdrop     = { fg = C.none, bg = C.blend.turquoise },
-    LazyComment      = { link = "Comment" },
+    LazyComment      = { link = 'Comment' },
     LazyCommit       = { fg = C.frost.turquoise, bg = C.none, bold = true },
     LazyCommitIssue  = { fg = C.frost.turquoise, bg = C.none },
     LazyCommitType   = { fg = C.frost.light_blue, bg = C.none, bold = true, italic = true },
@@ -528,10 +528,10 @@ P.indent_blankline = {
     IblIndent = { fg = C.night.c1, bg = C.none, sp = C.none },
     IblScope = { fg = C.frost.turquoise, bg = C.none },
     IblWhitespace = { fg = C.bg, bg = C.none, sp = C.none },
-    ["@ibl.indent.char.1"] = { fg = C.night.c1, bg = C.none },
-    ["@ibl.scope.char.1"] = { fg = C.frost.turquoise, bg = C.none },
-    ["@ibl.scope.underline.1"] = { fg = C.frost.turquoise, bg = C.blend.blue, underline = true },
-    ["@ibl.whitespace.char.1"] = { fg = C.bg, bg = C.none, sp = C.none },
+    ['@ibl.indent.char.1'] = { fg = C.night.c1, bg = C.none },
+    ['@ibl.scope.char.1'] = { fg = C.frost.turquoise, bg = C.none },
+    ['@ibl.scope.underline.1'] = { fg = C.frost.turquoise, bg = C.blend.blue, underline = true },
+    ['@ibl.whitespace.char.1'] = { fg = C.bg, bg = C.none, sp = C.none },
 }
 
 P.lualine          = {
@@ -681,12 +681,12 @@ P.nvimtree         = {
     NvimTreeWinSeparator                    = { fg = C.bg, bg = C.none },         --WinSeparator
     NvimTreeEndOfBuffer                     = { fg = C.bg, bg = C.none },         --EndOfBuffer
     NvimTreePopup                           = { fg = C.snow.c0, bg = C.none },    --Normal
-    NvimTreeSignColumn                      = { link = "SignColumn" },            --NvimTreeNormal
-    NvimTreeCursorColumn                    = { link = "CursorColumn" },          --CursorColumn
-    NvimTreeCursorLine                      = { link = "CursorLine" },            --CursorLine
-    NvimTreeCursorLineNr                    = { link = "CursorLineNr" },          --CursorLineNr
-    NvimTreeStatusLine                      = { link = "StatusLine" },            --StatusLine
-    NvimTreeStatusLineNC                    = { link = "StatusLineNC" },          --StatusLineNC
+    NvimTreeSignColumn                      = { link = 'SignColumn' },            --NvimTreeNormal
+    NvimTreeCursorColumn                    = { link = 'CursorColumn' },          --CursorColumn
+    NvimTreeCursorLine                      = { link = 'CursorLine' },            --CursorLine
+    NvimTreeCursorLineNr                    = { link = 'CursorLineNr' },          --CursorLineNr
+    NvimTreeStatusLine                      = { link = 'StatusLine' },            --StatusLine
+    NvimTreeStatusLineNC                    = { link = 'StatusLineNC' },          --StatusLineNC
     -- Clipboard
     NvimTreeCopiedHL                        = { fg = C.frost.blue, bg = C.none }, --SpellRare
     NvimTreeCutHL                           = { fg = C.aurora.red, bg = C.none }, --SpellBad
@@ -776,7 +776,7 @@ P.floaterm         = {
 }
 
 P.fzf_lua          = {
-    FzfLuaBorder     = { link = "FloatBorder" }, -- Normal          	hls.border        	Main win border
+    FzfLuaBorder     = { link = 'FloatBorder' }, -- Normal          	hls.border        	Main win border
     -- FzfLuaBufFlagAlt        = { fg = C.none, bg = C.bg },             -- *CadetBlue1     	hls.buf_flag_alt  	Buffer line (buffers)
     -- FzfLuaBufFlagCur        = { fg = C.none, bg = C.bg },             -- *Brown1         	hls.buf_flag_cur  	Buffer line (buffers)
     FzfLuaBackdrop   = { fg = C.none, bg = C.bg },            -- *LightMagenta   	hls.buf_name      	Buffer name (lines)
@@ -886,13 +886,13 @@ P.mini             = {
 P.avante           = {
     AvanteTitle                 = { fg = C.bg, bg = C.frost.turquoise },
     AvanteSubtitle              = { fg = C.bg, bg = C.frost.sea },
-    AvanteAnnotation            = { link = "Comment" },
+    AvanteAnnotation            = { link = 'Comment' },
     AvanteSuggestion            = { fg = C.night.c3, bg = C.none },
     AvanteThirdTitle            = { fg = C.bg, bg = C.aurora.green },
     AvanteReversedTitle         = { fg = C.frost.turquoise, bg = C.none },
-    AvanteConflictCurrent       = { link = "DiffDelete" },
+    AvanteConflictCurrent       = { link = 'DiffDelete' },
     AvanteConflictAncestor      = { fg = C.aurora.orange, bg = C.blend.yellow },
-    AvanteConflictIncoming      = { link = "DiffChange" },
+    AvanteConflictIncoming      = { link = 'DiffChange' },
     AvanteReversedSubtitle      = { fg = C.aurora.green, bg = C.none },
     AvanteReversedThirdTitle    = { fg = C.aurora.green, bg = C.none },
     AvanteConflictCurrentLabel  = { fg = C.aurora.red, bg = C.none },

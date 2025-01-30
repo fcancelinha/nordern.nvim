@@ -1,7 +1,7 @@
 local utils = {}
 
 local function semantic_token_override()
-    vim.api.nvim_create_autocmd("LspTokenUpdate", {
+    vim.api.nvim_create_autocmd('LspTokenUpdate', {
         callback = function(args)
             local token = args.data.token
             if token.modifiers.defaultLibrary and token.modifiers.readonly then
@@ -9,15 +9,15 @@ local function semantic_token_override()
                     token,
                     args.buf,
                     args.data.client_id,
-                    "@lsp.mod.defaultLibrary"
+                    '@lsp.mod.defaultLibrary'
                 )
             end
-            if token.type == "variable" and token.modifiers.readonly and token.modifiers.definition then
+            if token.type == 'variable' and token.modifiers.readonly and token.modifiers.definition then
                 vim.lsp.semantic_tokens.highlight_token(
                     token,
                     args.buf,
                     args.data.client_id,
-                    "@lsp.type.variable"
+                    '@lsp.type.variable'
                 )
             end
         end,
@@ -27,8 +27,8 @@ end
 function utils.preload()
     semantic_token_override()
     vim.o.termguicolors = true
-    vim.o.background = "dark"
-    vim.g.colors_name = "nordern"
+    vim.o.background = 'dark'
+    vim.g.colors_name = 'nordern'
 end
 
 local function hexToRgb(color)
@@ -37,7 +37,7 @@ local function hexToRgb(color)
 end
 
 function utils.blend(foreground, background, alpha)
-    alpha = type(alpha) == "string" and (tonumber(alpha, 16) / 0xff) or alpha
+    alpha = type(alpha) == 'string' and (tonumber(alpha, 16) / 0xff) or alpha
 
     local bg = hexToRgb(background)
     local fg = hexToRgb(foreground)
@@ -47,7 +47,7 @@ function utils.blend(foreground, background, alpha)
         return math.floor(math.min(math.max(0, ret), 255) + 0.5)
     end
 
-    return string.format("#%02x%02x%02x", blendChannel(1), blendChannel(2), blendChannel(3))
+    return string.format('#%02x%02x%02x', blendChannel(1), blendChannel(2), blendChannel(3))
 end
 
 function utils.load(...)

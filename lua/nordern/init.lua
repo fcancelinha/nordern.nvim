@@ -8,14 +8,14 @@
 -- ********************************************************************************
 local nordern = {}
 
-local B = require("nordern.base")
-local L = require("nordern.lang")
-local P = require("nordern.plugs")
-local U = require("nordern.utils")
-local C = require("nordern.config")
+local B = require('nordern.base')
+local L = require('nordern.lang')
+local P = require('nordern.plugs')
+local U = require('nordern.utils')
+local C = require('nordern.config')
 
 function nordern.setup(opts)
-    local config = vim.tbl_deep_extend("force", C.default, opts or {})
+    local config = vim.tbl_deep_extend('force', C.default, opts or {})
     C.apply_config(B, config)
 end
 

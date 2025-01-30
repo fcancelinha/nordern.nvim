@@ -1,9 +1,9 @@
 local C = {}
-local colors = require("nordern.colors")
+local colors = require('nordern.colors')
 
 C.default = {
     brighter_comments = false,
-    brighter_conditionals = true,
+    brighter_constants = true,
     italic_comments = false,
     transparent = false,
 }
@@ -13,28 +13,28 @@ local function apply_italicized_comments(syntax)
 end
 
 local function apply_brighter_comments(syntax)
-    syntax.Comment.fg = "#707788"
+    syntax.Comment.fg = '#707788'
 end
 
-local function apply_brighter_conditionals(syntax)
-    syntax.Boolean.fg = colors.aurora.yellow
+local function apply_brighter_constants(syntax)
+    syntax.Constant.fg = colors.aurora.yellow
 end
 
 local function apply_transparent_background(base)
     local highlight_groups = {
-        "Normal",
-        "NormalFloat",
-        "FloatBorder",
-        "FloatTitle",
-        "WinBarNC",
-        "WinBar",
-        "TermNormal",
-        "StatusLine",
-        "StatusLineNC",
-        "TabLine",
-        "TabLineFill",
-        "TabLineSel",
-        "SignColumn",
+        'Normal',
+        'NormalFloat',
+        'FloatBorder',
+        'FloatTitle',
+        'WinBarNC',
+        'WinBar',
+        'TermNormal',
+        'StatusLine',
+        'StatusLineNC',
+        'TabLine',
+        'TabLineFill',
+        'TabLineSel',
+        'SignColumn',
     }
 
     for _, group in ipairs(highlight_groups) do
@@ -56,8 +56,8 @@ function C.apply_config(highlights, opts)
             apply_transparent_background(highlights.gui)
         end
 
-        if opts.brighter_conditionals then
-            apply_brighter_conditionals(highlights.syntax)
+        if opts.brighter_constants then
+            apply_brighter_constants(highlights.syntax)
         end
     end
 end

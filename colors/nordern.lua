@@ -14,4 +14,4 @@ package.loaded['nordern.plugs'] = nil
 package.loaded['nordern.utils'] = nil
 package.loaded['nordern.config'] = nil
 
-require("nordern").load()
+require('nordern').load()
