@@ -7,7 +7,6 @@
 <br></br>
 </div>
 
-
 ![dashboard](https://github.com/user-attachments/assets/8bd142a5-6bd5-4c72-9564-7862aa677563)
 ![golang](https://github.com/user-attachments/assets/9b9cada4-5258-426c-93b9-1d9a4db3762e)
 ![image](https://github.com/user-attachments/assets/c8666ea2-48d4-43a2-b7d8-1ed3dbb509f7)
@@ -16,6 +15,7 @@
 <div align="center">
 
 **Nordern.nvim** | because like any good viking that loves gold, this colorscheme uses aurora yellow to highlight some of the more important tokens.
+
 </div>
 
 <div align="center">
@@ -27,12 +27,12 @@
 <details>
   <summary>more screenshots</summary>
 
-  **Info** the dark semicircle in the lower right corner is caused by manually resizing the WSL window, not the colorscheme
+**Info** the dark semicircle in the lower right corner is caused by manually resizing the WSL window, not the colorscheme
 
-  ![image](https://github.com/user-attachments/assets/ef593df1-c450-4fe8-9543-69c62351ca98)
-  ![image](https://github.com/user-attachments/assets/e5ada578-452c-48a5-b842-7bd56957d094)
-  ![image](https://github.com/user-attachments/assets/089cdd28-8e3d-4be4-9eea-3c8ba7c12154)
-  ![image](https://github.com/user-attachments/assets/25989b9a-dbb0-40bc-ba8d-5ce660a085de)
+![image](https://github.com/user-attachments/assets/ef593df1-c450-4fe8-9543-69c62351ca98)
+![image](https://github.com/user-attachments/assets/e5ada578-452c-48a5-b842-7bd56957d094)
+![image](https://github.com/user-attachments/assets/089cdd28-8e3d-4be4-9eea-3c8ba7c12154)
+![image](https://github.com/user-attachments/assets/25989b9a-dbb0-40bc-ba8d-5ce660a085de)
 
 </details>
 
@@ -63,16 +63,18 @@
 - [barbecue](https://github.com/utilyre/barbecue.nvim)
 
 ## Roadmap
- - [ ] - vimdoc documentation
- - [x] - improve README 
- - [x] - create & extend options
- - [x] - screenshots of different modes & languages
+
+- [ ] - vimdoc documentation
+- [x] - improve README
+- [x] - create & extend options
+- [x] - screenshots of different modes & languages
 
 ## Languages with special support
+
 <details>
   <summary>click to expand the list of languages</summary>
 
-  *missing languages will be supported upon popular request*
+*missing languages will be supported upon popular request*
 
 - [ ] - C
 - [ ] - C++
@@ -103,23 +105,26 @@
 
 ## 🎐 Requirements
 
-+ Neovim >= 0.8.0
+- Neovim >= 0.8.0
 
 ## 📦 Install
 
 use your favourite package manager:
 
 - [Lazy](https://github.com/folke/lazy.nvim)
+
 ```lua
 { "fcancelinha/nordern.nvim", branch = "master", priority = 1000 }
 ```
 
 - [Vim-plug](https://github.com/junegunn/vim-plug)
+
 ```vim
 Plug 'fcancelinha/nordern.nvim'
 ```
 
 - [Packer](https://github.com/wbthomason/packer.nvim)
+
 ```lua
 use {'fcancelinha/nordern.nvim'}
 ```
@@ -132,6 +137,7 @@ Make sure to place this at the end of your configuration to avoid overwriting.
 -- Lua
 vim.cmd.colorscheme('nordern')
 ```
+
 ```vim
 " Vim-Script
 colorscheme nordern
@@ -162,7 +168,7 @@ require('lualine').setup {
 -- Default options
 {
     brighter_comments = false, -- changes the hue of comments to be brighter and easier to read.
-    brighter_conditionals = false, -- changes the color of booleans, enums and readonly to aurora yellow from light blue.
+    brighter_constants = false, -- changes the color of default builtin, constants and readonly to aurora yellow from frost sea.
     italic_comments = false, -- italicizes comments
     transparent = false, -- turns the background transparent (this is a WIP and there might be inconsistencies)
 }
@@ -174,7 +180,7 @@ require('lualine').setup {
 -- Lazy nvim
 opts = {
     brighter_comments = Boolean,
-    brighter_conditionals = Boolean
+    brighter_constants = Boolean
     italic_comments = Boolean
     transparent = Boolean,
 },
@@ -187,7 +193,7 @@ OR
 config = function()
     require('nordern').setup({
         brighter_comments = Boolean,
-        brighter_conditionals = Boolean
+        brighter_constants = Boolean
         italic_comments = Boolean
         transparent = Boolean,
     })
@@ -197,7 +203,7 @@ end
 ## 💧 Acknowledgements
 
 This is my first try at making a neovim plugin. I want to thank [shaunsingh](https://github.com/shaunsingh) which made me understand how to setup my own plugin project structure and [gbprod](https://github.com/gbprod) for the blending functions that produce a soft background.
- 
+
 ## 🌊 Other Nord Themes
 
 - [shaunsingh/nord.nvim](https://github.com/shaunsingh/nord.nvim)
@@ -205,4 +211,4 @@ This is my first try at making a neovim plugin. I want to thank [shaunsingh](htt
 - [arcticicestudio/nord-vim](https://github.com/arcticicestudio/nord-vim)
 - [edeneast/nightfox.nvim](https://github.com/EdenEast/nightfox.nvim)
 
-----------------------------------------------------------------------------------------------------------------------
+______________________________________________________________________
