@@ -646,6 +646,7 @@ P.lualine          = {
     lualine_z_diff_removed_normal    = { fg = C.aurora.red, bg = C.none },
     lualine_z_diff_removed_replace   = { fg = C.aurora.red, bg = C.none },
     lualine_z_diff_removed_visual    = { fg = C.aurora.red, bg = C.none },
+    lualine_transparent              = { fg = C.none, bg = C.none },
 }
 
 P.nvimtree         = {
@@ -907,6 +908,53 @@ P.incline          = {
 
 P.dropbar          = {
     DropBarIconKindFolder = { fg = C.frost.turquoise, bg = C.none }
+}
+
+P.blink            = {
+    -- BlinkCmpCursorLineMenuHack           = { fg = C.none, bg = C.none },
+    BlinkCmpDoc                 = { fg = C.frost.blue, bg = C.none },
+    BlinkCmpDocBorder           = { fg = C.frost.turquoise, bg = C.none },
+    -- BlinkCmpDocCursorLine                = { fg = C.none, bg = C.none },
+    BlinkCmpDocSeparator        = { fg = C.night.c1, bg = C.none },
+    BlinkCmpGhostText           = { fg = C.night.c1, bg = C.none },
+    BlinkCmpKind                = { fg = C.aurora.red, bg = C.none },
+    BlinkCmpKindClass           = { fg = C.aurora.red, bg = C.none },
+    BlinkCmpKindColor           = { fg = C.aurora.yellow, bg = C.none },
+    BlinkCmpKindConstant        = { fg = C.aurora.yellow, bg = C.none },
+    BlinkCmpKindConstructor     = { fg = C.frost.light_blue, bg = C.none },
+    BlinkCmpKindEnum            = { fg = C.aurora.yellow, bg = C.none },
+    BlinkCmpKindEnumMember      = { fg = C.aurora.yellow, bg = C.none },
+    BlinkCmpKindEvent           = { fg = C.aurora.green, bg = C.none },
+    BlinkCmpKindField           = { fg = C.frost.turquoise, bg = C.none },
+    BlinkCmpKindFile            = { fg = C.frost.blue, bg = C.none },
+    BlinkCmpKindFolder          = { fg = C.frost.light_blue, bg = C.none },
+    BlinkCmpKindFunction        = { fg = C.frost.light_blue, bg = C.none },
+    BlinkCmpKindInterface       = { fg = C.frost.sea, bg = C.none },
+    BlinkCmpKindKeyword         = { fg = C.aurora.red, bg = C.none },
+    BlinkCmpKindMethod          = { fg = C.aurora.purple, bg = C.none },
+    BlinkCmpKindModule          = { fg = C.frost.light_blue, bg = C.none },
+    BlinkCmpKindOperator        = { fg = C.aurora.red, bg = C.none },
+    BlinkCmpKindProperty        = { fg = C.frost.turquoise, bg = C.none },
+    BlinkCmpKindReference       = { fg = C.aurora.yellow, bg = C.none },
+    BlinkCmpKindSnippet         = { fg = C.aurora.green, bg = C.none },
+    BlinkCmpKindStruct          = { fg = C.frost.sea, bg = C.none },
+    BlinkCmpKindText            = { fg = C.aurora.purple, bg = C.none },
+    BlinkCmpKindTypeParameter   = { fg = C.frost.turquoise, bg = C.none },
+    BlinkCmpKindUnit            = { fg = C.aurora.green, bg = C.none },
+    BlinkCmpKindValue           = { fg = C.frost.turquoise, bg = C.none },
+    BlinkCmpKindVariable        = { fg = C.frost.turquoise, bg = C.none },
+    BlinkCmpLabelDeprecated     = { fg = C.night.c1, bg = C.none },
+    -- BlinkCmpLabelDescription             = { fg = C.none, bg = C.none },
+    -- BlinkCmpLabelDetail                  = { fg = C.none, bg = C.none },
+    -- BlinkCmpMenu                         = { fg = C.none, bg = C.none },
+    BlinkCmpMenuBorder          = { fg = C.frost.turquoise, bg = C.none },
+    -- BlinkCmpMenuSelection                = { fg = C.none, bg = C.none },
+    -- BlinkCmpScrollBarGutter              = { fg = C.none, bg = C.none },
+    BlinkCmpScrollBarThumb      = { fg = C.none, bg = C.blend.blue },
+    -- BlinkCmpSignatureHelp                = { fg = C.none, bg = C.none },
+    -- BlinkCmpSignatureHelpActiveParameter = { fg = C.none, bg = C.none },
+    BlinkCmpSignatureHelpBorder = { fg = C.frost.turquoise, bg = C.none },
+    -- BlinkCmpSource                       = { fg = C.none, bg = C.none },
 }
 
 return P
