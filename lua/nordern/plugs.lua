@@ -408,29 +408,29 @@ P.diagnostics      = {
     LspCodeLensSeparator                 = { link = 'Comment' },
     LspCodeLensSign                      = { fg = C.frost.turquoise, bg = C.none },
     LspCodeLensText                      = { link = 'Comment' },
-    LspDiagnosticsDefaultError           = { fg = C.aurora.red, bg = C.none },                 -- used for "Error" diagnostic virtual text
-    LspDiagnosticsDefaultHint            = { fg = C.frost.turquoise, bg = C.none },            -- used for "Hint" diagnostic virtual text
-    LspDiagnosticsDefaultInformation     = { fg = C.frost.turquoise, bg = C.none },            -- used for "Information" diagnostic virtual text
-    LspDiagnosticsDefaultWarning         = { fg = C.aurora.yellow, bg = C.none },              -- used for "Warning" diagnostic signs in sign column
-    LspDiagnosticsFloatingError          = { fg = C.aurora.red, bg = C.none },                 -- used for "Error" diagnostic messages in the diagnostics float
-    LspDiagnosticsFloatingHint           = { fg = C.frost.turquoise, bg = C.none },            -- used for "Hint" diagnostic messages in the diagnostics float
-    LspDiagnosticsFloatingInformation    = { fg = C.frost.turquoise, bg = C.none },            -- used for "Information" diagnostic messages in the diagnostics float
-    LspDiagnosticsFloatingWarning        = { fg = C.aurora.yellow, bg = C.none },              -- used for "Warning" diagnostic messages in the diagnostics float
-    LspDiagnosticsSignError              = { fg = C.aurora.red, bg = C.none },                 -- used for "Error" diagnostic signs in sign column
-    LspDiagnosticsSignHint               = { fg = C.frost.sea, bg = C.none },                  -- used for "Hint" diagnostic signs in sign column
-    LspDiagnosticsSignInformation        = { fg = C.frost.turquoise, bg = C.none },            -- used for "Information" diagnostic signs in sign column
-    LspDiagnosticsSignWarning            = { fg = C.aurora.yellow, bg = C.none },              -- used for "Warning" diagnostic signs in sign column
-    LspDiagnosticsUnderlineError         = { fg = C.none, bg = C.blend.red },                  -- used to underline "Error" diagnostics.
-    LspDiagnosticsUnderlineHint          = { fg = C.none, bg = C.blend.turquoise },            -- used to underline "Hint" diagnostics.
-    LspDiagnosticsUnderlineInformation   = { fg = C.none, bg = C.blend.bluec1 },               -- used to underline "Information" diagnostics.
-    LspDiagnosticsUnderlineWarning       = { fg = C.none, bg = C.blend.yellow },               -- used to underline "Warning" diagnostics.
-    LspDiagnosticsVirtualTextError       = { fg = C.aurora.red, bg = C.blend.red },            -- Virtual text "Error"
-    LspDiagnosticsVirtualTextHint        = { fg = C.frost.turquoise, bg = C.blend.turquoise }, -- Virtual text "Hint"
-    LspDiagnosticsVirtualTextInformation = { fg = C.frost.turquoise, bg = C.blend.bluec1 },    -- Virtual text "Information"
-    LspDiagnosticsVirtualTextWarning     = { fg = C.aurora.yellow, bg = C.blend.yellow },      -- Virtual text "Warning"
-    LspReferenceRead                     = { fg = C.frost.turquoise, bg = C.none },            -- used for highlighting "read" references
-    LspReferenceText                     = { fg = C.frost.turquoise, bg = C.none },            -- used for highlighting "text" references
-    LspReferenceWrite                    = { fg = C.frost.sea, bg = C.none },                  -- used for highlighting "write" references
+    LspDiagnosticsDefaultError           = { fg = C.aurora.red, bg = C.none },                                     -- used for "Error" diagnostic virtual text
+    LspDiagnosticsDefaultHint            = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Hint" diagnostic virtual text
+    LspDiagnosticsDefaultInformation     = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Information" diagnostic virtual text
+    LspDiagnosticsDefaultWarning         = { fg = C.aurora.yellow, bg = C.none },                                  -- used for "Warning" diagnostic signs in sign column
+    LspDiagnosticsFloatingError          = { fg = C.aurora.red, bg = C.none },                                     -- used for "Error" diagnostic messages in the diagnostics float
+    LspDiagnosticsFloatingHint           = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Hint" diagnostic messages in the diagnostics float
+    LspDiagnosticsFloatingInformation    = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Information" diagnostic messages in the diagnostics float
+    LspDiagnosticsFloatingWarning        = { fg = C.aurora.yellow, bg = C.none },                                  -- used for "Warning" diagnostic messages in the diagnostics float
+    LspDiagnosticsSignError              = { fg = C.aurora.red, bg = C.none },                                     -- used for "Error" diagnostic signs in sign column
+    LspDiagnosticsSignHint               = { fg = C.frost.sea, bg = C.none },                                      -- used for "Hint" diagnostic signs in sign column
+    LspDiagnosticsSignInformation        = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Information" diagnostic signs in sign column
+    LspDiagnosticsSignWarning            = { fg = C.aurora.yellow, bg = C.none },                                  -- used for "Warning" diagnostic signs in sign column
+    LspDiagnosticsUnderlineError         = { fg = C.none, bg = C.none, sp = C.aurora.red, undercurl = true },      -- used to underline "Error" diagnostics.
+    LspDiagnosticsUnderlineHint          = { fg = C.none, bg = C.none, sp = C.frost.turquoise, undercurl = true }, -- used to underline "Hint" diagnostics.
+    LspDiagnosticsUnderlineInformation   = { fg = C.none, bg = C.none, sp = C.frost.blue, undercurl = true },      -- used to underline "Information" diagnostics.
+    LspDiagnosticsUnderlineWarning       = { fg = C.none, bg = C.none, sp = C.aurora.yellow, undercurl = true },   -- used to underline "Warning" diagnostics.
+    LspDiagnosticsVirtualTextError       = { fg = C.aurora.red, bg = C.blend.red },                                -- Virtual text "Error"
+    LspDiagnosticsVirtualTextHint        = { fg = C.frost.turquoise, bg = C.blend.turquoise },                     -- Virtual text "Hint"
+    LspDiagnosticsVirtualTextInformation = { fg = C.frost.turquoise, bg = C.blend.bluec1 },                        -- Virtual text "Information"
+    LspDiagnosticsVirtualTextWarning     = { fg = C.aurora.yellow, bg = C.blend.yellow },                          -- Virtual text "Warning"
+    LspReferenceRead                     = { fg = C.frost.turquoise, bg = C.none },                                -- used for highlighting "read" references
+    LspReferenceText                     = { fg = C.frost.turquoise, bg = C.none },                                -- used for highlighting "text" references
+    LspReferenceWrite                    = { fg = C.frost.sea, bg = C.none },                                      -- used for highlighting "write" references
     -- Diagnostics
     DiagnosticError                      = { link = 'LspDiagnosticsDefaultError' },
     DiagnosticFloatingError              = { link = 'LspDiagnosticsFloatingError' },
