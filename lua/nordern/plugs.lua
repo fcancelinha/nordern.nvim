@@ -262,7 +262,7 @@ P.dadBod           = {
 
 P.lazygit          = {
     LazyGitBorder = { link = 'FloatBorder' },
-    LazyGitFloat  = { fg = C.fg, bg = C.none },
+    LazyGitFloat  = { fg = C.aurora.green, bg = C.none },
 }
 
 P.neo_tree         = {
@@ -955,6 +955,45 @@ P.blink            = {
     -- BlinkCmpSignatureHelpActiveParameter = { fg = C.none, bg = C.none },
     BlinkCmpSignatureHelpBorder = { fg = C.frost.turquoise, bg = C.none },
     -- BlinkCmpSource                       = { fg = C.none, bg = C.none },
+}
+
+P.snacks           = {
+    -- Indent
+    SnacksIndent = { fg = C.night.c1, bg = C.none },
+    SnacksIndentBlank = { fg = C.blend.turquoise, bg = C.none },
+    SnacksIndentScope = { fg = C.frost.turquoise, bg = C.none },
+    -- Notifier
+}
+
+P.grug             = {
+    GrugFarHelpHeader = { fg = C.frost.turquoise, bg = C.none },
+    GrugFarHelpHeaderKey = { fg = C.fg, bg = C.none },
+    GrugFarHelpWinActionDescription = { fg = C.fg, bg = C.none },
+    GrugFarHelpWinActionKey = { fg = C.fg, bg = C.none },
+    GrugFarHelpWinActionPrefix = { fg = C.fg, bg = C.none },
+    GrugFarHelpWinActionText = { fg = C.fg, bg = C.none },
+    GrugFarHelpWinHeader = { fg = C.fg, bg = C.none },
+    GrugFarInputLabel = { fg = C.frost.turquoise, bg = C.none },
+    GrugFarInputPlaceholder = { fg = C.night.c2, bg = C.none, sp = C.none },
+    GrugFarResultsActionMessage = { fg = C.fg, bg = C.none },
+    GrugFarResultsAddIndicator = { fg = C.fg, bg = C.none },
+    GrugFarResultsChangeIndicator = { fg = C.fg, bg = C.none },
+    GrugFarResultsCmdHeader = { fg = C.aurora.yellow, bg = C.none },
+    GrugFarResultsColumnNr = { fg = C.night.c1, bg = C.none },
+    GrugFarResultsCursorLineNo = { fg = C.frost.turquoise, bg = C.none },
+    GrugFarResultsDiffSeparatorIndicator = { fg = C.night.c1, bg = C.none },
+    GrugFarResultsHeader = { fg = C.aurora.green, bg = C.none },
+    GrugFarResultsLineNr = { fg = C.night.c1, bg = C.none },
+    GrugFarResultsLongLineStr = { fg = C.fg, bg = C.none },
+    GrugFarResultsMatch = { fg = C.frost.turquoise, bg = C.blend.turquoise },
+    GrugFarResultsMatchAdded = { fg = C.fg, bg = C.none },
+    GrugFarResultsMatchRemoved = { fg = C.fg, bg = C.none },
+    GrugFarResultsNumberLabel = { fg = C.night.c3, bg = C.none },
+    GrugFarResultsNumbersSeparator = { fg = C.night.c1, bg = C.none },
+    GrugFarResultsPath = { fg = C.fg, bg = C.none },
+    GrugFarResultsRemoveIndicator = { fg = C.fg, bg = C.none },
+    GrugFarResultsStats = { fg = C.fg, bg = C.none },
+    GrugFarVisualBufrange = { fg = C.fg, bg = C.none },
 }
 
 return P

@@ -148,7 +148,7 @@ B.syntax = {
     Statement      = { fg = C.frost.turquoise, bg = C.none },                                     -- any statement
     StorageClass   = { fg = C.frost.light_blue, bg = C.none },                                    -- static, register, volatile, etc.
     String         = { fg = C.aurora.green, bg = C.none },                                        -- any string
-    Structure      = { fg = C.aurora.blue, bg = C.none },                                         -- struct, union, enum, etc.
+    Structure      = { fg = C.frost.blue, bg = C.none },                                          -- struct, union, enum, etc.
     Tag            = { fg = C.aurora.red, bg = C.none },                                          -- you can use CTRL-] on this
     Todo           = { fg = C.aurora.orange, bg = C.none },                                       -- anything that needs extra attention; mostly the keywords TODO FIXME and XXX
     Type           = { fg = C.frost.turquoise, bg = C.none },                                     -- int, long, char, etc.
