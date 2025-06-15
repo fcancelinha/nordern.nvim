@@ -988,7 +988,7 @@ P.grug             = {
     GrugFarResultsMatch = { fg = C.frost.turquoise, bg = C.blend.turquoise },
     GrugFarResultsMatchAdded = { fg = C.fg, bg = C.none },
     GrugFarResultsMatchRemoved = { fg = C.fg, bg = C.none },
-    GrugFarResultsNumberLabel = { fg = C.night.c3, bg = C.none },
+    GrugFarResultsNumberLabel = { fg = C.night.c2, bg = C.none },
     GrugFarResultsNumbersSeparator = { fg = C.night.c1, bg = C.none },
     GrugFarResultsPath = { fg = C.fg, bg = C.none },
     GrugFarResultsRemoveIndicator = { fg = C.fg, bg = C.none },
