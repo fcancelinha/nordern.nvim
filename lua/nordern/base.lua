@@ -118,7 +118,7 @@ B.gui = {
 }
 
 B.syntax = {
-    Boolean        = { fg = C.aurora.purple, bg = C.none },                                       -- a boolean constant: TRUE, false
+    Boolean        = { fg = C.frost.light_blue, bg = C.none },                                    -- a boolean constant: TRUE, false
     Character      = { fg = C.frost.light_blue, bg = C.none },                                    -- any character constant: 'c', '\n'
     Comment        = { fg = C.blend.comment, bg = C.none },                                       -- any comment
     Conditional    = { fg = C.frost.light_blue, bg = C.none },                                    -- italic if, then, else, endif, switch, etc.
@@ -161,13 +161,13 @@ B.treesitter = {
     -- Identifiers
     ['@variable']                    = { fg = C.fg, bg = C.none },                  -- variable names
     ['@variable.builtin']            = { fg = C.frost.light_blue, bg = C.none },    -- self, this, cls
-    ['@variable.parameter']          = { fg = C.fg, bg = C.none, italic = true },   -- function parameters
-    ['@variable.parameter.builtin']  = { fg = C.frost.light_blue, bg = C.none, italic = true }, -- special parameters (e.g. _, it)
+    ['@variable.parameter']          = { fg = C.fg, bg = C.none },                  -- function parameters
+    ['@variable.parameter.builtin']  = { fg = C.frost.light_blue, bg = C.none },    -- special parameters (e.g. _, it)
     ['@variable.member']             = { fg = C.fg, bg = C.none },                  -- object/struct fields
 
     -- Constants
     ['@constant']                    = { link = 'Constant' },
-    ['@constant.builtin']            = { fg = C.frost.sea, bg = C.none },           -- true, false, nil
+    ['@constant.builtin']            = { fg = C.frost.turquoise, bg = C.none },     -- true, false, nil
     ['@constant.macro']              = { fg = C.frost.sea, bg = C.none },           -- C preprocessor constants
 
     -- Modules / Namespaces
