@@ -138,7 +138,7 @@ B.syntax = {
     Label          = { fg = C.frost.light_blue, bg = C.none },                                    -- case, default, indent char, window labels etc.
     Macro          = { fg = C.none, bg = C.none },                                                -- same as Define
     Number         = { fg = C.aurora.purple, bg = C.none },                                       -- a number constant: 5
-    Operator       = { fg = C.aurora.yellow, bg = C.none },                                       -- sizeof", "+", "*", etc.
+    Operator       = { fg = C.frost.turquoise, bg = C.none },                                     -- sizeof", "+", "*", etc.
     PreCondit      = { fg = C.frost.turquoise, bg = C.none },                                     -- preprocessor #if, #else, #endif, etc.
     PreProc        = { fg = C.frost.turquoise, bg = C.none },                                     -- generic Preprocessor
     Repeat         = { fg = C.frost.turquoise, bg = C.none },                                     -- italic any other keyword
@@ -154,6 +154,122 @@ B.syntax = {
     Type           = { fg = C.frost.turquoise, bg = C.none },                                     -- int, long, char, etc.
     Typedef        = { fg = C.frost.turquoise, bg = C.none },                                     -- A typedef
     Underlined     = { fg = C.aurora.green, bg = C.none, underline = true, sp = C.aurora.green }, -- text that stands out, HTML links
+}
+
+-- Treesitter standard highlight groups (language-agnostic defaults)
+B.treesitter = {
+    -- Identifiers
+    ['@variable']                    = { fg = C.fg, bg = C.none },                  -- variable names
+    ['@variable.builtin']            = { fg = C.frost.light_blue, bg = C.none },    -- self, this, cls
+    ['@variable.parameter']          = { fg = C.fg, bg = C.none, italic = true },   -- function parameters
+    ['@variable.parameter.builtin']  = { fg = C.frost.light_blue, bg = C.none, italic = true }, -- special parameters (e.g. _, it)
+    ['@variable.member']             = { fg = C.fg, bg = C.none },                  -- object/struct fields
+
+    -- Constants
+    ['@constant']                    = { link = 'Constant' },
+    ['@constant.builtin']            = { fg = C.frost.sea, bg = C.none },           -- true, false, nil
+    ['@constant.macro']              = { fg = C.frost.sea, bg = C.none },           -- C preprocessor constants
+
+    -- Modules / Namespaces
+    ['@module']                      = { fg = C.frost.blue, bg = C.none },          -- module/namespace names
+    ['@module.builtin']              = { fg = C.frost.blue, bg = C.none },
+
+    -- Labels
+    ['@label']                       = { link = 'Label' },
+
+    -- Strings
+    ['@string']                      = { link = 'String' },
+    ['@string.documentation']        = { fg = C.blend.comment, bg = C.none, italic = true }, -- doc strings
+    ['@string.escape']               = { fg = C.aurora.yellow, bg = C.none },       -- escape chars \n \t
+    ['@string.regexp']               = { fg = C.aurora.yellow, bg = C.none },       -- regex
+    ['@string.special']              = { fg = C.aurora.yellow, bg = C.none },
+    ['@string.special.symbol']       = { fg = C.frost.sea, bg = C.none },           -- symbols (ruby :sym, etc.)
+    ['@string.special.url']          = { fg = C.aurora.green, bg = C.none, underline = true, sp = C.aurora.green },
+    ['@string.special.path']         = { fg = C.aurora.green, bg = C.none },
+
+    -- Types
+    ['@type']                        = { link = 'Type' },
+    ['@type.builtin']                = { fg = C.frost.turquoise, bg = C.none },     -- int, str, bool
+    ['@type.definition']             = { fg = C.fg, bg = C.none },                  -- type Foo in definitions
+    ['@type.qualifier']              = { fg = C.frost.light_blue, bg = C.none },    -- const, static, public
+
+    -- Attributes / Decorators / Annotations
+    ['@attribute']                   = { fg = C.frost.sea, bg = C.none },           -- @decorator, #[attr], annotations
+    ['@attribute.builtin']           = { fg = C.frost.sea, bg = C.none },
+
+    -- Properties
+    ['@property']                    = { fg = C.fg, bg = C.none },
+
+    -- Functions
+    ['@function']                    = { fg = C.frost.turquoise, bg = C.none },     -- function definitions
+    ['@function.builtin']            = { fg = C.frost.sea, bg = C.none },           -- print, len, etc.
+    ['@function.call']               = { fg = C.frost.turquoise, bg = C.none },     -- function calls
+    ['@function.macro']              = { fg = C.frost.sea, bg = C.none },           -- macro invocations
+    ['@function.method']             = { fg = C.frost.sea, bg = C.none },           -- method definitions
+    ['@function.method.call']        = { fg = C.frost.sea, bg = C.none },           -- method calls
+
+    -- Constructors
+    ['@constructor']                 = { fg = C.frost.blue, bg = C.none },          -- new Foo(), __init__
+
+    -- Operators
+    ['@operator']                    = { fg = C.aurora.yellow, bg = C.none },       -- +, -, =, etc.
+
+    -- Keywords
+    ['@keyword']                     = { link = 'Keyword' },
+    ['@keyword.conditional']         = { fg = C.frost.light_blue, bg = C.none },    -- if, else, switch
+    ['@keyword.conditional.ternary'] = { fg = C.aurora.yellow, bg = C.none },       -- ? :
+    ['@keyword.coroutine']           = { fg = C.aurora.yellow, bg = C.none },       -- async, await, yield
+    ['@keyword.directive']           = { fg = C.frost.turquoise, bg = C.none },     -- preprocessor directives
+    ['@keyword.exception']           = { fg = C.frost.light_blue, bg = C.none },    -- try, catch, throw
+    ['@keyword.function']            = { fg = C.frost.light_blue, bg = C.none },    -- func, def, fn keyword
+    ['@keyword.import']              = { fg = C.frost.light_blue, bg = C.none },    -- import, require, use
+    ['@keyword.modifier']            = { fg = C.frost.light_blue, bg = C.none },    -- public, private, abstract
+    ['@keyword.operator']            = { fg = C.frost.light_blue, bg = C.none },    -- and, or, not, in
+    ['@keyword.repeat']              = { fg = C.frost.light_blue, bg = C.none },    -- for, while, loop
+    ['@keyword.return']              = { fg = C.frost.light_blue, bg = C.none },    -- return
+    ['@keyword.type']                = { fg = C.frost.light_blue, bg = C.none },    -- struct, class, enum keyword
+
+    -- Punctuation
+    ['@punctuation.bracket']         = { fg = C.frost.light_blue, bg = C.none },    -- (), [], {}
+    ['@punctuation.delimiter']       = { fg = C.frost.light_blue, bg = C.none },    -- , ; :
+    ['@punctuation.special']         = { fg = C.aurora.yellow, bg = C.none },       -- interpolation braces, etc.
+
+    -- Comments
+    ['@comment']                     = { link = 'Comment' },
+    ['@comment.documentation']       = { fg = C.frost.sea, bg = C.none, italic = true }, -- doc comments (/** */, ///, ---)
+    ['@comment.error']               = { fg = C.aurora.red, bg = C.none, bold = true },
+    ['@comment.warning']             = { fg = C.aurora.yellow, bg = C.none, bold = true },
+    ['@comment.todo']                = { fg = C.aurora.orange, bg = C.none, bold = true },
+    ['@comment.note']                = { fg = C.frost.turquoise, bg = C.none, bold = true },
+
+    -- Markup
+    ['@markup.heading']              = { fg = C.frost.turquoise, bg = C.none, bold = true },
+    ['@markup.heading.1']            = { fg = C.frost.turquoise, bg = C.none, bold = true },
+    ['@markup.heading.2']            = { fg = C.frost.sea, bg = C.none, bold = true },
+    ['@markup.heading.3']            = { fg = C.frost.light_blue, bg = C.none, bold = true },
+    ['@markup.heading.4']            = { fg = C.frost.blue, bg = C.none, bold = true },
+    ['@markup.strong']               = { fg = C.frost.turquoise, bg = C.none, bold = true },
+    ['@markup.italic']               = { fg = C.frost.light_blue, bg = C.none, italic = true },
+    ['@markup.strikethrough']        = { fg = C.night.c3, bg = C.none, strikethrough = true },
+    ['@markup.underline']            = { underline = true },
+    ['@markup.link']                 = { fg = C.frost.turquoise, bg = C.none },
+    ['@markup.link.label']           = { fg = C.frost.turquoise, bg = C.none },
+    ['@markup.link.url']             = { link = 'Underlined' },
+    ['@markup.list']                 = { fg = C.aurora.yellow, bg = C.none },
+    ['@markup.raw']                  = { fg = C.aurora.green, bg = C.none },
+    ['@markup.raw.block']            = { fg = C.aurora.green, bg = C.none },
+    ['@markup.math']                 = { fg = C.aurora.purple, bg = C.none },
+
+    -- Tags (HTML/JSX/XML)
+    ['@tag']                         = { fg = C.frost.light_blue, bg = C.none },
+    ['@tag.builtin']                 = { fg = C.frost.turquoise, bg = C.none },
+    ['@tag.attribute']               = { fg = C.frost.sea, bg = C.none },
+    ['@tag.delimiter']               = { fg = C.frost.light_blue, bg = C.none },
+
+    -- Diff
+    ['@diff.plus']                   = { link = 'DiffAdd' },
+    ['@diff.minus']                  = { link = 'DiffDelete' },
+    ['@diff.delta']                  = { link = 'DiffChange' },
 }
 
 return B
