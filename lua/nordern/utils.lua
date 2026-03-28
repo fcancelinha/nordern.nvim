@@ -1,32 +1,6 @@
 local utils = {}
 
-local function semantic_token_override()
-    vim.api.nvim_create_autocmd('LspTokenUpdate', {
-        callback = function(args)
-            local token = args.data.token
-            if token.modifiers.defaultLibrary and token.modifiers.readonly then
-                vim.lsp.semantic_tokens.highlight_token(
-                    token,
-                    args.buf,
-                    args.data.client_id,
-                    '@lsp.mod.defaultLibrary'
-                )
-            end
-            if token.type == 'variable' and token.modifiers.readonly and token.modifiers.definition then
-                vim.lsp.semantic_tokens.highlight_token(
-                    token,
-                    args.buf,
-                    args.data.client_id,
-                    '@lsp.type.variable'
-                )
-            end
-        end,
-    })
-end
-
 function utils.preload()
-    semantic_token_override()
-    vim.o.termguicolors = true
     vim.o.background = 'dark'
     vim.g.colors_name = 'nordern'
 end
