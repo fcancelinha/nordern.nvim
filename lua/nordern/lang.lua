@@ -298,6 +298,7 @@ L.go = {
     ['@function.call.go']                        = { fg = C.frost.turquoise, bg = C.none },
     ['@keyword.function.go']                     = { fg = C.frost.light_blue, bg = C.none },
     ['@lsp.keyword.go']                          = { fg = C.frost.light_blue, bg = C.none },
+    ['@lsp.type.method.go']                      = { fg = C.frost.light_blue, bg = C.none },
     ['@lsp.mod.defaultLibrary.go']               = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.mod.definition.go']                   = { fg = C.fg, bg = C.none },
     ['@lsp.mod.readonly.go']                     = { fg = C.frost.turquoise, bg = C.none },
