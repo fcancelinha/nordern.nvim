@@ -26,6 +26,7 @@ local function apply_transparent_background(base)
         'NormalFloat',
         'FloatBorder',
         'FloatTitle',
+        'FloatFooter',
         'WinBarNC',
         'WinBar',
         'TermNormal',
@@ -38,7 +39,9 @@ local function apply_transparent_background(base)
     }
 
     for _, group in ipairs(highlight_groups) do
-        base[group].bg = colors.none
+        if base[group] then
+            base[group].bg = colors.none
+        end
     end
 end
 
