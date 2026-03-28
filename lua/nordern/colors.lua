@@ -38,6 +38,7 @@ local colors = {
         blue      = U.blend('#5e81ac', '#2E3440', 0.2),
         bluec1    = U.blend('#5e81ac', '#2E3440', 0.3),
         comment   = U.blend('#616E88', '#2E3440', 0.9),
+        float     = U.blend('#3b4252', '#2E3440', 0.7),
     },
     special = {
         sea = '#8EBDBC',

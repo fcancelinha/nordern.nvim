@@ -46,9 +46,9 @@ B.gui = {
     Directory                = { fg = C.fg, bg = C.none },                                 --	Directory names (and other special names in listings) fg = C.none, bg = C.blend.bluec1 .
     EndOfBuffer              = { fg = C.night.c1, bg = C.none },                           --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
     ErrorMsg                 = { fg = C.aurora.red, bg = C.none },                         --	Error messages on the command line.
-    FloatBorder              = { fg = C.frost.turquoise, bg = C.none },                    --	Border of floating windows.
+    FloatBorder              = { fg = C.frost.turquoise, bg = C.blend.float },              --	Border of floating windows.
     FloatFooter              = { link = 'FloatBorder' },                                   --	Footer of floating windows.base
-    FloatTitle               = { fg = C.fg, bg = C.bg },                                   --	Title of floating windows.
+    FloatTitle               = { fg = C.frost.turquoise, bg = C.blend.float, bold = true }, --	Title of floating windows.
     FoldColumn               = { fg = C.none, bg = C.none },                               --	'foldcolumn'
     Folded                   = { fg = C.none, bg = C.night.c3 },                           --	Line used for closed folds.
     IncSearch                = { link = 'CurSearch' },                                     --	'incsearch' highlighting; also used for the text replaced with ":s///c".
@@ -62,7 +62,7 @@ B.gui = {
     MsgSeparator             = { fg = C.night.c1, bg = C.bg },                             --	Separator for scrolled messages msgsep.
     NonText                  = { fg = C.night.c3, bg = C.none },                           --	'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also hl-EndOfBuffer.
     Normal                   = { fg = C.fg, bg = C.bg },                                   --	Normal text.
-    NormalFloat              = { link = 'Normal' },                                        --	Normal text in floating windows.
+    NormalFloat              = { fg = C.fg, bg = C.blend.float },                          --	Normal text in floating windows.
     NormalNC                 = { link = 'Normal' },                                        --	Normal text in non-current windows.
     Pmenu                    = { fg = C.fg, bg = C.bg },                                   --	Popup menu: Normal item.
     PmenuExtra               = { fg = C.frost.light_blue, bg = C.bg },                     --	Popup menu: Normal item "extra text".
@@ -256,7 +256,7 @@ B.treesitter = {
     ['@markup.link.label']           = { fg = C.frost.turquoise, bg = C.none },
     ['@markup.link.url']             = { link = 'Underlined' },
     ['@markup.list']                 = { fg = C.aurora.yellow, bg = C.none },
-    ['@markup.raw']                  = { fg = C.aurora.green, bg = C.none },
+    ['@markup.raw']                  = { fg = C.frost.turquoise, bg = C.none },
     ['@markup.raw.block']            = { fg = C.aurora.green, bg = C.none },
     ['@markup.math']                 = { fg = C.aurora.purple, bg = C.none },
 

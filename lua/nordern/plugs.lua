@@ -431,6 +431,7 @@ P.diagnostics      = {
     LspReferenceRead                     = { fg = C.frost.turquoise, bg = C.none },                                -- used for highlighting "read" references
     LspReferenceText                     = { fg = C.frost.turquoise, bg = C.none },                                -- used for highlighting "text" references
     LspReferenceWrite                    = { fg = C.frost.sea, bg = C.none },                                      -- used for highlighting "write" references
+    LspSignatureActiveParameter          = { fg = C.aurora.yellow, bg = C.blend.blue, bold = true, italic = true }, -- active parameter in signature help
     -- Diagnostics
     DiagnosticError                      = { link = 'LspDiagnosticsDefaultError' },
     DiagnosticFloatingError              = { link = 'LspDiagnosticsFloatingError' },
@@ -951,9 +952,9 @@ P.blink            = {
     -- BlinkCmpMenuSelection                = { fg = C.none, bg = C.none },
     -- BlinkCmpScrollBarGutter              = { fg = C.none, bg = C.none },
     BlinkCmpScrollBarThumb      = { fg = C.none, bg = C.blend.blue },
-    -- BlinkCmpSignatureHelp                = { fg = C.none, bg = C.none },
-    -- BlinkCmpSignatureHelpActiveParameter = { fg = C.none, bg = C.none },
-    BlinkCmpSignatureHelpBorder = { fg = C.frost.turquoise, bg = C.none },
+    BlinkCmpSignatureHelp                = { fg = C.fg, bg = C.blend.float },
+    BlinkCmpSignatureHelpActiveParameter = { fg = C.aurora.yellow, bg = C.blend.blue, bold = true, italic = true },
+    BlinkCmpSignatureHelpBorder          = { fg = C.frost.turquoise, bg = C.blend.float },
     -- BlinkCmpSource                       = { fg = C.none, bg = C.none },
 }
 
