@@ -328,10 +328,10 @@ P.cmp              = {
     CmpItemKindField         = { fg = C.frost.turquoise, bg = C.none },
     CmpItemKindFile          = { fg = C.aurora.red, bg = C.none },
     CmpItemKindFolder        = { fg = C.aurora.red, bg = C.none },
-    CmpItemKindFunction      = { fg = C.frost.light_blue, bg = C.none },
+    CmpItemKindFunction      = { fg = C.frost.turquoise, bg = C.none },
     CmpItemKindInterface     = { fg = C.frost.sea, bg = C.none },
     CmpItemKindKeyword       = { fg = C.aurora.red, bg = C.none },
-    CmpItemKindMethod        = { fg = C.aurora.purple, bg = C.none },
+    CmpItemKindMethod        = { fg = C.frost.sea, bg = C.none },
     CmpItemKindModule        = { fg = C.frost.light_blue, bg = C.none },
     CmpItemKindOperator      = { fg = C.aurora.red, bg = C.none },
     CmpItemKindProperty      = { fg = C.frost.turquoise, bg = C.none },
@@ -837,11 +837,11 @@ P.barbecue         = {
     barbecue_context_event          = { fg = C.aurora.green, bg = C.bg, },
     barbecue_context_field          = { fg = C.frost.sea, bg = C.bg, },
     barbecue_context_file           = { fg = C.aurora.red, bg = C.bg, },
-    barbecue_context_function       = { fg = C.frost.light_blue, bg = C.bg, },
+    barbecue_context_function       = { fg = C.frost.turquoise, bg = C.bg, },
     barbecue_context_interface      = { fg = C.frost.sea, bg = C.bg, },
     barbecue_context_key            = { fg = C.aurora.red, bg = C.bg, },
-    barbecue_context_method         = { fg = C.aurora.purple, bg = C.bg, },
-    barbecue_context_module         = { fg = C.aurora.purple, bg = C.bg, },
+    barbecue_context_method         = { fg = C.frost.sea, bg = C.bg, },
+    barbecue_context_module         = { fg = C.frost.blue, bg = C.bg, },
     barbecue_context_namespace      = { fg = C.frost.blue, bg = C.bg, },
     barbecue_context_null           = { fg = C.fg, bg = C.bg, },
     barbecue_context_number         = { fg = C.aurora.purple, bg = C.bg, },
@@ -928,10 +928,10 @@ P.blink            = {
     BlinkCmpKindField           = { fg = C.frost.turquoise, bg = C.none },
     BlinkCmpKindFile            = { fg = C.frost.blue, bg = C.none },
     BlinkCmpKindFolder          = { fg = C.frost.light_blue, bg = C.none },
-    BlinkCmpKindFunction        = { fg = C.frost.light_blue, bg = C.none },
+    BlinkCmpKindFunction        = { fg = C.frost.turquoise, bg = C.none },
     BlinkCmpKindInterface       = { fg = C.frost.sea, bg = C.none },
     BlinkCmpKindKeyword         = { fg = C.aurora.red, bg = C.none },
-    BlinkCmpKindMethod          = { fg = C.aurora.purple, bg = C.none },
+    BlinkCmpKindMethod          = { fg = C.frost.sea, bg = C.none },
     BlinkCmpKindModule          = { fg = C.frost.light_blue, bg = C.none },
     BlinkCmpKindOperator        = { fg = C.aurora.red, bg = C.none },
     BlinkCmpKindProperty        = { fg = C.frost.turquoise, bg = C.none },
@@ -958,11 +958,12 @@ P.blink            = {
 }
 
 P.snacks           = {
-    -- Indent
     SnacksIndent = { fg = C.night.c1, bg = C.none },
     SnacksIndentBlank = { fg = C.blend.turquoise, bg = C.none },
     SnacksIndentScope = { fg = C.frost.turquoise, bg = C.none },
-    -- Notifier
+    SnacksPickerTree = { fg = C.night.c1, bg = C.none },
+    SnacksPickerPathIgnored = { fg = C.night.c3, bg = C.none },
+    SnacksPickerPathHidden = { fg = C.night.c3, bg = C.none },
 }
 
 P.grug             = {
