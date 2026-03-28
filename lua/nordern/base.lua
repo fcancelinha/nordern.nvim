@@ -206,7 +206,7 @@ B.treesitter = {
     ['@function.call']               = { fg = C.frost.turquoise, bg = C.none },     -- function calls
     ['@function.macro']              = { fg = C.frost.sea, bg = C.none },           -- macro invocations
     ['@function.method']             = { fg = C.frost.sea, bg = C.none },           -- method definitions
-    ['@function.method.call']        = { fg = C.frost.sea, bg = C.none },           -- method calls
+    ['@function.method.call']        = { fg = C.frost.light_blue, bg = C.none },  -- method calls
 
     -- Constructors
     ['@constructor']                 = { fg = C.frost.blue, bg = C.none },          -- new Foo(), __init__
