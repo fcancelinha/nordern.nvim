@@ -12,17 +12,17 @@ P.quickfix         = {
 }
 
 P.outline          = {
-    OutlineGuides         = { fg = C.night.c1, bg = C.bg },
-    OutlineLineno         = { fg = C.night.c0, bg = C.bg },
+    OutlineGuides         = { fg = C.night.c1, bg = C.none },
+    OutlineLineno         = { fg = C.night.c0, bg = C.none },
     OutlineCurrent        = { fg = C.none, bg = C.blend.bluec1 },
-    OutlineDetails        = { fg = C.frost.turquoise, bg = C.bg },
-    OutlineHelpTip        = { fg = C.fg, bg = C.bg },
-    OutlineStatusFt       = { fg = C.fg, bg = C.bg },
-    OutlineFoldMarker     = { fg = C.frost.turquoise, bg = C.bg },
-    OutlineStatusError    = { fg = C.blend.red, bg = C.bg },
-    OutlineJumpHighlight  = { fg = C.aurora.yellow, bg = C.bg },
-    OutlineKeymapHelpKey  = { fg = C.aurora.yellow, bg = C.bg },
-    OutlineStatusProvider = { fg = C.aurora.purple, bg = C.bg },
+    OutlineDetails        = { fg = C.frost.turquoise, bg = C.none },
+    OutlineHelpTip        = { fg = C.fg, bg = C.none },
+    OutlineStatusFt       = { fg = C.fg, bg = C.none },
+    OutlineFoldMarker     = { fg = C.frost.turquoise, bg = C.none },
+    OutlineStatusError    = { fg = C.blend.red, bg = C.none },
+    OutlineJumpHighlight  = { fg = C.aurora.yellow, bg = C.none },
+    OutlineKeymapHelpKey  = { fg = C.aurora.yellow, bg = C.none },
+    OutlineStatusProvider = { fg = C.aurora.purple, bg = C.none },
 }
 
 P.neotest          = {
