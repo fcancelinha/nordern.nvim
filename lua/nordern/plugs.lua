@@ -8,7 +8,8 @@ P.luminate         = {
 
 P.quickfix         = {
     qfFileName = { fg = C.frost.turquoise, bg = C.none, bold = true, underline = true },
-    qfLineNr = { fg = C.night.c3, bg = C.bg },
+    qfLineNr = { fg = C.aurora.green, bg = C.none },
+    qfText = { fg = C.fg, bg = C.none },
 }
 
 P.outline          = {
@@ -269,16 +270,16 @@ P.neo_tree         = {
     NeoTreeBufferNumber       = { fg = C.fg, bg = C.none },                      --The buffer number shown in the buffers source.
     NeoTreeCursorLine         = { link = 'CursorLine' },                         --|hl-CursorLine| override in Neo-tree window.
     NeoTreeDimText            = { fg = C.night.c3, bg = C.none },                --Greyed out text used in various places.
-    NeoTreeDirectoryIcon      = { fg = C.frost.turquoise, bg = C.none },         --Directory icon.
-    NeoTreeDirectoryName      = { fg = C.snow.c0, bg = C.none, bold = true },    --Directory name.
-    NeoTreeDotfile            = { fg = C.night.c3, bg = C.none, bold = true },   --Used for icons and names when dotfiles are filtered.
+    NeoTreeDirectoryIcon      = { fg = C.night.c3, bg = C.none },                --Directory icon.
+    NeoTreeDirectoryName      = { fg = C.snow.c0, bg = C.none },                 --Directory name.
+    NeoTreeDotfile            = { fg = C.night.c3, bg = C.none },                --Used for icons and names when dotfiles are filtered.
     NeoTreeEndOfBuffer        = { fg = C.none, bg = C.none },                    --|hl-EndOfBuffer| override in Neo-tree window.
     NeoTreeExpander           = { fg = C.night.c2, bg = C.none },                --Used for collapsed/expanded icons.
     NeoTreeFadeText1          = { fg = C.night.c2, bg = C.none },                --Used for icons and names that are hidden on Windows.
     NeoTreeFadeText2          = { fg = C.night.c2, bg = C.none },                --Used for icons and names that are hidden on Windows.
     NeoTreeFileIcon           = { fg = C.frost.sea, bg = C.none },               --File icon, when not overridden by devicons.
-    NeoTreeFileName           = { fg = C.fg, bg = C.none, bold = true },         --File name, when not overwritten by another status.
-    NeoTreeFileNameOpened     = { fg = C.fg, bg = C.none, bold = true },         --File name when the file is open. Not used yet.
+    NeoTreeFileName           = { fg = C.fg, bg = C.none },                      --File name, when not overwritten by another status.
+    NeoTreeFileNameOpened     = { fg = C.fg, bg = C.none },                      --File name when the file is open. Not used yet.
     NeoTreeFileStats          = { fg = C.night.c3, bg = C.none },                --Used for "stat" columns like size, last modified, etc.
     NeoTreeFileStatsHeader    = { fg = C.night.c3, bg = C.none, italic = true }, --Used for the header (top line) of the above columns.
     NeoTreeFilterTerm         = { fg = C.aurora.yellow, bg = C.none },           --The filter term, as displayed in the root node.
@@ -343,7 +344,7 @@ P.cmp              = {
     CmpItemKindUnit          = { fg = C.aurora.green, bg = C.none },
     CmpItemKindValue         = { fg = C.frost.turquoise, bg = C.none },
     CmpItemKindVariable      = { fg = C.frost.turquoise, bg = C.none },
-    CmpItemMenu              = { fg = C.night.c3, bg = C.none, italic = true },
+    CmpItemMenu              = { fg = C.night.c3, bg = C.none },
 }
 
 P.telescope        = {
@@ -408,30 +409,30 @@ P.diagnostics      = {
     LspCodeLensSeparator                 = { link = 'Comment' },
     LspCodeLensSign                      = { fg = C.frost.turquoise, bg = C.none },
     LspCodeLensText                      = { link = 'Comment' },
-    LspDiagnosticsDefaultError           = { fg = C.aurora.red, bg = C.none },                                      -- used for "Error" diagnostic virtual text
-    LspDiagnosticsDefaultHint            = { fg = C.frost.turquoise, bg = C.none },                                 -- used for "Hint" diagnostic virtual text
-    LspDiagnosticsDefaultInformation     = { fg = C.frost.turquoise, bg = C.none },                                 -- used for "Information" diagnostic virtual text
-    LspDiagnosticsDefaultWarning         = { fg = C.aurora.yellow, bg = C.none },                                   -- used for "Warning" diagnostic signs in sign column
-    LspDiagnosticsFloatingError          = { fg = C.aurora.red, bg = C.none },                                      -- used for "Error" diagnostic messages in the diagnostics float
-    LspDiagnosticsFloatingHint           = { fg = C.frost.turquoise, bg = C.none },                                 -- used for "Hint" diagnostic messages in the diagnostics float
-    LspDiagnosticsFloatingInformation    = { fg = C.frost.turquoise, bg = C.none },                                 -- used for "Information" diagnostic messages in the diagnostics float
-    LspDiagnosticsFloatingWarning        = { fg = C.aurora.yellow, bg = C.none },                                   -- used for "Warning" diagnostic messages in the diagnostics float
-    LspDiagnosticsSignError              = { fg = C.aurora.red, bg = C.none },                                      -- used for "Error" diagnostic signs in sign column
-    LspDiagnosticsSignHint               = { fg = C.frost.sea, bg = C.none },                                       -- used for "Hint" diagnostic signs in sign column
-    LspDiagnosticsSignInformation        = { fg = C.frost.turquoise, bg = C.none },                                 -- used for "Information" diagnostic signs in sign column
-    LspDiagnosticsSignWarning            = { fg = C.aurora.yellow, bg = C.none },                                   -- used for "Warning" diagnostic signs in sign column
-    LspDiagnosticsUnderlineError         = { fg = C.none, bg = C.none, sp = C.aurora.red, undercurl = true },       -- used to underline "Error" diagnostics.
-    LspDiagnosticsUnderlineHint          = { fg = C.none, bg = C.none, sp = C.frost.turquoise, undercurl = true },  -- used to underline "Hint" diagnostics.
-    LspDiagnosticsUnderlineInformation   = { fg = C.none, bg = C.none, sp = C.frost.blue, undercurl = true },       -- used to underline "Information" diagnostics.
-    LspDiagnosticsUnderlineWarning       = { fg = C.none, bg = C.none, sp = C.aurora.yellow, undercurl = true },    -- used to underline "Warning" diagnostics.
-    LspDiagnosticsVirtualTextError       = { fg = C.aurora.red, bg = C.blend.red },                                 -- Virtual text "Error"
-    LspDiagnosticsVirtualTextHint        = { fg = C.frost.turquoise, bg = C.blend.turquoise },                      -- Virtual text "Hint"
-    LspDiagnosticsVirtualTextInformation = { fg = C.frost.turquoise, bg = C.blend.bluec1 },                         -- Virtual text "Information"
-    LspDiagnosticsVirtualTextWarning     = { fg = C.aurora.yellow, bg = C.blend.yellow },                           -- Virtual text "Warning"
-    LspReferenceRead                     = { fg = C.frost.turquoise, bg = C.none },                                 -- used for highlighting "read" references
-    LspReferenceText                     = { fg = C.frost.turquoise, bg = C.none },                                 -- used for highlighting "text" references
-    LspReferenceWrite                    = { fg = C.frost.sea, bg = C.none },                                       -- used for highlighting "write" references
-    LspSignatureActiveParameter          = { fg = C.aurora.yellow, bg = C.blend.blue, bold = true, italic = true }, -- active parameter in signature help
+    LspDiagnosticsDefaultError           = { fg = C.aurora.red, bg = C.none },                                     -- used for "Error" diagnostic virtual text
+    LspDiagnosticsDefaultHint            = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Hint" diagnostic virtual text
+    LspDiagnosticsDefaultInformation     = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Information" diagnostic virtual text
+    LspDiagnosticsDefaultWarning         = { fg = C.aurora.yellow, bg = C.none },                                  -- used for "Warning" diagnostic signs in sign column
+    LspDiagnosticsFloatingError          = { fg = C.aurora.red, bg = C.none },                                     -- used for "Error" diagnostic messages in the diagnostics float
+    LspDiagnosticsFloatingHint           = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Hint" diagnostic messages in the diagnostics float
+    LspDiagnosticsFloatingInformation    = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Information" diagnostic messages in the diagnostics float
+    LspDiagnosticsFloatingWarning        = { fg = C.aurora.yellow, bg = C.none },                                  -- used for "Warning" diagnostic messages in the diagnostics float
+    LspDiagnosticsSignError              = { fg = C.aurora.red, bg = C.none },                                     -- used for "Error" diagnostic signs in sign column
+    LspDiagnosticsSignHint               = { fg = C.frost.sea, bg = C.none },                                      -- used for "Hint" diagnostic signs in sign column
+    LspDiagnosticsSignInformation        = { fg = C.frost.turquoise, bg = C.none },                                -- used for "Information" diagnostic signs in sign column
+    LspDiagnosticsSignWarning            = { fg = C.aurora.yellow, bg = C.none },                                  -- used for "Warning" diagnostic signs in sign column
+    LspDiagnosticsUnderlineError         = { fg = C.none, bg = C.none, sp = C.aurora.red, undercurl = true },      -- used to underline "Error" diagnostics.
+    LspDiagnosticsUnderlineHint          = { fg = C.none, bg = C.none, sp = C.frost.turquoise, undercurl = true }, -- used to underline "Hint" diagnostics.
+    LspDiagnosticsUnderlineInformation   = { fg = C.none, bg = C.none, sp = C.frost.blue, undercurl = true },      -- used to underline "Information" diagnostics.
+    LspDiagnosticsUnderlineWarning       = { fg = C.none, bg = C.none, sp = C.aurora.yellow, undercurl = true },   -- used to underline "Warning" diagnostics.
+    LspDiagnosticsVirtualTextError       = { fg = C.aurora.red, bg = C.blend.red },                                -- Virtual text "Error"
+    LspDiagnosticsVirtualTextHint        = { fg = C.frost.turquoise, bg = C.blend.turquoise },                     -- Virtual text "Hint"
+    LspDiagnosticsVirtualTextInformation = { fg = C.frost.turquoise, bg = C.blend.bluec1 },                        -- Virtual text "Information"
+    LspDiagnosticsVirtualTextWarning     = { fg = C.aurora.yellow, bg = C.blend.yellow },                          -- Virtual text "Warning"
+    LspReferenceRead                     = { fg = C.frost.turquoise, bg = C.none },                                -- used for highlighting "read" references
+    LspReferenceText                     = { fg = C.frost.turquoise, bg = C.none },                                -- used for highlighting "text" references
+    LspReferenceWrite                    = { fg = C.frost.sea, bg = C.none },                                      -- used for highlighting "write" references
+    LspSignatureActiveParameter          = { fg = C.aurora.yellow, bg = C.blend.blue, bold = true },               -- active parameter in signature help
     -- Diagnostics
     DiagnosticError                      = { link = 'LspDiagnosticsDefaultError' },
     DiagnosticFloatingError              = { link = 'LspDiagnosticsFloatingError' },
@@ -474,7 +475,7 @@ P.mason            = {
     MasonHighlightBlockBoldSecondary = { fg = C.night.c0, bg = C.aurora.yellow },
     MasonHeaderSecondary             = { fg = C.frost.turquoise, bg = C.none },
     -- Lsp Info
-    LspInfoTip                       = { fg = C.night.c3, bg = C.none, italic = true },
+    LspInfoTip                       = { fg = C.night.c3, bg = C.none },
     LspInfoBorder                    = { link = 'FloatBorder' },
     LspInfoFiletypeList              = { fg = C.frost.turquoise, bg = C.none, bold = true },
     LspInfoFiletype                  = { fg = C.frost.turquoise, bg = C.none, bold = true },
@@ -956,7 +957,7 @@ P.blink            = {
     -- BlinkCmpScrollBarGutter              = { fg = C.none, bg = C.none },
     BlinkCmpScrollBarThumb               = { fg = C.none, bg = C.blend.blue },
     BlinkCmpSignatureHelp                = { fg = C.fg, bg = C.blend.float },
-    BlinkCmpSignatureHelpActiveParameter = { fg = C.aurora.yellow, bg = C.blend.blue, bold = true, italic = true },
+    BlinkCmpSignatureHelpActiveParameter = { fg = C.aurora.yellow, bg = C.blend.blue, bold = true },
     BlinkCmpSignatureHelpBorder          = { fg = C.frost.turquoise, bg = C.blend.float },
     -- BlinkCmpSource                       = { fg = C.none, bg = C.none },
 }

@@ -46,9 +46,9 @@ B.gui = {
     Directory                = { fg = C.fg, bg = C.none },                                 --	Directory names (and other special names in listings) fg = C.none, bg = C.blend.bluec1 .
     EndOfBuffer              = { fg = C.night.c1, bg = C.none },                           --	Filler lines (~) after the end of the buffer. By default, this is highlighted like hl-NonText.
     ErrorMsg                 = { fg = C.aurora.red, bg = C.none },                         --	Error messages on the command line.
-    FloatBorder              = { fg = C.frost.turquoise, bg = C.blend.float },              --	Border of floating windows.
+    FloatBorder              = { fg = C.frost.turquoise, bg = C.none },                    --	Border of floating windows.
     FloatFooter              = { link = 'FloatBorder' },                                   --	Footer of floating windows.base
-    FloatTitle               = { fg = C.frost.turquoise, bg = C.blend.float, bold = true }, --	Title of floating windows.
+    FloatTitle               = { fg = C.frost.turquoise, bg = C.none, bold = true },       --	Title of floating windows.
     FoldColumn               = { fg = C.none, bg = C.none },                               --	'foldcolumn'
     Folded                   = { fg = C.none, bg = C.night.c3 },                           --	Line used for closed folds.
     IncSearch                = { link = 'CurSearch' },                                     --	'incsearch' highlighting; also used for the text replaced with ":s///c".
@@ -56,16 +56,16 @@ B.gui = {
     LineNrAbove              = { fg = C.night.c3, bg = C.none },                           --	Line number for when the 'relativenumber' option is set, above the cursor line.
     LineNrBelow              = { fg = C.night.c3, bg = C.none },                           --	Line number for when the 'relativenumber' option is set, below the cursor line.
     MatchParen               = { fg = C.none, bg = C.night.c3 },                           --	Character under the cursor or just before it, if it is a paired bracket, and its match. pi_paren.txt
-    ModeMsg                  = { fg = C.fg, bg = C.bg },                                   --	'showmode' message (e.g., "-- INSERT --").
-    MoreMsg                  = { fg = C.fg, bg = C.bg },                                   --	more-prompt
-    MsgArea                  = { fg = C.none, bg = C.bg },                                 --	Area for messages and cmdline.
+    ModeMsg                  = { fg = C.fg, bg = C.none },                                 --	'showmode' message (e.g., "-- INSERT --").
+    MoreMsg                  = { fg = C.fg, bg = C.none },                                 --	more-prompt
+    MsgArea                  = { fg = C.none, bg = C.none },                               --	Area for messages and cmdline.
     MsgSeparator             = { fg = C.night.c1, bg = C.bg },                             --	Separator for scrolled messages msgsep.
     NonText                  = { fg = C.night.c3, bg = C.none },                           --	'@' at the end of the window, characters from 'showbreak' and other characters that do not really exist in the text (e.g., ">" displayed when a double-wide character doesn't fit at the end of the line). See also hl-EndOfBuffer.
     Normal                   = { fg = C.fg, bg = C.bg },                                   --	Normal text.
-    NormalFloat              = { fg = C.fg, bg = C.blend.float },                          --	Normal text in floating windows.
+    NormalFloat              = { fg = C.fg, bg = C.none },                                 --	Normal text in floating windows.
     NormalNC                 = { link = 'Normal' },                                        --	Normal text in non-current windows.
     Pmenu                    = { fg = C.fg, bg = C.bg },                                   --	Popup menu: Normal item.
-    PmenuExtra               = { fg = C.frost.light_blue, bg = C.bg },                     --	Popup menu: Normal item "extra text".
+    PmenuExtra               = { fg = C.frost.light_blue, bg = C.none },                   --	Popup menu: Normal item "extra text".
     PmenuExtraSel            = { fg = C.night.c1, bg = C.blend.blue },                     --	Popup menu: Selected item "extra text".
     PmenuKind                = { fg = C.frost.turquoise, bg = C.bg },                      --	Popup menu: Normal item "kind".
     PmenuKindSel             = { fg = C.frost.sea, bg = C.blend.blue },                    --	Popup menu: Selected item "kind".
@@ -159,19 +159,19 @@ B.syntax = {
 -- Treesitter standard highlight groups (language-agnostic defaults)
 B.treesitter = {
     -- Identifiers
-    ['@variable']                    = { fg = C.fg, bg = C.none },                  -- variable names
-    ['@variable.builtin']            = { fg = C.frost.light_blue, bg = C.none },    -- self, this, cls
-    ['@variable.parameter']          = { fg = C.fg, bg = C.none },                  -- function parameters
-    ['@variable.parameter.builtin']  = { fg = C.frost.light_blue, bg = C.none },    -- special parameters (e.g. _, it)
-    ['@variable.member']             = { fg = C.fg, bg = C.none },                  -- object/struct fields
+    ['@variable']                    = { fg = C.fg, bg = C.none },               -- variable names
+    ['@variable.builtin']            = { fg = C.frost.light_blue, bg = C.none }, -- self, this, cls
+    ['@variable.parameter']          = { fg = C.fg, bg = C.none },               -- function parameters
+    ['@variable.parameter.builtin']  = { fg = C.frost.light_blue, bg = C.none }, -- special parameters (e.g. _, it)
+    ['@variable.member']             = { fg = C.fg, bg = C.none },               -- object/struct fields
 
     -- Constants
     ['@constant']                    = { link = 'Constant' },
-    ['@constant.builtin']            = { fg = C.frost.turquoise, bg = C.none },     -- true, false, nil
-    ['@constant.macro']              = { fg = C.frost.sea, bg = C.none },           -- C preprocessor constants
+    ['@constant.builtin']            = { fg = C.frost.turquoise, bg = C.none }, -- true, false, nil
+    ['@constant.macro']              = { fg = C.frost.sea, bg = C.none },       -- C preprocessor constants
 
     -- Modules / Namespaces
-    ['@module']                      = { fg = C.frost.blue, bg = C.none },          -- module/namespace names
+    ['@module']                      = { fg = C.frost.blue, bg = C.none }, -- module/namespace names
     ['@module.builtin']              = { fg = C.frost.blue, bg = C.none },
 
     -- Labels
@@ -179,64 +179,64 @@ B.treesitter = {
 
     -- Strings
     ['@string']                      = { link = 'String' },
-    ['@string.documentation']        = { fg = C.blend.comment, bg = C.none, italic = true }, -- doc strings
-    ['@string.escape']               = { fg = C.aurora.yellow, bg = C.none },       -- escape chars \n \t
-    ['@string.regexp']               = { fg = C.aurora.yellow, bg = C.none },       -- regex
+    ['@string.documentation']        = { fg = C.blend.comment, bg = C.none }, -- doc strings
+    ['@string.escape']               = { fg = C.aurora.yellow, bg = C.none }, -- escape chars \n \t
+    ['@string.regexp']               = { fg = C.aurora.yellow, bg = C.none }, -- regex
     ['@string.special']              = { fg = C.aurora.yellow, bg = C.none },
-    ['@string.special.symbol']       = { fg = C.frost.sea, bg = C.none },           -- symbols (ruby :sym, etc.)
+    ['@string.special.symbol']       = { fg = C.frost.sea, bg = C.none },     -- symbols (ruby :sym, etc.)
     ['@string.special.url']          = { fg = C.aurora.green, bg = C.none, underline = true, sp = C.aurora.green },
     ['@string.special.path']         = { fg = C.aurora.green, bg = C.none },
 
     -- Types
     ['@type']                        = { link = 'Type' },
-    ['@type.builtin']                = { fg = C.frost.turquoise, bg = C.none },     -- int, str, bool
-    ['@type.definition']             = { fg = C.fg, bg = C.none },                  -- type Foo in definitions
-    ['@type.qualifier']              = { fg = C.frost.light_blue, bg = C.none },    -- const, static, public
+    ['@type.builtin']                = { fg = C.frost.turquoise, bg = C.none },  -- int, str, bool
+    ['@type.definition']             = { fg = C.fg, bg = C.none },               -- type Foo in definitions
+    ['@type.qualifier']              = { fg = C.frost.light_blue, bg = C.none }, -- const, static, public
 
     -- Attributes / Decorators / Annotations
-    ['@attribute']                   = { fg = C.frost.sea, bg = C.none },           -- @decorator, #[attr], annotations
+    ['@attribute']                   = { fg = C.frost.sea, bg = C.none }, -- @decorator, #[attr], annotations
     ['@attribute.builtin']           = { fg = C.frost.sea, bg = C.none },
 
     -- Properties
     ['@property']                    = { fg = C.fg, bg = C.none },
 
     -- Functions
-    ['@function']                    = { fg = C.frost.turquoise, bg = C.none },     -- function definitions
-    ['@function.builtin']            = { fg = C.frost.sea, bg = C.none },           -- print, len, etc.
-    ['@function.call']               = { fg = C.frost.turquoise, bg = C.none },     -- function calls
-    ['@function.macro']              = { fg = C.frost.sea, bg = C.none },           -- macro invocations
-    ['@function.method']             = { fg = C.frost.sea, bg = C.none },           -- method definitions
-    ['@function.method.call']        = { fg = C.frost.light_blue, bg = C.none },  -- method calls
+    ['@function']                    = { fg = C.frost.turquoise, bg = C.none },  -- function definitions
+    ['@function.builtin']            = { fg = C.frost.sea, bg = C.none },        -- print, len, etc.
+    ['@function.call']               = { fg = C.frost.turquoise, bg = C.none },  -- function calls
+    ['@function.macro']              = { fg = C.frost.sea, bg = C.none },        -- macro invocations
+    ['@function.method']             = { fg = C.frost.sea, bg = C.none },        -- method definitions
+    ['@function.method.call']        = { fg = C.frost.light_blue, bg = C.none }, -- method calls
 
     -- Constructors
-    ['@constructor']                 = { fg = C.frost.blue, bg = C.none },          -- new Foo(), __init__
+    ['@constructor']                 = { fg = C.frost.blue, bg = C.none }, -- new Foo(), __init__
 
     -- Operators
-    ['@operator']                    = { fg = C.aurora.yellow, bg = C.none },       -- +, -, =, etc.
+    ['@operator']                    = { fg = C.aurora.yellow, bg = C.none }, -- +, -, =, etc.
 
     -- Keywords
     ['@keyword']                     = { link = 'Keyword' },
-    ['@keyword.conditional']         = { fg = C.frost.light_blue, bg = C.none },    -- if, else, switch
-    ['@keyword.conditional.ternary'] = { fg = C.aurora.yellow, bg = C.none },       -- ? :
-    ['@keyword.coroutine']           = { fg = C.aurora.yellow, bg = C.none },       -- async, await, yield
-    ['@keyword.directive']           = { fg = C.frost.turquoise, bg = C.none },     -- preprocessor directives
-    ['@keyword.exception']           = { fg = C.frost.light_blue, bg = C.none },    -- try, catch, throw
-    ['@keyword.function']            = { fg = C.frost.light_blue, bg = C.none },    -- func, def, fn keyword
-    ['@keyword.import']              = { fg = C.frost.light_blue, bg = C.none },    -- import, require, use
-    ['@keyword.modifier']            = { fg = C.frost.light_blue, bg = C.none },    -- public, private, abstract
-    ['@keyword.operator']            = { fg = C.frost.light_blue, bg = C.none },    -- and, or, not, in
-    ['@keyword.repeat']              = { fg = C.frost.light_blue, bg = C.none },    -- for, while, loop
-    ['@keyword.return']              = { fg = C.frost.light_blue, bg = C.none },    -- return
-    ['@keyword.type']                = { fg = C.frost.light_blue, bg = C.none },    -- struct, class, enum keyword
+    ['@keyword.conditional']         = { fg = C.frost.light_blue, bg = C.none }, -- if, else, switch
+    ['@keyword.conditional.ternary'] = { fg = C.aurora.yellow, bg = C.none },    -- ? :
+    ['@keyword.coroutine']           = { fg = C.aurora.yellow, bg = C.none },    -- async, await, yield
+    ['@keyword.directive']           = { fg = C.frost.turquoise, bg = C.none },  -- preprocessor directives
+    ['@keyword.exception']           = { fg = C.frost.light_blue, bg = C.none }, -- try, catch, throw
+    ['@keyword.function']            = { fg = C.frost.light_blue, bg = C.none }, -- func, def, fn keyword
+    ['@keyword.import']              = { fg = C.frost.light_blue, bg = C.none }, -- import, require, use
+    ['@keyword.modifier']            = { fg = C.frost.light_blue, bg = C.none }, -- public, private, abstract
+    ['@keyword.operator']            = { fg = C.frost.light_blue, bg = C.none }, -- and, or, not, in
+    ['@keyword.repeat']              = { fg = C.frost.light_blue, bg = C.none }, -- for, while, loop
+    ['@keyword.return']              = { fg = C.frost.light_blue, bg = C.none }, -- return
+    ['@keyword.type']                = { fg = C.frost.light_blue, bg = C.none }, -- struct, class, enum keyword
 
     -- Punctuation
-    ['@punctuation.bracket']         = { fg = C.frost.light_blue, bg = C.none },    -- (), [], {}
-    ['@punctuation.delimiter']       = { fg = C.frost.light_blue, bg = C.none },    -- , ; :
-    ['@punctuation.special']         = { fg = C.aurora.yellow, bg = C.none },       -- interpolation braces, etc.
+    ['@punctuation.bracket']         = { fg = C.frost.light_blue, bg = C.none }, -- (), [], {}
+    ['@punctuation.delimiter']       = { fg = C.frost.light_blue, bg = C.none }, -- , ; :
+    ['@punctuation.special']         = { fg = C.aurora.yellow, bg = C.none },    -- interpolation braces, etc.
 
     -- Comments
     ['@comment']                     = { link = 'Comment' },
-    ['@comment.documentation']       = { fg = C.frost.sea, bg = C.none, italic = true }, -- doc comments (/** */, ///, ---)
+    ['@comment.documentation']       = { fg = C.frost.sea, bg = C.none }, -- doc comments (/** */, ///, ---)
     ['@comment.error']               = { fg = C.aurora.red, bg = C.none, bold = true },
     ['@comment.warning']             = { fg = C.aurora.yellow, bg = C.none, bold = true },
     ['@comment.todo']                = { fg = C.aurora.orange, bg = C.none, bold = true },

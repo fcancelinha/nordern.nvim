@@ -3,7 +3,7 @@ local colors = require('nordern.colors')
 
 C.default = {
     brighter_comments = false,
-    brighter_constants = true,
+    brighter_constants = false,
     italic_comments = false,
     transparent = false,
 }

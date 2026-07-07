@@ -1,5 +1,4 @@
 local C = require('nordern.colors')
-
 local L = {}
 
 L.neovim = {
@@ -27,7 +26,7 @@ L.lsp = {
     ['@lsp.type.type']                       = { link = '@type' },
     ['@lsp.type.typeParameter']              = { fg = C.aurora.yellow, bg = C.none },
     ['@lsp.type.variable']                   = { link = '@variable' },
-    ['@lsp.mod.declaration']                 = {},                                        -- don't override, let type-specific colors show
+    ['@lsp.mod.declaration']                 = {}, -- don't override, let type-specific colors show
     ['@lsp.mod.defaultLibrary']              = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.mod.readonly']                    = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.mod.deprecated']                  = { strikethrough = true },
@@ -292,31 +291,35 @@ L.gosum = {
 }
 
 L.go = {
+    ['@comment.documentation.go']                = { fg = C.frost.sea, bg = C.none },
     ['@constant.builtin.go']                     = { fg = C.frost.turquoise, bg = C.none },
     ['@constant.go']                             = { link = 'Constant' },
     ['@field.go']                                = { fg = C.fg, bg = C.none },
     ['@function.call.go']                        = { fg = C.frost.turquoise, bg = C.none },
+    ['@function.method.call.go']                 = { fg = C.frost.turquoise, bg = C.none },
     ['@keyword.function.go']                     = { fg = C.frost.light_blue, bg = C.none },
     ['@lsp.keyword.go']                          = { fg = C.frost.light_blue, bg = C.none },
-    ['@lsp.type.method.go']                      = { fg = C.frost.light_blue, bg = C.none },
     ['@lsp.mod.defaultLibrary.go']               = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.mod.definition.go']                   = { fg = C.fg, bg = C.none },
     ['@lsp.mod.readonly.go']                     = { fg = C.frost.turquoise, bg = C.none },
+    ['@lsp.mod.signature.go']                    = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.type.function.go']                    = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.type.keyword.go']                     = { fg = C.frost.light_blue, bg = C.none },
+    ['@lsp.type.method.go']                      = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.type.namespace.go']                   = { fg = C.none, bg = C.none },
     ['@lsp.type.operator.go']                    = { fg = C.aurora.yellow, bg = C.none },
     ['@lsp.type.string.go']                      = { fg = C.aurora.green, bg = C.none },
-    ['@lsp.type.type.go']                        = { link = '@type.go' },
+    ['@lsp.type.type.go']                        = { fg = C.fg, bg = C.none },
     ['@lsp.type.typeParameter.go']               = { fg = C.aurora.yellow, bg = C.none },
     ['@lsp.type.variable.go']                    = { fg = C.fg, bg = C.none },
     ['@lsp.typemod.function.definition.go']      = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.typemod.method.definition.go']        = { fg = C.frost.turquoise, bg = C.none },
+    ['@lsp.typemod.method.signature.go']         = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.typemod.parameter.definition.go']     = { fg = C.fg, bg = C.none },
     ['@lsp.typemod.type.defaultLibrary.go']      = { fg = C.frost.turquoise, bg = C.none },
     ['@lsp.typemod.type.definition.go']          = { fg = C.fg, bg = C.none },
     ['@lsp.typemod.typeParameter.definition.go'] = { fg = C.aurora.yellow, bg = C.none },
-    ['@lsp.typemod.variable.defaultLibrary.go']  = { fg = C.aurora.yellow, bg = C.none },
+    ['@lsp.typemod.variable.defaultLibrary.go']  = { fg = C.frost.light_blue, bg = C.none },
     ['@lsp.typemod.variable.definition.go']      = { fg = C.fg, bg = C.none },
     ['@lsp.typemod.variable.readonly.go']        = { fg = C.frost.turquoise, bg = C.none },
     ['@method.call.go']                          = { fg = C.frost.light_blue, bg = C.none },
@@ -332,7 +335,6 @@ L.go = {
     ['@type.go']                                 = { fg = C.special.light_blue, bg = C.none },
     ['@variable.go']                             = { fg = C.fg, bg = C.none },
     ['@variable.parameter.go']                   = { fg = C.fg, bg = C.none },
-    ['@comment.documentation.go']                = { fg = C.frost.sea, bg = C.none, italic = true },
     ['goBlock']                                  = { fg = C.frost.turquoise, bg = C.none },
     ['goConditional']                            = { fg = C.frost.light_blue, bg = C.none },
     ['goConst']                                  = { fg = C.aurora.yellow, bg = C.none },
@@ -379,9 +381,9 @@ L.lua = {
     ['@lsp.typemod.function.global.lua']         = { fg = C.frost.sea, bg = C.none },
     ['@field.lua']                               = { fg = C.fg, bg = C.none },
     ['@punctuation.delimiter.lua']               = { fg = C.fg, bg = C.none },
-    ['@punctuation.bracket.lua']                 = { fg = C.frost.light_blue, bg = C.none },
+    ['@punctuation.bracket.lua']                 = { fg = C.frost.turquoise, bg = C.none },
     ['@function.call.lua']                       = { fg = C.frost.turquoise, bg = C.none },
-    ['@constructor.lua']                         = { fg = C.frost.blue, bg = C.none },
+    ['@constructor.lua']                         = { fg = C.frost.turquoise, bg = C.none },
 }
 
 L.html = {
@@ -477,12 +479,12 @@ L.bash = {
 }
 
 L.markdown = {
+    ['@_label.markdown']                       = { fg = C.frost.sea, bg = C.none, bold = true },
     ['@_url.markdown_inline']                  = { fg = C.aurora.green, bg = C.none },
     ['@conceal.markdown_inline']               = { fg = C.aurora.yellow, bg = C.none },
     ['@label.markdown']                        = { fg = C.frost.sea, bg = C.none, bold = true },
-    ['@_label.markdown']                       = { fg = C.frost.sea, bg = C.none, bold = true },
+    ['@lsp.type.class.markdown']               = { fg = C.frost.turquoise, bg = C.bg, bold = true },
     ['@markup.heading']                        = { fg = C.frost.turquoise, bg = C.none, sp = C.frost.light_blue, bold = true },
-    ['markdownUrl']                            = { link = 'Underlined' },
     ['@markup.italic.markdown_inline']         = { fg = C.frost.light_blue, bg = C.none, italic = true },
     ['@markup.link.label.markdown_inline']     = { fg = C.frost.turquoise, bg = C.none },
     ['@markup.link.markdown_inline']           = { fg = C.fg, bg = C.none },
@@ -509,7 +511,7 @@ L.markdown = {
     ['@text.todo.checked.markdown']            = { fg = C.aurora.green, bg = C.none },
     ['@text.todo.unchecked.markdown']          = { fg = C.aurora.yellow, bg = C.none },
     ['@text.uri.markdown_inline']              = { link = 'Underlined' },
-    ['@lsp.type.class.markdown']               = { fg = C.frost.turquoise, bg = C.bg, bold = true },
+    ['markdownUrl']                            = { link = 'Underlined' },
 }
 
 L.xml = {
@@ -532,13 +534,14 @@ L.yaml = {
     ['@punctuation.delimiter.yaml'] = { fg = C.aurora.yellow, bg = C.none },
     ['@punctuation.special.yaml']   = { fg = C.frost.turquoise, bg = C.none, bold = true },
     ['@constant.builtin.yaml']      = { fg = C.frost.light_blue, bg = C.none },
-    ['yamlBlockMappingKey']         = { fg = C.frost.light_blue, bg = C.none },
     ['yamlBool']                    = { fg = C.frost.light_blue, bg = C.none },
     ['yamlDocumentStart']           = { fg = C.frost.light_blue, bg = C.none },
     ['yamlKey']                     = { fg = C.aurora.yellow, bg = C.none },
     ['yamlTSField']                 = { fg = C.aurora.red, bg = C.none },
     ['yamlTSPunctSpecial']          = { fg = C.aurora.red, bg = C.none },
     ['yamlTSString']                = { fg = C.aurora.green, bg = C.none },
+    ['yamlPlainScalar']             = { fg = C.aurora.green, bg = C.none },
+    ['yamlBlockMappingKey']         = { fg = C.frost.sea, bg = C.none },
 }
 
 L.json = {
