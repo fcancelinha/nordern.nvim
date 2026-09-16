@@ -49,12 +49,14 @@ L.http = {
     ['@keyword.http']               = { fg = C.aurora.green, bg = C.none, bold = true },
     ['@operator.http']              = { fg = C.aurora.green, bg = C.none, underline = true },
     ['@parameter.http']             = { fg = C.aurora.green, bg = C.none, bold = true },
+    ['@variable.parameter.http']    = { fg = C.aurora.green, bg = C.none, bold = true },
     ['@punctuation.delimiter.http'] = { fg = C.aurora.green, bg = C.none, bold = true },
     ['@string.special.url.http']    = { fg = C.aurora.green, bg = C.none, underline = true },
     ['@variable.member.http']       = { fg = C.aurora.green, bg = C.none, underline = true },
     ['@type.http']                  = { fg = C.aurora.green, bg = C.none, underline = true },
     ['@string.http']                = { fg = C.aurora.green, bg = C.none, underline = true },
     ['@text.uri.http']              = { fg = C.aurora.green, bg = C.none, underline = true },
+    ['@markup.link.url.http']       = { fg = C.aurora.green, bg = C.none, underline = true },
     ['@variable.http']              = { fg = C.aurora.green, bg = C.none, underline = true },
     ['httpResult200']               = { fg = C.aurora.green, bg = C.none },
     ['httpResult300']               = { fg = C.aurora.purple, bg = C.none },
@@ -80,6 +82,7 @@ L.sql = {
     ['@comment.sql']          = { link = 'Comment' },
     ['@spell.sql']            = { fg = C.night.c3, bg = C.none, italic = true },
     ['@field.sql']            = { fg = C.aurora.purple, bg = C.none },
+    ['@variable.member.sql']  = { fg = C.aurora.purple, bg = C.none },
     ['@attribute.sql']        = { fg = C.aurora.purple, bg = C.none },
 }
 
@@ -225,6 +228,7 @@ L.javascript = {
 
     --treesitter
     ['@conditional.ternary.javascript']                    = { fg = C.aurora.yellow, bg = C.none },
+    ['@keyword.conditional.ternary.javascript']            = { fg = C.aurora.yellow, bg = C.none },
     ['@constructor.javascript']                            = { fg = C.frost.blue, bg = C.none },
     ['@function.call.javascript']                          = { fg = C.frost.turquoise, bg = C.none },
     ['@function.method.call.javascript']                   = { fg = C.frost.light_blue, bg = C.none },
@@ -256,6 +260,7 @@ L.javascript = {
     ['@method.call.javascript']                            = { fg = C.frost.light_blue, bg = C.none },
     ['@parameter.javascript']                              = { fg = C.fg, bg = C.none },
     ['@preproc.javascript']                                = { fg = C.aurora.yellow, bg = C.none },
+    ['@keyword.directive.javascript']                      = { fg = C.aurora.yellow, bg = C.none },
     ['@property.javascript']                               = { fg = C.frost.light_blue, bg = C.none },
     ['@punctuation.special.javascript']                    = { fg = C.aurora.yellow, bg = C.none },
     ['@type.javascript']                                   = { fg = C.fg, bg = C.none },
@@ -273,6 +278,7 @@ L.make = {
 
 L.gomod = {
     ['@text.uri.gomod']           = { fg = C.aurora.green, bg = C.none },
+    ['@markup.link.url.gomod']    = { fg = C.aurora.green, bg = C.none },
     ['@comment.gomod']            = { link = 'Comment' },
     ['@keyword.gomod']            = { fg = C.frost.light_blue, bg = C.none, bold = true },
     ['@string.gomod']             = { fg = C.aurora.yellow, bg = C.none, bold = true },
@@ -295,6 +301,7 @@ L.go = {
     ['@constant.builtin.go']                     = { fg = C.frost.turquoise, bg = C.none },
     ['@constant.go']                             = { link = 'Constant' },
     ['@field.go']                                = { fg = C.fg, bg = C.none },
+    ['@variable.member.go']                      = { fg = C.fg, bg = C.none },
     ['@function.call.go']                        = { fg = C.frost.turquoise, bg = C.none },
     ['@function.method.call.go']                 = { fg = C.frost.turquoise, bg = C.none },
     ['@keyword.function.go']                     = { fg = C.frost.light_blue, bg = C.none },
@@ -324,6 +331,7 @@ L.go = {
     ['@lsp.typemod.variable.readonly.go']        = { fg = C.frost.turquoise, bg = C.none },
     ['@method.call.go']                          = { fg = C.frost.light_blue, bg = C.none },
     ['@method.go']                               = { fg = C.frost.turquoise, bg = C.none },
+    ['@function.method.go']                      = { fg = C.frost.turquoise, bg = C.none },
     ['@module.go']                               = { fg = C.fg, bg = C.none },
     ['@namespace.go']                            = { fg = C.none, bg = C.none },
     ['@property.go']                             = { fg = C.frost.turquoise, bg = C.none },
@@ -403,6 +411,7 @@ L.html = {
     ['@tag.html']                = { fg = C.frost.light_blue, bg = C.none },
     ['@text.html']               = { fg = C.fg, bg = C.none },
     ['@text.uri.html']           = { fg = C.aurora.green, bg = C.none },
+    ['@markup.link.url.html']    = { fg = C.aurora.green, bg = C.none },
 }
 
 L.css = {
@@ -440,15 +449,24 @@ L.css = {
 
 L.vimdoc = {
     ['@text.literal.vimdoc']       = { fg = C.frost.turquoise, bg = C.none },
+    ['@markup.raw.vimdoc']         = { fg = C.frost.turquoise, bg = C.none },
     ['@text.literal.block.vimdoc'] = { fg = C.frost.turquoise, bg = C.none, bold = true },
+    ['@markup.raw.block.vimdoc']   = { fg = C.frost.turquoise, bg = C.none, bold = true },
     ['@text.title.1.vimdoc']       = { fg = C.frost.light_blue, bg = C.none },
     ['@text.title.2.vimdoc']       = { fg = C.frost.light_blue, bg = C.none },
     ['@text.title.3.vimdoc']       = { fg = C.frost.light_blue, bg = C.none },
     ['@text.title.4.vimdoc']       = { fg = C.frost.turquoise, bg = C.none },
+    ['@markup.heading.1.vimdoc']   = { fg = C.frost.light_blue, bg = C.none },
+    ['@markup.heading.2.vimdoc']   = { fg = C.frost.light_blue, bg = C.none },
+    ['@markup.heading.3.vimdoc']   = { fg = C.frost.light_blue, bg = C.none },
+    ['@markup.heading.4.vimdoc']   = { fg = C.frost.turquoise, bg = C.none },
     ['@text.reference.vimdoc']     = { fg = C.frost.turquoise, bg = C.none },
+    ['@markup.link.vimdoc']        = { fg = C.frost.turquoise, bg = C.none },
     ['@text.uri.vimdoc']           = { fg = C.aurora.green, bg = C.none, underline = true, sp = C.aurora.green },
+    ['@markup.link.url.vimdoc']    = { fg = C.aurora.green, bg = C.none, underline = true, sp = C.aurora.green },
     ['@label.vimdoc']              = { fg = C.aurora.yellow, bg = C.none },
     ['@parameter.vimdoc']          = { fg = C.frost.turquoise, bg = C.none },
+    ['@variable.parameter.vimdoc'] = { fg = C.frost.turquoise, bg = C.none },
     ['@conceal.vimdoc']            = { fg = C.night.c0, bg = C.none },
 }
 
@@ -501,15 +519,23 @@ L.markdown = {
     ['@text.emphasis.markdown_inline']         = { fg = C.frost.light_blue, bg = C.none, italic = true },
     ['@text.literal.block.markdown']           = { fg = C.aurora.green, bg = C.none },
     ['@text.literal.markdown']                 = { fg = C.aurora.yellow, bg = C.none },
+    ['@markup.raw.markdown']                   = { fg = C.aurora.yellow, bg = C.none },
     ['@text.literal.markdown_inline']          = { fg = C.aurora.green, bg = C.none },
     ['@text.quote.markdown']                   = { fg = C.night.c3, bg = C.none },
+    ['@markup.quote.markdown']                 = { fg = C.night.c3, bg = C.none },
     ['@text.reference.markdown']               = { fg = C.aurora.green, bg = C.none, italic = true },
+    ['@markup.link.markdown']                  = { fg = C.aurora.green, bg = C.none, italic = true },
     ['@text.reference.markdown_inline']        = { fg = C.frost.turquoise, bg = C.none },
     ['@text.strike.markdown_inline']           = { fg = C.frost.light_blue, bg = C.none, strikethrough = true },
+    ['@markup.strikethrough.markdown_inline']  = { fg = C.frost.light_blue, bg = C.none, strikethrough = true },
     ['@text.strong.markdown_inline']           = { fg = C.frost.sea, bg = C.none, bold = true },
+    -- Deliberately no '@markup.heading.markdown': it would shadow the per-level
+    -- '@markup.heading.1'..'4' in base.lua and flatten every heading to C.fg.
     ['@text.title.markdown']                   = { fg = C.fg, bg = C.none },
     ['@text.todo.checked.markdown']            = { fg = C.aurora.green, bg = C.none },
+    ['@markup.list.checked.markdown']          = { fg = C.aurora.green, bg = C.none },
     ['@text.todo.unchecked.markdown']          = { fg = C.aurora.yellow, bg = C.none },
+    ['@markup.list.unchecked.markdown']        = { fg = C.aurora.yellow, bg = C.none },
     ['@text.uri.markdown_inline']              = { link = 'Underlined' },
     ['markdownUrl']                            = { link = 'Underlined' },
 }
@@ -524,6 +550,7 @@ L.xml = {
 
 L.yaml = {
     ['@field.yaml']                 = { fg = C.aurora.yellow, bg = C.none },
+    ['@variable.member.yaml']       = { fg = C.aurora.yellow, bg = C.none },
     ['@type.yaml']                  = { fg = C.fg, bg = C.none, bold = true },
     ['@number.yaml']                = { fg = C.aurora.purple, bg = C.none },
     ['@property.yaml']              = { fg = C.frost.sea, bg = C.none },
