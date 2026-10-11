@@ -79,7 +79,6 @@
 - [ ] - C
 - [ ] - C++
 - [ ] - JAVA
-- [ ] - Python
 - [ ] - Rust
 - [x] - Bash
 - [x] - CSS
@@ -92,6 +91,7 @@
 - [x] - Javascript
 - [x] - Lua
 - [x] - Markdown
+- [x] - Python & (requirements)
 - [x] - SQL
 - [x] - TSX
 - [x] - Toml
