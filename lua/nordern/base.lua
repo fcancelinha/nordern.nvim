@@ -35,7 +35,7 @@ local B = {}
 B.gui = {
     ColorColumn              = { link = 'CursorLine' },                                    --	Used for the columns set with 'colorcolumn'.
     Conceal                  = { fg = C.none, bg = C.none },                               --	Placeholder characters substituted for concealed text ().
-    CurSearch                = { fg = C.bg, bg = C.frost.turquoise },                      --   Used for highlighting a search pattern under the cursor (see 'hlsearch').
+    CurSearch                = { fg = C.bg, bg = C.aurora.yellow },                        --   Used for highlighting a search pattern under the cursor (see 'hlsearch').
     Cursor                   = { fg = C.bg, bg = C.frost.turquoise },                      --	Character under the cursor.
     CursorColumn             = { fg = C.none, bg = C.night.c1 },                           --	Screen-column at the cursor, when 'cursorcolumn' is set.
     CursorIM                 = { fg = C.bg, bg = C.frost.turquoise },                      --	Like Cursor, but used when in IME mode. CursorIM

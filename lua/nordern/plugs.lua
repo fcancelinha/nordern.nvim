@@ -906,9 +906,40 @@ P.avante           = {
     AvanteSidebarWinSeparator           = { fg = C.night.c2, bg = C.bg },
 }
 
+-- Incline-scoped mirrors of the Diff and Diagnostic groups. The originals keep
+-- their blended backgrounds for diff mode and virtual text; these are fg-only
+-- so the bar stays flat against the editor background.
 P.incline          = {
-    InclineNormal = { fg = C.none, bg = C.none },
-    InclineNormalNC = { fg = C.none, bg = C.none },
+    InclineNormal              = { fg = C.snow.c1, bg = C.none },
+    InclineNormalNC            = { fg = C.night.c3, bg = C.none },
+
+    InclineFilename            = { fg = C.snow.c1, bg = C.none, bold = true },
+    InclineFilenameModified    = { fg = C.aurora.yellow, bg = C.none, bold = true, italic = true },
+    InclineSeparator           = { fg = C.night.c3, bg = C.none },
+    InclineBranch              = { fg = C.aurora.green, bg = C.none },
+    InclineLsp                 = { fg = C.frost.light_blue, bg = C.none },
+    InclineEncoding            = { fg = C.night.c3, bg = C.none },
+    InclinePosition            = { fg = C.snow.c0, bg = C.none },
+    InclineSearch              = { fg = C.aurora.yellow, bg = C.none },
+    InclineSelection           = { fg = C.aurora.orange, bg = C.none },
+    InclineWinNumber           = { fg = C.frost.blue, bg = C.none },
+
+    InclineDiffAdd             = { fg = C.aurora.green, bg = C.none },
+    InclineDiffChange          = { fg = C.aurora.yellow, bg = C.none },
+    InclineDiffDelete          = { fg = C.aurora.red, bg = C.none },
+
+    InclineDiagnosticError     = { fg = C.aurora.red, bg = C.none },
+    InclineDiagnosticWarn      = { fg = C.aurora.yellow, bg = C.none },
+    InclineDiagnosticInfo      = { fg = C.frost.turquoise, bg = C.none },
+    InclineDiagnosticHint      = { fg = C.frost.sea, bg = C.none },
+
+    -- Mode colours carried over from the lualine theme's a/z caps.
+    InclineModeNormal          = { fg = C.frost.turquoise, bg = C.none, bold = true },
+    InclineModeInsert          = { fg = C.aurora.green, bg = C.none, bold = true },
+    InclineModeVisual          = { fg = C.frost.sea, bg = C.none, bold = true },
+    InclineModeReplace         = { fg = C.aurora.red, bg = C.none, bold = true },
+    InclineModeCommand         = { fg = C.aurora.yellow, bg = C.none, bold = true },
+    InclineModeTerminal        = { fg = C.aurora.purple, bg = C.none, bold = true },
 }
 
 P.dropbar          = {
